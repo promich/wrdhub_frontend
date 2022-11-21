@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Women's Resilience to Disasters Knowledge Hub </title>
+
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Women's Resilience to Disasters Knowledge Hub. The Women's Resilience to Disasters programme proposes a comprehensive package to strengthen women's resilience to disasters and threats, including climate change and COVID-19.  The WRD programme aims to render the lives and livelihoods of women and girls resilient to disasters and threats, contributing to sustainable, secure, and thriving communities. The objective is for WRD countries to adopt gender-responsive decision-making and governance systems, and enable targeted action to build the resilience of women and girls.">
+    <meta name="keywords" content="disasters, resilience, women, knowledge, local knowledge, UN Women, united nations">
+    <meta name="author" content="UN Women">
+
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" media="all" href="https://use.typekit.net/qtp3bsv.css">
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery.js/dist/css/lightgallery.min.css"/>
+
+    <link rel="stylesheet" media="screen" href="assets/css/plyr.css">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.css">
+
+    
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #131022;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== undefined && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body class="" data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="50">
+
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <header class="header navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            <img src="assets/img/wrd_logo.svg" alt="Women's Resilience to Disasters Knowledge Hub graphic">
+            <h1 class="d-none">Women's Resilience to Disasters Knowledge Hub</h1>
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                <li class="nav-item dropdown">
+                  <a href="about-v1.html" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
+                  <a class="nav-link collapsed" href="#menu-1" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-1"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-1" data-bs-parent="#navbarNav">
+                      <li><a href="account-details.html" class="dropdown-item">Women’s Resilience to Disasters Programme</a></li>
+                      <li><a href="account-security.html" class="dropdown-item">Partners</a></li>
+                      <li><a href="account-notifications.html" class="dropdown-item">Donors</a></li>
+                  </ul>               
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="about-v1.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Explore</a>
+                  <a class="nav-link collapsed" href="#menu-2" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-2"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-2" data-bs-parent="#navbarNav">
+                      <li><a href="account-details.html" class="dropdown-item">Women’s perspectives</a></li>
+                      
+                      <li><a href="account-notifications.html" class="dropdown-item">Insights</a></li>
+                      
+                      <li><a href="regions.html" class="dropdown-item">Regions</a></li>
+                      <li><a href="account-messages.html" class="dropdown-item">Hazards</a></li>
+                  </ul>               
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="about-v1.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Practice</a>
+                  <a class="nav-link collapsed" href="#menu-3" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-3"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-3" data-bs-parent="#navbarNav">
+                    
+                    <li><a href="account-details.html" class="dropdown-item">Topics</a></li>
+                    <li><a href="library.html" class="dropdown-item">Library</a></li>
+                      <li><a href="account-security.html" class="dropdown-item">Toolbox</a></li>
+                      <li><a href="account-details.html" class="dropdown-item">Policy Tracker</a></li>  
+
+                  </ul>               
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="about-v1.html" class="nav-link active dropdown-toggle" data-toggle="dropdown">Engage</a>
+                  <a class="nav-link collapsed" href="#menu-4" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-4"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-4" data-bs-parent="#navbarNav">
+                      <li><a href="account-details.html" class="dropdown-item">Community of Practice</a></li>
+                      <li><a href="account-security.html" class="dropdown-item">Expert Roster</a></li>
+                      <li><a href="events.html" class="dropdown-item active">Events</a></li>
+                      <li><a href="account-messages.html" class="dropdown-item">Recommended Platforms</a></li>
+                  </ul>               
+                </li>
+                <li class="nav-item">
+                  <a href="docs/getting-started.html" class="nav-link"><span class="d-none d-lg-block">FR</span><span class="d-md-block d-lg-none">En français</span></a>
+                </li>
+
+              </ul>
+
+
+
+            </div>
+            <div class="offcanvas-footer border-top">
+
+
+
+
+ <form>
+  <label for="mobile-search" class="form-label">Search our website</label>
+  <div class="grouped-inputs p-1 rounded-pill border">
+
+  <div class="input-group">
+    <input type="text" id="mobile-search" class="form-control rounded-start" aria-label="Text input with button" placeholder="Search" >
+    <button type="submit" class="btn btn-primary btn-icon rounded-circle"><i
+      class="bx bx-search fs-lg "></i></button>
+  </div>
+</div>
+</form>
+ 
+              <div class="d-flex mt-4">
+
+                <div class="">
+                  <a href="#" class="btn btn-icon btn-primary btn-linkedin rounded-circle me-2">
+                    <i class="bx bxl-linkedin"></i>
+                  </a>
+                </div>
+                <div class="">
+                  <a href="#" class="btn btn-icon btn-primary btn-twitter rounded-circle me-2">
+                    <i class="bx bxl-twitter"></i>
+                  </a>
+                </div>
+                <div class="flex-grow-1 ">
+                  <a href="#" class="btn btn-primary w-100 ">
+                    <i class="bx bxs-envelope fs-4 lh-1 me-1"></i>
+                    &nbsp;Get in touch
+                  </a>
+                </div>
+              </div>
+
+ 
+            </div>      
+          </div>
+
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--
+          <button class="btn btn-outline-primary btn-icon rounded-circle d-none d-lg-inline-flex" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAccess"><i class="bx bx-body "></i></button>
+-->
+          <button class="btn btn-outline-primary btn-icon rounded-circle d-none d-lg-inline-flex ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch"><i class="bx bx-search "></i></button>
+
+        </div>
+
+
+
+      </header>
+
+<!-- Offcanvas Search-->
+<div class="offcanvas offcanvas-top" id="offcanvasSearch" tabindex="-1">
+  <div class="offcanvas-header container">
+      <h5 class="offcanvas-title"> </h5>
+      <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body d-flex align-items-center ">
+
+    <div class="container ">
+      <div class="row d-flex justify-content-center">
+        <div class="col-xl-10 col-lg-12 pb-5">
+          <form>
+            <label for="top-search" class="form-label">Search our website</label>
+            <div class="input-group">
+              <input type="text" id="top-search" class="form-control form-control-lg rounded-start ps-5" placeholder="What are you looking for?" >
+              <i class="bx bx-search fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+              <button type="submit" class="btn btn-lg btn-primary">Search</button>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Offcanvas accessibility -->
+<div class="offcanvas offcanvas-start" id="offcanvasAccess" tabindex="-1">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title">Accessibility menu</h5>
+    <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.</p>
+    <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+      <input type="checkbox" class="form-check-input" id="theme-mode">
+      <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+      <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+    </div>
+  </div>
+</div>
+
+
+
+      <!-- Event top WITHOUT thumbnail -->
+      <!--
+      <section class="event-single-top pt-0">
+        <div class="position-relative overflow-hidden">
+ 
+
+
+          <div class="container position-relative px-0 px-lg-5 zindex-5">
+	          
+	              
+    <nav class="d-none d-lg-block py-3 " aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item" aria-current="page"><a href="engage.html">Engage</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="events.html">Events</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Global Platform for Disaster Risk Reduction Disaster Risk Reduction</li>
+      </ol>
+    </nav>  
+	          
+	          
+            <div class="row">
+              <div class="col-xl-9 col-lg-12">
+  
+               
+                <div class="card bg-dark overflow-hidden py-4 px-2 p-sm-4">
+                  <div class="card-body position-relative zindex-5">
+                    <p class="fs-xl fw-bold text-primary text-uppercase mb-3">Forum</p>
+                    <h1 class="display-5 text-light pb-3 mb-3">The Global Platform for Disaster Risk Reduction</h1>
+                    <p class="fs-lg text-light opacity-70 mb-3">The Global Platform for Disaster Risk Reduction is the main global forum to assess and discuss progress on the implementation of the Sendai Framework for Disaster Risk Reduction.</p>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+-->
+
+
+
+
+
+      <!-- Event top with thumbnail -->
+      <section class="event-single-top pt-0">
+        <div class="position-relative overflow-hidden">
+  
+          <!-- Image -->
+          <div class="container-fluid position-relative position-lg-absolute top-0 start-0 h-100">
+            <div class="row h-100 me-n4 me-n2">
+              <div class="col-lg-6 offset-lg-6 position-relative">
+                <div class="d-none d-sm-block d-lg-none" style="height: 400px;"></div>
+                <div class="d-sm-none" style="height: 300px;"></div>
+                <div class="jarallax position-absolute top-0 start-0 w-100 h-100 overflow-hidden" data-jarallax data-speed="0.5">
+                  <div class="jarallax-img" style="background-image: url(assets/img/event-big.jpg);"></div>
+                  <figcaption class="figure-caption">Photo: Jane Doe/UN Women</figcaption>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container position-relative px-0 px-lg-5 zindex-5">
+	          
+	              <!-- Breadcrumb - hidden on mobile -->
+    <nav class="d-none d-lg-block py-3 " aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item" aria-current="page"><a href="engage.html">Engage</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="events.html">Events</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Global Platform for Disaster Risk Reduction Disaster Risk Reduction</li>
+      </ol>
+    </nav>  
+	          
+	          
+            <div class="row pb-lg-4 ">
+              <div class="col-xl-7 col-lg-8 py-lg-5">
+  
+                <!-- Card -->
+                <div class="card bg-dark overflow-hidden py-4 px-2 p-sm-4">
+                  <div class="card-body position-relative zindex-5">
+                    <p class="fs-xl fw-bold text-primary text-uppercase mb-3">Forum</p>
+                    <h1 class="display-5 text-light pb-3 mb-3">The Global Platform for Disaster Risk Reduction</h1>
+                    <p class="fs-lg text-light opacity-70 mb-3">The Global Platform for Disaster Risk Reduction is the main global forum to assess and discuss progress on the implementation of the Sendai Framework for Disaster Risk Reduction.</p>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+      <!-- Event content + Side column -->
+      <section class="mb-5 pt-4 pb-2 py-md-4">
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- Side column -->
+          <div class="col-lg-3 position-relative">
+            <aside id="event-side" class="sticky-top " style="top: 120px !important;">
+
+                <!-- Contact (List) -->
+                <div class="side-details">
+                  <li class="d-flex align-items-center pb-1 mb-2">
+                    <i class="bx bx-calendar fs-xl text-primary me-2"></i>
+                    <span class="fw-normal p-0"><strong>12 Apr 2022</strong> 14:00—15:00 CET</span>
+                  </li>
+                  <li class="d-flex align-items-center pb-1 mb-2">
+                    <a href="https://www.google.com/maps/place/Bali,+Indonesia/" target="_blank">
+                    <i class="bx bx-map fs-xl text-primary me-2"></i>
+                    Bali, Indonesia</a>
+                  </li>
+
+                  <li class="d-flex align-items-center pb-1 mb-2">
+                    <i class="bx bx-envelope fs-xl text-primary me-2"></i>
+                    <a href="mailto:email@example.com" class="nav-link fw-normal p-0">wrd@unwomen.org</a>
+                  </li>
+                  <li class="d-flex align-items-center pb-1 mb-2">
+                    <i class="bx bx-phone-call fs-xl text-primary me-2"></i>
+                    <a href="tel:4065550120" class="nav-link fw-normal p-0">(406) 555-0120</a>
+                  </li>
+
+                </div>
+
+
+
+              <div class="side-buttons">
+
+
+
+                <a class="btn btn-lg btn-outline-secondary mb-2">
+                  Register
+                  <i class="bx bx-user-check lead"></i>
+                </a>
+                <a class="btn btn-lg btn-outline-secondary mb-2" data-bs-toggle="modal" data-bs-target="#modalEvent">
+                  <span>Add to calendar</span>
+                  <i class="bx bx-calendar-plus lead"></i>
+                </a>
+                <a href="#" target="_blank" class="btn btn-lg btn-outline-secondary w-100 d-flex align-items-center justify-content-between mb-2">
+                  <span>Event flyer</span>
+                <i class="bx bxs-file-pdf lead"></i>
+              </a>
+                <a href="https://www.undrr.org/event/seventh-session-global-platform-disaster-risk-reduction-gp2022" target="_blank" class="btn btn-lg btn-outline-secondary w-100 d-flex align-items-center justify-content-between ">
+                    <span>Event website</span>
+                  <i class="bx bx-right-top-arrow-circle lead"></i>
+                </a>
+              </div>  
+
+<div class="side-people">
+    <h6>Featuring</h6>
+
+	<a href="#" class="side-person">
+	                <img src="assets/img/avatar/04.jpg"  alt="Jane Cooper">
+	                <div >
+	                  <h6 >Jane Cooper Jane Cooper Jane Cooper</h6>
+	                  <span >CEO of Ipsum Company CEO of Ipsum Company</span>
+	                </div>
+	</a>
+	
+	<a href="#" class="side-person">
+	                <img src="assets/img/avatar/05.jpg"  alt="Jane Cooper">
+	                <div >
+	                  <h6 >Jane Cooper-Smith</h6>
+	                  <span >CEO of Ipsum Company CEO of Ipsum Company</span>
+	                </div>
+	</a>
+	
+	<a href="#" class="side-person">
+	                <img src="assets/img/avatar/03.jpg"  alt="Jane Cooper">
+	                <div >
+	                  <h6 >Jane Cooper</h6>
+	                  <span >CEO of Ipsum </span>
+	                </div>
+	</a>
+
+
+</div>
+
+
+
+<div class="side-org">
+              <h6>Organiser</h6>
+              <p><a href="">International Energy Agency (IEA)</a></p>
+</div>
+
+              <div class="side-social">
+              <h6>Share this event</h6>
+              <div class="mb-4 pb-lg-3">
+                <a href="#" class="btn btn-icon btn-secondary btn-linkedin me-1 mb-2">
+                  <i class="bx bxl-linkedin"></i>
+                </a>
+                <a href="#" class="btn btn-icon btn-secondary btn-twitter me-1 mb-2">
+                  <i class="bx bxl-twitter"></i>
+                </a>
+                <a href="#" class="btn btn-icon btn-secondary btn-whatsapp me-1 mb-2">
+                  <i class="bx bxl-whatsapp"></i>
+                </a>
+                <a href="#" class="btn btn-icon btn-secondary btn-facebook me-1 mb-2">
+                  <i class="bx bxl-facebook"></i>
+                </a>
+              </div>
+
+              </div>
+
+
+            </aside>
+          </div><!-- End side column -->
+
+          <!-- Content -->
+          <div class="col-lg-8 offset-lg-1">
+	      <main id="event-content">    
+	          
+            <h3 class="h5 mb-4 pb-2 fw-medium">Est quis sit phasellus proin proin fringilla eu quis. Placerat praesent blandit urna eu pellentesque dictum. Aliquam duis quam interdum quis. Urna, rutrum aenean lacus phasellus. Ipsum, ac porttitor lacus orci, cras lacus, quis leo.</h3>
+            
+            <div class="mb-4 pb-2">
+            <div class="plyr__video-embed" id="player">
+              <iframe
+                src="https://www.youtube.com/embed/v3Z52Z_LREo?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                allowfullscreen
+                allowtransparency
+                allow="autoplay"
+              ></iframe>
+            </div>
+            </div>
+
+            <h2 class="h4">Paragraph Title</h2>
+            <p>Purus ornare nisl est nec. Nunc, enim tellus pretium viverra quisque id in metus volutpat. Urna eget velit venenatis, commodo eget massa. Magna donec dictum cras nullam platea. Diam rhoncus massa lectus pellentesque tristique. Amet commodo, egestas vitae bibendum. Volutpat elit condimentum integer tortor porttitor justo vel lobortis risus. Lacinia pellentesque fermentum tellus orci mauris, velit duis eget. Commodo justo, hac ligula molestie felis, iaculis. Vitae dui at ante orci, dictum fusce. Urna, sed urna fringilla faucibus euismod aliquet nec. Quis libero, fermentum amet eu, condimentum auctor. Sit vel ipsum sem tempus gravida et. Scelerisque blandit orci, est quis. Nisi, tellus amet est nascetur habitant faucibus ornare et vivamus.</p>
+
+
+
+            <p>Tempor donec aliquam est, a. Sit arcu tellus pharetra, bibendum hendrerit arcu, sed. Scelerisque dui enim libero sit ac sed lacus lectus. Quam in iaculis scelerisque feugiat nibh mi. Maecenas posuere lobortis praesent iaculis sagittis. Egestas vel at praesent ipsum pretium faucibus adipiscing gravida feugiat. Lacus, rhoncus velit at non nunc, quam urna, phasellus facilisis. Cursus elit posuere amet tortor at. Mi tristique congue vulputate eget in pellentesque tincidunt. In viverra est id nibh. Nunc tellus ultrices magna turpis. Viverra est morbi posuere dapibus nisi habitasse. Id tristique cursus vel metus.</p>
+
+            <!-- Quotation -->
+            <figure class="position-relative mb-4 ps-4">
+              <span class="position-absolute top-0 start-0 w-3 h-100 bg-primary"></span>
+              <blockquote class="blockquote fs-xl fw-medium text-dark ps-1 ps-sm-3">
+                <p>Sollicitudin eget massa, elementum, purus nec fermentum vitae, elementum. Tincidunt vulputate lorem cursus id. Dictum tincidunt mi ornare tristique. Id sit elit pulvinar eu. Tempus vel, mauris sed proin aliquet vulputate cras est. Ut ornare eget a viverra.</p>
+              </blockquote>
+
+            </figure>
+
+            <p>Pellentesque laoreet neque ut dictumst fames scelerisque. In malesuada orci dapibus risus tellus, amet, ultrices sagittis a. Turpis vel tincidunt tristique maecenas cursus tortor, suscipit ut. Ullamcorper at faucibus dolor tortor suspendisse suscipit senectus convallis aliquam. At orci amet facilisi nunc mi vitae iaculis diam a. Mauris venenatis sed purus cursus torte.</p>
+            <h2 class="h4">Paragraph Title 2</h2>
+            <p>Praesent sed pulvinar posuere nisl tincidunt. Iaculis sit quam magna congue. Amet vel non aliquet habitasse. Egestas erat odio et, eleifend turpis etiam blandit interdum. Nec augue ut senectus quisque diam quis. At augue accumsan, in bibendum. A eget et, eget quisque egestas netus vel. Velit, aliquet turpis convallis ullamcorper. Scelerisque sagittis condimentum pretium in vitae etiam lacinia quis amet. Porttitor consequat, sollicitudin vivamus pharetra nibh faucibus neque, viverra. Praesent amet sed lacus vitae.</p>
+            <h4 class="h6">
+              <i class="bx bx-plus-circle me-1 mt-n1 align-middle fs-5 text-primary"></i>
+              PROS
+            </h4>
+            <ul class="mb-4 pb-2 ps-4">
+              <li class="mb-1">A eu, ac nunc, volutpat. Augue enim ac justo, at elementum, arcu.</li>
+              <li class="mb-1">At sodales quam felis ullamcorper iaculis tristique. Felis, etiam felis pellentesque sit neque.</li>
+              <li class="mb-1">Porta ipsum quis lacus eu ipsum mattis sit quis. Massa, massa lectus porttitor laoreet ultricies odio fermentum arcu quam.</li>
+              <li class="mb-1">Accumsan arcu neque, nisl, pellentesque fames justo consequat blandit lacus. Eget odio vel nulla vel.</li>
+              <li class="mb-1">Diam ac phasellus est, eu urna purus blandit aliquam. Vitae accumsan et pellentesque diam in.</li>
+              <li>Tellus arcu, lectus tincidunt neque nunc. Bibendum lacus, molestie ultrices sed arcu.</li>
+            </ul>
+            <h4 class="h6">
+              <i class="bx bx-minus-circle me-1 mt-n1 align-middle fs-5 text-primary"></i>
+              CONS
+            </h4>
+            <ul class="mb-4 pb-2 ps-4">
+              <li class="mb-1">Donec maecenas justo, et tortor quam elementum pharetra velit. Auctor dictum purus sollicitudin et quam vehicula amet lacus, integer.</li>
+              <li class="mb-1">Mi elit nibh erat facilisis. Volutpat eget malesuada mi in.</li>
+              <li class="mb-1">Tincidunt iaculis eleifend arcu egestas. Sit gravida vestibulum quam scelerisque.</li>
+              <li class="mb-1">Ornare elit, vel, ullamcorper nunc nulla pellentesque ut varius. Vitae tortor nulla a turpis erat fermentum, rhoncus.</li>
+              <li>Gravida cursus nunc habitant aliquet lacus. Tempus, interdum nullam non quam ipsum ultricies ac.</li>
+            </ul>
+
+
+
+<!-- Gallery inside carousel -->
+<div class="position-relative ">
+
+  <div class="swiper pt-1" data-swiper-options='{
+    "slidesPerView": 1,
+    "spaceBetween": 20,
+    "loop": true,
+	"autoHeight": true,
+    "pagination": {
+      "el": ".swiper-pagination",
+      "clickable": true
+    },
+    "navigation": {
+      "prevEl": "#prev",
+      "nextEl": "#next"
+    }
+  }'>
+    <div class="swiper-wrapper gallery">
+
+      <!-- Item -->
+      <div class="swiper-slide">
+        <a href="assets/img/event-big.jpg" class="gallery-item" data-sub-html='<p class="fs-base text-light">Gallery image caption</p>'>
+          <img src="assets/img/event-big.jpg" alt="Gallery thumbnail">
+          <div class="gallery-item-caption">Gallery image caption</div>
+        </a>
+      </div>
+
+      <!-- Item -->
+      <div class="swiper-slide">
+        <a href="assets/img/perspective.jpg" class="gallery-item " data-sub-html='<p class="fs-base text-light">Gallery image caption</p>'>
+          <img src="assets/img/perspective.jpg" alt="Gallery thumbnail">
+          <div class="gallery-item-caption">Gallery image caption</div>
+        </a>
+      </div>
+
+      <!-- Item -->
+      <div class="swiper-slide">
+        <a href="assets/img/region-wc-africa.jpeg" class="gallery-item " data-sub-html='<p class="fs-base text-light">Gallery image caption</p>'>
+          <img src="assets/img/region-wc-africa.jpeg" alt="Gallery thumbnail">
+          <div class="gallery-item-caption">Gallery image caption</div>
+        </a>
+      </div>
+    </div>
+
+  <!-- Prev button -->
+  <button type="button" id="prev" class="btn btn-prev btn-icon btn-sm me-2">
+    <i class="bx bx-chevron-left"></i>
+  </button>
+
+  <!-- Next button -->
+  <button type="button" id="next" class="btn btn-next btn-icon btn-sm ms-2">
+    <i class="bx bx-chevron-right"></i>
+  </button>
+
+
+    <div class="swiper-pagination position-relative pt-3 pt-sm-4 mt-3 mb-4"></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+            <figure class="figure">
+              <img src="assets/img/event-big.jpg" class="figure-img img-fluid " alt="A generic square placeholder image in a figure.">
+              <figcaption class="figure-caption text-end">A caption for the above image.</figcaption>
+            </figure>
+
+            <h2 class="h4">Conclusion</h2>
+            <p>Venenatis faucibus platea gravida amet sed sed urna volutpat. Aliquam neque, mi, justo odio semper. Egestas potentiquis neque nunc, rhoncus hendrerit. Viverra gravida pretium dolor eget placerat morbi proin eget. Vestibulum vitae ultrices vel sed sit quis. Ac quis diam at nulla libero. Turpis duis magna tellus condimentum.</p>
+            <p>Velit parturient tellus tellus, congue pulvinar tellus viverra. In cum massa mattis ac. Amet vitae massa ut mi etiam. Auctor aliquam tristique felis donec eu sit nisi. Accumsan mauris eget convallis mattis sed etiam scelerisque.</p>
+
+
+
+            <!-- Selected Insights -->
+            <hr>
+            <div class="mb-4">
+              <h6 class=" ">Further reading</h6>
+              
+              <article class="card card-list overflow-hidden mb-4">
+              <a href="blog-single.html">
+              <div class="row g-0">
+                <div class="col-8 col-xl-9">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span class="badge">Blog</span>
+                      <span class="date">2 March 2022</span>
+                    </div>
+                    <h3 class="h5">
+                      Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+                      
+                    </h3><p class="small">How international commitments and recommendations are being translated into national DRR frameworks</p>
+
+                  </div>
+                </div>
+                <div class="col-4 col-xl-3 position-relative bg-position-center bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/interview.jpg); min-height: 8rem;">
+
+                </div>
+
+              </div>
+            </a>
+            </article>
+              
+              
+            </div>
+
+
+
+
+            <!-- Selected Publications/Tools/Frameworks -->
+            <hr >
+            <div class="mb-4">
+              <h6 class=" ">Featured</h6>
+
+
+              <article class="card card-list card-list-pub overflow-hidden mb-4">
+              <a href="blog-single.html">
+              <div class="row g-0">
+                <div class="col-8 col-xl-8">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span class="badge">Publication</span>
+                      <span class="date">Nov 2022</span>
+                    </div>
+                    <h3 class="h5">
+                      Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+                    </h3>
+                    <p class="small">How international commitments and recommendations are being translated into national DRR frameworks</p>
+
+                  </div>
+                </div>
+                <div class="col-4 col-xl-4" >
+
+	            <div class="pub-image">
+                    <img src="assets/img/pub-cover.jpg" alt="Publication title">
+                </div>
+
+                </div>
+
+              </div>
+            </a>
+            </article>
+
+
+
+
+              <article class="card card-list card-list-pub overflow-hidden mb-4">
+              <a href="blog-single.html">
+              <div class="row g-0">
+                <div class="col-8 col-xl-8">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span class="badge">Tool</span>
+                      <span class="date">Nov 2022</span>
+                    </div>
+                    <h3 class="h5">
+                      Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+                    </h3>
+                    <p class="small">How international commitments and recommendations are being translated into national DRR frameworks</p>
+
+                  </div>
+                </div>
+                <div class="col-4 col-xl-4" >
+
+	            <div class="pub-image">
+                    <img src="assets/img/pub-cover.jpg" alt="Publication title">
+                </div>
+
+                </div>
+
+              </div>
+            </a>
+            </article>
+
+
+
+
+
+
+
+            <!-- Tags -->
+            <hr>
+            <div class="d-flex flex-sm-row flex-column pt-2">
+              <h6 class="mt-sm-1 mb-sm-2 mb-3 me-2 text-nowrap">Related topics</h6>
+              <div>
+                <a href="#" class="btn btn-sm btn-outline-secondary me-1 mb-2">Intersectionality</a>
+                <a href="#" class="btn btn-sm btn-outline-secondary me-1 mb-2">Information management systems</a>
+                <a href="#" class="btn btn-sm btn-outline-secondary me-1 mb-2">Access to finance</a>
+              </div>
+            </div>
+          </div>
+
+	      </main>
+        </div>
+      </div>
+      </section>
+
+    <!-- Related/Upcoming events (Carousel) -->
+    <section class="related-events">
+      <div class="container">
+
+        <div class="d-flex align-items-center justify-content-between pb-md-2">
+          <h2 class="h3 ">Upcoming events</h2>
+          <a href="events.html" class="btn btn-sm btn-outline-primary hover-arrow">
+            View all events
+          </a>
+
+        </div>
+
+
+
+
+        
+        <div class="swiper mx-n2" data-swiper-options='{
+          "slidesPerView": 2,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "breakpoints": {
+            "500": {
+              "slidesPerView": 1,
+              "spaceBetween": 8
+            },
+            "650": {
+              "slidesPerView": 2,
+              "spaceBetween": 8
+            },
+            "900": {
+              "slidesPerView": 3,
+              "spaceBetween": 8
+            },
+            "1100": {
+              "slidesPerView": 4,
+              "spaceBetween": 8
+            }
+          }
+        }'>
+          <div class="swiper-wrapper">
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="event-single.html" class="card mx-2" aria-label="Read more">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-2 mb-sm-3">
+                      <span class="badge">Webinar</span>
+                      <span>28 May 2022</span>
+                    </div>
+                    <h3 class="h5">The Global Platform for Disaster Risk Reduction
+                    </h3>
+                  </div>
+              </a>
+            </div>
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="event-single.html" class="card mx-2" aria-label="Read more">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-2 mb-sm-3">
+                      <span class="badge">Webinar</span>
+                      <span>28 May 2022</span>
+                    </div>
+                    <h3 class="h5">The Global Platform for Disaster Risk Reduction for Disaster Risk Reduction
+                    </h3>
+                  </div>
+              </a>
+            </div>
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="event-single.html" class="card mx-2" aria-label="Read more">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-2 mb-sm-3">
+                      <span class="badge">Webinar</span>
+                      <span>28 May 2022</span>
+                    </div>
+                    <h3 class="h5">The Global Platform for Disaster Risk Reduction
+                    </h3>
+                  </div>
+              </a>
+            </div>
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              <a href="event-single.html" class="card mx-2" aria-label="Read more">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-2 mb-sm-3">
+                      <span class="badge">Webinar</span>
+                      <span>28 May 2022</span>
+                    </div>
+                    <h3 class="h5">The Global Platform for Disaster Risk Reduction for Disaster Risk Reduction
+                    </h3>
+                  </div>
+              </a>
+            </div>
+
+
+          </div>
+
+          <!-- Pagination (bullets) -->
+          <div class="swiper-pagination position-relative pt-2 mt-4"></div>
+        </div>
+      </div>
+    </section>
+
+ 
+    </main>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer text-light pt-5 pb-4 pb-lg-5">
+
+      <div class="container ">
+        <div class="row d-flex flex-column flex-sm-row align-items-start justify-content-between position-relative">
+          <div class="col-auto">
+            <h5 class="h5">Navigation</h5>
+            <div id="useful-links" >
+              <ul class="nav pb-lg-1  d-flex flex-column flex-sm-row">
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Explore</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Practice</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Engage</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-auto d-none d-md-block">
+          <div class="footer-brand p-0 me-0 mb-3">
+            <img src="assets/img/wrdp_logo_wh.svg" alt="Women's Resilience to Disasters Programme">
+          </div>
+        </div>
+
+        </div>
+
+
+
+        <div class="row d-flex flex-column flex-sm-row align-items-start align-items-sm-end justify-content-between position-relative pb-5">
+
+          <div class="col-md-8 col-lg-4 ">
+
+
+
+            <h4 class="h5 mt-md-0">Connect with us</h4>
+            <div class="d-flex mb-4 mb-sm-0">
+              <a href="#" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-2">
+                <i class="bx bxl-linkedin"></i>
+              </a>
+              <a href="#" class="btn btn-icon btn-secondary btn-twitter rounded-circle me-2">
+                <i class="bx bxl-twitter"></i>
+              </a>
+              <a href="#" class="btn btn-icon btn-secondary btn-youtube rounded-circle me-2">
+                <i class="bx bxl-youtube"></i>
+              </a>
+              <a href="#" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-2">
+                <i class="bx bxl-facebook"></i>
+              </a>
+            </div>
+
+            <form class="needs-validation" novalidate>
+              <label for="subscr-email" class="form-label">Subscribe to our newsletter</label>
+              <div class="input-group">
+                <input type="email" id="subscr-email" class="form-control rounded-start ps-5" placeholder="Your email" required>
+                <i class="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+                <div class="invalid-tooltip position-absolute top-100 start-0">Please provide a valid email address.</div>
+                <button type="submit" class="btn btn-footer">Subscribe</button>
+              </div>
+            </form>
+
+
+            <h5 class="h5">Contact us</h5>
+
+            <a href="mailto:wrd@unwomen.org" class="nav-link fs-xl fw-semibold p-0">
+              wrd@unwomen.org
+              <i class="bx bx-right-arrow-circle fs-4 ms-2"></i>
+            </a>
+
+          </div>
+
+
+
+          <div class="col-auto ">
+          <h5 class="h5">Supported by</h5>
+          <div class="d-flex supporters flex-column flex-md-row mt-4">
+          <a href="" target="_blank" class="card-hover-grow p-0 ps-2 ps-sm-2 ps-md-0 me-0 mb-3 mb-lg-0">
+            <img src="assets/img/logo-australian_wh.svg"  alt="">
+          </a>
+          <a href="" target="_blank" class="card-hover-grow ps-0 ps-sm-2 mb-3 mb-lg-0">
+            <img src="assets/img/logo-pw_wh.svg" class="ps-0 ps-md-3 py-2" alt="Prevention Web">
+          </a>
+          <a href="" target="_blank" class="card-hover-grow ps-2 ps-md-4 mb-3 mb-lg-0">
+            <img src="assets/img/logo-unwomen_wh.svg" class="py-2" alt="UN Women">
+          </a>
+        </div>
+        </div>
+        </div>
+
+
+
+        <p class="fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+         Copyright &copy; 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">UN Women</a> | 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">Information Security</a> | 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">Privacy Policy</a> | 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">Terms of Use</a>
+        </p>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+    <!--Event calendar modal-->
+<div class="modal fade" id="modalEvent" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add to calendar</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;dates=20220412T070000Z/20220412T090000Z&amp;ctz=UTC&amp;text=Arab+Digital+Inclusion+Platform%3A+Future+perspectives&amp;details=Planning+the+next+phase+of+the+Arab+Digital+Inclusion+Platform+%28ADIP%29+to+continue+the+development+of+e-Accessibility+for+all%2C+across+the+Arab+region.&amp;location=Online" target="_blank" class="calendar-link-google">Google</a>
+        </p>
+        <p>
+          <a href="data:text/calendar;charset=utf8;base64,QkVHSU46VkNBTEVOREFSDQpWRVJTSU9OOjIuMA0KQkVHSU46VkVWRU5UDQpVSUQ6Y2MyYWI1MWYyOWRkZTIxMTFmODJkZTY1YTQ1ZThjMDINClNVTU1BUlk6QXJhYiBEaWdpdGFsIEluY2x1c2lvbiBQbGF0Zm9ybTogRnV0dXJlIHBlcnNwZWN0aXZlcw0KRFRTVEFSVDtUWklEPVVUQzoyMDIyMDQxMlQwNzAwMDANCkRURU5EO1RaSUQ9VVRDOjIwMjIwNDEyVDA5MDAwMA0KREVTQ1JJUFRJT046UGxhbm5pbmcgdGhlIG5leHQgcGhhc2Ugb2YgdGhlIEFyYWIgRGlnaXRhbCBJbmNsdXNpb24gUGxhdGZvcm0gKEFESVApIHRvIGNvbnRpbnVlIHRoZSBkZXZlbG9wbWVudCBvZiBlLUFjY2Vzc2liaWxpdHkgZm9yIGFsbFwsIGFjcm9zcyB0aGUgQXJhYiByZWdpb24uDQpMT0NBVElPTjpPbmxpbmUNCkVORDpWRVZFTlQNCkVORDpWQ0FMRU5EQVI=" target="_blank" class="calendar-link-ics">iCal</a>
+        </p>
+        <p>
+          <a href="https://calendar.yahoo.com/?v=60&amp;view=d&amp;type=20&amp;ST=20220412T070000Z&amp;ET=20220412T090000Z&amp;TITLE=Arab%20Digital%20Inclusion%20Platform%3A%20Future%20perspectives&amp;DESC=Planning%20the%20next%20phase%20of%20the%20Arab%20Digital%20Inclusion%20Platform%20%28ADIP%29%20to%20continue%20the%20development%20of%20e-Accessibility%20for%20all%2C%20across%20the%20Arab%20region.&amp;in_loc=Online" target="_blank" class="calendar-link-yahoo">Yahoo!</a>
+        </p>
+        <p>
+          <a href="https://outlook.live.com/calendar/deeplink/compose?path=/calendar/action/compose&amp;rru=addevent&amp;startdt=2022-04-12T07:00:00Z&amp;enddt=2022-04-12T09:00:00Z&amp;subject=Arab%26%2332%3BDigital%26%2332%3BInclusion%26%2332%3BPlatform%3A%26%2332%3BFuture%26%2332%3Bperspectives&amp;body=Planning%26%2332%3Bthe%26%2332%3Bnext%26%2332%3Bphase%26%2332%3Bof%26%2332%3Bthe%26%2332%3BArab%26%2332%3BDigital%26%2332%3BInclusion%26%2332%3BPlatform%26%2332%3B%28ADIP%29%26%2332%3Bto%26%2332%3Bcontinue%26%2332%3Bthe%26%2332%3Bdevelopment%26%2332%3Bof%26%2332%3Be-Accessibility%26%2332%3Bfor%26%2332%3Ball%2C%26%2332%3Bacross%26%2332%3Bthe%26%2332%3BArab%26%2332%3Bregion.&amp;location=Online" target="_blank" class="calendar-link-webOutlook">Outlook.com</a>
+        </p>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    
+    
+    <script src="assets/vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    
+    
+    <!--<script src="assets/vendor/aos/aos.js"></script>-->
+ 
+    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+    <!--<script type="text/javascript" src="https://unpkg.com/plyr@~3.6.2/dist/plyr.polyfilled.min.js"></script>-->
+    <!--<script src="assets/vendor/plyr.js"></script>-->
+    <script src="https://cdn.plyr.io/3.6.12/plyr.polyfilled.js"></script>
+    <script>
+      const player = new Plyr('#player');
+    </script>
+
+    <!-- Main Theme Script <script src="assets/js/theme.min.js"></script>-->
+    <script src="assets/js/theme.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+<script>
+$(".caribbean").hover(
+  function () {
+    $('.caribbean').addClass('reg-active');
+    $(".accordion-header.region").parent('.accordion-item').children('.caribbean-ac.collapse').collapse('show');
+  },
+  function () {
+    $('.caribbean').removeClass('reg-active');
+    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.caribbean-ac').collapse('hide');
+  }
+);
+$(".wc-africa").hover(
+  function () {
+    $('.wc-africa').addClass('reg-active');
+    $(".accordion-header.region").parent('.accordion-item').children('.wc-africa-ac.collapse').collapse('show');
+  },
+  function () {
+    $('.wc-africa').removeClass('reg-active');
+    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.wc-africa-ac').collapse('hide');
+  }
+);
+$(".se-asia").hover(
+  function () {
+    $('.se-asia').addClass('reg-active');
+    $(".accordion-header.region").parent('.accordion-item').children('.se-asia-ac.collapse').collapse('show');
+  },
+  function () {
+    $('.se-asia').removeClass('reg-active');
+    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.se-asia-ac').collapse('hide');
+  }
+);    
+
+$('.caribbean-ac').on('shown.bs.collapse', function () {
+    $('.caribbean').addClass('reg-active');
+});
+$('.caribbean-ac').on('hidden.bs.collapse', function () {
+   $(".caribbean").removeClass("reg-active")
+});
+
+$('.wc-africa-ac').on('shown.bs.collapse', function () {
+    $('.wc-africa').addClass('reg-active');
+});
+$('.wc-africa-ac').on('hidden.bs.collapse', function () {
+   $(".wc-africa").removeClass("reg-active")
+});
+
+$('.se-asia-ac').on('shown.bs.collapse', function () {
+    $('.se-asia').addClass('reg-active');
+});
+$('.se-asia-ac').on('hidden.bs.collapse', function () {
+   $(".se-asia").removeClass("reg-active")
+});
+
+
+
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+var typed = new Typed('.typed-element', {
+  strings: ["Securing gender-responsive systems", "Enabling women’s leadership","Supporting women’s voice and agency","Addressing underlying inequalities", "Sharing knowledge and tools"],
+  typeSpeed: 40,
+  backSpeed: 10,
+  loop: true,
+  fadeOut: true,
+  backDelay: 4000
+});
+
+
+
+
+  </script>
+
+  </body>
+</html>

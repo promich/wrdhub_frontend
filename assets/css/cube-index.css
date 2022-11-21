@@ -1,0 +1,241 @@
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(0, 0, 0, 0);
+    background-clip: border-box;
+    border: 0 solid rgba(0, 0, 0, 0.125);
+}
+.card > hr {
+    margin-right: 0;
+    margin-left: 0;
+}
+.card > .list-group {
+    border-top: inherit;
+    border-bottom: inherit;
+}
+.card > .list-group:first-child {
+    border-top-width: 0;
+}
+.card > .list-group:last-child {
+    border-bottom-width: 0;
+}
+.card > .card-header + .list-group,
+.card > .list-group + .card-footer {
+    border-top: 0;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 2.5rem 2.5rem;
+}
+.card-title {
+    margin-bottom: 0.5rem;
+}
+.card-subtitle {
+    margin-top: -0.25rem;
+    margin-bottom: 0;
+}
+.card-text:last-child {
+    margin-bottom: 0;
+}
+.card-link:hover {
+    text-decoration: none;
+}
+.card-link + .card-link {
+    margin-left: 2.5rem;
+}
+.card-header {
+    padding: 2.5rem 2.5rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 0 solid rgba(0, 0, 0, 0.125);
+}
+.card-footer {
+    padding: 2.5rem 2.5rem;
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 0 solid rgba(0, 0, 0, 0.125);
+}
+.card-header-tabs {
+    margin-right: -1.25rem;
+    margin-bottom: -2.5rem;
+    margin-left: -1.25rem;
+    border-bottom: 0;
+}
+.card-header-tabs .nav-link.active {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+.card-header-pills {
+    margin-right: -1.25rem;
+    margin-left: -1.25rem;
+}
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+}
+.card-img,
+.card-img-top,
+.card-img-bottom {
+    width: 100%;
+}
+.card-group > .card {
+    margin-bottom: 20px;
+}
+@media (min-width: 576px) {
+    .card-group {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .card-group > .card {
+        flex: 1 0 0%;
+        margin-bottom: 0;
+    }
+    .card-group > .card + .card {
+        margin-left: 0;
+        border-left: 0;
+    }
+}
+
+.card {
+    transition: all 0.2s;
+    transition-delay: 0s;
+    color: inherit;
+}
+.card > .card-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+}
+.card .equal,
+.card .background {
+    z-index: 0;
+}
+.card.bg-opaque-white {
+    background: rgba(255, 255, 255, 0.4) !important;
+}
+.card [class*="language-"] {
+    max-height: 25vh;
+}
+.card-title {
+    font-size: calc(1.275rem + 0.3vw);
+    position: relative;
+    display: block;
+    color: inherit;
+}
+@media (min-width: 1200px) {
+    .card-title {
+        font-size: 1.5rem;
+    }
+}
+.card-title > * {
+    color: inherit;
+    display: inline-block;
+    line-height: inherit;
+    font-size: inherit;
+}
+.card:hover {
+    z-index: 4;
+}
+.card-arrow .card-header,
+.card-arrow .card-footer,
+.card-arrow .card-body {
+    padding-right: 4rem;
+}
+.card-arrow.equal {
+    padding-right: 0;
+}
+.card-arrow.equal .card-wrap {
+    padding-right: 3.5rem;
+}
+.card-arrow::after {
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    right: 2.5rem;
+    bottom: 2.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: bootstrap-icons;
+    font-size: 1.5rem;
+    line-height: 1em;
+    z-index: 4;
+    color: inherit;
+    content: "\f123";
+}
+.card-arrow:not(.card-hover-arrow):hover::after {
+    right: 2rem;
+    bottom: 2rem;
+}
+.card-hover-reveal {
+    overflow: hidden;
+}
+.card-hover-reveal > * {
+    z-index: 4;
+}
+.card-hover-reveal .background {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: scale(1.1);
+    z-index: 2;
+}
+.card-hover-reveal:hover {
+    color: #fff;
+}
+.card-hover-reveal:hover .background {
+    opacity: 1;
+    transform: scale(1);
+}
+.card-hover-arrow::after {
+    opacity: 0;
+    transform: translateY(50%);
+}
+.card-hover-arrow:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+.card-hover-gradient {
+    transition: background-color 0.2s ease-in-out;
+    background-color: #000;
+}
+.card-hover-gradient .background {
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(rgba(0, 0, 0, 0.4)));
+    mask-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(rgba(0, 0, 0, 0.4)));
+}
+.card-hover-gradient:hover {
+    background-color: #4726e1;
+}
+.card-hover-rise:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.card-hover-image-rise:hover .card-img-top {
+    transform: translateY(-8px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.card-hover-border:hover,
+.card-hover-border:active {
+    box-shadow: 0 0 0 1px currentColor;
+}
+.card-img-top {
+    transition: all 0.2s;
+    transition-delay: 0s;
+}
+.card .accordion-classic {
+    border: 0;
+}
+.card .accordion-classic .accordion-item .accordion-button {
+    padding: 2rem 3.5rem 2rem 2rem;
+}
+.card .accordion-classic .accordion-item .accordion-button::after {
+    right: 1.5rem;
+}
+.card .accordion-classic .accordion-item .accordion-body {
+    padding: 0 3.5rem 2rem 2rem;
+}

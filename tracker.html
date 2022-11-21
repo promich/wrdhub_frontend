@@ -1,0 +1,2732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Women's Resilience to Disasters Knowledge Hub </title>
+
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Women's Resilience to Disasters Knowledge Hub. The Women's Resilience to Disasters programme proposes a comprehensive package to strengthen women's resilience to disasters and threats, including climate change and COVID-19.  The WRD programme aims to render the lives and livelihoods of women and girls resilient to disasters and threats, contributing to sustainable, secure, and thriving communities. The objective is for WRD countries to adopt gender-responsive decision-making and governance systems, and enable targeted action to build the resilience of women and girls.">
+    <meta name="keywords" content="disasters, resilience, women, knowledge, local knowledge, UN Women, united nations">
+    <meta name="author" content="UN Women">
+
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" media="all" href="https://use.typekit.net/qtp3bsv.css">
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #131022;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    
+    #mapcontrol .list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.625rem 0.75rem;
+    color: #004662;
+    font-weight: 600;
+    line-height: 1.25rem;
+    text-align: center !important;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #e5f5fb;
+    width: 100%;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
+    
+	}
+#mapcontrol .list-group-item:hover, #mapcontrol .list-group-item:focus {
+    z-index: 1;
+    color: #009ddc;
+    text-decoration: none;
+    background-color: rgba(0, 157, 220, 0.12);
+}
+
+
+
+	#mapcontrol .list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #009ddc;
+    border-color: #009ddc;
+}
+      
+     #trackermap{
+	     background-color: #a6ddf3;
+	     background-color: #80ceed; /*50%*/
+     } 
+
+.map-legend{
+	margin-top: 0;
+    margin-bottom: 0.25rem;
+    display: block;
+    text-align: right !important;
+}
+
+.map-legend span{
+	margin-right: 0.5rem;
+	font-size: 0.875rem !important;
+}
+.map-legend span:hover{
+	cursor: default;
+}
+
+
+    #trackertable_filter, 
+    #trackertableregion_filter,
+    #trackertableregion_info{
+	    display: none;
+    }
+ 
+ #tool .table thead th, .table tbody th {
+    font-size: .875rem;
+    line-height: 1.25;
+    }
+   #tool .table > :not(caption) > * > * {
+    padding: 0.5rem 0.75rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    }
+    
+    #tool .h4{
+	    margin-bottom: 0;
+	    margin-top: 1rem;
+    }
+    
+ 
+ 
+ 
+      
+      
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== undefined && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+   
+
+    
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <header class="header navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            <img src="assets/img/wrd_logo.svg" alt="Women's Resilience to Disasters Knowledge Hub graphic">
+            <h1 class="d-none">Women's Resilience to Disasters Knowledge Hub</h1>
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <!--<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>-->
+
+            
+              
+              
+              
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                <li class="nav-item dropdown">
+                  <a href="about-v1.html" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
+                  <a class="nav-link collapsed" href="#menu-1" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-1"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-1" data-bs-parent="#navbarNav">
+                      <li><a href="account-details.html" class="dropdown-item">Women’s Resilience to Disasters Programme</a></li>
+                      <li><a href="account-security.html" class="dropdown-item">Partners</a></li>
+                      <li><a href="account-notifications.html" class="dropdown-item">Donors</a></li>
+                  </ul>               
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="about-v1.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Explore</a>
+                  <a class="nav-link collapsed" href="#menu-2" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-2"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-2" data-bs-parent="#navbarNav">
+                      <li><a href="account-details.html" class="dropdown-item">Women’s perspectives</a></li>
+                      
+                      <li><a href="account-notifications.html" class="dropdown-item">Insights</a></li>
+                      
+                      <li><a href="regions.html" class="dropdown-item">Regions</a></li>
+                      <li><a href="account-messages.html" class="dropdown-item">Hazards</a></li>
+                  </ul>               
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="about-v1.html" class="nav-link active dropdown-toggle" data-toggle="dropdown">Practice</a>
+                  <a class="nav-link collapsed" href="#menu-3" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-3"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-3" data-bs-parent="#navbarNav">
+                    
+                    <li><a href="account-details.html" class="dropdown-item">Topics</a></li>
+                    <li><a href="account-notifications.html" class="dropdown-item">Library</a></li>
+                    <li><a href="account-security.html" class="dropdown-item">Toolbox</a></li>
+                    <li><a href="account-details.html" class="dropdown-item active">Policy Tracker</a></li>  
+
+                  </ul>               
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="about-v1.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Engage</a>
+                  <a class="nav-link collapsed" href="#menu-4" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-4"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-4" data-bs-parent="#navbarNav">
+                      <li><a href="account-details.html" class="dropdown-item">Community of Practice</a></li>
+                      <li><a href="account-security.html" class="dropdown-item">Expert Roster</a></li>
+                      <li><a href="events.html" class="dropdown-item">Events</a></li>
+                      <li><a href="account-messages.html" class="dropdown-item">Recommended Platforms</a></li>
+                  </ul>               
+                </li>
+                <li class="nav-item">
+                  <a href="docs/getting-started.html" class="nav-link"><span class="d-none d-lg-block">FR</span><span class="d-md-block d-lg-none">En français</span></a>
+                </li>
+
+              </ul>
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="offcanvas-footer border-top">
+
+
+
+
+ <form>
+  <label for="mobile-search" class="form-label">Search our website</label>
+  <div class="grouped-inputs p-1 rounded-pill border">
+
+  <div class="input-group">
+    <input type="text" id="mobile-search" class="form-control rounded-start" aria-label="Text input with button" placeholder="Search" >
+    <button type="submit" class="btn btn-primary btn-icon rounded-circle"><i
+      class="bx bx-search fs-lg "></i></button>
+  </div>
+</div>
+</form>
+ 
+              <div class="d-flex mt-4">
+
+                <div class="">
+                  <a href="#" class="btn btn-icon btn-primary btn-linkedin rounded-circle me-2">
+                    <i class="bx bxl-linkedin"></i>
+                  </a>
+                </div>
+                <div class="">
+                  <a href="#" class="btn btn-icon btn-primary btn-twitter rounded-circle me-2">
+                    <i class="bx bxl-twitter"></i>
+                  </a>
+                </div>
+                <div class="flex-grow-1 ">
+                  <a href="#" class="btn btn-primary w-100 ">
+                    <i class="bx bxs-envelope fs-4 lh-1 me-1"></i>
+                    &nbsp;Get in touch
+                  </a>
+                </div>
+              </div>
+
+
+ 
+ 
+            </div>      
+          </div>
+
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+          	<!-- new hamburger-->
+			
+			<div id="togglenav" class="burger-wrapper">
+			  <div class="hamburger"></div>
+			</div>
+			 <!-- 
+          end new hamburger-->  
+
+          </button>
+          
+          
+          <!--
+          <button class="btn btn-outline-primary btn-icon rounded-circle d-none d-lg-inline-flex" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAccess"><i class="bx bx-body "></i></button>
+-->
+          <button class="btn btn-outline-primary btn-icon rounded-circle d-none d-lg-inline-flex ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch"><i class="bx bx-search "></i></button>
+
+        </div>
+
+
+
+
+
+
+
+
+      </header>
+
+<!-- Offcanvas Search-->
+<div class="offcanvas offcanvas-top" id="offcanvasSearch" tabindex="-1">
+  <div class="offcanvas-header">
+	  <div class="container">
+      <h5 class="offcanvas-title"> </h5>
+      <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+	  </div>
+  </div>
+  <div class="offcanvas-body d-flex align-items-center ">
+
+    <div class="container ">
+      <div class="row d-flex justify-content-center">
+        <div class="col-xl-10 col-lg-12 pb-5">
+          <form>
+            <label for="top-search" class="form-label">Search our website</label>
+            <div class="input-group">
+              <input type="text" id="top-search" class="form-control form-control-lg rounded-start ps-5" placeholder="What are you looking for?" >
+              <i class="bx bx-search fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+              <button type="submit" class="btn btn-lg btn-primary">Search</button>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Offcanvas accessibility -->
+<div class="offcanvas offcanvas-start" id="offcanvasAccess" tabindex="-1">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title">Accessibility menu</h5>
+    <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.</p>
+    <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+      <input type="checkbox" class="form-check-input" id="theme-mode">
+      <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+      <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Nav pills 
+<ul class="nav nav-pills mb-4" role="tablist">
+  <li class="nav-item">
+    <a href="#" class="nav-link active" id="pills-home1" data-bs-toggle="tab" role="tab" aria-controls="home1" aria-selected="true">
+      <i class="bx bx-home-alt opacity-70 me-2"></i>
+      Home
+    </a>
+  </li>
+  <li class="nav-item">
+    <a href="#" class="nav-link" id="pills-profile1" data-bs-toggle="tab" role="tab" aria-controls="profile1" aria-selected="false">
+      <i class="bx bx-user opacity-70 me-2"></i>
+      Profile
+    </a>
+  </li>
+  <li class="nav-item">
+    <a href="#" class="nav-link" id="pills-messages1" data-bs-toggle="tab" role="tab" aria-controls="messages1" aria-selected="false">
+      <i class="bx bx-comment opacity-70 me-2"></i>
+      Messages
+    </a>
+  </li>
+</ul>
+-->
+
+
+      <!-- Hero -->
+      <section class="overflow-hidden" style="background: radial-gradient(116.18% 118% at 50% 100%, rgba(232, 105, 46, 0.1) 0%, rgba(241, 165, 130, 0.05) 41.83%, rgba(252, 232, 224, 0.07) 82.52%);">
+        <div class="container">
+	        
+	<nav class="d-none d-md-block py-3 " aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item" aria-current="page"><a href="practice.html">Practice</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="toolkit.html">Toolkit</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Policy Tracker</li>
+      </ol>
+    </nav> 
+	        
+	        
+	        
+          <div class="row">
+            <div class="col-md-8 d-flex flex-column pt-5 pb-3 pb-sm-4 py-md-4">
+              <h1 class="display-4 mb-4">The WRD Policy Tracker</h1>
+              <span class="fs-sm">Last updated 23 Nov 2022</span>
+              <p class="fs-lg pb-2 mb-4">The WRD Policy Tracker follows the progress of gender-responsive and inclusive legal, policy, and planning frameworks in 193 UN Member States. It helps analyse comparative progress across regions and countries, and highlights good practice.</p>
+              <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-start">
+ 
+               <a href="#" class="btn btn-outline-primary hover-arrow  px-3 py-2 me-sm-1 me-lg-2 mb-3">
+                Learn more
+              </a> 
+              <a href="#" class="btn btn-outline-primary hover-arrow  px-3 py-2 me-sm-1 me-lg-2 mb-3">
+                Summary of current findings
+              </a> 
+              <a href="#" class="btn btn-outline-primary hover-arrow  px-3 py-2 me-sm-1 me-lg-2 mb-3">
+                Suggest a framework
+              </a> 
+
+
+              </div>
+              <div class="position-relative d-inline-flex align-items-center justify-content-center justify-content-md-start mt-auto pt-3 pt-md-4 pb-xl-2">
+                <a href="#tool" class="btn btn-icon btn-light bg-white stretched-link rounded-circle me-3" data-scroll data-scroll-offset="120">
+                  <i class="bx bx-chevron-down"></i>
+                </a>
+
+                
+                
+                
+                <span class="fs-sm">Use the tool</span> 
+              </div>     
+            </div>
+            <div class="col-md-4 align-self-end">
+              <div class="position-relative overflow-hidden mt-4 pb-3 pt-4 mx-auto me-md-0" style="max-width: 632px;">
+                <div class="ratio ratio-1x1"></div>
+                <img src="assets/img/landing/app-showcase/hero-phone-1.png" class="rellax position-absolute top-0 start-0 zindex-2"  data-rellax-speed="1.6" data-disable-parallax-down="md" alt="Phone">
+                <img src="assets/img/landing/app-showcase/hero-phone-2.png" class="rellax position-absolute top-0 start-0"  data-rellax-speed="2.8" data-disable-parallax-down="md" alt="Phone">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+<section id="tool" class="py-5">
+	<div class="container">
+		
+
+		
+		
+	<div class="row">
+
+    <div class="tab-content pt-1">
+      <div class="tab-pane fade active show" id="pagetitlenav" role="tabpanel" >
+        <ul class="nav nav-tabs-alt mb-4" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" href="#t-main-1" id="pills-t-main-1" data-bs-toggle="tab" role="tab" aria-controls="t-main-1" aria-selected="true">
+              Global Map
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" href="#t-main-2" id="pills-t-main-2" data-bs-toggle="tab" role="tab" aria-controls="t-main-2" aria-selected="false" tabindex="-1">
+              Global Analysis
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" href="#t-main-3" id="pills-t-main-3" data-bs-toggle="tab" role="tab" aria-controls="t-main-3" aria-selected="false" tabindex="-1">
+              Regional Analysis
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" href="#t-main-4" id="pills-t-main-4" data-bs-toggle="tab" role="tab" aria-controls="t-main-4" aria-selected="false" tabindex="-1">
+              High-risk Groups Analysis
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" href="#t-main-5" id="pills-t-main-5" data-bs-toggle="tab" role="tab" aria-controls="t-main-5" aria-selected="false" tabindex="-1">
+              Good Practice
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" href="#t-main-6" id="pills-t-main-6" data-bs-toggle="tab" role="tab" aria-controls="t-main-6" aria-selected="false" tabindex="-1">
+              LGBTIQ+
+            </a>
+          </li>
+
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade active show" id="t-main-1" role="tabpanel" aria-labelledby="pills-t-main-1">
+            <!--<h2>Map View</h2>-->
+            
+            <div class="row">
+	            <div class="col-lg-12 col-xl-8">
+		            <p>Explore which UN Member States or regions have developed <strong>gender-responsive</strong> and <strong>inclusive</strong> disaster, climate or development frameworks (i.e. laws, policies, strategies, plans).</p>
+
+            	</div>
+            </div>    
+
+<!--<p><em>Click on a region in the list below to find out more!</em></p>-->
+
+
+<div id="trackermap" style="height:575px;"></div>
+            
+
+<!-- Actionable horizontal list group (starting sm screen) -->
+  <ul id="mapcontrol" class="list-group list-group-horizontal-md">
+    <a href="#" id="all" class="list-group-item active">Globe</a>
+    <a href="#" id="pac" class="list-group-item">Pacific</a>
+    <a href="#" id="asi" class="list-group-item">Asia</a>
+    <a href="#" id="eur" class="list-group-item">Europe & Central Asia</a>
+    <a href="#" id="nor" class="list-group-item">Northern Africa & Middle East</a>
+    <a href="#" id="wes" class="list-group-item">Western & Central Africa</a>
+    <a href="#" id="eas" class="list-group-item">Eastern & Southern Africa</a>
+    <a href="#" id="ame" class="list-group-item">Americas & Caribbean</a>    
+  </ul>
+
+
+
+<p class="fs-xxs text-end">* The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations</p>
+
+<div class="row">
+<div class="col-md-12 col-lg-5">
+
+<!-- Legend for table -->
+<dv class="map-legend">
+ <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Law: This includes constitutions, legislations, regulations, decrees and local by-laws. These are based on a country’s constitution and are passed by the legislature, or may be regulations or decrees made by government ministers authorised under legislation.">
+ <i class="bx bxs-circle red"></i> Law
+</span>
+ <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Policy: this sets out government policy agendas and principle of action.">
+ <i class="bx bxs-circle orange"></i> Policy
+</span>
+ <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Strategy: this is a plan of action designed to achieve a long-term or overall aim such as a policy objective (i.e. what needs to be done).">
+ <i class="bx bxs-circle purple"></i> Strategy
+</span>
+ <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Plan: this is a list of steps or detailed proposal (i.e. how).">
+  <i class="bx bxs-circle green"></i> Plan
+</span>  
+</dv>
+
+    </div> 
+        </div> 
+
+
+<h3 class="h4">Countries with inclusive frameworks</h3>
+<div class="table-responsive">
+  <table id="trackertable" class="table table-striped" width="100%">
+    <thead>
+      <tr>
+        <th>Country</th>
+        <th>Region</th>
+        <th>ISO</th>
+        <th>Women</th>
+        <th>Children & Youth</th>
+        <th>People with disabilities</th>
+        <th>People living in extreme poverty</th>
+        <th>Displaced and migrant people</th>
+        <th>Indigenous people & ethnic minorities</th>
+        <th>Older people</th>
+      </tr>
+
+    </thead>
+
+<!--    <tfoot>
+      <tr>
+        <th>Programs and Courses</th>
+        <th>Status</th>
+        <th>Delivery</th>
+        <th>Link</th>
+      </tr>
+    </tfoot>-->
+
+    <tbody>
+      <tr>
+        <td>Afghanistan</td>
+        <td>Asi</td>
+        <td>AF</td>
+
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Bangladesh</td>
+        <td>asi</td>
+        <td>BD</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Bahamas</td>
+        <td>Ame</td>
+        <td>FI</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Switzerland</td>
+        <td>Europe</td>
+        <td>FI</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>India</td>
+        <td>asi</td>
+        <td>IN</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Fiji</td>
+        <td>pac</td>
+        <td>FI</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Kiribati</td>
+        <td>pac</td>
+        <td>FI</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle orange"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Vatanu</td>
+        <td>pac</td>
+        <td>FI</td>
+        
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Ukraine</td>
+        <td>eur</td>
+        <td>FI</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Chile</td>
+        <td>ame</td>
+        <td>FI</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Italy</td>
+        <td>eur</td>
+        <td>IT</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>China</td>
+        <td>asi</td>
+        <td>FI</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Nepal</td>
+        <td>asi</td>
+        <td>FI</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Mongolia</td>
+        <td>asi</td>
+        <td>FI</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Brazil</td>
+        <td>ame</td>
+        <td>FI</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Poland</td>
+        <td>eur</td>
+        <td>FI</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>frMexico</td>
+        <td>ame</td>
+        <td>FI</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>France</td>
+        <td>eur</td>
+        <td>FR</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Canada</td>
+        <td>ame</td>
+        <td>FI</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>United States</td>
+        <td>ame</td>
+        <td>US</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Belize</td>
+        <td>ame</td>
+        <td>BZ</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Guatemala</td>
+        <td>ame</td>
+        <td>GT</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+
+      <tr>
+        <td>Kenya</td>
+        <td>eas</td>
+        <td>KE</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+
+
+      <tr>
+        <td>Chad</td>
+        <td>wes</td>
+        <td>TD</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+
+      <tr>
+        <td>Nauru</td>
+        <td>pac</td>
+        <td>FR</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Morocco</td>
+        <td>nor</td>
+        <td>MA</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>United Kingdom</td>
+        <td>eur</td>
+        <td>UK</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+
+    </tbody>
+  </table>  
+</div>
+
+
+
+<h3 class="h4">Regional inclusive frameworks</h3>
+<div class="table-responsive">
+  <table id="trackertableregion" class="table table-striped" width="100%">
+    <thead>
+      <tr>
+        <th>Region</th>
+        <th>Region code</th>
+        <th>Women</th>
+        <th>Children & Youth</th>
+        <th>People with disabilities</th>
+        <th>People living in extreme poverty</th>
+        <th>Displaced and migrant people</th>
+        <th>Indigenous people & ethnic minorities</th>
+        <th>Older people</th>
+      </tr>
+
+    </thead>
+
+<!--    <tfoot>
+      <tr>
+        <th>Programs and Courses</th>
+        <th>Status</th>
+        <th>Delivery</th>
+        <th>Link</th>
+      </tr>
+    </tfoot>-->
+
+    <tbody>
+      <tr>
+        <td>Pacific</td>
+        <td>pac</td>
+
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Asia</td>
+        <td>asi</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Europe & Central Asia</td>
+        <td>eur</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>North Africa & Middle East</td>
+        <td>nor</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>West & Central Africa</td>
+        <td>wes</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Eastern & Southern Africa</td>
+        <td>eas</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+      <tr>
+        <td>Americas & Caribbean</td>
+        <td>ame</td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle orange"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle red"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle green"></i></a></td>
+        <td><a href="#" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="National Disaster Risk Reduction Strategy"><i class="bx bxs-circle purple"></i></a></td>
+      </tr>
+
+    </tbody>
+  </table>  
+</div><!--end #trackertableregion-->
+
+
+ 
+ 
+            
+          </div>
+          <div class="tab-pane fade" id="t-main-2" role="tabpanel" aria-labelledby="pills-t-main-2">
+            
+            <p>Explore the global distribution of gender-responsive and inclusive DRR/DRM frameworks through the following.</p>
+            
+         
+      <div class="tab-content pt-1">
+      <div class="tab-pane fade active show" id="panel-2" role="tabpanel" >
+        <ul class="nav nav-tabs-alt mb-4" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" href="#t-two-1" id="pills-t-two-1" data-bs-toggle="tab" role="tab" aria-controls="t-two-1" aria-selected="true">
+              Global Overview
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" href="#t-two-2" id="pills-t-two-2" data-bs-toggle="tab" role="tab" aria-controls="t-two-2" aria-selected="false" tabindex="-1">
+              Inter-regional Overview
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" href="#t-two-3" id="pills-t-two-3" data-bs-toggle="tab" role="tab" aria-controls="t-two-3" aria-selected="false" tabindex="-1">
+              Inclusion Overview
+            </a>
+          </li>
+
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade active show" id="t-two-1" role="tabpanel" aria-labelledby="pills-t-two-1">
+            
+            <p>Global analysis shows that:</p>          
+			<ul>
+			<li>
+			<strong>53 countries</strong> have developed gender-responsive DRR/DRM  frameworks.
+			</li>
+			<li>
+			<strong>Almost half</strong> of the reviewed inclusive DRR/DRM frameworks are plans rather than laws or policies.
+			</li>
+			<li>
+			<strong>Almost all</strong> the reviewed inclusive DRR/DRM frameworks have been developed for the national level.
+			</li>
+			</ul>
+			
+		<div class="row g-4" >
+                <div class="col-sm-12 col-md-6">
+                  <div class="card border-primary">
+                    <div class="card-header border-primary">Number of inclusive DRR/DRM frameworks by group</div>
+                    <div class="card-body">
+                      <canvas id="trackerChart2a1"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="card border-primary">
+                    <div class="card-header border-primary">Type of inclusive DRR/DRM frameworks</div>
+                    <div class="card-body">
+                      <canvas id="trackerChart2a2"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="card border-primary">
+                    <div class="card-header border-primary">Focus of inclusive frameworks</div>
+                    <div class="card-body">
+                      <canvas id="trackerChart2a3"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="card border-primary">
+                    <div class="card-header border-primary">Level of inclusive DRR/DRM frameworks</div>
+                    <div class="card-body">
+                      <canvas id="trackerChart2a4"></canvas>
+                    </div>
+                  </div>
+                </div>
+
+        </div>
+
+
+
+
+			
+
+          </div>
+          <div class="tab-pane fade" id="t-two-2" role="tabpanel" aria-labelledby="pills-t-two-2">
+            
+            <p>Inter-regional analysis shows that:</p>
+<ul>
+	<li>
+	<strong>70% of countries in the Pacific and 69% in the Americas and Caribbean</strong> have DRR/DRM frameworks inclusive of at least one high-risk group.
+	</li>
+	<li>
+	<strong>56% of countries in Asia, 54% in Eastern and Southern Africa</strong>, 43% in Western and Central Africa, and only 12% of countries in Europe and Central Asia have frameworks inclusive of at least one group.
+	</li>
+	<li>
+	The few <strong>community-level and subnational-level inclusive frameworks</strong> publicly available and reviewed for the Policy Tracker, were all developed in <strong>Asia or the Pacific</strong>.
+	</li>
+</ul>
+		<div class="row g-4" >
+                <div class="col-sm-12 col-md-6">
+                  <div class="card border-primary">
+                    <div class="card-header border-primary">Number of inclusive DRR/DRM frameworks by region and group</div>
+                    <div class="card-body">
+                      <canvas id="trackerChart2b1"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="card border-primary">
+                    <div class="card-header border-primary">Type of inclusive DRR/DRM frameworks by region</div>
+                    <div class="card-body">
+                      <canvas id="trackerChart2b2"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="card border-primary">
+                    <div class="card-header border-primary">Type of gender-responsive frameworks by region</div>
+                    <div class="card-body">
+                      <canvas id="trackerChart2b3"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="card border-primary">
+                    <div class="card-header border-primary">Focus of inclusive frameworks by region</div>
+                    <div class="card-body">
+                      <canvas id="trackerChart2b4"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="card border-primary">
+                    <div class="card-header border-primary">Level of inclusive frameworks by region</div>
+                    <div class="card-body">
+                      <canvas id="trackerChart2b5"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="card border-primary">
+                    <div class="card-header border-primary">% of countries in each region with DRR/DRM frameworks inclusive of AT LEAST ONE high-risk group</div>
+                    <div class="card-body">
+                      <canvas id="trackerChart2b6"></canvas>
+                    </div>
+                  </div>
+                </div>                
+        </div>
+
+
+
+          </div>
+          <div class="tab-pane fade" id="t-two-3" role="tabpanel" aria-labelledby="pills-t-two-3">
+            <h2>Inclusion overview</h2>
+            <p>Est quis nulla laborum officia ad nisi ex nostrud culpa Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut duis ipsum nisi elit fugiat commodo sunt reprehenderit laborum veniam eu veniam. Eiusmod minim exercitation fugiat irure ex labore incididunt do fugiat commodo aliquip sit id deserunt reprehenderit aliquip nostrud. Amet ex cupidatat excepteur aute veniam incididunt mollit cupidatat esse irure officia elit do ipsum ullamco Lorem. Ullamco ut ad minim do mollit labore ipsum laboris ipsum commodo sunt tempor enim incididunt. Commodo quis sunt dolore aliquip aute tempor irure magna enim minim reprehenderit. Ullamco consectetur culpa veniam sint cillum aliqua incididunt velit ullamco sunt ullamco quis quis commodo voluptate. Mollit nulla nostrud adipisicing aliqua cupidatat aliqua pariatur mollit voluptate voluptate consequat non.</p>
+          </div>
+
+
+        </div>
+      </div>
+	</div>
+          
+            
+            
+            
+          </div>
+          <div class="tab-pane fade" id="t-main-3" role="tabpanel" aria-labelledby="pills-t-main-3">
+            <h2>Regional Analysis</h2>
+            <p>Est quis nulla laborum officia ad nisi ex nostrud culpa Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut duis ipsum nisi elit fugiat commodo sunt reprehenderit laborum veniam eu veniam. Eiusmod minim exercitation fugiat irure ex labore incididunt do fugiat commodo aliquip sit id deserunt reprehenderit aliquip nostrud. Amet ex cupidatat excepteur aute veniam incididunt mollit cupidatat esse irure officia elit do ipsum ullamco Lorem. Ullamco ut ad minim do mollit labore ipsum laboris ipsum commodo sunt tempor enim incididunt. Commodo quis sunt dolore aliquip aute tempor irure magna enim minim reprehenderit. Ullamco consectetur culpa veniam sint cillum aliqua incididunt velit ullamco sunt ullamco quis quis commodo voluptate. Mollit nulla nostrud adipisicing aliqua cupidatat aliqua pariatur mollit voluptate voluptate consequat non.</p>
+
+
+<ul class="nav nav-tabs-alt mb-4" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" href="#t-three-1" id="pills-t-three-1" data-bs-toggle="tab" role="tab" aria-controls="t-three-1" aria-selected="true">
+        Pacific
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" href="#t-three-2" id="pills-t-three-2" data-bs-toggle="tab" role="tab" aria-controls="t-three-2" aria-selected="false" tabindex="-1">
+        Asia
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" href="#t-three-3" id="pills-t-three-3" data-bs-toggle="tab" role="tab" aria-controls="t-three-3" aria-selected="false" tabindex="-1">
+        Europe & Central Asia
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" href="#t-three-4" id="pills-t-three-4" data-bs-toggle="tab" role="tab" aria-controls="t-three-4" aria-selected="false" tabindex="-1">
+        North Africa & Middle East
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" href="#t-three-5" id="pills-t-three-5" data-bs-toggle="tab" role="tab" aria-controls="t-three-5" aria-selected="false" tabindex="-1">
+        Western & Central Africa
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" href="#t-three-6" id="pills-t-three-6" data-bs-toggle="tab" role="tab" aria-controls="t-three-6" aria-selected="false" tabindex="-1">
+        Eastern & Southern Africa
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" href="#t-three-7" id="pills-t-three-7" data-bs-toggle="tab" role="tab" aria-controls="t-three-7" aria-selected="false" tabindex="-1">
+        Americas & Caribbean
+      </a>
+    </li>    
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane fade active show" id="t-three-1" role="tabpanel" aria-labelledby="pills-t-three-1">
+      
+      <p>PacificGlobal analysis shows that:</p>          
+
+
+      
+
+    </div>
+    <div class="tab-pane fade" id="t-three-2" role="tabpanel" aria-labelledby="pills-t-three-2">
+      
+      <p>AsiaInter-regional analysis shows that:</p>
+
+
+
+
+    </div>
+    <div class="tab-pane fade" id="t-three-3" role="tabpanel" aria-labelledby="pills-t-three-3">
+      <h2>Europe & Central Asia Inclusion overview</h2>
+
+    </div>
+    <div class="tab-pane fade" id="t-three-4" role="tabpanel" aria-labelledby="pills-t-three-4">
+      <h2>4 North Africa & Middle East</h2>
+
+    </div>
+    <div class="tab-pane fade" id="t-three-5" role="tabpanel" aria-labelledby="pills-t-three-5">
+      <h2>5 Western & Central Africa</h2>
+
+    </div>
+    <div class="tab-pane fade" id="t-three-6" role="tabpanel" aria-labelledby="pills-t-three-6">
+      <h2>6 Eastern & Southern Africa</h2>
+
+    </div>
+    <div class="tab-pane fade" id="t-three-7" role="tabpanel" aria-labelledby="pills-t-three-7">
+      <h2>7 Americas & Caribbean</h2>
+
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+            
+    
+            
+            
+            
+          </div>
+          <div class="tab-pane fade" id="t-main-4" role="tabpanel" aria-labelledby="pills-t-main-4">
+            <h2>High-risk Groups Analysis</h2>
+            <p>Est quis nulla laborum officia ad nisi ex nostrud culpa Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut duis ipsum nisi elit fugiat commodo sunt reprehenderit laborum veniam eu veniam. Eiusmod minim exercitation fugiat irure ex labore incididunt do fugiat commodo aliquip sit id deserunt reprehenderit aliquip nostrud. Amet ex cupidatat excepteur aute veniam incididunt mollit cupidatat esse irure officia elit do ipsum ullamco Lorem. Ullamco ut ad minim do mollit labore ipsum laboris ipsum commodo sunt tempor enim incididunt. Commodo quis sunt dolore aliquip aute tempor irure magna enim minim reprehenderit. Ullamco consectetur culpa veniam sint cillum aliqua incididunt velit ullamco sunt ullamco quis quis commodo voluptate. Mollit nulla nostrud adipisicing aliqua cupidatat aliqua pariatur mollit voluptate voluptate consequat non.</p>
+ 
+ 
+<ul class="nav nav-tabs-alt mb-4" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" href="#t-four-1" id="pills-t-four-1" data-bs-toggle="tab" role="tab" aria-controls="t-four-1" aria-selected="true">
+        Women
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" href="#t-four-2" id="pills-t-four-2" data-bs-toggle="tab" role="tab" aria-controls="t-four-2" aria-selected="false" tabindex="-1">
+        Children & Youth
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" href="#t-four-3" id="pills-t-four-3" data-bs-toggle="tab" role="tab" aria-controls="t-four-3" aria-selected="false" tabindex="-1">
+        Persons with disabilities
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" href="#t-four-4" id="pills-t-four-4" data-bs-toggle="tab" role="tab" aria-controls="t-four-4" aria-selected="false" tabindex="-1">
+        People living in extreme poverty
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" href="#t-four-5" id="pills-t-four-5" data-bs-toggle="tab" role="tab" aria-controls="t-four-5" aria-selected="false" tabindex="-1">
+        Displaced & migrant people
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" href="#t-four-6" id="pills-t-four-6" data-bs-toggle="tab" role="tab" aria-controls="t-four-6" aria-selected="false" tabindex="-1">
+        Indigenous & ethnic minorities
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" href="#t-four-7" id="pills-t-four-7" data-bs-toggle="tab" role="tab" aria-controls="t-four-7" aria-selected="false" tabindex="-1">
+        Older persons
+      </a>
+    </li>    
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane fade active show" id="t-four-1" role="tabpanel" aria-labelledby="pills-t-four-1">
+      
+      <p>Women</p>          
+      
+
+    </div>
+    <div class="tab-pane fade" id="t-four-2" role="tabpanel" aria-labelledby="pills-t-four-2">
+      
+      <p>Children & Youth</p>
+
+    </div>
+    <div class="tab-pane fade" id="t-four-3" role="tabpanel" aria-labelledby="pills-t-four-3">
+      <h2>Persons with disabilities</h2>
+
+    </div>
+    <div class="tab-pane fade" id="t-four-4" role="tabpanel" aria-labelledby="pills-t-four-4">
+      <h2>People living in extreme poverty</h2>
+
+    </div>
+    <div class="tab-pane fade" id="t-four-5" role="tabpanel" aria-labelledby="pills-t-four-5">
+      <h2>Displaced & migrant people</h2>
+
+    </div>
+    <div class="tab-pane fade" id="t-four-6" role="tabpanel" aria-labelledby="pills-t-four-6">
+      <h2>Indigenous & ethnic minorities</h2>
+
+    </div>
+    <div class="tab-pane fade" id="t-four-7" role="tabpanel" aria-labelledby="pills-t-four-7">
+      <h2>Older persons</h2>
+
+    </div>
+
+
+
+  </div>
+      
+            
+            
+            
+            
+          </div>
+          <div class="tab-pane fade" id="t-main-5" role="tabpanel" aria-labelledby="pills-t-main-5">
+            <h2>Good practice</h2>
+            <p>Est quis nulla laborum officia ad nisi ex nostrud culpa Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut duis ipsum nisi elit fugiat commodo sunt reprehenderit laborum veniam eu veniam. Eiusmod minim exercitation fugiat irure ex labore incididunt do fugiat commodo aliquip sit id deserunt reprehenderit aliquip nostrud. Amet ex cupidatat excepteur aute veniam incididunt mollit cupidatat esse irure officia elit do ipsum ullamco Lorem. Ullamco ut ad minim do mollit labore ipsum laboris ipsum commodo sunt tempor enim incididunt. Commodo quis sunt dolore aliquip aute tempor irure magna enim minim reprehenderit. Ullamco consectetur culpa veniam sint cillum aliqua incididunt velit ullamco sunt ullamco quis quis commodo voluptate. Mollit nulla nostrud adipisicing aliqua cupidatat aliqua pariatur mollit voluptate voluptate consequat non.</p>
+
+
+
+ 
+<ul class="nav nav-tabs-alt mb-4" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" href="#t-five-1" id="pills-t-five-1" data-bs-toggle="tab" role="tab" aria-controls="t-five-1" aria-selected="true">
+        Inclusion of all high-risk groups
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" href="#t-five-2" id="pills-t-five-2" data-bs-toggle="tab" role="tab" aria-controls="t-five-2" aria-selected="false" tabindex="-1">
+        Individual high-risk group
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" href="#t-five-3" id="pills-t-five-3" data-bs-toggle="tab" role="tab" aria-controls="t-five-3" aria-selected="false" tabindex="-1">
+        Gender responsive
+      </a>
+    </li>  
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane fade active show" id="t-five-1" role="tabpanel" aria-labelledby="pills-t-five-1">
+      
+      <p>Inclusion of all high-risk groups</p>   
+      
+      <!-- Basic table -->
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>LAWS</th>
+        <th>POLICY</th>
+        <th>STRATEGY</th>
+        <th>PLAN</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Papua New Guinea</th>
+        <td>john</td>
+        <td>Doe</td>
+        <td>CEO, Founder</td>
+        <td>+3 555 68 70</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Anna</td>
+        <td>Cabana</td>
+        <td>Designer</td>
+        <td><i class='bx bxs-circle'></i></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Kale</td>
+        <td>Thornton</td>
+        <td>Developer</td>
+        <td>+3 285 42 88</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Jane</td>
+        <td>Birkins</td>
+        <td>Support</td>
+        <td>+3 774 28 50</td>
+      </tr>
+    </tbody>
+  </table>
+</div>       
+      
+
+    </div>
+    <div class="tab-pane fade" id="t-five-2" role="tabpanel" aria-labelledby="pills-t-five-2">
+      
+      <p>Individual high-risk group</p>
+
+
+    </div>
+    <div class="tab-pane fade" id="t-five-3" role="tabpanel" aria-labelledby="pills-t-five-3">
+      <h2>Gender responsive</h2>
+
+    </div>
+
+
+
+  </div>
+
+         
+            
+          </div>
+          <div class="tab-pane fade" id="t-main-6" role="tabpanel" aria-labelledby="pills-t-main-6">
+            <h2>LGBTIQ+</h2>
+            <p>Est quis nulla laborum officia ad nisi ex nostrud culpa Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut duis ipsum nisi elit fugiat commodo sunt reprehenderit laborum veniam eu veniam. Eiusmod minim exercitation fugiat irure ex labore incididunt do fugiat commodo aliquip sit id deserunt reprehenderit aliquip nostrud. Amet ex cupidatat excepteur aute veniam incididunt mollit cupidatat esse irure officia elit do ipsum ullamco Lorem. Ullamco ut ad minim do mollit labore ipsum laboris ipsum commodo sunt tempor enim incididunt. Commodo quis sunt dolore aliquip aute tempor irure magna enim minim reprehenderit. Ullamco consectetur culpa veniam sint cillum aliqua incididunt velit ullamco sunt ullamco quis quis commodo voluptate. Mollit nulla nostrud adipisicing aliqua cupidatat aliqua pariatur mollit voluptate voluptate consequat non.</p>
+
+       <!-- Publications slider -->
+
+       <h2 class="h1 text-center pb-2">Key Publications &amp; Tools</h2>
+       <div class="position-relative mx-md-2 px-md-5">
+
+         <!-- Slider controls (Prev / next) -->
+         <button type="button" id="pub-prev" class="btn btn-prev btn-icon position-absolute top-50 start-0 translate-middle-y mt-n4 d-none d-md-inline-flex">
+           <i class="bx bx-chevron-left"></i>
+         </button>
+         <button type="button" id="pub-next" class="btn btn-next btn-icon position-absolute top-50 end-0 translate-middle-y mt-n4 d-none d-md-inline-flex">
+           <i class="bx bx-chevron-right"></i>
+         </button>
+
+         <!-- Swiper slider -->
+         <div class="swiper swiper-nav-onhover mx-n3" data-swiper-options='{
+           "slidesPerView": 1,
+           "loop": false,
+           "spaceBetween": 4,
+           "pagination": {
+             "el": ".swiper-pagination",
+             "clickable": true
+           },
+           "navigation": {
+             "prevEl": "#pub-prev",
+             "nextEl": "#pub-next"
+           },
+           "breakpoints": {
+             "0": {
+               "slidesPerView": 1
+             },
+             "560": {
+               "slidesPerView": 2
+             },
+             "768": {
+               "slidesPerView": 3
+             },
+             "1024": {
+               "slidesPerView": 4
+             },
+             "1200": {
+               "slidesPerView": 5
+             }
+           }
+         }'>
+           <div class="swiper-wrapper">
+ 
+ <!-- Pub Item 1-->
+ <div class="swiper-slide py-3 "> <!-- h-auto-->
+   <div class="mx-2">
+     <article class="border-0 shadow-sm card-hover-grow h-100">
+                 <div class="pb-0">
+                   <a href="blog-single.html" class="stretched-link">
+                   <img src="assets/img/pub-cover.jpeg">
+                   </a>
+                 </div>
+     </article>
+     <h3 class="h6">Pub #1 Short Title</h3>
+
+   </div>
+ </div>
+
+ <!-- Pub Item 2-->
+ <div class="swiper-slide py-3"> <!-- h-auto-->
+   <div class="mx-2">
+   <article class="border-0 shadow-sm card-hover-grow h-100">
+     <div class="pb-0">
+       <a href="blog-single.html" class="stretched-link">
+       <img src="assets/img/pub-cover-02.jpeg">
+       </a>
+     </div>
+   </article>
+   <h3 class="h6">Pub #2 Short Title</h3>
+
+</div>
+ </div>    
+
+ <!-- Pub Item 3-->
+ <div class="swiper-slide py-3 "> <!-- h-auto-->
+   <div class="mx-2">
+   <article class="border-0 shadow-sm card-hover-grow h-100">
+     <div class="pb-0">
+       <a href="blog-single.html" class="stretched-link">
+       <img src="assets/img/pub-cover.jpeg">
+       </a>
+     </div>
+   </article>
+   <h3 class="h6">Pub #3 Short Title</h3>
+
+</div>
+ </div>
+
+ <!-- Pub Item 4-->
+ <div class="swiper-slide py-3 "> <!-- h-auto-->
+   <div class="mx-2">
+ <article class="border-0 shadow-sm card-hover-grow h-100">
+ <div class="pb-0">
+ <a href="blog-single.html" class="stretched-link">
+ <img src="assets/img/pub-cover.jpeg">
+ </a>
+ </div>
+ </article>
+ <h3 class="h6">Pub #4Short Title</h3>
+ </div>
+ </div>      
+
+ <!-- Pub Item 5-->
+ <div class="swiper-slide py-3 "> <!-- h-auto-->
+   <div class="mx-2">
+   <article class="border-0 shadow-sm card-hover-grow h-100">
+     <div class="pb-0">
+       <a href="blog-single.html" class="stretched-link">
+       <img src="assets/img/pub-cover.jpeg">
+       </a>
+     </div>
+   </article>
+   <h3 class="h6">Pub #5 Short Title</h3>
+</div>
+ </div>
+
+ <!-- Pub Item 6-->
+ <div class="swiper-slide py-3"> <!-- h-auto-->
+   <div class="mx-2">
+ <article class="border-0 shadow-sm card-hover-grow h-100">
+ <div class="pb-0">
+ <a href="blog-single.html" class="stretched-link">
+ <img src="assets/img/pub-cover.jpeg">
+ </a>
+ </div>
+ </article>
+ <h3 class="h6">Pub #6 Short Title</h3>
+ </div>
+ </div> 
+
+           </div>
+ 
+           <!-- Pagination (bullets) -->
+           <div class="swiper-pagination position-relative pt-2 pt-sm-4 "></div>
+         </div>
+
+
+
+       </div>
+
+       <div class="d-md-flex align-items-center justify-content-end mt-3">
+         <a href="#" class="btn btn-sm btn-outline-primary hover-arrow">
+           View all publications
+         </a>
+         <a href="#" class="ms-2 btn btn-sm btn-outline-primary hover-arrow">
+           View all tools
+         </a>
+       </div>
+
+
+<!-- Publications slider -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+	</div>
+	</div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+      <!-- Latest updates: Events and Insights -->
+      <section class="bg-secondary">
+        <div class="container">
+        <h2 class="h1 mb-4 pb-3 text-center">Latest updates</h2>
+        <div class="row">
+          <div class="col-lg-5 col-12 d-flex flex-column justify-content-between mb-4 mb-lg-0">
+
+            <!-- Article -->
+            <article class="card card-latest h-100 shadow-sm">
+              <a href="event-single.html" class="w-100 h-100" aria-label="Read more">
+              <!---->
+                
+                <div class="btn btn-light btn-featured fs-sm bg-white border-white btn-sm me-3 mt-3">
+                  <i class="me-2 bx bx-bookmark"></i>Featured Event
+                </div>
+                <img src="assets/img/event.jpg" class="card-img-top" alt="Image">
+              
+              <div class="card-body pb-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <span class="badge fs-sm text-nav bg-secondary">Bali, Indonesia</span>
+                  <span class="fs-md">23-28 May 2022</span>
+                </div>
+                <h3 class="h4 ">The Global Platform for Disaster Risk Reduction
+                </h3>
+                <p>The seventh session of the The Global Platform for Disaster Risk Reduction, the main global forum to assess and discuss progress on the implementation of the Sendai Framework organised by UNDRR, will be hosted by the Government of Indonesia in Bali, Indonesia.</p>
+              </div>
+            </a>
+            </article>
+            <div class="d-md-flex justify-content-end text-center text-md-end mt-3">
+              <a href="events.html" class="btn btn-outline-primary hover-arrow">
+                View all events
+                
+              </a>
+            </div>
+          </div>
+          <div class="col">
+
+            <!-- Article -->
+            <article class="card card-latest shadow-sm overflow-hidden mb-4">
+              <a href="blog-single.html">
+              <div class="row g-0">
+                <div class="col-8 col-xl-7">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span class="badge fs-sm text-nav bg-secondary text-decoration-none">Interview</span>
+                      <span class="fs-sm ps-3 ms-3">2 March 2022</span>
+                    </div>
+                    <h3 class="h5 mb-0">
+                      Varanisese Maisamoa
+                      
+                    </h3><p class="small mb-1 d-none d-xl-block">Meet Varanisese Maisamoa, who is helping increase women's access to resilient infrastructure in Fiji.</p>
+                    <hr class="my-2 mt-3">
+                    <div class="d-flex flex-nowrap align-items-center">
+                      <div class="d-flex align-items-center position-relative me-3">
+                        <img src="assets/img/avatar/08.jpg" class="rounded-circle me-3" width="48" alt="Avatar">
+                        <div>
+                          <span class="nav-link p-0 fw-bold text-decoration-none stretched-link"> Annette Black</span>
+                          
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-xl-5 position-relative bg-position-center bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/interview.jpg); min-height: 8rem;">
+
+                </div>
+
+              </div>
+            </a>
+            </article>
+
+            <!-- Article -->
+            <article class="card card-latest shadow-sm overflow-hidden mb-4">
+              <a href="blog-single.html">
+              <div class="row g-0">
+                <div class="col-8 col-xl-7">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span class="badge fs-sm text-nav bg-secondary text-decoration-none">Blog</span>
+                      <span class="fs-sm ps-3 ms-3">2 March 2022</span>
+                    </div>
+                    <h3 class="h5 mb-0">
+                      Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+                      
+                    </h3><p class="small mb-1 d-none d-xl-block">How international commitments and recommendations are being translated into national DRR frameworks</p>
+                    <hr class="my-2 mt-3">
+                    <div class="d-flex flex-nowrap align-items-center">
+                      <div class="d-flex align-items-center position-relative me-3">
+                        <img src="assets/img/avatar/08.jpg" class="rounded-circle me-3" width="48" alt="Avatar">
+                        <div>
+                          <span class="nav-link p-0 fw-bold text-decoration-none stretched-link"> Maria Holtsberg</span>
+                          
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-xl-5 position-relative bg-position-center bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/interview.jpg); min-height: 8rem;">
+
+                </div>
+
+              </div>
+            </a>
+            </article>
+
+            <!-- Article -->
+            <article class="card card-latest shadow-sm overflow-hidden">
+              <a href="blog-single.html">
+              <div class="row g-0">
+                <div class="col-8 col-xl-7">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span class="badge fs-sm text-nav bg-secondary text-decoration-none">Interview</span>
+                      <span class="fs-sm ps-3 ms-3">2 March 2022</span>
+                    </div>
+                    <h3 class="h5 mb-0">
+                      Varanisese Maisamoa
+                      
+                    </h3><p class="small mb-1 d-none d-xl-block">Meet Varanisese Maisamoa, who is helping increase women's access to resilient infrastructure in Fiji.</p>
+                    <hr class="my-2 mt-3">
+                    <div class="d-flex flex-nowrap align-items-center">
+                      <div class="d-flex align-items-center position-relative me-3">
+                        <img src="assets/img/avatar/08.jpg" class="rounded-circle me-3" width="48" alt="Avatar">
+                        <div>
+                          <span class="nav-link p-0 fw-bold text-decoration-none stretched-link"> Annette Black</span>
+                          
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-xl-5 position-relative bg-position-center bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/interview.jpg); min-height: 8rem;">
+
+                </div>
+
+              </div>
+            </a>
+            </article>
+            <div class="d-md-flex align-items-center justify-content-end text-center text-md-end mt-3">
+              <a href="#" class="btn btn-outline-primary hover-arrow">
+                View all insights
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </section>
+
+
+ 
+    </main>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer text-light pt-5 pb-4 pb-lg-5">
+
+      <div class="container ">
+        <div class="row d-flex flex-column flex-sm-row align-items-start justify-content-between position-relative">
+          <div class="col-auto">
+            <h5 class="h5">Navigation</h5>
+            <div id="useful-links" >
+              <ul class="nav pb-lg-1  d-flex flex-column flex-sm-row">
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Explore</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Practice</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Engage</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-auto d-none d-md-block">
+          <div class="footer-brand p-0 me-0 mb-3">
+            <img src="assets/img/wrdp_logo_wh.svg" alt="Women's Resilience to Disasters Programme">
+          </div>
+        </div>
+
+        </div>
+
+
+
+        <div class="row d-flex flex-column flex-sm-row align-items-start align-items-sm-end justify-content-between position-relative pb-5">
+
+          <div class="col-md-8 col-lg-4 ">
+
+
+
+            <h4 class="h5 mt-md-0">Connect with us</h4>
+            <div class="d-flex mb-4 mb-sm-0">
+              <a href="#" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-2">
+                <i class="bx bxl-linkedin"></i>
+              </a>
+              <a href="#" class="btn btn-icon btn-secondary btn-twitter rounded-circle me-2">
+                <i class="bx bxl-twitter"></i>
+              </a>
+              <a href="#" class="btn btn-icon btn-secondary btn-youtube rounded-circle me-2">
+                <i class="bx bxl-youtube"></i>
+              </a>
+              <a href="#" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-2">
+                <i class="bx bxl-facebook"></i>
+              </a>
+            </div>
+
+            <form class="needs-validation" novalidate>
+              <label for="subscr-email" class="form-label">Subscribe to our newsletter</label>
+              <div class="input-group">
+                <input type="email" id="subscr-email" class="form-control rounded-start ps-5" placeholder="Your email" required>
+                <i class="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+                <div class="invalid-tooltip position-absolute top-100 start-0">Please provide a valid email address.</div>
+                <button type="submit" class="btn btn-footer">Subscribe</button>
+              </div>
+            </form>
+
+
+            <h5 class="h5">Contact us</h5>
+
+            <a href="mailto:wrd@unwomen.org" class="nav-link fs-xl fw-semibold p-0">
+              wrd@unwomen.org
+              <i class="bx bx-right-arrow-circle fs-4 ms-2"></i>
+            </a>
+
+          </div>
+
+
+
+          <div class="col-auto ">
+          <h5 class="h5">Supported by</h5>
+          <div class="d-flex supporters flex-column flex-md-row mt-4">
+          <a href="" target="_blank" class="card-hover-grow p-0 ps-2 ps-sm-2 ps-md-0 me-0 mb-3 mb-lg-0">
+            <img src="assets/img/logo-australian_wh.svg"  alt="">
+          </a>
+          <a href="" target="_blank" class="card-hover-grow ps-0 ps-sm-2 mb-3 mb-lg-0">
+            <img src="assets/img/logo-pw_wh.svg" class="ps-0 ps-md-3 py-2" alt="Prevention Web">
+          </a>
+          <a href="" target="_blank" class="card-hover-grow ps-2 ps-md-4 mb-3 mb-lg-0">
+            <img src="assets/img/logo-unwomen_wh.svg" class="py-2" alt="UN Women">
+          </a>
+        </div>
+        </div>
+        </div>
+
+
+
+        <p class="fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+         Copyright &copy; 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">UN Women</a> | 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">Information Security</a> | 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">Privacy Policy</a> | 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">Terms of Use</a>
+        </p>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    
+  
+
+    <!-- Main Theme Script <script src="assets/js/theme.min.js"></script>-->
+    <script src="assets/js/theme.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+ 
+ <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
+
+  
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  
+  
+    
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+
+
+
+  <script>
+    var table = $('#trackertable').DataTable({
+	    columnDefs: [
+            {
+                target: 1,
+                visible: false,
+            },
+                        {
+                target: 2,
+                visible: false,
+            },
+        ],  
+	    	    
+      ordering: false,
+
+      paging: false,
+      "language": {
+        "zeroRecords": "Sorry, no frameworks to display", //changes words used
+        "lengthMenu": "Show _MENU_ countries per page", //changes words used
+        "info": "&raquo; Showing _START_ to _END_ of _TOTAL_ countries", //changes words used
+        "search": "", //changes words used originally - Search programs:
+        "searchPlaceholder": "Search countries",
+        "infoFiltered": "(filtered from _MAX_ countries)"
+      }
+    });
+
+    var tabler = $('#trackertableregion').DataTable({
+	    columnDefs: [
+            {
+                target: 1,
+                visible: false,
+            },
+        ],  
+	    	    
+      ordering: false,
+
+      paging: false,
+      "language": {
+        "zeroRecords": "Sorry, no frameworks to display", //changes words used
+        "lengthMenu": "Show _MENU_ countries per page", //changes words used
+        "info": "&raquo; Showing _START_ to _END_ of _TOTAL_ regions", //changes words used
+        "search": "", //changes words used originally - Search programs:
+        "searchPlaceholder": "Search regions",
+        "infoFiltered": "(filtered from _MAX_ regions)"
+      }
+    });
+
+
+
+
+
+/**
+ * ---------------------------------------
+ * created using amCharts 4.
+ *
+ * For more information visit:
+ * https://www.amcharts.com/
+ *
+ * Documentation is available at:
+ * https://www.amcharts.com/docs/v4/
+ * ---------------------------------------
+ */
+
+// Create map instance
+var chart = am4core.create("trackermap", am4maps.MapChart);
+
+// Set map definition
+chart.geodata = am4geodata_worldLow;
+
+// Set projection
+chart.projection = new am4maps.projections.Miller();
+
+// Create map polygon series
+var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+
+// Make map load polygon (like country names) data from GeoJSON
+polygonSeries.useGeodata = true;
+
+// Disable scroll-zoom
+chart.chartContainer.wheelable = false;
+
+// Remove Antarctica
+polygonSeries.exclude = ["AQ"];
+
+// Configure series
+var polygonTemplate = polygonSeries.mapPolygons.template;
+polygonTemplate.fill = am4core.color("#b9e4f5");//32,5%
+polygonTemplate.stroke = am4core.color("#e5f5fb");//10%
+
+polygonTemplate.applyOnClones = true;
+polygonTemplate.togglable = true;
+
+polygonTemplate.tooltipText = "{name}";
+// Add some data
+
+
+
+
+
+
+// Create hover and active states
+var hs = polygonTemplate.states.create("hover");
+hs.properties.fill = am4core.color("#dff3fb");//17.5%
+
+var ss = polygonTemplate.states.create("active");
+ss.properties.fill = am4core.color("#ffffff");
+
+
+polygonSeries.calculateVisualCenter = true;
+polygonTemplate.tooltipPosition = "fixed";
+
+var homeButton = new am4core.Button();
+homeButton.events.on("hit", function(){
+
+	//Not working??
+      table
+        .search('')
+        .columns(1)
+        .search('')
+        .draw();
+
+  chart.goHome();
+ 
+  
+});
+
+chart.zoomControl = new am4maps.ZoomControl();
+
+homeButton.icon = new am4core.Sprite();
+homeButton.padding(7, 5, 7, 5);
+homeButton.width = 30;
+homeButton.icon.path = "M16,8 L14,8 L14,16 L10,16 L10,10 L6,10 L6,16 L2,16 L2,8 L0,8 L8,0 L16,8 Z M16,8";
+homeButton.marginBottom = 10;
+homeButton.background.cornerRadius(0, 0, 0, 0);//new
+homeButton.background.stroke = am4core.color("#80ceed");
+homeButton.background.fill = am4core.color("#d2eef9");//new
+homeButton.background.states.getKey("hover").properties.fill = am4core.color("#ffffff");
+homeButton.background.states.getKey("down").properties.fill = am4core.color("#007aab");
+//homeButton.icon.stroke = am4core.color("#80ceed");
+homeButton.icon.fill = '#009ddc';
+
+homeButton.parent = chart.zoomControl;
+homeButton.insertBefore(chart.zoomControl.plusButton);
+
+chart.zoomControl.plusButton.background.stroke = am4core.color("#80ceed");
+chart.zoomControl.plusButton.background.cornerRadius(0, 0, 0, 0);
+chart.zoomControl.plusButton.background.fill = am4core.color("#d2eef9");//new
+chart.zoomControl.plusButton.background.states.getKey("hover").properties.fill = am4core.color("#ffffff");
+chart.zoomControl.plusButton.background.states.getKey("down").properties.fill = am4core.color("#007aab");
+chart.zoomControl.plusButton.label.fill = '#009ddc';
+chart.zoomControl.plusButton.label.stroke = am4core.color("#009ddc");
+chart.zoomControl.plusButton.label.strokeWidth = 2;
+
+chart.zoomControl.minusButton.background.stroke = am4core.color("#80ceed");
+chart.zoomControl.minusButton.background.cornerRadius(0, 0, 0, 0);
+chart.zoomControl.minusButton.background.fill = am4core.color("#d2eef9");//new
+chart.zoomControl.minusButton.background.states.getKey("hover").properties.fill = am4core.color("#ffffff");
+chart.zoomControl.minusButton.background.states.getKey("down").properties.fill = am4core.color("#007aab");
+chart.zoomControl.minusButton.label.fill = '#009ddc';
+chart.zoomControl.minusButton.label.stroke = am4core.color("#009ddc");
+chart.zoomControl.minusButton.label.strokeWidth = 2;
+
+
+// Bind "fill" property to "fill" key in data
+polygonTemplate.propertyFields.fill = "fill";
+polygonTemplate.propertyFields.cursorOverStyle = "cursor";
+
+
+// Set up region arrays
+var pacList = ["AU", "ID", "PG", "NZ", "PH", "FJ", "KI", "MH", "FM", "NR", "PG", "WS", "SB", "TO", "TV", "VU"];
+var asiList = ["CN", "MM", "CN", "TH", "KH", "IN", "ID", "JP", "KR", "KP", "BT", "NP", "BD", "VN", "LA", "MY", "PH", "LK", "PK", "AF", "MN", "TW"];
+var eurList = ["FR", "FI", "SE", "ES", "DK", "UA", "IT", "KZ", "UZ", "TM", "KG", "TJ", "BY", "EE", "LV", "LT", "PL", "SK", "HU", "RO", "MD", "GE", "AZ", "AM", "CY", "MT", "IE", "PT", "DE", "CH", "NO", "IS", "RU", "NL", "CZ", "GB", "BE", "LU", "AT", "SI", "HR", "BA", "TR", "GR", "AL", "MK", "XK", "ME", "BG", "LI", "SM", "RS", "AD", "SJ"];
+var norList = ["MA", "DZ", "LY", "EG", "SA", "TN", "JO", "IQ", "KW", "SY", "IL", "PS", "YE", "OM", "AE", "QA", "BH", "IR"];
+var wesList = ["ML", "NE", "TD", "NG", "BF", "CI", "CD", "CG", "GA", "CM", "CF", "GH", "TG", "BJ", "LR", "SL", "SL", "GN", "GW", "SN", "MR", "EH", "GQ", "ST", "CV"];
+var easList = ["SO", "ET", "KE", "SS", "SD", "BW", "ET", "KE", "LS", "MG", "MW", "MZ", "NA", "SC", "ZA", "UG", "ZM", "AO", "ZW", "SZ", "TZ", "BI", "RW", "ER", "DJ", "MU", "SC", "RE", "KM", "YT"];
+var ameList = ["BR", "CA", "US", "CW", "NI", "AR", "CL", "BO", "PY", "PE", "GT", "BZ", "NC", "PR", "DO", "HT", "JM", "BS", "CU", "GD", "BB", "MQ", "DM", "UY", "SV", "HN", "CR", "PA", "EC", "CO", "VE", "GY", "SR", "GF", "TT", "AW", "GL", "MX"];
+
+
+var RegionStatus;
+RegionStatus = "all";
+var RegionGroup = [ ];
+
+
+    $('ul#mapcontrol').on('click', 'a', function() {
+		$("ul#mapcontrol a").removeClass("active");
+		$(this).addClass("active");
+		//series1.mapPolygons.template.fill = am4core.color("#000000");		
+		
+		
+      table
+      	.columns().search( '' )
+        .columns(1)
+        .search($(this).attr("id"))
+        .draw();
+      tabler
+      	.columns().search( '' )
+        .columns(1)
+        .search($(this).attr("id"))
+        .draw();
+        
+       if ($(this).attr("id") == "pac") {	        
+			for (let i = 0; i < pacList.length; i++) {
+			    polygonSeries.getPolygonById(pacList[i]).isActive = true;
+			    RegionGroup = polygonSeries.getPolygonById(pacList[i]);
+			}
+    	}else if ($(this).attr("id") != "pac") {
+	    	for (let i = 0; i < pacList.length; i++) {
+			    polygonSeries.getPolygonById(pacList[i]).isActive = false;
+			}
+    	};       
+       if ($(this).attr("id") == "asi") {	        
+			for (let i = 0; i < asiList.length; i++) {
+			    polygonSeries.getPolygonById(asiList[i]).isActive = true;
+			    RegionStatus = "asi";
+
+			}
+    	}else if ($(this).attr("id") != "asi") {
+	    	for (let i = 0; i < asiList.length; i++) {
+			    polygonSeries.getPolygonById(asiList[i]).isActive = false;
+
+			}
+    	};  
+      if ($(this).attr("id") == "eur") {	        
+			for (let i = 0; i < eurList.length; i++) {
+			    polygonSeries.getPolygonById(eurList[i]).isActive = true;
+			    RegionStatus = "eur";
+			}
+    	}else if ($(this).attr("id") != "eur") {
+	    	for (let i = 0; i < eurList.length; i++) {
+			    polygonSeries.getPolygonById(eurList[i]).isActive = false;
+			}
+    	};
+      if ($(this).attr("id") == "nor") {	        
+			for (let i = 0; i < norList.length; i++) {
+			    polygonSeries.getPolygonById(norList[i]).isActive = true;
+			    RegionStatus = "nor";
+
+			}
+    	}else if ($(this).attr("id") != "nor") {
+	    	for (let i = 0; i < norList.length; i++) {
+			    polygonSeries.getPolygonById(norList[i]).isActive = false;
+			}
+    	};
+      if ($(this).attr("id") == "wes") {	        
+			for (let i = 0; i < wesList.length; i++) {
+			    polygonSeries.getPolygonById(wesList[i]).isActive = true;
+			    RegionStatus = "wes";
+
+			}
+    	}else if ($(this).attr("id") != "wes") {
+	    	for (let i = 0; i < wesList.length; i++) {
+			    polygonSeries.getPolygonById(wesList[i]).isActive = false;
+			}
+    	};
+      if ($(this).attr("id") == "eas") {	        
+			for (let i = 0; i < easList.length; i++) {
+			    polygonSeries.getPolygonById(easList[i]).isActive = true;
+			    RegionStatus = "eas";
+
+			}
+    	}else if ($(this).attr("id") != "eas") {
+	    	for (let i = 0; i < easList.length; i++) {
+			    polygonSeries.getPolygonById(easList[i]).isActive = false;
+			}
+    	};    	
+      if ($(this).attr("id") == "ame") {	        
+			for (let i = 0; i < ameList.length; i++) {
+			    polygonSeries.getPolygonById(ameList[i]).isActive = true;
+			    RegionGroup = polygonSeries.getPolygonById(ameList[i]);
+			    RegionStatus = "ame";
+			}
+    	}else if ($(this).attr("id") != "ame") {
+	    	for (let i = 0; i < ameList.length; i++) {
+			    polygonSeries.getPolygonById(ameList[i]).isActive = false;
+			}
+    	};
+
+		chart.goHome();
+        event.preventDefault();
+        
+    });
+
+    $('ul#mapcontrol').on('click', 'a#all', function() {
+      table
+        .search('')
+        .columns(1)
+        .search('')
+        .draw();
+      tabler
+        .search('')
+        .columns(1)
+        .search('')
+        .draw();
+        
+        
+        event.preventDefault();
+    });
+
+
+
+
+
+
+/*
+var selected;
+function selectCountry(id) {
+  if (selected) {
+    selected.isActive = false;
+  }
+  selected = polygonSeries.getPolygonById(id);
+  selected.isActive = true;
+}
+*/
+
+var lastSelected;
+
+polygonTemplate.events.on("hit", function(ev){
+    //chart.zoomToMapObject(event.target);
+    
+    var countryCode = ev.target.dataItem.dataContext.id;
+    var countryName = ev.target.dataItem.dataContext.name;
+    var regionName;
+
+
+    
+    
+        if ((pacList).includes(countryCode)) {	        
+			regionName = "pac";
+    	};
+         if ((asiList).includes(countryCode)) {	        
+			regionName = "asi";
+    	};
+         if ((eurList).includes(countryCode)) {	        
+			regionName = "eur";
+    	}; 
+         if ((norList).includes(countryCode)) {	        
+			regionName = "nor";
+    	}; 
+         if ((wesList).includes(countryCode)) {	        
+			regionName = "wes";
+    	}; 
+         if ((easList).includes(countryCode)) {	        
+			regionName = "eas";
+    	}; 
+         if ((ameList).includes(countryCode)) {	        
+			regionName = "ame";
+    	};     
+
+
+
+  if (lastSelected) {
+    // This line serves multiple purposes:
+    // 1. Clicking a country twice actually de-activates, the line below
+    //    de-activates it in advance, so the toggle then re-activates, making it
+    //    appear as if it was never de-activated to begin with.
+    // 2. Previously activated countries should be de-activated.
+    lastSelected.isActive = false;
+
+  //if (lastSelected.isActive !== "true") {
+    //lastSelected.isActive = true;
+  //}
+  
+  
+  //
+//if (RegionStatus == "ame") {
+	//polygonTemplate.fill = am4core.color("#9b3c90");
+	//RegionGroup.properties.fill = am4core.color("#9b3c90");
+	//polygonSeries.getPolygonById(ameList[i]).isActive = true;
+	
+//	};
+
+
+
+
+
+  }
+  ev.target.series.chart.zoomToMapObject(ev.target);
+  if (lastSelected !== ev.target) {
+    lastSelected = ev.target;
+  }
+
+
+    
+    table
+    	.columns()
+		.search( '' )
+		.columns( 0 )
+		.search(countryName)
+		.draw();
+		  
+	tabler
+	    .columns().search( '' )
+	    .columns( 1 )
+	    .search(regionName)
+	    .draw();
+ });
+
+
+
+
+
+
+</script>
+
+
+
+
+<script>
+
+
+let trackerChart2a1 = document.getElementById("trackerChart2a1").getContext('2d');
+let trackerChart2a2 = document.getElementById("trackerChart2a2").getContext('2d');
+let trackerChart2a3 = document.getElementById("trackerChart2a3").getContext('2d');
+let trackerChart2a4 = document.getElementById("trackerChart2a4").getContext('2d');
+
+let trackerChart2b1 = document.getElementById("trackerChart2b1").getContext('2d');
+
+// Global options
+//Chart.defaults.global.defaultFontFamily ='Roboto';
+Chart.defaults.global.defaultFontSize = 12;
+Chart.defaults.global.defaultFontColor ='#004662';
+
+let TrackChart2a1 = new Chart(trackerChart2a1, {
+  type:'pie',
+  data: {
+      labels: [
+    'Women',
+    'Children & youth',
+    'People living with disabilities',
+    'People living in extreme poverty',
+    'Displaced or migrant people',
+    'Indigenous people & ethnic minorities',
+    'Older people'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [53, 65, 52, 48, 26, 29, 51],
+    backgroundColor: [
+      'rgba(232, 105, 46, 1.0)',
+      'rgba(232, 105, 46, 0.7)',
+      'rgba(232, 105, 46, 0.4)',
+      'rgba(0, 157, 220, 1.0)',
+      'rgba(0, 157, 220, 0.7)',
+      'rgba(0, 157, 220, 0.4)',
+      'rgba(0, 182, 158, 1.0)'
+    ],
+    hoverOffset: 10
+  }]
+ 
+  },
+  options: {
+	legend: {
+     labels:{
+       //fontColor:'#000',
+       //fontSize: 10
+     }     
+  	},
+	  layout:{
+	    padding:{
+	      left:0,
+	      right:0,
+	      bottom:0,
+	      top:0
+	    }
+	  },
+  aspectRatio:1.5
+	  
+  }
+});
+
+let TrackChart2a2 = new Chart(trackerChart2a2, {
+  type:'pie',
+  data: {
+      labels: [
+    'Plans',
+    'Legislation',
+    'Policies',
+    'Strategies'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [47, 3, 15, 35],
+    backgroundColor: [
+      'rgba(232, 105, 46, 1.0)',
+      'rgba(232, 105, 46, 0.7)',
+      'rgba(232, 105, 46, 0.4)',
+      'rgba(0, 157, 220, 1.0)',
+      'rgba(0, 157, 220, 0.7)',
+      'rgba(0, 157, 220, 0.4)',
+      'rgba(0, 182, 158, 1.0)'
+    ],
+    hoverOffset: 10
+  }]
+ 
+  },
+  options: {
+	legend: {
+     labels:{
+       //fontColor:'#000',
+       //fontSize: 10
+     }     
+  	},
+	  layout:{
+	    padding:{
+	      left:0,
+	      right:0,
+	      bottom:0,
+	      top:0
+	    }
+	  },
+  aspectRatio:1.5
+	  
+  }
+});
+
+let TrackChart2a3 = new Chart(trackerChart2a3, {
+  type:'pie',
+  data: {
+      labels: [
+    'Joint DRM & DRR',
+    'Joint CC & DRM',
+    'DRR',
+    'DRM'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [15, 14, 36, 35],
+    backgroundColor: [
+      'rgba(232, 105, 46, 1.0)',
+      'rgba(232, 105, 46, 0.7)',
+      'rgba(232, 105, 46, 0.4)',
+      'rgba(0, 157, 220, 1.0)',
+      'rgba(0, 157, 220, 0.7)',
+      'rgba(0, 157, 220, 0.4)',
+      'rgba(0, 182, 158, 1.0)'
+    ],
+    hoverOffset: 10
+  }]
+ 
+  },
+  options: {
+	legend: {
+     labels:{
+       //fontColor:'#000',
+       //fontSize: 10
+     }     
+  	},
+	  layout:{
+	    padding:{
+	      left:0,
+	      right:0,
+	      bottom:0,
+	      top:0
+	    }
+	  },
+  aspectRatio:1.5
+	  
+  }
+});
+
+let TrackChart2a4 = new Chart(trackerChart2a4, {
+  type:'pie',
+  data: {
+      labels: [
+    'National',
+    'Subnational',
+    'Community'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [96, 2, 2],
+    backgroundColor: [
+      'rgba(232, 105, 46, 1.0)',
+      'rgba(232, 105, 46, 0.7)',
+      'rgba(232, 105, 46, 0.4)',
+      'rgba(0, 157, 220, 1.0)',
+      'rgba(0, 157, 220, 0.7)',
+      'rgba(0, 157, 220, 0.4)',
+      'rgba(0, 182, 158, 1.0)'
+    ],
+    hoverOffset: 10
+  }]
+ 
+  },
+  options: {
+	legend: {
+     labels:{
+       //fontColor:'#000',
+       //fontSize: 10
+     }     
+  	},
+	  layout:{
+	    padding:{
+	      left:0,
+	      right:0,
+	      bottom:0,
+	      top:0
+	    }
+	  },
+  aspectRatio:1.5
+	  
+  }
+});
+
+
+
+
+
+ let TrackChart2b1 = new Chart(trackerChart2b1, {
+	type: 'horizontalBar',
+	data: {
+		labels: ["Pacific","Asia","Europe & Central Asia","Northern Africa & Middle East","Western Africa & Central Africa","Eastern Africa & Southern Africa","Americas & Caribbean"],
+		datasets: [{
+			label: 'Women',
+			backgroundColor: "#caf270",
+			data: [12, 59, 5, 56, 58,12, 59],
+		}, {
+			label: 'Children & Youth',
+			backgroundColor: "#45c490",
+			data: [12, 59, 5, 56, 58,12, 59],
+		}, {
+			label: 'People living with disabilities',
+			backgroundColor: "#008d93",
+			data: [12, 59, 5, 56, 58,12, 59],
+		}, {
+			label: 'People living with disabilities',
+			backgroundColor: "#008d93",
+			data: [12, 59, 5, 56, 50,12, 59],
+		}, {
+			label: 'People living with disabilities',
+			backgroundColor: "#008d93",
+			data: [7, 39, 5, 56, 58,12, 59],
+		}, {
+			label: 'People living with disabilities',
+			backgroundColor: "#008d93",
+			data: [2, 59, 5, 56, 58, 2, 59],
+		}, {
+			label: 'People living in extreme poverty',
+			backgroundColor: "#2e5468",
+			data: [12, 22, 5, 16, 58, 12, 59],
+		}],
+	},
+options: {
+	
+    tooltips: {
+      displayColors: true,
+      callbacks:{
+        mode: 'x',
+      },
+    },
+    scales: {
+      yAxes: [{
+        stacked: true,
+        gridLines: {
+          display: false,
+        }
+      }],
+      xAxes: [{
+        stacked: true,
+        ticks: {
+          beginAtZero: true,
+        },
+        type: 'linear',
+      }]
+    },
+		responsive: true,
+		maintainAspectRatio: true,
+		legend: { position: 'bottom' },
+	}
+});
+
+
+
+</script>
+
+
+    
+    <script>
+	    
+	   
+	$(document).on('click', '.navbar-toggler', function(){
+	   $('#togglenav').toggleClass('menu-open')
+	}) 
+	$(document).on('click', '.offcanvas-backdrop', function(){
+	   $('#togglenav').toggleClass('menu-open')
+	})	
+
+</script>
+
+
+  </body>
+</html>

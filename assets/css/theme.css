@@ -4932,6 +4932,10 @@ color: #001118;
   margin-block-end: 0;
 }
 
+
+
+
+
 /* Events page */
 
 section.event-top-featured{
@@ -5559,6 +5563,14 @@ section.events-landing{
 
   color: #b45224;
 }
+
+@media (max-width: 991.98px){
+  .breadcrumb {
+  display: none;
+  }
+}
+
+
 
 .breadcrumb-item {
   display: flex;
@@ -8483,9 +8495,9 @@ section.events-landing{
   background-image: linear-gradient(to left, rgba(13,5,12,0), rgba(13,5,12,0.33)) !important;
 }
 /*bottom up*/
-.bg-region-slider {
-  background-image: linear-gradient(0deg, rgba(13,5,12,0.33), rgba(13,5,12,0)) !important;
-  background-image: linear-gradient(to bottom, rgba(13,5,12,0), rgba(13,5,12,0.33)) !important;
+.bg-hero-top {
+  background-image: linear-gradient(0deg, rgba(13,5,12,0.5), rgba(13,5,12,0)) !important;
+  background-image: linear-gradient(to bottom, rgba(13,5,12,0), rgba(13,5,12,0.5)) !important;
 }
 
 
@@ -16019,6 +16031,110 @@ a.badge {
   color: #e8692e;
 }
 
+/* Region single page */
+#hero-top .container{
+  min-height: 350px;
+}
+@media (min-width: 1200px) {
+  #hero-top .container{
+    min-height: 550px;
+  }
+  
+}
+
+#related-platforms{
+  
+}
+@media (max-width: 499.98px) {
+  #related-platforms .col-sm-6{
+    border-top: 1px solid #bfe6f6 !important;
+  }	
+  #related-platforms .col-sm-6:first-child{
+    border-top: none !important;	    
+  }
+  #related-platforms .card-body {
+    padding: 1.5rem 0;
+  }
+}
+
+
+@media (max-width: 991.98px) and (min-width: 500px){
+  #related-platforms .col-sm-6{
+    border-left: 1px solid #bfe6f6 !important;
+    border-top: 1px solid #bfe6f6 !important;
+      
+  }
+  #related-platforms .col-sm-6:nth-child(2n+1){
+    border-left: none !important;	    
+  }	
+  #related-platforms .col-sm-6:nth-child(-n+2){
+    border-top: none !important;	    
+  }
+}
+
+@media (max-width: 1199.98px) and (min-width: 992px){
+  #related-platforms .col-sm-6{
+    border-left: 1px solid #bfe6f6 !important;
+    border-top: 1px solid #bfe6f6 !important;
+      
+  }
+  #related-platforms .col-sm-6:nth-child(3n+1){
+    border-left: none !important;	    
+  }	
+  #related-platforms .col-sm-6:nth-child(-n+3){
+    border-top: none !important;	    
+  }	
+
+
+}
+
+@media (min-width: 1200px){
+  #related-platforms .col-sm-6{
+    border-left: 1px solid #bfe6f6 !important;
+    border-top: 1px solid #bfe6f6 !important;
+      
+  }
+  #related-platforms .col-sm-6:nth-child(4n+1){
+    border-left: none !important;	    
+  }	
+  #related-platforms .col-sm-6:nth-child(-n+4){
+    border-top: none !important;	    
+  }	
+
+
+}
+
+
+#related-platforms .card {
+    border: 0 !important;
+    height: 100% !important;
+    text-decoration: none !important;
+    
+    padding-top: calc(var(--bs-gutter-x) * 0.5);
+    padding-bottom: calc(var(--bs-gutter-x) * 0.5);
+    
+    
+    transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#related-platforms .card:hover {
+  /*background: radial-gradient(#fce8e0 0, transparent 70% );
+  box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(0 157 220 / 7%), 0 0.125rem 0.4rem -0.0625rem rgb(0 157 220 / 4%);*/
+  background-color: rgba(0,157,220,0.075);
+}
+#related-platforms .card img {
+    margin-bottom: 0.5rem;
+    transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+#related-platforms .card img:hover {
+  transform: scale(1.085);
+}
+
+
+
+
+
+
 
 
 
@@ -18397,16 +18513,20 @@ img-comparison-slider:focus {
   background-color: rgba(255, 255, 255, 0.15);
 }
 .dark-mode .breadcrumb-item {
-  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode .breadcrumb-item {
+  color: rgba(255, 255, 255, 0.85);
 }
 .dark-mode .breadcrumb-item::before {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.85);
 }
 .dark-mode .breadcrumb-item > a {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.85);
 }
 .dark-mode .breadcrumb-item:hover > a {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 1.0);
 }
 .dark-mode .breadcrumb-item.active {
   color: #fff;

@@ -16082,71 +16082,64 @@ a.badge {
   align-self: self-start;
 }    
 
+/* Related platforms */
 
-
-
-#related-platforms{
-  
-}
 @media (max-width: 499.98px) {
-  #related-platforms .col-sm-6{
+  .related-orgs .col-sm-6{
     border-top: 1px solid #bfe6f6 !important;
   }	
-  #related-platforms .col-sm-6:first-child{
+  .related-orgs .col-sm-6:first-child{
     border-top: none !important;	    
   }
-  #related-platforms .card-body {
+  .related-orgs .card-body {
     padding: 1.5rem 0;
   }
 }
 
-
 @media (max-width: 991.98px) and (min-width: 500px){
-  #related-platforms .col-sm-6{
+  .related-orgs .col-sm-6{
     border-left: 1px solid #bfe6f6 !important;
     border-top: 1px solid #bfe6f6 !important;
       
   }
-  #related-platforms .col-sm-6:nth-child(2n+1){
+  .related-orgs .col-sm-6:nth-child(2n+1){
     border-left: none !important;	    
   }	
-  #related-platforms .col-sm-6:nth-child(-n+2){
+  .related-orgs .col-sm-6:nth-child(-n+2){
     border-top: none !important;	    
   }
 }
 
 @media (max-width: 1199.98px) and (min-width: 992px){
-  #related-platforms .col-sm-6{
+  .related-orgs .col-sm-6{
     border-left: 1px solid #bfe6f6 !important;
     border-top: 1px solid #bfe6f6 !important;
       
   }
-  #related-platforms .col-sm-6:nth-child(3n+1){
+  .related-orgs .col-sm-6:nth-child(3n+1){
     border-left: none !important;	    
   }	
-  #related-platforms .col-sm-6:nth-child(-n+3){
+  .related-orgs .col-sm-6:nth-child(-n+3){
     border-top: none !important;	    
   }	
-
-
 }
 
 @media (min-width: 1200px){
-  #related-platforms .col-sm-6{
+  .related-orgs .col-sm-6{
     border-left: 1px solid #bfe6f6 !important;
     border-top: 1px solid #bfe6f6 !important;
   }
-  #related-platforms .col-sm-6:nth-child(4n+1){
+  .related-orgs .col-sm-6:nth-child(4n+1){
     border-left: none !important;	    
   }	
-  #related-platforms .col-sm-6:nth-child(-n+4){
+  .related-orgs .col-sm-6:nth-child(-n+4){
     border-top: none !important;	    
   }	
 
 }
 
 
-#related-platforms .card {
+.related-orgs .card {
     border: 0 !important;
     height: 100% !important;
     text-decoration: none !important;
@@ -16154,24 +16147,50 @@ a.badge {
     padding-top: calc(var(--bs-gutter-x) * 0.5);
     padding-bottom: calc(var(--bs-gutter-x) * 0.5);
     
-    
     transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-#related-platforms .card:hover {
+.related-orgs .card:hover {
   /*background: radial-gradient(#fce8e0 0, transparent 70% );
   box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(0 157 220 / 7%), 0 0.125rem 0.4rem -0.0625rem rgb(0 157 220 / 4%);*/
   background-color: rgba(0,157,220,0.075);
+  background-color: transparent;
 }
-#related-platforms .card img {
-    margin-bottom: 0.5rem;
+.related-orgs .card .card-body{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.related-orgs .card .card-inner{
+  display: flex !important;
+  flex-grow: 1 !important;
+}
+.related-orgs .card picture{
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  
+}
+
+
+
+
+.related-orgs .card img {
+    margin-bottom: 0;
+    min-width: 150px;
     transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
-#related-platforms .card img:hover {
+.related-orgs .card img:hover {
   transform: scale(1.085);
 }
 
-
+.related-orgs h3 {
+  margin-bottom: 0 !important;
+  line-height: 1.125;
+  text-align: center;
+  z-index: 2;
+}
 
 
 

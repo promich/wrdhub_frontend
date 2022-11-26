@@ -16062,6 +16062,47 @@ a.badge {
   
 }
 
+.btn-subreg{
+  display: flex !important;
+  align-items: center !important;
+  
+  width: 100%;
+  color: #fff;
+  background-color: #e8692e;
+  border-color: #e8692e;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn-subreg img{
+  width: 90px;
+  height: auto;
+}   
+.btn-subreg h3, .btn-subreg .h5{
+  color: #fff;
+  margin-bottom: 0;
+} 
+.btn-subreg p{
+  font-size: 0.875rem !important;
+  margin-bottom: 0;
+} 
+
+
+.btn-subreg:hover, .btn-subreg:focus, .btn-subreg:active, .btn-subreg.active, .btn-subreg.show {
+    background-color: #b45224;
+    border-color: #b45224;
+    color: #fff;
+}
+
+
+
+
+
 .btn-unlink{
   flex-direction: column !important;
   align-items: unset;
@@ -16081,6 +16122,14 @@ a.badge {
 .btn-unlink span:first-of-type{
   align-self: self-start;
 }    
+.btn-unlink:hover, .btn-unlink:focus, .btn-unlink:active, .btn-unlink.active, .btn-unlink.show {
+    background-color: #007aab;
+    border-color: #007aab;
+    color: #fff;
+}
+
+
+
 
 /* Related platforms */
 
@@ -16685,6 +16734,63 @@ a.badge {
 
 
 
+.slider-perspec{
+  
+}
+.slider-perspec a.swiper-slide{
+  --bs-bg-opacity: 1;
+  background-color: #fdf4ef !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.slider-perspec a.swiper-slide:hover{
+  background-color: #fce8e0 !important;
+}
+.slider-perspec a{
+  text-decoration: none;
+}
+.slider-perspec a > * > *{
+  overflow: hidden;
+}
+.slider-perspec p{
+  color: #001118;
+  font-size: 1.125rem;
+  margin-bottom: 0; 
+}
+
+
+.slider-perspec picture{
+  display: block;
+  position: relative;
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  
+  height: 100%; 
+  min-height: 22rem; 
+  transform: scale(1, 1);
+  transition: transform 0.4s;
+}
+
+.slider-perspec a.swiper-slide:hover picture {
+  transform: scale(1.025, 1.025);
+}
+
+.slider-perspec .perspec-cap {
+  color: #fff;
+  font-size: 0.75rem;
+  text-align: right;
+  line-height: 1.125rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.25rem 0.5rem;
+  z-index: 3;
+  background-color: rgba(0,017,024,0.25);
+  
+}    
+
+
 
 
 .from-top, .from-bottom,
@@ -16845,9 +16951,9 @@ a.badge {
   content: "\ebbd";
 }
 .gallery-item.video-item:hover::after {
-  background-color: #9b3c90;
+  background-color: #009ddc;
   color: #fff;
-  box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(99, 102, 241, 0.9);
+  box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(0, 105, 147, 0.9);
 }
 
 /* Added video section for plyr*/

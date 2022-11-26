@@ -496,13 +496,25 @@
       
         
         <div class="col">
-      
-        <a href="#" class="btn btn-unlink btn-dark btn-lg">
+          <!-- Note: Button below is optional. Appears if region has subregion -->
+          <a href="" class="btn-subreg">
+            <img src="assets/img/interview.jpg" alt="">
+            <div class="p-2 ms-1">
+              <h3 class="h5 ">Caribbean</h3>
+              <p>Subregion</p>
+            </div>
+          </a>
+          
+
+      <!-- Note: in button below, 'Regional website' should be editable -->
+        <a href="https://africa.unwomen.org/en" target="_blank" class="btn btn-unlink btn-lg">
           <span>Visit the</span>
           <img src="assets/img/logo-unwomen_wh.svg" alt="UN Women">
           <span>Regional website</span>
         </a>
-        <p>Hello there</p>
+
+
+
         </div>
       
         
@@ -933,7 +945,7 @@
       <!-- Insights -->
       <section id="related-insights" class="bg-secondary">
         <div class="container ">
-          <h2 class="h3">Regional Insights</h2>
+          <h2 class="h3 pb-2">Regional Insights</h2>
             <div class="row">
               <div class="col-12 col-lg-4 mb-4" >
 
@@ -1028,12 +1040,10 @@
 
 
       <!-- Perspectives slider -->
-      <section id="related-perspectives" class="">
+      <section id="related-perspectives" class="slider-perspec">
         <div class="container">
-        <h2 class="h3 text-center pb-2">Women's Perspectives</h2>
-        <div class="row g-0">
-          <div class="col-12 col-md-8 order-2 order-md-1">
-            <div class="card bg-secondary border-0 p-4 p-xl-5 ">
+        <h2 class="h3 pb-2">Women's Perspectives</h2>
+
 
               <!-- Quotation mark 
               <div class="pb-4 mb-2">
@@ -1042,82 +1052,95 @@
                 </span>
               </div>-->
 
-              <!-- Slider -->
-              <div class="swiper mx-0 mb-md-n2 mb-xxl-n3" data-swiper-options='{
+    <!-- WP Slider -->
+    <div class="swiper " data-swiper-options='{
+
                 "pagination": {
                   "el": ".swiper-per-pagination",
                   "clickable": true
                 },
                 "spaceBetween": 24,
-                "loop": true,
-                "tabs": true
+                "loop": true
               }'>
-                <div class="swiper-wrapper">
+    <div class="swiper-wrapper">
 
-                  <!-- Item -->
-                  <div class="swiper-slide h-auto" data-swiper-tab="#author-1">
-                    <figure class="card h-100 position-relative border-0 bg-transparent">
-                      <blockquote class="card-body p-0 mb-0">
-                        <h4>Women are adapting to climate change through climate-smart agriculture
+<!-- Item -->
+    <a href="#" class="swiper-slide h-auto">
+        <div class="row g-0">
+          <div class="col-12 col-md-8 order-2 order-md-1">
+              <div class="p-4 p-xl-5 ">
+                    
+                <blockquote class="">
+                  <h4>Women are coordinating and strengthening resilience networks
                         </h4>
-                        <p class="fs-lg mb-0">Dolor, a eget elementum, integer nulla volutpat, nunc, sit. Quam iaculis varius mauris magna sem. Egestas sed sed suscipit dolor faucibus dui imperdiet at eget. Tincidunt imperdiet quis hendrerit aliquam feugiat neque cras sed. Dictum quam integer volutpat tellus, faucibus platea. Pulvinar turpis proin faucibus at mauris. Sagittis gravida vitae porta enim, nulla arcu fermentum massa. Tortor ullamcorper lacus. Pellentesque lectus adipiscing aenean volutpat tortor habitant.</p>
-                      </blockquote>
-                    </figure>
-                  </div>
-
-                  <!-- Item -->
-                  <div class="swiper-slide h-auto" data-swiper-tab="#author-2">
-                    <figure class="card h-100 position-relative border-0 bg-transparent">
-                      <blockquote class="card-body p-0 mb-0">
-                        <h4>Women are adapting to climate change through climate-smart agriculture
-                        </h4>
-                        <p class="fs-lg mb-0">Mi semper risus ultricies orci pulvinar in at enim orci. Quis facilisis nunc pellentesque in ullamcorper sit. Lorem blandit arcu sapien, senectus libero, amet dapibus cursus quam. Eget pellentesque eu purus volutpat adipiscing malesuada. Purus nisi, tortor vel lacus. Donec diam molestie ultrices vitae eget pulvinar fames. Velit lacus mi purus velit justo, amet. Nascetur lobortis diam, duis orci.</p>
-                      </blockquote>
-
-                    </figure>
-                  </div>
-
-                  <!-- Item -->
-                  <div class="swiper-slide h-auto" data-swiper-tab="#author-3">
-                    <figure class="card h-100 position-relative border-0 bg-transparent">
-                      <blockquote class="card-body p-0 mb-0">
-                        <h4>Women are adapting to climate change through climate-smart agriculture
-                        </h4>
-                        <p class="fs-lg mb-0">Ac at sed sit senectus massa. Massa ante amet ultrices magna porta tempor. Aliquet diam in et magna ultricies mi at. Lectus enim, vel enim egestas nam pellentesque et leo. Elit mi faucibus laoreet aliquam pellentesque sed aliquet integer massa. Orci leo tortor ornare id mattis auctor aliquam volutpat aliquet. Odio lectus viverra eu blandit nunc malesuada vitae eleifend pulvinar. In ac fermentum sit in orci.</p>
-                      </blockquote>
-
-                    </figure>
-                  </div>
-                </div>
+                      <p class="">The Network of Women-led Organisations in Nigeria coordinates and strengthens the collaboration among members and partners, insuring the inclusion of women and girls in programs and projects.</p>
+                </blockquote>
+    
               </div>
-            </div>
-
-
           </div>
-          <div class="col-12 col-md-4 order-1 order-md-2" style="min-height:350px;">
-
-            <!-- Swiper tabs (Author images) -->
-            <div class="swiper-tabs">
-
-              <!-- Author image 1 -->
-              <div id="author-1" class="card bg-transparent border-0 swiper-tab active">
-                <div class="card-body p-0 bg-size-cover bg-repeat-0 bg-position-top-center" style="background-image: url(assets/img/perspective.jpg);"></div>
-              </div>
-
-              <!-- Author image 2 -->
-              <div id="author-2" class="card bg-transparent border-0 swiper-tab">
-                <div class="card-body p-0 bg-size-cover bg-repeat-0 bg-position-top-center" style="background-image: url(assets/img/testimonials/02.jpg);"></div>
-              </div>
-
-              <!-- Author image 3 -->
-              <div id="author-3" class="card bg-transparent border-0 swiper-tab">
-                <div class="card-body p-0 bg-size-cover bg-repeat-0 bg-position-top-center" style="background-image: url(assets/img/testimonials/03.jpg);"></div>
-              </div>
-            </div>
+    
+          <div class="col-12 col-md-4 order-1 order-md-2 position-relative" style="">
+            <picture class="" style="background-image: url(assets/img/user-1.jpg); ">
+            </picture>
+            <p class="perspec-cap">Jannatul Mouwa, Executive Director of Best Initiative National Development Unification, Bangladesh</p>
+            
           </div>
         </div>
+    </a>
+
+    <!-- Item -->
+    <a href="#" class="swiper-slide h-auto">
+        <div class="row g-0">
+          <div class="col-12 col-md-8 order-2 order-md-1">
+              <div class="p-4 p-lg-5 ">
+                    
+                <blockquote class="">
+                  <h4>Women are adapting to climate change through climate-smart agriculture
+                        </h4>
+                  <p>The Network of Women-led Organisations in Nigeria coordinates and strengthens the collaboration among members and partners, insuring the inclusion of women and girls in programs and projects.</p>
+                </blockquote>
+
+              </div>
+          </div>
+
+          <div class="col-12 col-md-4 order-1 order-md-2 position-relative" style="">
+            <picture class="" style="background-image: url(assets/img/perspective.jpg); ">
+            </picture>
+            <p class="perspec-cap">Jannatul Mouwa, Executive Director of Best Initiative National Development Unification, Bangladesh</p>
+          </div>
+        </div>
+    </a>
+
+    <!-- Item 3-->
+    <a href="#" class="swiper-slide h-auto">
+        <div class="row g-0">
+          <div class="col-12 col-md-8 order-2 order-md-1">
+              <div class="p-4 p-xl-5 ">
+                    
+                <blockquote class="">
+                  <h4>Women are disaster risk management leaders
+                        </h4>
+                      <p class="">Vasiti Soko, the first woman Director of Fiji’s National Disaster Management Office, and the winner of the WIN DRR leadership award 2021 reflects on the benefits of women's leadership in reducing disaster risks.</p>
+                </blockquote>
+    
+              </div>
+          </div>
+    
+          <div class="col-12 col-md-4 order-1 order-md-2 position-relative" style="">
+            <picture class="" style="background-image: url(assets/img/user-1.jpg); ">
+            </picture>
+          </div>
+        </div>
+    </a>
+
+
+
+    </div><!-- End slider-wrapper -->
+
+    </div><!-- End swiper -->
           <!-- Pagination (bullets) -->
           <div class="swiper-per-pagination position-relative pt-2 mt-4"></div>
+          <!-- End pagination -->
           <div class="d-md-flex align-items-center justify-content-end text-center text-md-end">
             <a href="events.html" class="btn btn-sm btn-outline-primary hover-arrow">
               View all WRD women's perspectives

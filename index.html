@@ -395,7 +395,7 @@
 <section class="bg-secondary ">
         <div class="container">
             <div class="row g-1">
-              <div class="col-xl-5 col-lg-6 col-md-5 col-3" style="margin-top: -100px;">
+              <div class="col-lg-5 col-md-5 col-3" style="margin-top: -100px;">
 
                 <!-- Swiper tabs -->
                 <div class="swiper-tabs mx-auto" style="max-width: 526px;">
@@ -413,7 +413,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-6 col-lg-6 col-md-7 col-9 offset-xl-1 pt-md-0 pt-lg-5 mt-md-4">
+              <div class="col-lg-6 col-md-7 col-9 offset-lg-1 pt-lg-5 pt-md-0 ps-md-3 mt-lg-4">
 
 
 
@@ -902,69 +902,92 @@
 
 
 
-      <!-- Women's Perspectives -->
-      <section class="bg-secondary ">
-        <div class="container">
-            <div class="row">
-              <div class="col-xl-5 col-lg-6 col-md-5" style="margin-top: -100px;">
-
-                <!-- Swiper tabs -->
-                <div class="swiper-tabs mx-auto" style="max-width: 526px;">
-                  <div id="perspec-1" class="swiper-tab active">
-                    <img src="assets/img/perspective.jpg" class="" alt="Image">
-                  </div>
-                  <div id="perspec-2" class="swiper-tab">
-                    <img src="assets/img/landing/medical/cta/02.jpg" class="" alt="Image">
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-5 col-lg-6 col-md-7 offset-xl-1 pt-2 pt-md-4 pt-lg-5 mt-4">
-
-                <!-- Slider prev/next buttons -->
-                <div class="d-flex justify-content-center justify-content-lg-start pb-3 mb-3">
-                  <button type="button" id="prev" class="btn btn-prev btn-icon btn-sm me-2">
-                    <i class="bx bx-chevron-left"></i>
-                  </button>
-                  <button type="button" id="next" class="btn btn-next btn-icon btn-sm ms-2">
-                    <i class="bx bx-chevron-right"></i>
-                  </button>
-                </div>
-
-                <!-- Swiper slider -->
-                <div class="swiper mx-0 mb-md-n2 mb-xxl-n3" data-swiper-options='{
-                  "spaceBetween": 30,
-                  "loop": true,
-                  "tabs": true,
-                  "navigation": {
-                    "prevEl": "#prev",
-                    "nextEl": "#next"
-                  }
-                }'>
-                  <div class="swiper-wrapper">
-
-                    <!-- Item -->
-                    <div class="swiper-slide pb-4" data-swiper-tab="#perspec-1">
-                      <h2 class="h1 mb-4">Women are improving the health resilience of their communities</h2>
-                      <p class="pb-2 pb-xl-0 mb-4 mb-xl-5">"…I decided to bring about change in the lives of my people."</p>
-                    </div>
-
-                    <!-- Item -->
-                    <div class="swiper-slide pb-4" data-swiper-tab="#perspec-2">
-                      <h2 class="h1 mb-4">Support Groups for Resilience</h2>
-                      <p class="pb-2 pb-xl-0 mb-4 mb-xl-5">Magna cursus feugiat sed sodales praesent vehicula integer arcu. Felis duis lectus felis, tempus aliquet quis non. At integer consectetur eget nunc, fames. Et facilisi vel, luctus sed interdum vitae nec, velit. Maecenas purus et pharetra, at volutpat aenean.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="d-md-flex align-items-center justify-content-end text-center text-md-end">
-              <a href="#" class="btn btn-outline-primary hover-arrow">
-                See more women's perspectives
+<!-- Perspectives slider -->
+  <section id="related-perspectives" class="pt-0 home-slider-perspec">
+    <div class="container">
+      <!-- WP Slider -->
+      <div class="swiper " data-swiper-options='{
+                            "pagination": {
+                              "el": "#swiper-per-pagination",
+                              "clickable": true
+                            },
+                            "spaceBetween": 24,
+                            "loop": true
+                          }'>
+        <div class="swiper-wrapper">
+            
+            <!-- Item -->
+                <a href="#" class="swiper-slide">
+                    <div class="row">
+                      <div class="col-xl-5 col-lg-6 col-md-7 offset-xl-1 order-2 order-md-1" >
+                          <blockquote class="pt-3 pt-lg-5">
+                              <h4 class="h1">Women are coordinating and strengthening resilience networks</h4>
+                                  <p class="">The Network of Women-led Organisations in Nigeria coordinates and strengthens the collaboration among members and partners, insuring the inclusion of women and girls in programs and projects.</p>
+                          </blockquote>
+                      </div>
                 
-              </a>
-            </div>
+                      <div class="col-xl-5 col-lg-6 col-md-5 offset-xl-1 order-1 order-md-2 position-relative">
+                          <div class="pic-frame">
+                            <picture class="ratio" style="background-image: url(assets/img/user-1.jpg); ">
+                            </picture>
+                            <span class="bg-hero-top"></span>
+                            <div class="perspec-overlay">
+                              <h3>Dilanthi Amaratunga</h3>
+                              <p>Executive Director of Best Initiative National Development Unification, Bangladesh</p>
+                            </div>
+                            
+                          </div>
+                      </div>
+                    </div>
+                </a>
+            
+                <!-- Item  margin-top: -100px;-->
+            <!-- Item -->
+                <a href="#" class="swiper-slide">
+                    <div class="row">
+                      <div class="col-xl-5 col-lg-6 col-md-7 offset-xl-1 order-2 order-md-1" >
+                          <blockquote class="pt-3 pt-lg-5">
+                              <h4 class="h1">Women are disaster risk management leaders</h4>
+                                  <p class="">Vasiti Soko, the first woman Director of Fiji’s National Disaster Management Office, and the winner of the WIN DRR leadership award 2021 reflects on the benefits of women's leadership in reducing disaster risks.</p>
+                          </blockquote>
+                      </div>
+                
+                      <div class="col-xl-5 col-lg-6 col-md-5 offset-xl-1 order-1 order-md-2 position-relative">
+                          <div class="pic-frame">
+                            <picture class="ratio" style="background-image: url(assets/img/perspective.jpg); ">
+                            </picture>
+                            <span class="bg-hero-top"></span>
+                            <div class="perspec-overlay">
+                              <h3>Dilanthi Amaratunga</h3>
+                              <p>Executive Director of Best Initiative National Development Unification, Bangladesh</p>
+                            </div>
+                            
+                            
+                            
+                          </div>
+                      </div>
+                    </div>
+                </a>
+            
+                <!-- Item 3-->
+
+            
+            
+                </div><!-- End slider-wrapper -->
+            
+                </div><!-- End swiper -->
+                      <!-- Pagination (bullets) -->
+        <div id="swiper-per-pagination" class="swiper-pagination position-relative py-3 bottom-0 "></div>
+                      <!-- End pagination -->
+
+        <div class="d-flex align-items-center justify-content-end">
+          <a href="#" class="btn btn-outline-primary hover-arrow">
+            See more women's perspectives
+          </a>
         </div>
-      </section>
+                      
+    </div>
+  </section>
 
 
 

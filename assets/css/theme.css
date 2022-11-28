@@ -4918,6 +4918,7 @@ textarea.form-control-lg {
 .card-latest a{
 text-decoration: none;
 color: #001118;
+transition: background-color 0.2s ease-in-out;
 }
 .card-latest a:hover,
 .card-event a:hover{
@@ -5011,7 +5012,7 @@ section.events-landing{
        --bs-bg-opacity: 0.75;
     background-color: #fdf4ef !important;
 }
-
+span.date,
 .card-event span.date,
 .card-list span.date {
     font-size: 0.875rem !important;
@@ -16739,7 +16740,7 @@ a.badge {
 }
 
 
-
+/*Women's Perspective slider - used on region-single*/
 
 .slider-perspec{
   
@@ -16765,14 +16766,12 @@ a.badge {
   margin-bottom: 0; 
 }
 
-
 .slider-perspec picture{
   display: block;
   position: relative;
   background-size: cover !important;
   background-position: top center !important;
   background-repeat: no-repeat !important;
-  
   height: 100%; 
   min-height: 22rem; 
   transform: scale(1, 1);
@@ -16797,7 +16796,110 @@ a.badge {
   
 }    
 
+
+
+/*Home: Women's Perspective slider*/
+
+.home-slider-perspec{
+  background: linear-gradient(0deg, #fdf4ef 0%, #fff 100%) !important;
+  }
+
+
+.home-slider-perspec a{
+  text-decoration: none;
+}
+.home-slider-perspec p{
+  color: #001118;
+  font-size: 1.125rem;
+  margin-bottom: 0;
+}
+
+.home-slider-perspec .h1,
+.home-slider-perspec p {
+  transition: color 0.4s;
+}
+  .home-slider-perspec a.swiper-slide:hover blockquote .h1,
+  .home-slider-perspec a.swiper-slide:hover blockquote p {
+  color: #009ddc;
+}
+
+
+
+
+.home-slider-perspec .pic-frame{
+  overflow:hidden; 
+  position:relative;
+}
+
+
+.home-slider-perspec picture{
+  display: block;
+  position: relative;
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  height: 100%; 
+  min-height: 22rem; 
+  transform: scale(1, 1);
+  transition: transform 0.4s;
+}
+@media (min-width: 768px) {
+  .home-slider-perspec picture{
+  --bs-aspect-ratio: 110%;
+  }
+}
+
+.home-slider-perspec .bg-hero-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(13,5,12,0.5) 0%, rgba(13,5,12,0) 50%, rgba(13,5,12,0) 100%) !important;
+    
+}
+  
+.perspec-overlay{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .home-slider-perspec a.swiper-slide:hover picture {
+    transform: scale(1.025, 1.025);
+  }
+  .swiper-slide .bg-hero-top,
+  .swiper-slide .perspec-overlay{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .swiper-slide:hover .bg-hero-top,
+  .swiper-slide:hover .perspec-overlay {
+      opacity: 1;
+  }
+}
+
+.perspec-overlay h3,
+.perspec-overlay p{
+color: #fff;
+margin-bottom: 0;
+text-align: right;
+}
+.perspec-overlay h3{
+  font-size: 1.125rem !important;
+  font-weight: 700 !important;
+}
+.perspec-overlay p{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+
+
 /*Slider expert*/
+
 .slider-experts a.person-hover{
   display: block;
   overflow: hidden;

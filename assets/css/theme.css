@@ -238,17 +238,21 @@ sup {
 a {
   color: #9b3c90;
   text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: #792f70;
   text-decoration: none;
+  text-decoration: underline;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
 }
-
+a.btn:hover {
+  text-decoration: none;
+}
 
 .arrow-link {
   font-weight: 600;
@@ -16962,6 +16966,89 @@ text-align: right;
 }
 
 
+/* expert-single */
+.expert-single h1{
+  font-size: calc(1.575rem + 3.9vw);
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+.expert-single h2{
+  font-size: 1.5rem !important;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+}
+.expert-single img{ padding-left: 0.25rem;}
+
+
+.expert-item{
+  margin-bottom:1.5rem;
+}
+.expert-item p{
+  margin-bottom:0;
+}
+.expert-item .fs-5{
+  margin-bottom:0;
+}
+
+
+.expert-single .social-box .btn.hover-arrow{
+    padding: 0.27rem 1.5rem;
+}
+.expert-single .social-box {
+ margin-bottom: 1.5rem; 
+}
+
+.expert-single .social-box .btn{
+margin-bottom: 0.25rem;
+}
+
+
+
+
+
+.expert-experience [class*='col-']{
+  margin-bottom: 1rem;
+}
+
+.expert-experience p {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+
+.circle-blue{
+  border: 3px solid #009ddc;
+  border-radius: 50%;
+  width: 100%;  
+  
+}
+.circle-blue .inner{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; 
+}
+.circle-blue .inner span{
+color: #009ddc;
+line-height: 1;
+text-transform: uppercase;
+}
+
+.circle-blue .inner .year{
+font-size: 4rem !important;
+font-weight: 800;
+line-height: 1;
+}
+
+/*
+.circle-blue:before{
+    content: "";
+    display: block;
+    padding-top: 100%;  /* initial ratio of 1:1*/
+}
+*/
 .from-top, .from-bottom,
 .from-start, .from-end,
 .scale-up, .scale-down,

@@ -16984,7 +16984,7 @@ text-align: right;
   padding: 1rem;
   padding: 0;
   background: transparent !important;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .experts-top .card h3{
   margin-bottom: 0.5rem;
@@ -17020,12 +17020,7 @@ text-align: right;
 .expert-listing{
   
 }
-/*
-.expert-listing a.expert-card{
-  display: block;
-  text-decoration: none;
-  margin-bottom: 1rem;
-}*/
+
 .expert-listing a.expert-card {
     display: block;
     text-decoration: none;
@@ -17062,6 +17057,21 @@ text-align: right;
   margin-bottom: 0.5rem;
   line-height: 1.25;
 }
+@media (max-width: 767.98px){
+  .expert-listing p{
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+  }
+  .expert-listing h2 {
+      margin-bottom: 0.25rem;
+  }
+  .expert-listing .fs-lg {
+      font-size: 1rem !important;
+  }
+  
+  
+}
+
 
 .expert-listing picture{
   display: block;

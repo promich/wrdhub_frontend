@@ -364,7 +364,7 @@
   <div class="container">
 
     <!-- Breadcrumb - hidden on mobile -->
-    <nav class="d-none d-md-block py-3 " aria-label="breadcrumb">
+    <nav class="py-3 " aria-label="breadcrumb">
       <ol class="breadcrumb mb-0">
         <li class="breadcrumb-item">
           <a href="index.html">Home</a>
@@ -373,31 +373,123 @@
         <li class="breadcrumb-item active" aria-current="page">Library</li>
       </ol>
     </nav> 
+
+
+
 <div class="row">
-  <div class="col-lg-7 mb-4 mb-lg-0 border-end-lg">
+  <div class="col-lg-9 col-xl-9 border-end-lg">
+<h3 class="top-label">Featured highlights</h3>
+<!-- Pagination: Bullets -->
+  <div class="swiper swiper-nav-onhover" data-swiper-options='{
+    "spaceBetween": 20,
+    "loop": true,
+    "pagination": {
+      "el": ".swiper-pagination",
+      "clickable": true
+    }
+  }'>
+    <div class="swiper-wrapper">
+  
+      <!-- Item 1-->
+          <a href="pub-single.html" class="swiper-slide featured-pub-slide">
+            <div class="row g-0">
+              <div class="col-5 position-relative" style="">
+                <div class="ratio ratio-1x1">
+                <div class="pub-image">
+                  <img src="assets/img/pub-cover-03.jpg" alt="Publication title">
+                </div>
+                </div>
+              </div>
+                    <div class="col-7">
+                        <div class="p-0 p-md-3 px-lg-4 ">
+                          <span class="badge">Tool</span>
+                            <h2 class="featured-pub-title" >Gender analysis in non-traditional sectors: climate and disaster risk finance and insurance</h2>
+                        </div>
+                    </div>
+            </div>
+          </a>
 
+  <!-- Item 2-->
+  <a href="pub-single.html" class="swiper-slide featured-pub-slide">
+    <div class="row g-0">
+      <div class="col-5 position-relative" style="">
+        <div class="ratio ratio-1x1">
+        <div class="pub-image">
+          <img src="assets/img/pub-cover-01.jpg" alt="Publication title">
+        </div>
+        </div>
+      </div>
+            <div class="col-7">
+                <div class="p-0 p-md-3 px-lg-4 ">
+                  <span class="badge">Publication</span>
+                    <h2 class="featured-pub-title" >Inclusive infrastructure for climate action</h2>
+                </div>
+            </div>
+    </div>
+  </a>
+      <!-- Item 3-->
+  <a href="pub-single.html" class="swiper-slide featured-pub-slide">
+    <div class="row g-0">
+      <div class="col-5 position-relative" style="">
+        <div class="ratio ratio-1x1">
+        <div class="pub-image">
+          <img src="assets/img/pub-cover.jpg" alt="Publication title">
+        </div>
+        </div>
+      </div>
+            <div class="col-7">
+                <div class="p-0 p-md-3 px-lg-4 ">
+                  <span class="badge">Publication</span>
+                    <h2 class="featured-pub-title" >Closing the funding gap for women-focused organizations responding to COVID-19 in Asia and the Pacific</h2>
+                </div>
+            </div>
+    </div>
+  </a>
 
-
-
-  </div>
-  <div class="col-lg-5 col-xl-4 offset-xl-1 ">
-     <p class="fs-sm ">Our library features over 1,000 key resources, including from PreventionWeb and UN Women, for building women's resilience to disasters and threats.</p>
-     <p class="pt-3 mb-0 fs-sm ">Powered by</p>
-     <button type="button" class="btn btn-dark btn-lg px-3 py-2 w-100 mb-3">
-       <span class="d-none">PreventionWeb</span>
-       <img src="assets/img/logo-pw_wh.svg" class="light-mode-img" width="225" alt="PreventionWeb">
-     </button>
-     
-     <div class="button-group">
-     <a href="#" class="btn btn-sm btn-outline-primary hover-arrow">
-      Recommend a resource
-    </a> 
     </div>
 
+  
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+  </div>
+  <div class="col-lg-3 col-xl-3">
+    
+    
+    <div class="row pt-4 pt-lg-0 border-lg-top">
+      <div class="col-12 col-sm-6 col-md-8 col-lg-12">
+        <p>Our library features over 1,000 key resources, including from PreventionWeb and UN Women, for building women's resilience to disasters and threats.</p>
+
+        <a href="#" class="btn hover-arrow">
+         Recommend a resource
+        </a> 
+
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-12">
+        <a href="https://preventionweb.net" target="_blank" class="btn btn-pwlink btn-lg">
+           <span>Powered by</span>
+           <img src="assets/img/logo-pw_wh.svg" alt="Prevention Web">
+         </a>
+      </div>
+    </div>
+    
+    
+    
+
+     
+
+     
+
+
   </div>
 </div>
 
 </div>
+
+</section>
+<section id="library-search-sec" class="">
 
 <div id="library-search" class="container">
 
@@ -409,7 +501,6 @@
                   <option value="Publications">Publications</option>
                   <option value="Tools">Tools</option>
                   <option value="Frameworks">Legal &amp; Policy Frameworks</option>
-
                 </select>
 
                 <button type="submit" class="btn btn-icon btn-primary btn-lg">
@@ -420,8 +511,7 @@
 
 
 
-<form class="mb-5">
-
+<form class="">
 
 
               <div class="input-group input-group-lg" style="margin-top:-1px;">
@@ -515,6 +605,27 @@
 
 </form>
 
+<div class="filter-tokens pt-3">
+
+    <button type="button" class="btn btn-token btn-danger">Clear filters</button>
+
+    <button type="button" class="btn btn-token">West and Central Africa</button>
+    <button type="button" class="btn btn-token">South-east Asia</button>
+    <button type="button" class="btn btn-token">West and Central Africa</button>
+    <button type="button" class="btn btn-token">South-east Asia</button>
+    <button type="button" class="btn btn-token">West and Central Africa</button>
+    <button type="button" class="btn btn-token">South-east Asia</button>
+    <button type="button" class="btn btn-token">West and Central Africa</button>
+    <button type="button" class="btn btn-token">South-east Asia</button>
+    <button type="button" class="btn btn-token">West and Central Africa</button>
+    <button type="button" class="btn btn-token">South-east Asia</button>
+    <button type="button" class="btn btn-token">West and Central Africa</button>
+    <button type="button" class="btn btn-token">South-east Asia</button>
+    <button type="button" class="btn btn-token">West and Central Africa</button>
+    <button type="button" class="btn btn-token">South-east Asia</button>
+                    
+</div>
+
 </div>
 </section>
 
@@ -525,7 +636,7 @@
 
 <!-- item -->
   <article class="card card-list card-list-pub overflow-hidden mb-4">
-  <a href="blog-single.html">
+  <a href="pub-single.html">
     <div class="row g-0">
       <div class="col-8 col-xl-9">
         <div class="card-body">

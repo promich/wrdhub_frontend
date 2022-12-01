@@ -4070,6 +4070,68 @@ textarea.form-control-lg {
 }
 
 /* Library */
+
+.library-top {
+    overflow: hidden !important;
+    background: radial-gradient(116.18% 118% at 50% 100%, rgba(232, 105, 46, 0.1) 0%, rgba(241, 165, 130, 0.05) 41.83%, rgba(252, 232, 224, 0.07) 82.52%);
+}
+
+.library-top .input-group .btn{
+  border-radius: 0;
+}
+
+/*@media (max-width: 991.98px) and (min-width: 768px)*/
+
+  #library-search .form-select.form-resources{
+  width: calc(14.455% - 1.625rem);
+}
+
+
+@media (max-width: 1199.98px){
+  #library-search .form-select.form-resources {
+      width: calc(14.1% - 1.625rem);
+  }
+  #library-search .form-select{
+    width: 33.3332%;
+  }
+  #library-search .form-select:not(:nth-child(-n+3)):not(:focus){
+    border-top: transparent;
+  }
+}
+
+
+
+@media (max-width: 991.98px){
+  #library-search .form-select{
+    width: 50%;
+  }
+  #library-search .form-select:not(:nth-child(-n+2)):not(:focus){
+    border-top: transparent;
+  }
+}
+@media (max-width: 767.98px){
+  
+  #library-search .form-select.form-resources{
+    margin-top: -1px;
+    width: calc(100% - 3.25rem);
+  }
+  
+  #library-search .form-select{
+    width: 100%;
+  }
+  #library-search .form-select:not(:first-of-type):not(:focus){
+    border-top: transparent;
+  }
+
+}
+
+
+
+
+
+
+
+
 #search-main{
   background-color: #ecf8fc;
 }

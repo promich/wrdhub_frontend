@@ -325,7 +325,7 @@
   </div>
 </div>
 
-<section class="">
+<section id="events-archive-top" class="">
   <div class="container">
     <!-- Breadcrumb - hidden on mobile -->
     <nav class="d-none d-md-block py-3 " aria-label="breadcrumb">
@@ -340,37 +340,38 @@
     </nav>  
 
 
-        <h1>Past events</h1>
+<h1>Past events</h1>
 
+  <div id="events-search">
 
-<!-- Inline form -->
-<form class="row row-cols-md-auto g-2 align-items-center">
-  <div class="col-12 col-md-4">
-    <input class="form-control" id="inline-form-input" type="text" placeholder="Search">
-  </div>
-  <div class="col-12 col-md-3">
-    <select class="form-select" id="inline-form-select">
-      <option selected>All events</option>
-      <option value="1">Conferences</option>
-      <option value="2">Forums</option>
-      <option value="3">Webinars</option>
-      <option value="4">Workshops</option>
-    </select>
-  </div>
-  <div class="col-12 col-md-3">
-    <select class="form-select" id="inline-form-select">
-      <option selected>All years</option>
-      <option value="1">2022</option>
-      <option value="2">2021</option>
-      <option value="3">2020</option>
-      <option value="4">2019</option>
-    </select>
-  </div>
-  <div class="col-12 col-md-2">
-    <button class="btn btn-primary w-100" type="submit">Submit</button>
-  </div>
-</form>
+    <div class="input-group input-group-lg ">
+                <input type="text" class="form-control w-50" placeholder="Search events...">
 
+                <select class="form-select form-event">
+                  <option value="" selected="" disabled="">All events</option>
+                  <option value="Publications">Conferences</option>
+                  <option value="Tools">Forums</option>
+                  <option value="Frameworks">Webinars</option>
+                  <option value="Frameworks">Workshops</option>
+                </select>
+
+                <select class="form-select" >
+                  <option selected>All years</option>
+                  <option value="1">2022</option>
+                  <option value="2">2021</option>
+                  <option value="3">2020</option>
+                  <option value="4">2019</option>
+                </select>
+
+                <button type="submit" class="btn btn-icon btn-primary btn-lg">
+                  <i class="bx bx-search"></i>
+                </button>
+
+            </div>
+
+  </div>
+
+</div>
 
 
 </section>
@@ -378,41 +379,7 @@
 
 
 
-<!--  
-<section class="events-nav bg-sky" style="padding-top: 0 !important;">
-  <div class="container">
 
-                <div class="d-md-flex align-items-center justify-content-end mt-3">
-					<a href="#" class="btn btn-sm btn-outline-primary hover-arrow">
-					Learn more
-            		</a>
-				</div>
-
-
-	  
-	  <button class="btn btn-outline-secondary" type="button">
-  <i class="bx bx-user fs-lg me-2"></i>
-  Upcoming events
-</button>
-
-       
-        <ul class="nav nav-tabs mb-4">
-          <li class="nav-item">
-            <a href="events.html" class="nav-link ">Upcoming events</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link active">Past events</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">International days</a>
-          </li>
-        </ul>
-
-
-  </div>
-</section>
-
--->
 
 
 

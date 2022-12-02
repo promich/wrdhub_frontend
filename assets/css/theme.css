@@ -18419,16 +18419,21 @@ color:#FF885F;
 .article-progress-wrapper .nav-link {
   padding: 0.535rem 0 0.535rem 0.75rem;
 }
+.article-progress-wrapper a {
+  font-size: 0.875rem;
+  text-decoration: none;
+}
 
 @media (min-width: 1200px) {
   .article-progress-wrapper .nav-link {
     padding: 0.535rem 0.666rem;
   }
+  .article-progress-wrapper a {
+    font-size: 1rem;
+  }
 }
 
-.article-progress-wrapper a {
-  text-decoration: none;
-}
+
 
 .article-progress-wrapper h5, .article-progress-wrapper .h5 {
   font-size: 1.125rem;

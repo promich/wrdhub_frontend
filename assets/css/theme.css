@@ -5432,50 +5432,30 @@ span.date,
 /* Events Archive */
 
 #events-archive-top{
-  
 }
-
 
 #events-search .input-group .btn{
   border-radius: 0;
 }
 
-/*@media (max-width: 991.98px) and (min-width: 768px)*/
-
-  #events-search .form-select.form-resources{
-    width: calc(14.455% - 1.625rem);
-  }
-
-
-
-
-
 @media (max-width: 991.98px){
-  
   #events-search .w-50{
     width: 100% !important;
   }
-  /*
-  #events-search .form-select{
-    width: 50%;
-  }*/
   #events-search .form-select:not(:focus){
     border-top: transparent;
   }
 }
 @media (max-width: 767.98px){
-  
   #events-search .btn-icon.btn-lg{
     width: 100%;
   }
-  
   #events-search .form-select{
     width: 100%;
   }
   #events-search .form-select:not(:first-of-type):not(:focus){
     border-top: transparent;
   }
-
 }
 
 

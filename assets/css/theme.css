@@ -5783,8 +5783,10 @@ span.date,
 
 .breadcrumb {
   display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   padding: 0 0;
+  padding: 0 0.25rem;
   margin-bottom: 1rem;
   font-size: 0.875rem;
   list-style: none;
@@ -16341,11 +16343,37 @@ a.badge {
     background-color: #b45224;
     border-color: #b45224;
     color: #fff;
+    text-decoration: none;
 }
 
 
 
 
+
+.btn-unwlink{
+  flex-direction: column !important;
+  align-items: unset;
+  align-items: flex-end;
+  width: 100%;
+  color: #fff;
+  background-color: #009ddc;
+  border-color: #009ddc;
+  box-shadow: unset;
+  padding: 0.66rem 1rem !important;
+  border-radius: 0;
+  margin-bottom: 1rem;
+}
+.btn-unwlink img{
+  padding: 0.5rem 1rem 0.75rem 0.75rem !important;
+}
+.btn-unwlink span:first-of-type{
+  align-self: self-start;
+}    
+.btn-unwlink:hover, .btn-unlink:focus, .btn-unlink:active, .btn-unlink.active, .btn-unlink.show {
+    background-color: #007aab;
+    border-color: #007aab;
+    color: #fff;
+}
 
 .btn-unlink{
   flex-direction: column !important;
@@ -16361,17 +16389,16 @@ a.badge {
   margin-bottom: 1rem;
 }
 .btn-unlink img{
-  padding: 0.5rem 1rem 0.75rem 0.75rem !important;
+  padding: 0.25rem 0.25rem 0.75rem 0.25rem !important;
 }
-.btn-unlink span:first-of-type{
-  align-self: self-start;
+.btn-unlink span{
+  align-self: self-end;
 }    
 .btn-unlink:hover, .btn-unlink:focus, .btn-unlink:active, .btn-unlink.active, .btn-unlink.show {
     background-color: #007aab;
     border-color: #007aab;
     color: #fff;
 }
-
 
 
 
@@ -17130,6 +17157,27 @@ text-align: right;
 .perspec-overlay p{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+/* Region page */
+
+/* Hazard page */
+
+.hazard-top-title {
+  position: absolute !important;
+  bottom: 0 !important;
+  display: inline-flex;
+  align-items: center !important;
+  
+}
+.hazard-top-title h1{
+  margin-bottom: 0 !important;
+}
+.hazard-top-title img{
+  background-color: #c51127;
+  height: 4rem;
+  width: 4rem;
+  margin-right: 1rem;
 }
 
 
@@ -19413,8 +19461,8 @@ img-comparison-slider:focus {
 .dark-mode .toast-header::after {
   background-color: rgba(255, 255, 255, 0.15);
 }
-.dark-mode .breadcrumb-item {
-  background-color: rgba(0, 0, 0, 0.15);
+.dark-mode .breadcrumb {
+  background-color: rgba(0, 0, 0, 0.125);
 }
 
 .dark-mode .breadcrumb-item {

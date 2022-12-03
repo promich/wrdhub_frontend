@@ -5395,9 +5395,33 @@ span.date,
 	      transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-
-
-
+.tags-row{
+  width: 100%;
+  display: inline-flex !important;
+  flex-wrap: wrap !important;
+  margin-bottom: 0.666rem !important;
+}
+.tags-row h6 {
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin: 0.25rem 0.5rem 0.25rem 0;
+}
+.tags-row .btn {
+  padding: 0.275rem 0.85rem;
+  font-size: 0.75rem;
+  border-color: #d4d7e5;
+  color: #431a3e !important;
+  margin: 0 0.25rem 0.333rem 0;
+}
+.tags-row .btn:hover, 
+.tags-row .btn:focus, 
+.tags-row .btn:active,
+.tags-row .btn.active, 
+.tags-row .btn.show {
+  border-color: #e5f5fb;
+  background-color: #e5f5fb;
+  color: #001118 !important;
+}
 
 
 .related-events{

@@ -3346,78 +3346,298 @@
     <script src="assets/js/theme.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script>
-$(".caribbean").hover(
-  function () {
-    $('.caribbean').addClass('reg-active');
-    $(".accordion-header.region").parent('.accordion-item').children('.caribbean-ac.collapse').collapse('show');
-  },
-  function () {
-    $('.caribbean').removeClass('reg-active');
-    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.caribbean-ac').collapse('hide');
-  }
-);
-$(".wc-africa").hover(
-  function () {
-    $('.wc-africa').addClass('reg-active');
-    $(".accordion-header.region").parent('.accordion-item').children('.wc-africa-ac.collapse').collapse('show');
-  },
-  function () {
-    $('.wc-africa').removeClass('reg-active');
-    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.wc-africa-ac').collapse('hide');
-  }
-);
-$(".se-asia").hover(
-  function () {
-    $('.se-asia').addClass('reg-active');
-    $(".accordion-header.region").parent('.accordion-item').children('.se-asia-ac.collapse').collapse('show');
-  },
-  function () {
-    $('.se-asia').removeClass('reg-active');
-    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.se-asia-ac').collapse('hide');
-  }
-);    
+         
+      $(document).on('click', '.navbar-toggler', function(){
+         $('#togglenav').toggleClass('menu-open')
+      }) 
+      $(document).on('click', '.offcanvas-backdrop', function(){
+         $('#togglenav').toggleClass('menu-open')
+      })	
+      
+    
+    $(".pacific").hover(
+        function () {
+          $('.pacific').addClass('reg-active');
+          $('.butpac').addClass('reg-active');
+        },
+        function () {
+          $('.pacific').removeClass('reg-active');
+          $('.butpac').removeClass('reg-active');
+        }
+      );
+      $(".butpac").hover(
+        function () {
+          $('.pacific').addClass('reg-active');
+          $('.butpac').addClass('reg-active');
+        },
+        function () {
+          $('.pacific').removeClass('reg-active');
+          $('.butpac').removeClass('reg-active');
+        }
+      );	
+    
+    $(".asia").hover(
+        function () {
+          $('.asia').addClass('reg-active');
+          $('.se-asia').addClass('reg-active');
+          $('.butasi').addClass('reg-active');
+        },
+        function () {
+          $('.asia').removeClass('reg-active');
+          $('.se-asia').removeClass('reg-active');
+          $('.butasi').removeClass('reg-active');
+        }
+      );
+      $(".butasi").hover(
+        function () {
+          $('.asia').addClass('reg-active');
+          $('.se-asia').addClass('reg-active');
+          $('.butasi').addClass('reg-active');
+        },
+        function () {
+          $('.asia').removeClass('reg-active');
+          $('.se-asia').removeClass('reg-active');
+          $('.butasi').removeClass('reg-active');
+        }
+      );	   
+    
+    $(".se-asia").hover(
+        function () {
+          $('.se-asia').addClass('reg-active');
+          $('.subasi').addClass('reg-active');
+        },
+        function () {
+          $('.se-asia').removeClass('reg-active');
+          $('.subasi').removeClass('reg-active');
+        }
+      );
+      $(".subasi").hover(
+        function () {
+          $('.se-asia').addClass('reg-active');
+          $('.subasi').addClass('reg-active');
+        },
+        function () {
+          $('.se-asia').removeClass('reg-active');
+          $('.subasi').removeClass('reg-active');
+        }
+      );
+    
+    $(".europe").hover(
+        function () {
+          $('.europe').addClass('reg-active');
+          $('.buteur').addClass('reg-active');
+        },
+        function () {
+          $('.europe').removeClass('reg-active');
+          $('.buteur').removeClass('reg-active');
+        }
+      );
+      $(".buteur").hover(
+        function () {
+          $('.europe').addClass('reg-active');
+          $('.buteur').addClass('reg-active');
+        },
+        function () {
+          $('.europe').removeClass('reg-active');
+          $('.buteur').removeClass('reg-active');
+        }
+      );
+    
+    $(".northern").hover(
+        function () {
+          $('.northern').addClass('reg-active');
+          $('.arab').addClass('reg-active');
+          $('.butnor').addClass('reg-active');
+        },
+        function () {
+          $('.northern').removeClass('reg-active');
+          $('.arab').removeClass('reg-active');
+          $('.butnor').removeClass('reg-active');
+        }
+      );
+      $(".butnor").hover(
+        function () {
+          $('.northern').addClass('reg-active');
+          $('.arab').addClass('reg-active');
+          $('.butnor').addClass('reg-active');
+        },
+        function () {
+          $('.northern').removeClass('reg-active');
+          $('.arab').removeClass('reg-active');
+          $('.butnor').removeClass('reg-active');
+        }
+      );
+    $(".arab").hover(
+        function () {
+          $('.arab').addClass('reg-active');
+          $('.subnor').addClass('reg-active');
+        },
+        function () {
+          $('.arab').removeClass('reg-active');
+          $('.subnor').removeClass('reg-active');
+        }
+      );
+      $(".subnor").hover(
+        function () {
+          $('.arab').addClass('reg-active');
+          $('.subnor').addClass('reg-active');
+        },
+        function () {
+          $('.arab').removeClass('reg-active');
+          $('.subnor').removeClass('reg-active');
+        }
+      );
+    
+    $(".eastern").hover(
+        function () {
+          $('.eastern').addClass('reg-active');
+          $('.buteas').addClass('reg-active');
+        },
+        function () {
+          $('.eastern').removeClass('reg-active');
+          $('.buteas').removeClass('reg-active');
+        }
+      );
+      $(".buteas").hover(
+        function () {
+          $('.eastern').addClass('reg-active');
+          $('.buteas').addClass('reg-active');
+        },
+        function () {
+          $('.eastern').removeClass('reg-active');
+          $('.buteas').removeClass('reg-active');
+        }
+      );	
+    
+    $(".wc-africa").hover(
+        function () {
+          $('.wc-africa').addClass('reg-active');
+          $('.butwes').addClass('reg-active');
+        },
+        function () {
+          $('.wc-africa').removeClass('reg-active');
+          $('.butwes').removeClass('reg-active');
+        }
+      );
+      $(".butwes").hover(
+        function () {
+          $('.wc-africa').addClass('reg-active');
+          $('.butwes').addClass('reg-active');
+        },
+        function () {
+          $('.wc-africa').removeClass('reg-active');
+          $('.butwes').removeClass('reg-active');
+        }
+      );
+          
+    $(".americas").hover(
+        function () {
+          $('.americas').addClass('reg-active');
+          $('.caribbean').addClass('reg-active');
+          $('.butame').addClass('reg-active');
+        },
+        function () {
+          $('.americas').removeClass('reg-active');
+          $('.caribbean').removeClass('reg-active');
+          $('.butame').removeClass('reg-active');
+        }
+      );
+      $(".butame").hover(
+        function () {
+          $('.americas').addClass('reg-active');
+          $('.caribbean').addClass('reg-active');
+          $('.butame').addClass('reg-active');
+        },
+        function () {
+          $('.americas').removeClass('reg-active');
+          $('.caribbean').removeClass('reg-active');
+          $('.butame').removeClass('reg-active');
+        }
+      );	    
+          
+    $(".caribbean").hover(
+      function () {
+        $('.caribbean').addClass('reg-active');
+        $('.subame').addClass('reg-active');
+      },
+      function () {
+        $('.caribbean').removeClass('reg-active');
+        $('.subame').removeClass('reg-active');
+      }
+    );
+    $(".subame").hover(
+      function () {
+        $('.caribbean').addClass('reg-active');
+        $('.subame').addClass('reg-active');
+      },
+      function () {
+        $('.caribbean').removeClass('reg-active');
+        $('.subame').removeClass('reg-active');
+      }
+    );
+    
+    $(".wc-africa").hover(
+      function () {
+        $('.wc-africa').addClass('reg-active');
+        $(".accordion-header.region").parent('.accordion-item').children('.wc-africa-ac.collapse').collapse('show');
+      },
+      function () {
+        $('.wc-africa').removeClass('reg-active');
+        $(".accordion-header").parent('.accordion-item').children('.collapse').not('.wc-africa-ac').collapse('hide');
+      }
+    );
+    $(".se-asia").hover(
+      function () {
+        $('.se-asia').addClass('reg-active');
+        $(".accordion-header.region").parent('.accordion-item').children('.se-asia-ac.collapse').collapse('show');
+      },
+      function () {
+        $('.se-asia').removeClass('reg-active');
+        $(".accordion-header").parent('.accordion-item').children('.collapse').not('.se-asia-ac').collapse('hide');
+      }
+    );    
+    $(".pacific").hover(
+      function () {
+        $('.pacific').addClass('reg-active');
+        $(".accordion-header.region").parent('.accordion-item').children('.pacific-ac.collapse').collapse('show');
+      },
+      function () {
+        $('.pacific').removeClass('reg-active');
+        $(".accordion-header").parent('.accordion-item').children('.collapse').not('.pacific-ac').collapse('hide');
+      }
+    );  
+    
+    $('.caribbean-ac').on('shown.bs.collapse', function () {
+        $('.caribbean').addClass('reg-active');
+    });
+    $('.caribbean-ac').on('hidden.bs.collapse', function () {
+       $(".caribbean").removeClass("reg-active")
+    });
+    
+    $('.wc-africa-ac').on('shown.bs.collapse', function () {
+        $('.wc-africa').addClass('reg-active');
+    });
+    $('.wc-africa-ac').on('hidden.bs.collapse', function () {
+       $(".wc-africa").removeClass("reg-active")
+    });
+    
+    $('.se-asia-ac').on('shown.bs.collapse', function () {
+        $('.se-asia').addClass('reg-active');
+    });
+    $('.se-asia-ac').on('hidden.bs.collapse', function () {
+       $(".se-asia").removeClass("reg-active")
+    });
+    
+    $('.pacific-ac').on('shown.bs.collapse', function () {
+        $('.pacific').addClass('reg-active');
+    });
+    $('.pacific-ac').on('hidden.bs.collapse', function () {
+       $(".pacific").removeClass("reg-active")
+    });
+    
+    
+    </script>
 
-$('.caribbean-ac').on('shown.bs.collapse', function () {
-    $('.caribbean').addClass('reg-active');
-});
-$('.caribbean-ac').on('hidden.bs.collapse', function () {
-   $(".caribbean").removeClass("reg-active")
-});
-
-$('.wc-africa-ac').on('shown.bs.collapse', function () {
-    $('.wc-africa').addClass('reg-active');
-});
-$('.wc-africa-ac').on('hidden.bs.collapse', function () {
-   $(".wc-africa").removeClass("reg-active")
-});
-
-$('.se-asia-ac').on('shown.bs.collapse', function () {
-    $('.se-asia').addClass('reg-active');
-});
-$('.se-asia-ac').on('hidden.bs.collapse', function () {
-   $(".se-asia").removeClass("reg-active")
-});
-
-
-
-
-
-      </script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-var typed = new Typed('.typed-element', {
-  strings: ["Securing gender-responsive systems", "Enabling women’s leadership","Supporting women’s voice and agency","Addressing underlying inequalities", "Sharing knowledge and tools"],
-  typeSpeed: 40,
-  backSpeed: 10,
-  loop: true,
-  fadeOut: true,
-  backDelay: 4000
-});
-
-
-
-
-  </script>
 
   </body>
 </html>

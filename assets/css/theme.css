@@ -14784,7 +14784,7 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
 }
 .dropdown-menu .active > .dropdown-item,
 .dropdown-menu .dropdown-item.active {
-  pointer-events: none;
+  /*pointer-events: none;*/
 }
 .dropdown-menu.w-100 {
   min-width: 100%;
@@ -16185,10 +16185,12 @@ a.badge {
   }
   .list-group-horizontal-lg > .list-group-item:first-child {
     border-bottom-left-radius: 0.5rem;
+    border-bottom-left-radius: 0;
     border-top-right-radius: 0;
   }
   .list-group-horizontal-lg > .list-group-item:last-child {
     border-top-right-radius: 0.5rem;
+    border-top-right-radius: 0;
     border-bottom-left-radius: 0;
   }
   .list-group-horizontal-lg > .list-group-item.active {
@@ -18855,7 +18857,8 @@ img-comparison-slider:focus {
   fill: #fff ;
 }
 .home-regions a circle{
-  fill: #73c9ec;
+  /*fill: #73c9ec;*/
+  fill: #a6ddf3;
 }
 .home-regions a.region{
   fill: transparent;
@@ -18865,7 +18868,70 @@ img-comparison-slider:focus {
   fill:  #006993;
 }
 
-/* circle, */
+#regions-map{}
+
+#regions-map #mapcontrol{
+  background-color: #008cc4;
+  padding-left: 0;
+  padding-right: 0;
+}
+#regions-map #mapcontrol .list-group-item {
+    position: relative;
+    padding: 0;
+    background-color: transparent;
+    border: 2px solid  #009ddc;
+    width: 100%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column;
+}
+#regions-map #mapcontrol .list-group-item a{
+    position: relative;
+    padding: 0.625rem 0.75rem;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    min-height: 4rem;
+    text-align: center !important;
+    text-decoration: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+#regions-map #mapcontrol .list-group-item a:hover,
+#regions-map #mapcontrol .list-group-item a:focus,
+#regions-map #mapcontrol .list-group-item a.reg-active{
+    background-color: #006993;
+}
+
+
+#regions-map #mapcontrol .list-group-item a#subreg-item {
+    min-height: auto;
+    padding: 0.625rem 0.75rem;
+    font-weight: 600;
+    font-size: 0.8725rem;
+    line-height: 1rem;
+    background-color: #0e83b6;
+    width: 100%;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+#regions-map #mapcontrol .list-group-item a#subreg-item:hover,
+ #regions-map #mapcontrol .list-group-item a#subreg-item:focus,
+ #regions-map #mapcontrol .list-group-item a#subreg-item.reg-active{
+  background-color: #006993;
+}
+
+
+/* circle, color: #004662; #e5f5fb*/
 
 .banaan {
   fill: #fff;

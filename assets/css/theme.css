@@ -17192,6 +17192,54 @@ text-align: right;
   line-height: 1rem;
 }
 
+/* Organizations page */
+
+
+#directory-orgs a.card {
+  color: var(--bs-body-color);
+  border: 0 !important;
+  height: 100% !important;
+  text-decoration: none !important;
+  margin-bottom: 2rem;
+  padding-top: calc(var(--bs-gutter-x) * 0.5);
+  padding-bottom: calc(var(--bs-gutter-x) * 0.5);
+  }
+
+#directory-orgs a.card:hover  {
+  /*background: radial-gradient(#fce8e0 0, transparent 70% );
+  box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(0 157 220 / 7%), 0 0.125rem 0.4rem -0.0625rem rgb(0 157 220 / 4%);*/
+  background-color: rgba(0,157,220,0.075);
+  background-color: transparent;
+}
+
+#directory-orgs .card picture{
+  display: flex !important;
+  justify-content: center !important;
+}
+
+#directory-orgs .card img {
+  margin-bottom: 0;
+  min-width: 100px;
+  max-height: 230px;
+  transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+#directory-orgs a.card:hover img {
+  transform: scale(1.085);
+}
+
+#directory-orgs h3 {
+  margin-bottom: 0.5rem;
+  line-height: 1.125;
+}
+
+#directory-orgs a.card:hover h3 {
+  color:#009ddc;
+}    
+
+
+
+
+
 /* Region page */
 
 /* Hazards page */

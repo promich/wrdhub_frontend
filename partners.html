@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Women's Resilience to Disasters Knowledge Hub </title>
+
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Women's Resilience to Disasters Knowledge Hub. The Women's Resilience to Disasters programme proposes a comprehensive package to strengthen women's resilience to disasters and threats, including climate change and COVID-19.  The WRD programme aims to render the lives and livelihoods of women and girls resilient to disasters and threats, contributing to sustainable, secure, and thriving communities. The objective is for WRD countries to adopt gender-responsive decision-making and governance systems, and enable targeted action to build the resilience of women and girls.">
+    <meta name="keywords" content="disasters, resilience, women, knowledge, local knowledge, UN Women, united nations">
+    <meta name="author" content="UN Women">
+
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" media="all" href="https://use.typekit.net/qtp3bsv.css">
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #131022;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== undefined && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+   
+
+    
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <header class="header navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            <img src="assets/img/wrd_logo.svg" alt="Women's Resilience to Disasters Knowledge Hub graphic">
+            <h1 class="d-none">Women's Resilience to Disasters Knowledge Hub</h1>
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <!--<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>-->
+
+            
+              
+              
+              
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                <li class="nav-item dropdown">
+                  <a href="about-v1.html" class="nav-link active dropdown-toggle" data-toggle="dropdown">About</a>
+                  <a class="nav-link collapsed" href="#menu-1" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-1"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-1" data-bs-parent="#navbarNav">
+                      <li><a href="account-details.html" class="dropdown-item">Women’s Resilience to Disasters Programme</a></li>
+                      <li><a href="partners.html" class="dropdown-item active">Partners</a></li>
+                      <li><a href="donors.html" class="dropdown-item">Donors</a></li>
+                  </ul>               
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="about-v1.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Explore</a>
+                  <a class="nav-link collapsed" href="#menu-2" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-2"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-2" data-bs-parent="#navbarNav">
+                      <li><a href="account-notifications.html" class="dropdown-item">Insights</a></li>
+                      <li><a href="account-details.html" class="dropdown-item">Women’s perspectives</a></li>
+                      <li><a href="account-messages.html" class="dropdown-item">Case Studies</a></li>
+                      <li><a href="regions.html" class="dropdown-item">Regions</a></li>
+                      <li><a href="hazards.html" class="dropdown-item">Hazards</a></li>
+                      
+                  </ul>               
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="about-v1.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Practice</a>
+                  <a class="nav-link collapsed" href="#menu-3" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-3"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-3" data-bs-parent="#navbarNav">
+                    
+                    <li><a href="account-details.html" class="dropdown-item">Topics</a></li>
+                    <li><a href="library.html" class="dropdown-item">Library</a></li>
+                    <li><a href="library.html" class="dropdown-item">Tools</a></li>
+                    <li><a href="tracker.html" class="dropdown-item">Policy Tracker</a></li>  
+
+                  </ul>               
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="about-v1.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Engage</a>
+                  <a class="nav-link collapsed" href="#menu-4" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-4"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-4" data-bs-parent="#navbarNav">
+                      <li><a href="account-details.html" class="dropdown-item">Community of Practice</a></li>
+                      <li><a href="account-security.html" class="dropdown-item">Expert Register</a></li>
+                      <li><a href="events.html" class="dropdown-item">Events</a></li>
+                      <li><a href="account-messages.html" class="dropdown-item">Recommended Platforms</a></li>
+                  </ul>               
+                </li>
+                <li class="nav-item">
+                  <a href="docs/getting-started.html" class="nav-link"><span class="d-none d-lg-block">FR</span><span class="d-md-block d-lg-none">En français</span></a>
+                </li>
+
+              </ul>
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="offcanvas-footer border-top">
+
+
+
+
+ <form>
+  <label for="mobile-search" class="form-label">Search our website</label>
+  <div class="grouped-inputs p-1 rounded-pill border">
+
+  <div class="input-group">
+    <input type="text" id="mobile-search" class="form-control rounded-start" aria-label="Text input with button" placeholder="Search" >
+    <button type="submit" class="btn btn-primary btn-icon rounded-circle"><i
+      class="bx bx-search fs-lg "></i></button>
+  </div>
+</div>
+</form>
+ 
+              <div class="d-flex mt-4">
+
+                <div class="">
+                  <a href="#" class="btn btn-icon btn-primary btn-linkedin rounded-circle me-2">
+                    <i class="bx bxl-linkedin"></i>
+                  </a>
+                </div>
+                <div class="">
+                  <a href="#" class="btn btn-icon btn-primary btn-twitter rounded-circle me-2">
+                    <i class="bx bxl-twitter"></i>
+                  </a>
+                </div>
+                <div class="flex-grow-1 ">
+                  <a href="#" class="btn btn-primary w-100 ">
+                    <i class="bx bxs-envelope fs-4 lh-1 me-1"></i>
+                    &nbsp;Get in touch
+                  </a>
+                </div>
+              </div>
+
+
+ 
+ 
+            </div>      
+          </div>
+
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+          	<!-- new hamburger-->
+			
+			<div id="togglenav" class="burger-wrapper">
+			  <div class="hamburger"></div>
+			</div>
+			 <!-- 
+          end new hamburger-->  
+
+          </button>
+          
+          
+          <!--
+          <button class="btn btn-outline-primary btn-icon rounded-circle d-none d-lg-inline-flex" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAccess"><i class="bx bx-body "></i></button>
+-->
+          <button class="btn btn-outline-primary btn-icon rounded-circle d-none d-lg-inline-flex ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch"><i class="bx bx-search "></i></button>
+
+        </div>
+
+
+
+
+
+
+
+
+      </header>
+
+<!-- Offcanvas Search-->
+<div class="offcanvas offcanvas-top" id="offcanvasSearch" tabindex="-1">
+  <div class="offcanvas-header">
+	  <div class="container">
+      <h5 class="offcanvas-title"> </h5>
+      <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+	  </div>
+  </div>
+  <div class="offcanvas-body d-flex align-items-center ">
+
+    <div class="container ">
+      <div class="row d-flex justify-content-center">
+        <div class="col-xl-10 col-lg-12 pb-5">
+          <form>
+            <label for="top-search" class="form-label">Search our website</label>
+            <div class="input-group">
+              <input type="text" id="top-search" class="form-control form-control-lg rounded-start ps-5" placeholder="What are you looking for?" >
+              <i class="bx bx-search fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+              <button type="submit" class="btn btn-lg btn-primary">Search</button>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Offcanvas accessibility -->
+<div class="offcanvas offcanvas-start" id="offcanvasAccess" tabindex="-1">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title">Accessibility menu</h5>
+    <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.</p>
+    <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+      <input type="checkbox" class="form-check-input" id="theme-mode">
+      <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+      <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+    </div>
+  </div>
+</div>
+
+
+
+
+<section class="">
+  <div class="container">
+    <!-- Breadcrumb - hidden on mobile -->
+    <nav class="py-3 " aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item" aria-current="page"><a href="about.html">About</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Partners</li>
+      </ol>
+    </nav>  
+<!-- if page description not empty-->
+<!--
+    <div class="row">
+      <div class="col-lg-4">
+        <h1 class="py-3 py-md-0">Donors</h1>
+      </div>
+      <div class="col-lg-8">
+        <p class="lead">
+          The Australian government has funded development of the WRD Knowledge Hub, and together with other donors, is providing support for the development of new knowledge products and tools to increase women's leadership and gender-responsiveness in disaster and climate risk reduction, and resilience.
+        </p>
+      </div>
+    </div>
+-->
+  <div class="row">
+  <div class="col-lg-4">
+    <h1 class="py-3 py-md-0">Partners</h1>
+  </div>
+  
+</div>
+
+
+  </div>
+</section>
+
+<section id="directory-orgs" class="">
+<div class="container">
+<h2>Global Partners</h2>
+<!-- Item -->
+<a href="#" target="_blank" class="card" aria-label="Visit the website of this organization">
+  <div class="row">
+    <div class="col-sm-4 col-md-4">
+      <div class="card-body ">
+          <picture>
+            <img src="assets/img/logo_sida.png" alt="Org name">
+          </picture>
+      </div>
+    </div> 
+    <div class="col-sm-8 col-md-8">
+      <h3 class="lead">Sida – the Swedish International Development Cooperation Agency</h3>
+      <p>Sida is a government agency. SIDA’s mission is part of the national policy for global development and SIDA strives to reduce world poverty. Sida’s activities are funded through Swedish tax revenue. SIDA strives to reduce world poverty by allocating resources and knowledge with the goal of making a difference for people in Africa, Asia, Europe and Latin America. To achieve this, SIDA collaborates with actors from civil society and universities as well as the public and private sector.</p>
+    </div>
+  </div>
+</a>
+
+<!-- Item -->
+<a href="#" target="_blank" class="card" aria-label="Visit the website of this organization">
+  <div class="row">
+    <div class="col-sm-4 col-md-4">
+      <div class="card-body ">
+          <picture>
+            <img src="assets/img/org-japan.png" alt="Org name">
+          </picture>
+      </div>
+    </div> 
+    <div class="col-sm-8 col-md-8">
+      <h3 class="lead">Government of Japan</h3>
+      <p>The Government of Japan has generously contributed to the sister Women’s Resilience to Disasters Programme 'Strengthening Resilience of Women and Girls in the Lake Chad Region,'  which has contributed knowledge and learning to the WRD Knowledge Hub. The programme responds to the urgent and protracted needs of women and girls facing crises and disasters in the Lake Chad Basin.</p>
+    </div>
+  </div>
+</a>
+
+<!-- Item -->
+<a href="#" target="_blank" class="card" aria-label="Visit the website of this organization">
+  <div class="row">
+    <div class="col-sm-4 col-md-4">
+      <div class="card-body ">
+          <picture>
+            <img src="assets/img/logo-australia.png" alt="Org name">
+          </picture>
+      </div>
+    </div> 
+    <div class="col-sm-8 col-md-8">
+      <h3 class="lead">Australian Government - Department of Foreign Affairs and Trade (DFAT)</h3>
+      <p>The Australian Development Program integrates disaster risk reduction and climate change adaptation throughout its policies and programmes. Australia supports partner countries in the Indo-Pacific region to harness the leadership, energy and innovations of diverse groups as essential players in achieving resilient societies. Australia funds the Women's Resilience to Disasters Programme in the Pacific region and is the primary donor for the global WRD Knowledge Hub.</p>
+    </div>
+  </div>
+</a>
+
+
+
+
+</div>
+</section>
+
+<section id="directory-orgs" class="">
+<div class="container">
+<h2>Regional Partners</h2>
+<!-- Item -->
+<a href="#" target="_blank" class="card" aria-label="Visit the website of this organization">
+  <div class="row">
+    <div class="col-sm-4 col-md-4">
+      <div class="card-body ">
+          <picture>
+            <img src="assets/img/logo_sida.png" alt="Org name">
+          </picture>
+      </div>
+    </div> 
+    <div class="col-sm-8 col-md-8">
+      <h3 class="lead">Sida – the Swedish International Development Cooperation Agency</h3>
+      <p>Sida is a government agency. SIDA’s mission is part of the national policy for global development and SIDA strives to reduce world poverty. Sida’s activities are funded through Swedish tax revenue. SIDA strives to reduce world poverty by allocating resources and knowledge with the goal of making a difference for people in Africa, Asia, Europe and Latin America. To achieve this, SIDA collaborates with actors from civil society and universities as well as the public and private sector.</p>
+    </div>
+  </div>
+</a>
+
+<!-- Item -->
+<a href="#" target="_blank" class="card" aria-label="Visit the website of this organization">
+  <div class="row">
+    <div class="col-sm-4 col-md-4">
+      <div class="card-body ">
+          <picture>
+            <img src="assets/img/org-japan.png" alt="Org name">
+          </picture>
+      </div>
+    </div> 
+    <div class="col-sm-8 col-md-8">
+      <h3 class="lead">Government of Japan</h3>
+      <p>The Government of Japan has generously contributed to the sister Women’s Resilience to Disasters Programme 'Strengthening Resilience of Women and Girls in the Lake Chad Region,'  which has contributed knowledge and learning to the WRD Knowledge Hub. The programme responds to the urgent and protracted needs of women and girls facing crises and disasters in the Lake Chad Basin.</p>
+    </div>
+  </div>
+</a>
+
+<!-- Item -->
+<a href="#" target="_blank" class="card" aria-label="Visit the website of this organization">
+  <div class="row">
+    <div class="col-sm-4 col-md-4">
+      <div class="card-body ">
+          <picture>
+            <img src="assets/img/logo-australia.png" alt="Org name">
+          </picture>
+      </div>
+    </div> 
+    <div class="col-sm-8 col-md-8">
+      <h3 class="lead">Australian Government - Department of Foreign Affairs and Trade (DFAT)</h3>
+      <p>The Australian Development Program integrates disaster risk reduction and climate change adaptation throughout its policies and programmes. Australia supports partner countries in the Indo-Pacific region to harness the leadership, energy and innovations of diverse groups as essential players in achieving resilient societies. Australia funds the Women's Resilience to Disasters Programme in the Pacific region and is the primary donor for the global WRD Knowledge Hub.</p>
+    </div>
+  </div>
+</a>
+
+
+
+
+</div>
+</section>
+
+
+<!-- if org-directory page has a bottom button-->
+<section class="pt-0">
+  <div class="container">
+  <div class="d-flex justify-content-end">
+    <a href="platforms.html" class="btn btn-outline-primary hover-arrow">
+        View WRD recommended platforms
+    </a>
+  </div>
+  </div>
+</section>
+
+ 
+    </main>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer text-light pt-5 pb-4 pb-lg-5">
+
+      <div class="container ">
+        <div class="row d-flex flex-column flex-sm-row align-items-start justify-content-between position-relative">
+          <div class="col-auto">
+            <!--<h5 class="h5">Navigation</h5>-->
+            <div id="useful-links" >
+              <ul class="nav pb-lg-1  d-flex flex-column flex-sm-row">
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Explore</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Practice</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Engage</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Contact</a></li>
+              </ul>
+            </div>
+
+
+            <h4 class="h5">Connect with us</h4>
+            <div class="d-flex mb-4 mb-sm-0">
+              <a href="#" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-2">
+                <i class="bx bxl-linkedin"></i>
+              </a>
+              <a href="#" class="btn btn-icon btn-secondary btn-twitter rounded-circle me-2">
+                <i class="bx bxl-twitter"></i>
+              </a>
+              <a href="#" class="btn btn-icon btn-secondary btn-youtube rounded-circle me-2">
+                <i class="bx bxl-youtube"></i>
+              </a><!--
+              <a href="#" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-2">
+                <i class="bx bxl-facebook"></i>
+              </a>-->
+            </div>
+
+
+          </div>
+
+
+          <div class="col-auto d-none d-md-block">
+          <div class="footer-brand p-0 me-0 mb-3">
+            <img src="assets/img/wrdp_logo_wh.svg" alt="Women's Resilience to Disasters Programme">
+          </div>
+        </div>
+
+        </div>
+
+
+
+        <div class="row d-flex flex-column flex-sm-row align-items-start align-items-sm-end justify-content-between position-relative pb-5">
+
+          <div class="col-md-8 col-lg-4 ">
+
+
+
+
+            <form class="needs-validation" novalidate>
+              <label for="subscr-email" class="form-label">Subscribe to our newsletter</label>
+              <div class="input-group">
+                <input type="email" id="subscr-email" class="form-control rounded-start ps-5" placeholder="Your email" required>
+                <i class="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+                <div class="invalid-tooltip position-absolute top-100 start-0">Please provide a valid email address.</div>
+                <button type="submit" class="btn btn-footer">Subscribe</button>
+              </div>
+            </form>
+
+
+            <h5 class="h5">Contact us</h5>
+
+            <a href="mailto:wrd@unwomen.org" class="nav-link fs-xl fw-semibold p-0">
+              wrd@unwomen.org
+              <i class="bx bx-right-arrow-circle fs-4 ms-2"></i>
+            </a>
+
+          </div>
+
+
+
+          <div class="col-auto ">
+          <h5 class="h5">Supported by</h5>
+          <div class="d-flex supporters flex-column flex-md-row mt-4">
+          <a href="" target="_blank" class="card-hover-grow p-0 ps-2 ps-sm-2 ps-md-0 me-0 mb-3 mb-lg-0">
+            <img src="assets/img/logo-australian_wh.svg"  alt="">
+          </a>
+          <a href="" target="_blank" class="card-hover-grow ps-0 ps-sm-2 mb-3 mb-lg-0">
+            <img src="assets/img/logo-pw_wh.svg" class="ps-0 ps-md-3 py-2" alt="Prevention Web">
+          </a>
+          <a href="" target="_blank" class="card-hover-grow ps-2 ps-md-4 mb-3 mb-lg-0">
+            <img src="assets/img/logo-unwomen_wh.svg" class="py-2" alt="UN Women">
+          </a>
+        </div>
+        </div>
+        </div>
+
+
+
+        <p class="fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+         Copyright &copy; 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">UN Women</a> | 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">Information Security</a> | 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">Privacy Policy</a> | 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">Terms of Use</a>
+        </p>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+  
+
+    <!-- Main Theme Script <script src="assets/js/theme.min.js"></script>-->
+    <script src="assets/js/theme.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+	    
+	   
+	$(document).on('click', '.navbar-toggler', function(){
+	   $('#togglenav').toggleClass('menu-open')
+	}) 
+	$(document).on('click', '.offcanvas-backdrop', function(){
+	   $('#togglenav').toggleClass('menu-open')
+	})	
+	
+	   
+	    
+	    
+	    
+$(".caribbean").hover(
+  function () {
+    $('.caribbean').addClass('reg-active');
+    $(".accordion-header.region").parent('.accordion-item').children('.caribbean-ac.collapse').collapse('show');
+  },
+  function () {
+    $('.caribbean').removeClass('reg-active');
+    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.caribbean-ac').collapse('hide');
+  }
+);
+$(".wc-africa").hover(
+  function () {
+    $('.wc-africa').addClass('reg-active');
+    $(".accordion-header.region").parent('.accordion-item').children('.wc-africa-ac.collapse').collapse('show');
+  },
+  function () {
+    $('.wc-africa').removeClass('reg-active');
+    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.wc-africa-ac').collapse('hide');
+  }
+);
+$(".se-asia").hover(
+  function () {
+    $('.se-asia').addClass('reg-active');
+    $(".accordion-header.region").parent('.accordion-item').children('.se-asia-ac.collapse').collapse('show');
+  },
+  function () {
+    $('.se-asia').removeClass('reg-active');
+    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.se-asia-ac').collapse('hide');
+  }
+);    
+$(".pacific").hover(
+  function () {
+    $('.pacific').addClass('reg-active');
+    $(".accordion-header.region").parent('.accordion-item').children('.pacific-ac.collapse').collapse('show');
+  },
+  function () {
+    $('.pacific').removeClass('reg-active');
+    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.pacific-ac').collapse('hide');
+  }
+);  
+
+$('.caribbean-ac').on('shown.bs.collapse', function () {
+    $('.caribbean').addClass('reg-active');
+});
+$('.caribbean-ac').on('hidden.bs.collapse', function () {
+   $(".caribbean").removeClass("reg-active")
+});
+
+$('.wc-africa-ac').on('shown.bs.collapse', function () {
+    $('.wc-africa').addClass('reg-active');
+});
+$('.wc-africa-ac').on('hidden.bs.collapse', function () {
+   $(".wc-africa").removeClass("reg-active")
+});
+
+$('.se-asia-ac').on('shown.bs.collapse', function () {
+    $('.se-asia').addClass('reg-active');
+});
+$('.se-asia-ac').on('hidden.bs.collapse', function () {
+   $(".se-asia").removeClass("reg-active")
+});
+
+$('.pacific-ac').on('shown.bs.collapse', function () {
+    $('.pacific').addClass('reg-active');
+});
+$('.pacific-ac').on('hidden.bs.collapse', function () {
+   $(".pacific").removeClass("reg-active")
+});
+
+
+
+      </script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+var typed = new Typed('.typed-element', {
+  strings: ["Securing gender-responsive systems", "Enabling women’s leadership","Supporting women’s voice and agency","Addressing underlying inequalities", "Sharing knowledge and tools"],
+  typeSpeed: 40,
+  backSpeed: 10,
+  loop: true,
+  fadeOut: true,
+  backDelay: 4000
+});
+
+
+
+
+  </script>
+
+  </body>
+</html>

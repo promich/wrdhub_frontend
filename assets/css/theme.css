@@ -17200,7 +17200,7 @@ text-align: right;
   border: 0 !important;
   height: 100% !important;
   text-decoration: none !important;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   padding-top: calc(var(--bs-gutter-x) * 0.5);
   padding-bottom: calc(var(--bs-gutter-x) * 0.5);
   }

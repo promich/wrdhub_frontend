@@ -5527,7 +5527,11 @@ transition: background-color 0.2s ease-in-out;
 }
 .card-latest a:hover,
 .card-event a:hover{
-  background-color: #ecf8fc;
+  background-color: #d9f0fa; /*15%*/
+  background-color: #e5f5fb; /*10%*/
+  background-color: #f2fafd; /*5%*/
+  
+  
 }
 
 .card-latest a:hover .badge,
@@ -5560,6 +5564,8 @@ section.event-top-featured{
 
 .event-top-featured a:hover .bg-sky{
   background-color: #bfe6f6;
+  background-color: #e5f5fb;/*10%*/
+  background-color: #d9f0fa;/*15%*/
 }
 
 
@@ -9198,6 +9204,7 @@ span.date,
 
 .bg-sky{
   background-color: #e5f5fb; /*blue 10% */
+
 }
 
 .bg-gradient {
@@ -18114,6 +18121,14 @@ cursor: pointer;
     font-size: 1.125rem;
   }
 }
+
+/*Topic page*/
+#subtopic-zone{
+  padding: 3rem 0;
+  
+}
+
+
 
 
 .from-top, .from-bottom,

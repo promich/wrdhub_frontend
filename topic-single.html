@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Women's Resilience to Disasters Knowledge Hub </title>
+
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Women's Resilience to Disasters Knowledge Hub. The Women's Resilience to Disasters programme proposes a comprehensive package to strengthen women's resilience to disasters and threats, including climate change and COVID-19.  The WRD programme aims to render the lives and livelihoods of women and girls resilient to disasters and threats, contributing to sustainable, secure, and thriving communities. The objective is for WRD countries to adopt gender-responsive decision-making and governance systems, and enable targeted action to build the resilience of women and girls.">
+    <meta name="keywords" content="disasters, resilience, women, knowledge, local knowledge, UN Women, united nations">
+    <meta name="author" content="UN Women">
+
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" media="all" href="https://use.typekit.net/qtp3bsv.css">
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery.js/dist/css/lightgallery.min.css"/>
+
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #131022;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== undefined && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body class="" data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="50">
+
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <header class="header navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            <img src="assets/img/wrd_logo.svg" alt="Women's Resilience to Disasters Knowledge Hub graphic">
+            <h1 class="d-none">Women's Resilience to Disasters Knowledge Hub</h1>
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                <li class="nav-item dropdown">
+                  <a href="about-v1.html" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
+                  <a class="nav-link collapsed" href="#menu-1" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-1"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-1" data-bs-parent="#navbarNav">
+                      <li><a href="account-details.html" class="dropdown-item">Women’s Resilience to Disasters Programme</a></li>
+                      <li><a href="account-security.html" class="dropdown-item">Partners</a></li>
+                      <li><a href="account-notifications.html" class="dropdown-item">Donors</a></li>
+                  </ul>               
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="about-v1.html" class="nav-link active dropdown-toggle" data-toggle="dropdown">Explore</a>
+                  <a class="nav-link collapsed" href="#menu-2" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-2"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-2" data-bs-parent="#navbarNav">
+                      <li><a href="insights.html" class="dropdown-item">Women’s perspectives</a></li>
+                      
+                      <li><a href="insights.html" class="dropdown-item">Insights</a></li>
+                      
+                      <li><a href="regions.html" class="dropdown-item active">Regions</a></li>
+                      <li><a href="hazards.html" class="dropdown-item">Hazards</a></li>
+                  </ul>               
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="about-v1.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Practice</a>
+                  <a class="nav-link collapsed" href="#menu-3" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-3"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-3" data-bs-parent="#navbarNav">
+                    
+                    <li><a href="account-details.html" class="dropdown-item">Topics</a></li>
+                    <li><a href="library.html" class="dropdown-item">Library</a></li>
+                      <li><a href="account-security.html" class="dropdown-item">Toolbox</a></li>
+                      <li><a href="account-details.html" class="dropdown-item">Policy Tracker</a></li>  
+
+                  </ul>               
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="about-v1.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Engage</a>
+                  <a class="nav-link collapsed" href="#menu-4" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-4"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-4" data-bs-parent="#navbarNav">
+                      <li><a href="account-details.html" class="dropdown-item">Community of Practice</a></li>
+                      <li><a href="account-security.html" class="dropdown-item">Expert Roster</a></li>
+                      <li><a href="account-notifications.html" class="dropdown-item">Events</a></li>
+                      <li><a href="account-messages.html" class="dropdown-item">Recommended Platforms</a></li>
+                  </ul>               
+                </li>
+                <li class="nav-item">
+                  <a href="docs/getting-started.html" class="nav-link"><span class="d-none d-lg-block">FR</span><span class="d-md-block d-lg-none">En français</span></a>
+                </li>
+
+              </ul>
+
+
+
+            </div>
+            <div class="offcanvas-footer border-top">
+
+
+
+
+ <form>
+  <label for="mobile-search" class="form-label">Search our website</label>
+  <div class="grouped-inputs p-1 rounded-pill border">
+
+  <div class="input-group">
+    <input type="text" id="mobile-search" class="form-control rounded-start" aria-label="Text input with button" placeholder="Search" >
+    <button type="submit" class="btn btn-primary btn-icon rounded-circle"><i
+      class="bx bx-search fs-lg "></i></button>
+  </div>
+</div>
+</form>
+ 
+              <div class="d-flex mt-4">
+
+                <div class="">
+                  <a href="#" class="btn btn-icon btn-primary btn-linkedin rounded-circle me-2">
+                    <i class="bx bxl-linkedin"></i>
+                  </a>
+                </div>
+                <div class="">
+                  <a href="#" class="btn btn-icon btn-primary btn-twitter rounded-circle me-2">
+                    <i class="bx bxl-twitter"></i>
+                  </a>
+                </div>
+                <div class="flex-grow-1 ">
+                  <a href="#" class="btn btn-primary w-100 ">
+                    <i class="bx bxs-envelope fs-4 lh-1 me-1"></i>
+                    &nbsp;Get in touch
+                  </a>
+                </div>
+              </div>
+
+ 
+            </div>      
+          </div>
+
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--
+          <button class="btn btn-outline-primary btn-icon rounded-circle d-none d-lg-inline-flex" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAccess"><i class="bx bx-body "></i></button>
+-->
+          <button class="btn btn-outline-primary btn-icon rounded-circle d-none d-lg-inline-flex ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch"><i class="bx bx-search "></i></button>
+
+        </div>
+
+
+
+      </header>
+
+<!-- Offcanvas Search-->
+<div class="offcanvas offcanvas-top" id="offcanvasSearch" tabindex="-1">
+  <div class="offcanvas-header container">
+      <h5 class="offcanvas-title"> </h5>
+      <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body d-flex align-items-center ">
+
+    <div class="container ">
+      <div class="row d-flex justify-content-center">
+        <div class="col-xl-10 col-lg-12 pb-5">
+          <form>
+            <label for="top-search" class="form-label">Search our website</label>
+            <div class="input-group">
+              <input type="text" id="top-search" class="form-control form-control-lg rounded-start ps-5" placeholder="What are you looking for?" >
+              <i class="bx bx-search fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+              <button type="submit" class="btn btn-lg btn-primary">Search</button>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Offcanvas accessibility -->
+<div class="offcanvas offcanvas-start" id="offcanvasAccess" tabindex="-1">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title">Accessibility menu</h5>
+    <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.</p>
+    <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+      <input type="checkbox" class="form-check-input" id="theme-mode">
+      <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+      <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+    </div>
+  </div>
+</div>
+
+<section class="topic-top">
+  <div class="container"> 
+    <!-- Breadcrumb - hidden on mobile -->
+    <nav class="py-3" aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="practice.html">Practice</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="framework.html">WRD Framework</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Risk</li>
+      </ol>
+    </nav>
+
+    <div class="row">
+      <div class="col-12 clearfix">
+        <h1 class="py-3 py-md-0 display-3 mb-0">Risk</h1>
+        <h2 class="">Understanding gendered risks, interests & needs</h1>
+
+
+    <!-- Sidebar  -->
+        <div class="col-xl-5 col-lg-4 col-md-12 col-12 float-lg-end ">
+            <aside id="region-side" class="sticky-top  ms-md-0 ms-lg-4 mb-5" style="top: 180px !important;">        
+                
+        
+          <!-- If photo AND video: Gallery grid with gutters -->
+            <div class="gallery row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-1 g-3" data-video="true">
+                
+                  
+                  <div class="col">
+                    <a href="assets/img/topic-risk.jpg" class="gallery-item " data-sub-html='<h6 class="fs-sm text-light">Photo: UN Women/Mohammad Rakibul Hasan</h6>'>
+                      <img src="assets/img/topic-risk.jpg" alt="Photo of a women holding a child in flood waters.">
+                      <div class="gallery-item-caption fs-sm">Photo: UN Women/Mohammad Rakibul Hasan</div>
+                    </a>
+                  </div>
+                
+                  
+                  <div class="col">
+                    <a href="https://www.youtube.com/watch?v=16yp1HDxZvI&t=5s" class="gallery-item video-item " data-sub-html='<h6 class="fs-sm text-light">How can we support womens leadership in disaster risk reduction?</h6>'>
+                      <img src="assets/img/thumbnail_yt.jpg" alt="Gallery thumbnail">
+                      <div class="gallery-item-caption fs-sm ">How can we support women's leadership in disaster risk reduction?</div>
+                    </a>
+                  </div>
+                
+                  
+                </div>
+          <!-- END If photo AND video -->
+        </aside>
+          </div>
+
+
+        
+      <p class="lead">Underlying risk factors, such as gender inequality, cause differential and disproportionate disaster and climate risks and impacts for women and girls. Disasters can magnify the inequalities and hardships marginalised groups are already facing, fuelling a vicious cycle, with reduced resilience for when the next crisis strikes. 
+      </p>
+      <p>
+      Discrimination, unequal access to opportunities and resources, and socially constructed differences can impact the ability of women and girls to effectively prevent, prepare, survive, and recover from disasters.
+      </p>
+      <p>
+      Gender and intersectional data collection and analysis should inform key processes including risk assessments and needs assessments (e.g. post-disaster needs assessments) to help understanding existing inequalities and differential needs based on biology and gender roles.
+      </p>        
+        
+        
+        
+      </div>         
+    </div>
+
+<div id="subtopic-zone">
+  <h3 class="h6">Related WRD topics</h3>
+  <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-2 g-lg-3">
+    <div class="col ">
+      <button href="topic-single.html"  type="button" class="btn btn-outline-primary btn-lg w-100 hover-arrow">Gender dimensions of disasters</button>  
+    </div>
+    <div class="col ">
+      <button href="topic-single.html"  type="button" class="btn btn-outline-primary btn-lg w-100 hover-arrow">Intersectionality</button>  
+    </div>
+    <div class="col ">
+      <button href="topic-single.html"  type="button" class="btn btn-outline-primary btn-lg w-100 hover-arrow">Gender data</button>  
+    </div>
+    <div class="col ">
+      <button href="topic-single.html" type="button" class="btn btn-outline-primary btn-lg w-100 hover-arrow">Gender-responsive risk assessment</button>  
+    </div>
+    <div class="col ">
+      <button href="topic-single.html"  type="button" class="btn btn-outline-primary btn-lg w-100 hover-arrow">Gender-responsive needs assessment</button>  
+    </div>
+  </div>
+</div>
+
+        
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<div class="stickyNavSection">
+
+        <!-- Sticky sub nav -->
+      <div class="article-progress sticky" style="">
+        <div class="article-progress-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col py-1">
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                    <a href="#" class="h5 back-to-top" data-scroll>
+                    Risk
+                    </a>
+                  
+                  <div class="d-flex align-items-center">
+                    <nav class="" id="myScrollspy">
+                      <ul class="nav flex-row">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#related-publications" data-scroll>Publications</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#related-tools" data-scroll>Tools</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#related-insights" data-scroll>Insights</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#related-cases" data-scroll>Case Studies</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#related-perspectives" data-scroll>Perspectives</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#related-experts" data-scroll>Experts</a>
+                        </li>
+                      </ul>
+                    </nav> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+  <!-- Publications slider -->
+  <section id="related-publications" class="slider-salon py-3 py-lg-5"><!-- bg-secondary  -->
+                <div class="container">
+                  <h2 class="h3">Key Publications</h2>
+                  <div class="position-relative mx-md-2 px-md-5">
+        
+                    <!-- Slider controls (Prev / next) -->
+                    <button type="button" id="pub-prev" class="btn btn-prev btn-icon position-absolute top-50 start-0 translate-middle-y mt-n4 d-none d-md-inline-flex">
+                      <i class="bx bx-chevron-left"></i>
+                    </button>
+                    <button type="button" id="pub-next" class="btn btn-next btn-icon position-absolute top-50 end-0 translate-middle-y mt-n4 d-none d-md-inline-flex">
+                      <i class="bx bx-chevron-right"></i>
+                    </button>
+        
+                    <!-- Swiper slider -->
+                    <div class="swiper swiper-nav-onhover mx-n3" data-swiper-options='{
+                      "slidesPerView": 1,
+                      "loop": false,
+                      "spaceBetween": 4,
+                      "pagination": {
+                        "el": ".swiper-pagination",
+                        "clickable": true
+                      },
+                      "navigation": {
+                        "prevEl": "#pub-prev",
+                        "nextEl": "#pub-next"
+                      },
+                      "breakpoints": {
+                        "0": {
+                          "slidesPerView": 1
+                        },
+                        "560": {
+                          "slidesPerView": 2
+                        },
+                        "768": {
+                          "slidesPerView": 3
+                        },
+                        "1024": {
+                          "slidesPerView": 4
+                        },
+                        "1200": {
+                          "slidesPerView": 5
+                        }
+                      }
+                    }'>
+                      <div class="swiper-wrapper">
+        
+        
+         <!-- Pub Item 1-->
+                   <div class="swiper-slide py-3 "> <!-- h-auto-->
+                     <div class="mx-3 mx-md-2">
+                       <article class=" hover-grow h-100">
+                         <a href="pub-single.html" class="stretched-link">
+                                     <img src="assets/img/pub-cover.jpeg" class="shadow-sm">
+                                     <h3 class="h6" >
+                                       Pub #1 Short Title
+                                     </h3>
+                         </a>
+                       </article>
+                     </div>
+                   </div>
+         
+         <!-- Pub Item 2-->
+                   <div class="swiper-slide py-3 "> <!-- h-auto-->
+                     <div class="mx-3 mx-md-2">
+                       <article class=" hover-grow h-100">
+                         <a href="pub-single.html" class="stretched-link">
+                                     <img src="assets/img/pub-cover.jpeg" class="shadow-sm">
+                                     <h3 class="h6" >
+                                       Pub #2 Short Title
+                                     </h3>
+                         </a>
+                       </article>
+                     </div>
+                   </div>   
+            <!-- Pub Item 3-->
+                             <div class="swiper-slide py-3 "> <!-- h-auto-->
+                               <div class="mx-3 mx-md-2">
+                                 <article class=" hover-grow h-100">
+                                   <a href="pub-single.html" class="stretched-link">
+                                               <img src="assets/img/pub-cover.jpeg" class="shadow-sm">
+                                               <h3 class="h6" >
+                                                 Pub #3 Short Title
+                                               </h3>
+                                   </a>
+                                 </article>
+                               </div>
+                             </div>
+                   
+                   <!-- Pub Item 4-->
+                             <div class="swiper-slide py-3 "> <!-- h-auto-->
+                               <div class="mx-3 mx-md-2">
+                                 <article class=" hover-grow h-100">
+                                   <a href="pub-single.html" class="stretched-link">
+                                               <img src="assets/img/pub-cover.jpeg" class="shadow-sm">
+                                               <h3 class="h6" >
+                                                 Pub #4 Short Title
+                                               </h3>
+                                   </a>
+                                 </article>
+                               </div>
+                             </div>
+            <!-- Pub Item 5-->
+                                       <div class="swiper-slide py-3 "> <!-- h-auto-->
+                                         <div class="mx-3 mx-md-2">
+                                           <article class=" hover-grow h-100">
+                                             <a href="pub-single.html" class="stretched-link">
+                                                         <img src="assets/img/pub-cover.jpeg" class="shadow-sm">
+                                                         <h3 class="h6" >
+                                                           Pub #5 Short Title
+                                                         </h3>
+                                             </a>
+                                           </article>
+                                         </div>
+                                       </div>
+                             
+                             <!-- Pub Item 6-->
+                                       <div class="swiper-slide py-3 "> <!-- h-auto-->
+                                         <div class="mx-3 mx-md-2">
+                                           <article class=" hover-grow h-100">
+                                             <a href="pub-single.html" class="stretched-link">
+                                                         <img src="assets/img/pub-cover-02.jpeg" class="shadow-sm">
+                                                         <h3 class="h6" >
+                                                           Pub #6 Short Title
+                                                         </h3>
+                                             </a>
+                                           </article>
+                                         </div>
+                                       </div>
+            <!-- Pub Item 7-->
+                                                 <div class="swiper-slide py-3 "> <!-- h-auto-->
+                                                   <div class="mx-3 mx-md-2">
+                                                     <article class=" hover-grow h-100">
+                                                       <a href="pub-single.html" class="stretched-link">
+                                                                   <img src="assets/img/pub-cover.jpeg" class="shadow-sm">
+                                                                   <h3 class="h6" >
+                                                                     Pub #7 Short Title
+                                                                   </h3>
+                                                       </a>
+                                                     </article>
+                                                   </div>
+                                                 </div>
+                                       
+                                       <!-- Pub Item 8-->
+                                                 <div class="swiper-slide py-3 "> <!-- h-auto-->
+                                                   <div class="mx-3 mx-md-2">
+                                                     <article class=" hover-grow h-100">
+                                                       <a href="pub-single.html" class="stretched-link">
+                                                                   <img src="assets/img/pub-cover.jpeg" class="shadow-sm">
+                                                                   <h3 class="h6" >
+                                                                     Pub #8 Short Title
+                                                                   </h3>
+                                                       </a>
+                                                     </article>
+                                                   </div>
+                                                 </div>
+        
+        
+        
+                      </div>
+            
+                      <!-- Pagination (bullets) -->
+                      <div class="swiper-pagination position-relative pt-2 pt-sm-4 "></div>
+                    </div>
+        
+        
+        
+                  </div>
+        
+                  <div class="d-flex align-items-center justify-content-end">
+                    <a href="#" class="btn btn-sm btn-outline-primary hover-arrow">
+                      View all publications
+                    </a>
+                  </div>
+                </div>
+              </section>
+              
+  <!-- Tools slider -->
+  <section id="related-tools" class="slider-salon"><!-- bg-secondary  -->
+                            <div class="container">
+                              <h2 class="h3">Key Tools</h2>
+                              <div class="position-relative mx-md-2 px-md-5">
+                    
+                                <!-- Slider controls (Prev / next) -->
+                                <button type="button" id="tool-prev" class="btn btn-prev btn-icon position-absolute top-50 start-0 translate-middle-y mt-n4 d-none d-md-inline-flex">
+                                  <i class="bx bx-chevron-left"></i>
+                                </button>
+                                <button type="button" id="tool-next" class="btn btn-next btn-icon position-absolute top-50 end-0 translate-middle-y mt-n4 d-none d-md-inline-flex">
+                                  <i class="bx bx-chevron-right"></i>
+                                </button>
+                    
+                                <!-- Swiper slider -->
+                                <div class="swiper swiper-nav-onhover mx-n3" data-swiper-options='{
+                                  "slidesPerView": 1,
+                                  "loop": false,
+                                  "spaceBetween": 4,
+                                  "pagination": {
+                                    "el": ".swiper-pagination",
+                                    "clickable": true
+                                  },
+                                  "navigation": {
+                                  "prevEl": "#tool-prev",
+                                  "nextEl": "#tool-next"
+                                  },
+                                  "breakpoints": {
+                                    "0": {
+                                      "slidesPerView": 1
+                                    },
+                                    "560": {
+                                      "slidesPerView": 2
+                                    },
+                                    "768": {
+                                      "slidesPerView": 3
+                                    },
+                                    "1024": {
+                                      "slidesPerView": 4
+                                    },
+                                    "1200": {
+                                      "slidesPerView": 5
+                                    }
+                                  }
+                                }'>
+                                  <div class="swiper-wrapper">
+                    
+                    
+                     <!-- Tool Item 1-->
+                               <div class="swiper-slide py-3 "> <!-- h-auto-->
+                                 <div class="mx-3 mx-md-2">
+                                   <article class=" hover-grow h-100">
+                                     <a href="pub-single.html" class="stretched-link">
+                                                 <img src="assets/img/pub-cover.jpeg" class="shadow-sm">
+                                                 <h3 class="h6" >
+                                                   Tool #1 Short Title
+                                                 </h3>
+                                     </a>
+                                   </article>
+                                 </div>
+                               </div>
+                     
+                     <!-- Tool Item 2-->
+                               <div class="swiper-slide py-3 "> <!-- h-auto-->
+                                 <div class="mx-3 mx-md-2">
+                                   <article class=" hover-grow h-100">
+                                     <a href="pub-single.html" class="stretched-link">
+                                                 <img src="assets/img/pub-cover.jpeg" class="shadow-sm">
+                                                 <h3 class="h6" >
+                                                   Tool #2 Short Title
+                                                 </h3>
+                                     </a>
+                                   </article>
+                                 </div>
+                               </div>   
+                        <!-- Tool Item 3-->
+                                         <div class="swiper-slide py-3 "> <!-- h-auto-->
+                                           <div class="mx-3 mx-md-2">
+                                             <article class=" hover-grow h-100">
+                                               <a href="pub-single.html" class="stretched-link">
+                                                           <img src="assets/img/pub-cover.jpeg" class="shadow-sm">
+                                                           <h3 class="h6" >
+                                                             Tool #3 Short Title
+                                                           </h3>
+                                               </a>
+                                             </article>
+                                           </div>
+                                         </div>
+                               
+                               <!-- Tool Item 4-->
+                                         <div class="swiper-slide py-3 "> <!-- h-auto-->
+                                           <div class="mx-3 mx-md-2">
+                                             <article class=" hover-grow h-100">
+                                               <a href="pub-single.html" class="stretched-link">
+                                                           <img src="assets/img/pub-cover.jpeg" class="shadow-sm">
+                                                           <h3 class="h6" >
+                                                             Tool #4 Short Title
+                                                           </h3>
+                                               </a>
+                                             </article>
+                                           </div>
+                                         </div>
+                        <!-- Tool Item 5-->
+                                                   <div class="swiper-slide py-3 "> <!-- h-auto-->
+                                                     <div class="mx-3 mx-md-2">
+                                                       <article class=" hover-grow h-100">
+                                                         <a href="pub-single.html" class="stretched-link">
+                                                                     <img src="assets/img/pub-cover.jpeg" class="shadow-sm">
+                                                                     <h3 class="h6" >
+                                                                       Tool #5 Short Title
+                                                                     </h3>
+                                                         </a>
+                                                       </article>
+                                                     </div>
+                                                   </div>
+                                         
+                                         <!-- Tool Item 6-->
+                                                   <div class="swiper-slide py-3 "> <!-- h-auto-->
+                                                     <div class="mx-3 mx-md-2">
+                                                       <article class=" hover-grow h-100">
+                                                         <a href="pub-single.html" class="stretched-link">
+                                                                     <img src="assets/img/pub-cover-02.jpeg" class="shadow-sm">
+                                                                     <h3 class="h6" >
+                                                                       Tool #6 Short Title
+                                                                     </h3>
+                                                         </a>
+                                                       </article>
+                                                     </div>
+                                                   </div>
+                        <!-- Tool Item 7-->
+                                                             <div class="swiper-slide py-3 "> <!-- h-auto-->
+                                                               <div class="mx-3 mx-md-2">
+                                                                 <article class=" hover-grow h-100">
+                                                                   <a href="pub-single.html" class="stretched-link">
+                                                                               <img src="assets/img/pub-cover.jpeg" class="shadow-sm">
+                                                                               <h3 class="h6" >
+                                                                                 Tool #7 Short Title
+                                                                               </h3>
+                                                                   </a>
+                                                                 </article>
+                                                               </div>
+                                                             </div>
+                                                   
+                                                   <!-- Tool Item 8-->
+                                                             <div class="swiper-slide py-3 "> <!-- h-auto-->
+                                                               <div class="mx-3 mx-md-2">
+                                                                 <article class=" hover-grow h-100">
+                                                                   <a href="pub-single.html" class="stretched-link">
+                                                                               <img src="assets/img/pub-cover.jpeg" class="shadow-sm">
+                                                                               <h3 class="h6" >
+                                                                                 Tool #8 Short Title
+                                                                               </h3>
+                                                                   </a>
+                                                                 </article>
+                                                               </div>
+                                                             </div>
+                    
+                    
+                    
+                                  </div>
+                        
+                                  <!-- Pagination (bullets) -->
+                                  <div class="swiper-pagination position-relative pt-2 pt-sm-4 "></div>
+                                </div>
+                    
+                    
+                    
+                              </div>
+                    
+                              <div class="d-flex align-items-center justify-content-end">
+                                <a href="#" class="btn btn-sm btn-outline-primary hover-arrow">
+                                  View all tools
+                                </a>
+                              </div>
+                            </div>
+  </section>
+
+
+
+  <!-- Insights -->
+  <!-- Ability to filter out certain insight-types required: e.g. Not: Case Studies -->
+  <section id="related-insights" class="bg-sky">
+        <div class="container ">
+          <h2 class="h3 pb-2">Key Insights</h2>
+            <div class="row">
+              <div class="col-12 col-lg-4 mb-4" >
+
+                  <!-- Insight item -->
+                  <article class="card card-latest h-100 shadow-sm overflow-hidden">
+                    <a href="insight-single.html" class="w-100 h-100" aria-label="Read more">
+                    <div class="row g-0">
+                      <div class="col-4 col-lg-12 position-relative bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/blog/01.jpg); min-height: 15rem;">
+                      
+                      </div>
+                      <div class="col-8 col-lg-12">
+                        <div class="card-body">
+                          <div class="d-flex align-items-center justify-content-between mb-2">
+                            <span class="badge fs-sm text-nav bg-secondary text-decoration-none">Interview</span>
+                            <span class="date">2 March 2022</span>
+                          </div>
+                          <h3 class="h4">
+                            5 Bad Landing Page Examples &amp; How We Would Fix Them
+                          </h3>
+                          <p>Tellus sagittis dolor pellentesque vel porttitor magna aliquet arcu. Interdum risus mauris pulvinar et vel. Morbi tellus, scelerisque vel metus. Scelerisque arcu egestas ac commodo, ac nibh. Pretium ac elit sed nulla nec.</p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  </article>
+
+              </div>
+              <div class="col-12 col-lg-4 mb-4" >
+                <!-- Insight item -->
+                <article class="card card-latest h-100 shadow-sm overflow-hidden">
+                  <a href="insight-single.html" class="w-100 h-100" aria-label="Read more">
+                  <div class="row g-0">
+                    <div class="col-4 col-lg-12 position-relative bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/blog/01.jpg); min-height: 15rem;">
+                    
+                    </div>
+                    <div class="col-8 col-lg-12">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                          <span class="badge fs-sm text-nav bg-secondary text-decoration-none">Interview</span>
+                          <span class="date">2 March 2022</span>
+                        </div>
+                        <h3 class="h4">
+                          5 Bad Landing Page Examples
+                        </h3>
+                        <p>Interdum risus mauris pulvinar et vel. Morbi tellus, scelerisque vel metus. Scelerisque arcu egestas ac commodo, ac nibh. Pretium ac elit sed nulla nec.</p>
+
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                </article>
+
+              </div>
+              <div class="col-12 col-lg-4 mb-4" >
+
+              <!-- Insight item -->
+              <article class="card card-latest h-100 shadow-sm overflow-hidden">
+                <a href="insight-single.html" class="w-100 h-100" aria-label="Read more">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 position-relative bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/photo-news.jpg); min-height: 15rem;">
+                  
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <span class="badge fs-sm text-nav bg-secondary text-decoration-none">Interview</span>
+                        <span class="date">2 March 2022</span>
+                      </div>
+                      <h3 class="h4">
+                        5 Bad Landing Page Examples
+                      </h3>
+                      <p>Interdum risus mauris pulvinar et vel. Morbi tellus, scelerisque vel metus. Scelerisque arcu egestas ac commodo, ac nibh. Pretium ac elit sed nulla nec.</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              </article>
+    
+
+
+
+              </div>             
+            </div>
+            <div class="d-flex align-items-center justify-content-end text-center text-md-end">
+              <a href="insights.html" class="btn btn-sm btn-outline-primary hover-arrow">
+                View all insights
+              </a>
+            </div>
+        </div>
+      </section>
+
+  <!-- Insights: Case Studies -->
+  <!-- Ability to filter out certain insight-types required: e.g. Only: Case Studies -->
+  <section id="related-cases" class="bg-sky">
+        <div class="container ">
+          <h2 class="h3 pb-2">Key Case Studies</h2>
+            <div class="row">
+              <div class="col-12 col-lg-4 mb-4" >
+  
+                  <!-- Insight item -->
+                  <article class="card card-latest h-100 shadow-sm overflow-hidden">
+                    <a href="insight-single.html" class="w-100 h-100" aria-label="Read more">
+                    <div class="row g-0">
+                      <div class="col-4 col-lg-12 position-relative bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/blog/01.jpg); min-height: 15rem;">
+                      
+                      </div>
+                      <div class="col-8 col-lg-12">
+                        <div class="card-body">
+                          <div class="d-flex align-items-center justify-content-between mb-2">
+                            <span class="badge fs-sm text-nav bg-secondary text-decoration-none">Interview</span>
+                            <span class="date">2 March 2022</span>
+                          </div>
+                          <h3 class="h4">
+                            5 Bad Landing Page Examples &amp; How We Would Fix Them
+                          </h3>
+                          <p>Tellus sagittis dolor pellentesque vel porttitor magna aliquet arcu. Interdum risus mauris pulvinar et vel. Morbi tellus, scelerisque vel metus. Scelerisque arcu egestas ac commodo, ac nibh. Pretium ac elit sed nulla nec.</p>
+  
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  </article>
+  
+              </div>
+              <div class="col-12 col-lg-4 mb-4" >
+                <!-- Insight item -->
+                <article class="card card-latest h-100 shadow-sm overflow-hidden">
+                  <a href="insight-single.html" class="w-100 h-100" aria-label="Read more">
+                  <div class="row g-0">
+                    <div class="col-4 col-lg-12 position-relative bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/blog/01.jpg); min-height: 15rem;">
+                    
+                    </div>
+                    <div class="col-8 col-lg-12">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                          <span class="badge fs-sm text-nav bg-secondary text-decoration-none">Interview</span>
+                          <span class="date">2 March 2022</span>
+                        </div>
+                        <h3 class="h4">
+                          5 Bad Landing Page Examples
+                        </h3>
+                        <p>Interdum risus mauris pulvinar et vel. Morbi tellus, scelerisque vel metus. Scelerisque arcu egestas ac commodo, ac nibh. Pretium ac elit sed nulla nec.</p>
+  
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                </article>
+  
+              </div>
+              <div class="col-12 col-lg-4 mb-4" >
+  
+              <!-- Insight item -->
+              <article class="card card-latest h-100 shadow-sm overflow-hidden">
+                <a href="insight-single.html" class="w-100 h-100" aria-label="Read more">
+                <div class="row g-0">
+                  <div class="col-4 col-lg-12 position-relative bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/photo-news.jpg); min-height: 15rem;">
+                  
+                  </div>
+                  <div class="col-8 col-lg-12">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <span class="badge fs-sm text-nav bg-secondary text-decoration-none">Interview</span>
+                        <span class="date">2 March 2022</span>
+                      </div>
+                      <h3 class="h4">
+                        5 Bad Landing Page Examples
+                      </h3>
+                      <p>Interdum risus mauris pulvinar et vel. Morbi tellus, scelerisque vel metus. Scelerisque arcu egestas ac commodo, ac nibh. Pretium ac elit sed nulla nec.</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              </article>
+    
+  
+  
+  
+              </div>             
+            </div>
+            <div class="d-flex align-items-center justify-content-end text-center text-md-end">
+              <a href="insights.html" class="btn btn-sm btn-outline-primary hover-arrow">
+                View all insights
+              </a>
+            </div>
+        </div>
+      </section>
+
+  <!-- Perspectives slider -->
+  <section id="related-perspectives" class="slider-perspec">
+        <div class="container">
+        <h2 class="h3 pb-2">Women's Perspectives</h2>
+
+
+              <!-- Quotation mark 
+              <div class="pb-4 mb-2">
+                <span class="btn btn-icon btn-primary btn-lg pe-none">
+                  <i class="bx bxs-quote-left"></i>
+                </span>
+              </div>-->
+
+    <!-- WP Slider -->
+    <div class="swiper " data-swiper-options='{
+
+                "pagination": {
+                  "el": ".swiper-per-pagination",
+                  "clickable": true
+                },
+                "spaceBetween": 24,
+                "loop": true
+              }'>
+    <div class="swiper-wrapper">
+
+<!-- Item -->
+    <a href="#" class="swiper-slide h-auto">
+        <div class="row g-0">
+          <div class="col-12 col-md-8 order-2 order-md-1">
+              <blockquote class="p-4 p-lg-5 ">
+                  <h4>Women are coordinating and strengthening resilience networks
+                        </h4>
+                      <p class="">The Network of Women-led Organisations in Nigeria coordinates and strengthens the collaboration among members and partners, insuring the inclusion of women and girls in programs and projects.</p>
+              </blockquote>
+          </div>
+    
+          <div class="col-12 col-md-4 order-1 order-md-2 position-relative" style="">
+            <picture class="" style="background-image: url(assets/img/user-1.jpg); ">
+            </picture>
+            <p class="perspec-cap">Jannatul Mouwa, Executive Director of Best Initiative National Development Unification, Bangladesh</p>
+            
+          </div>
+        </div>
+    </a>
+
+    <!-- Item -->
+    <a href="#" class="swiper-slide h-auto">
+        <div class="row g-0">
+          <div class="col-12 col-md-8 order-2 order-md-1">
+              <blockquote class="p-4 p-lg-5 ">
+                  <h4>Women are adapting to climate change through climate-smart agriculture
+                        </h4>
+                  <p>The Network of Women-led Organisations in Nigeria coordinates and strengthens the collaboration among members and partners, insuring the inclusion of women and girls in programs and projects.</p>
+              </blockquote>
+          </div>
+
+          <div class="col-12 col-md-4 order-1 order-md-2 position-relative" style="">
+            <picture class="" style="background-image: url(assets/img/perspective.jpg); ">
+            </picture>
+            <p class="perspec-cap">Jannatul Mouwa, Executive Director of Best Initiative National Development Unification, Bangladesh</p>
+          </div>
+        </div>
+    </a>
+
+    <!-- Item 3-->
+    <a href="#" class="swiper-slide h-auto">
+        <div class="row g-0">
+          <div class="col-12 col-md-8 order-2 order-md-1">
+              <blockquote class="p-4 p-lg-5 ">
+                  <h4>Women are disaster risk management leaders
+                        </h4>
+                      <p class="">Vasiti Soko, the first woman Director of Fiji’s National Disaster Management Office, and the winner of the WIN DRR leadership award 2021 reflects on the benefits of women's leadership in reducing disaster risks.</p>
+                </blockquote>
+
+          </div>
+    
+          <div class="col-12 col-md-4 order-1 order-md-2 position-relative" style="">
+            <picture class="" style="background-image: url(assets/img/user-1.jpg); ">
+            </picture>
+          </div>
+        </div>
+    </a>
+
+
+
+    </div><!-- End slider-wrapper -->
+
+    </div><!-- End swiper -->
+          <!-- Pagination (bullets) -->
+          <div class="swiper-per-pagination position-relative pt-2 mt-4"></div>
+          <!-- End pagination -->
+          <div class="d-flex align-items-center justify-content-end">
+            <a href="insights.html" class="btn btn-sm btn-outline-primary hover-arrow">
+              View all WRD women's perspectives
+            </a>
+          </div>
+          
+          
+        </div>
+      </section>    
+
+      <!-- Experts (Slider) -->
+  <section id="related-experts" class="slider-experts">
+    <div class="container">
+      <h2 class="h3 pb-md-2">Related Experts</h2>
+
+        <div class="swiper mx-0 mb-md-n2 mb-xxl-n3" data-swiper-options='{
+            "slidesPerView": 1,
+            "spaceBetween": 8,
+            "loop": true,
+            "pagination": {
+              "el": ".swiper-pagination",
+              "clickable": true
+            },
+            "breakpoints": {
+              "480": {
+                "slidesPerView": 2
+              },
+              "700": {
+                "slidesPerView": 3
+              },
+              "900": {
+                "slidesPerView": 4
+              },
+              "1160": {
+                "slidesPerView": 5
+              },
+              "1500": {
+                "slidesPerView": 6
+              }
+            }
+          }'>
+            <div class="swiper-wrapper">
+  
+
+    <!-- Item -->
+      <div class="swiper-slide py-2">
+        <a href="expert-single.html" class="person-hover">
+          <div class=" position-relative">
+            <picture class="ratio ratio-8x9" style="background-image: url(assets/img/user-1.jpg); ">
+            </picture>
+            <span class="bg-hero-top"></span>
+              <div class="expert-overlay">
+                <h3>Dilanthi Amaratunga</h3>
+                <p>Professor of Disaster Risk Reduction</p>
+              </div>
+          </div>
+        </a>
+      </div>
+
+    <!-- Item -->
+      <div class="swiper-slide py-2">
+        <a href="expert-single.html" class="person-hover">
+          <div class=" position-relative">
+            <picture class="ratio ratio-8x9" style="background-image: url(assets/img/team/28.jpg); ">
+            </picture>
+            <span class="bg-hero-top"></span>
+              <div class="expert-overlay">
+                <h3>Dilanthi Amaratunga</h3>
+                <p>Professor of Disaster Risk Reduction</p>
+              </div>
+          </div>
+        </a>
+      </div>
+    <!-- Item -->
+        <div class="swiper-slide py-2">
+          <a href="expert-single.html" class="person-hover">
+            <div class=" position-relative">
+              <picture class="ratio ratio-8x9" style="background-image: url(assets/img/user-1.jpg); ">
+              </picture>
+              <span class="bg-hero-top"></span>
+                <div class="expert-overlay">
+                  <h3>Dilanthi Amaratunga</h3>
+                  <p>Professor of Disaster Risk Reduction</p>
+                </div>
+            </div>
+          </a>
+        </div>
+      
+      <!-- Item -->
+        <div class="swiper-slide py-2">
+          <a href="expert-single.html" class="person-hover">
+            <div class=" position-relative">
+              <picture class="ratio ratio-8x9" style="background-image: url(assets/img/team/08.jpg); ">
+              </picture>
+              <span class="bg-hero-top"></span>
+                <div class="expert-overlay">
+                  <h3>Dilanthi Amaratunga</h3>
+                  <p>Professor of Disaster Risk Reduction</p>
+                </div>
+            </div>
+          </a>
+        </div>
+ 
+ <!-- Item -->
+ <div class="swiper-slide py-2">
+   <a href="expert-single.html" class="person-hover">
+     <div class=" position-relative">
+       <picture class="ratio ratio-8x9" style="background-image: url(assets/img/team/11.jpg); ">
+       </picture>
+       <span class="bg-hero-top"></span>
+         <div class="expert-overlay">
+           <h3>Dilanthi Amaratunga</h3>
+           <p>Professor of Disaster Risk Reduction</p>
+         </div>
+     </div>
+   </a>
+ </div> 
+
+ <!-- Item -->
+         <div class="swiper-slide py-2">
+           <a href="expert-single.html" class="person-hover">
+             <div class=" position-relative">
+               <picture class="ratio ratio-8x9" style="background-image: url(assets/img/team/08.jpg); ">
+               </picture>
+               <span class="bg-hero-top"></span>
+                 <div class="expert-overlay">
+                   <h3>Dilanthi Amaratunga</h3>
+                   <p>Professor of Disaster Risk Reduction</p>
+                 </div>
+             </div>
+           </a>
+         </div>
+  
+  <!-- Item -->
+  <div class="swiper-slide py-2">
+    <a href="expert-single.html" class="person-hover">
+      <div class=" position-relative">
+        <picture class="ratio ratio-8x9" style="background-image: url(assets/img/team/11.jpg); ">
+        </picture>
+        <span class="bg-hero-top"></span>
+          <div class="expert-overlay">
+            <h3>Dilanthi Amaratunga</h3>
+            <p>Professor of Disaster Risk Reduction</p>
+          </div>
+      </div>
+    </a>
+  </div>  
+
+    
+  
+            </div>
+  
+            <!-- Pagination (bullets) -->
+            <div class="swiper-pagination position-relative pt-3 mt-3"></div>
+          </div>
+          <div class="d-flex align-items-center justify-content-end">
+            <a href="experts.html" class="btn btn-sm btn-outline-primary hover-arrow">
+              View all experts
+            </a>
+          </div>
+          
+          
+      </div>
+  </section>
+
+
+
+
+    </div><!--End StickyNav-->
+
+
+
+
+ 
+    </main>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer text-light pt-5 pb-4 pb-lg-5">
+
+      <div class="container ">
+        <div class="row d-flex flex-column flex-sm-row align-items-start justify-content-between position-relative">
+          <div class="col-auto">
+            <h5 class="h5">Navigation</h5>
+            <div id="useful-links" >
+              <ul class="nav pb-lg-1  d-flex flex-column flex-sm-row">
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Explore</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Practice</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Engage</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-auto d-none d-md-block">
+          <div class="footer-brand p-0 me-0 mb-3">
+            <img src="assets/img/wrdp_logo_wh.svg" alt="Women's Resilience to Disasters Programme">
+          </div>
+        </div>
+
+        </div>
+
+
+
+        <div class="row d-flex flex-column flex-sm-row align-items-start align-items-sm-end justify-content-between position-relative pb-5">
+
+          <div class="col-md-8 col-lg-4 ">
+
+
+
+            <h4 class="h5 mt-md-0">Connect with us</h4>
+            <div class="d-flex mb-4 mb-sm-0">
+              <a href="#" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-2">
+                <i class="bx bxl-linkedin"></i>
+              </a>
+              <a href="#" class="btn btn-icon btn-secondary btn-twitter rounded-circle me-2">
+                <i class="bx bxl-twitter"></i>
+              </a>
+              <a href="#" class="btn btn-icon btn-secondary btn-youtube rounded-circle me-2">
+                <i class="bx bxl-youtube"></i>
+              </a>
+              <a href="#" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-2">
+                <i class="bx bxl-facebook"></i>
+              </a>
+            </div>
+
+            <form class="needs-validation" novalidate>
+              <label for="subscr-email" class="form-label">Subscribe to our newsletter</label>
+              <div class="input-group">
+                <input type="email" id="subscr-email" class="form-control rounded-start ps-5" placeholder="Your email" required>
+                <i class="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+                <div class="invalid-tooltip position-absolute top-100 start-0">Please provide a valid email address.</div>
+                <button type="submit" class="btn btn-footer">Subscribe</button>
+              </div>
+            </form>
+
+
+            <h5 class="h5">Contact us</h5>
+
+            <a href="mailto:wrd@unwomen.org" class="nav-link fs-xl fw-semibold p-0">
+              wrd@unwomen.org
+              <i class="bx bx-right-arrow-circle fs-4 ms-2"></i>
+            </a>
+
+          </div>
+
+
+
+          <div class="col-auto ">
+          <h5 class="h5">Supported by</h5>
+          <div class="d-flex supporters flex-column flex-md-row mt-4">
+          <a href="" target="_blank" class="card-hover-grow p-0 ps-2 ps-sm-2 ps-md-0 me-0 mb-3 mb-lg-0">
+            <img src="assets/img/logo-australian_wh.svg"  alt="">
+          </a>
+          <a href="" target="_blank" class="card-hover-grow ps-0 ps-sm-2 mb-3 mb-lg-0">
+            <img src="assets/img/logo-pw_wh.svg" class="ps-0 ps-md-3 py-2" alt="Prevention Web">
+          </a>
+          <a href="" target="_blank" class="card-hover-grow ps-2 ps-md-4 mb-3 mb-lg-0">
+            <img src="assets/img/logo-unwomen_wh.svg" class="py-2" alt="UN Women">
+          </a>
+        </div>
+        </div>
+        </div>
+
+
+
+        <p class="fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+         Copyright &copy; 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">UN Women</a> | 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">Information Security</a> | 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">Privacy Policy</a> | 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">Terms of Use</a>
+        </p>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <script src="assets/vendor/lg-fullscreen.js/dist/lg-fullscreen.min.js"></script>
+    <script src="assets/vendor/lg-zoom.js/dist/lg-zoom.min.js"></script>
+    <script src="assets/vendor/lg-video.js/dist/lg-video.min.js"></script>
+    <script src="assets/vendor/lg-thumbnail.js/dist/lg-thumbnail.min.js"></script>
+    
+    
+      
+    <!--<script src="assets/vendor/aos/aos.js"></script>-->
+  
+
+    <!-- Main Theme Script <script src="assets/js/theme.min.js"></script>-->
+    <script src="assets/js/theme.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+$(".caribbean").hover(
+  function () {
+    $('.caribbean').addClass('reg-active');
+    $(".accordion-header.region").parent('.accordion-item').children('.caribbean-ac.collapse').collapse('show');
+  },
+  function () {
+    $('.caribbean').removeClass('reg-active');
+    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.caribbean-ac').collapse('hide');
+  }
+);
+$(".wc-africa").hover(
+  function () {
+    $('.wc-africa').addClass('reg-active');
+    $(".accordion-header.region").parent('.accordion-item').children('.wc-africa-ac.collapse').collapse('show');
+  },
+  function () {
+    $('.wc-africa').removeClass('reg-active');
+    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.wc-africa-ac').collapse('hide');
+  }
+);
+$(".se-asia").hover(
+  function () {
+    $('.se-asia').addClass('reg-active');
+    $(".accordion-header.region").parent('.accordion-item').children('.se-asia-ac.collapse').collapse('show');
+  },
+  function () {
+    $('.se-asia').removeClass('reg-active');
+    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.se-asia-ac').collapse('hide');
+  }
+);    
+
+$('.caribbean-ac').on('shown.bs.collapse', function () {
+    $('.caribbean').addClass('reg-active');
+});
+$('.caribbean-ac').on('hidden.bs.collapse', function () {
+   $(".caribbean").removeClass("reg-active")
+});
+
+$('.wc-africa-ac').on('shown.bs.collapse', function () {
+    $('.wc-africa').addClass('reg-active');
+});
+$('.wc-africa-ac').on('hidden.bs.collapse', function () {
+   $(".wc-africa").removeClass("reg-active")
+});
+
+$('.se-asia-ac').on('shown.bs.collapse', function () {
+    $('.se-asia').addClass('reg-active');
+});
+$('.se-asia-ac').on('hidden.bs.collapse', function () {
+   $(".se-asia").removeClass("reg-active")
+});
+
+
+
+
+
+      </script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+var typed = new Typed('.typed-element', {
+  strings: ["Securing gender-responsive systems", "Enabling women’s leadership","Supporting women’s voice and agency","Addressing underlying inequalities", "Sharing knowledge and tools"],
+  typeSpeed: 40,
+  backSpeed: 10,
+  loop: true,
+  fadeOut: true,
+  backDelay: 4000
+});
+
+
+
+
+  </script>
+
+  </body>
+</html>

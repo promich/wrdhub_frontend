@@ -5547,7 +5547,6 @@ transition: background-color 0.2s ease-in-out;
 
 
 
-
 /* Events page */
 
 section.event-top-featured{
@@ -18123,8 +18122,32 @@ cursor: pointer;
 }
 
 /*Topic page*/
+
+/* Topic single*/
+
+.topic-top .icon-title{
+  display: flex !important;
+  position: relative !important;
+  align-items: center !important;
+  margin-bottom: 1.5rem;
+}
+.topic-top .icon-title > div{
+    padding-left: 0.5rem !important;
+}
+.topic-top .icon-title h1 {
+    font-size: calc(1.525rem + 3.3vw);
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0 !important;
+}
+.topic-top .icon-title h2 {
+    margin-bottom: 0 !important;
+}
+
+
+
 #subtopic-zone{
-  padding: 3rem 0;
+  padding: 2rem 0 3rem 0;
   
 }
 

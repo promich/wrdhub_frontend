@@ -346,8 +346,20 @@
 
     <div class="row">
       <div class="col-12 clearfix">
-        <h1 class="py-3 py-md-0 display-3 mb-0">Risk</h1>
-        <h2 class="">Understanding gendered risks, interests & needs</h1>
+        <!--Display if Topic is pillar (has icon) -->
+        <div class="icon-title">
+          <img src="assets/img/pillar-b.svg" class="" width="150" alt="Graphic of a globe in flames.">
+          <div>
+            <h1>Risk</h1>
+            <h2>Understanding gendered risks, interests &amp; needs</h2>
+          </div>
+        </div>
+        
+        
+        <!--OR Display if Topic is NOT pillar (no icon) -->
+        <!--
+        <h2 class="">Understanding gendered risks, interests & needs</h2>
+        -->
 
 
     <!-- Sidebar  -->
@@ -355,17 +367,15 @@
             <aside id="region-side" class="sticky-top  ms-md-0 ms-lg-4 mb-5" style="top: 180px !important;">        
                 
         
-          <!-- If photo AND video: Gallery grid with gutters -->
+          <!-- If photo AND video: Gallery grid with gutters --><!--
             <div class="gallery row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-1 g-3" data-video="true">
                 
-                  
                   <div class="col">
                     <a href="assets/img/topic-risk.jpg" class="gallery-item " data-sub-html='<h6 class="fs-sm text-light">Photo: UN Women/Mohammad Rakibul Hasan</h6>'>
                       <img src="assets/img/topic-risk.jpg" alt="Photo of a women holding a child in flood waters.">
                       <div class="gallery-item-caption fs-sm">Photo: UN Women/Mohammad Rakibul Hasan</div>
                     </a>
                   </div>
-                
                   
                   <div class="col">
                     <a href="https://www.youtube.com/watch?v=16yp1HDxZvI&t=5s" class="gallery-item video-item " data-sub-html='<h6 class="fs-sm text-light">How can we support womens leadership in disaster risk reduction?</h6>'>
@@ -373,10 +383,23 @@
                       <div class="gallery-item-caption fs-sm ">How can we support women's leadership in disaster risk reduction?</div>
                     </a>
                   </div>
-                
                   
-                </div>
+                </div>-->
           <!-- END If photo AND video -->
+          
+          <!-- OR if topic page only has photo (NO video) -->
+          <div class="gallery" >
+            <a href="assets/img/topic-risk.jpg" class="gallery-item " data-sub-html='<h6 class="fs-sm text-light">Photo: UN Women/Mohammad Rakibul Hasan</h6>'>
+              <img src="assets/img/topic-risk.jpg" alt="Photo of a women holding a child in flood waters.">
+              <div class="gallery-item-caption fs-sm">Photo: UN Women/Mohammad Rakibul Hasan</div>
+            </a>
+         </div>
+          <!-- END If photo only -->
+          
+          
+          
+          
+          
         </aside>
           </div>
 

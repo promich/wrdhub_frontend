@@ -754,7 +754,7 @@
                       </div>
             
                       <!-- Pagination (bullets) -->
-                      <div class="swiper-pagination position-relative pt-2 pt-sm-4 "></div>
+                      <div class="swiper-pagination position-relative pt-2 mt-2 "></div>
                     </div>
         
         
@@ -931,7 +931,7 @@
                                   </div>
                         
                                   <!-- Pagination (bullets) -->
-                                  <div class="swiper-pagination position-relative pt-2 pt-sm-4 "></div>
+                                  <div class="swiper-pagination position-relative pt-2 mt-2"></div>
                                 </div>
                     
                     
@@ -1108,7 +1108,7 @@
                                     </div>
                           
                                     <!-- Pagination (bullets) -->
-                                    <div class="swiper-pagination position-relative pt-2 pt-sm-4 "></div>
+                                    <div class="swiper-pagination position-relative pt-2 mt-2"></div>
                                   </div>
                       
                       
@@ -1124,100 +1124,109 @@
                             </section>
 
       <!-- Insights -->
-      <section id="related-insights" class="bg-secondary">
-        <div class="container ">
-          <h2 class="h3 pb-2">Insights</h2>
-            <div class="row">
-              <div class="col-12 col-lg-4 mb-4" >
-
-                  <!-- Blog item -->
-                  <article class="card card-latest h-100 shadow-sm overflow-hidden">
-                    <a href="blog-single.html" class="w-100 h-100" aria-label="Read more">
-                    <div class="row g-0">
-                      <div class="col-4 col-lg-12 position-relative bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/blog/01.jpg); min-height: 15rem;">
-                      
+  <!-- Insights -->
+      <!-- Ability to filter out certain insight-types required: e.g. Not: Case Studies -->
+      <section id="related-insights" class="slider-insight">
+        <div class="container">
+          <h2 class="h3 pb-md-2">Key insights</h2>
+            
+            <div class="swiper mx-n2" data-swiper-options='{
+            "slidesPerView": 1,
+            "pagination": {
+              "el": ".swiper-pagination",
+              "clickable": true
+            },
+            "breakpoints": {
+              "992": {
+                "slidesPerView": 3,
+                "spaceBetween": 12
+              }
+            }
+          }'>
+              <div class="swiper-wrapper">
+      
+                <!-- Item -->
+              <div class="swiper-slide py-2">
+                <a href="event-single.html" class="card card-latest mx-2" aria-label="Read more">
+                <div class="row g-0">
+                  <div class="col-sm-4 col-lg-12 position-relative bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/blog/01.jpg); min-height: 15rem;">
+                  
+                  </div>
+                  <div class="col-sm-8 col-lg-12">
+                    <div class="card-body">
+                      <div class="card-top">
+                        <span class="badge">Interview</span>
+                        <span class="date">2 March 2022</span>
                       </div>
-                      <div class="col-8 col-lg-12">
-                        <div class="card-body">
-                          <div class="d-flex align-items-center justify-content-between mb-2">
-                            <span class="badge fs-sm text-nav bg-secondary text-decoration-none">Interview</span>
-                            <span class="date">2 March 2022</span>
-                          </div>
-                          <h3 class="h4">
-                            5 Bad Landing Page Examples &amp; How We Would Fix Them
-                          </h3>
-                          <p>Tellus sagittis dolor pellentesque vel porttitor magna aliquet arcu. Interdum risus mauris pulvinar et vel. Morbi tellus, scelerisque vel metus. Scelerisque arcu egestas ac commodo, ac nibh. Pretium ac elit sed nulla nec.</p>
-
-                        </div>
-                      </div>
+                      <h3 class="h4">
+                        5 Bad Landing Page Examples &amp; How We Would Fix Them
+                      </h3>
+                      <p>Tellus sagittis dolor pellentesque vel porttitor magna aliquet arcu. Interdum risus mauris pulvinar et vel. Morbi tellus, scelerisque vel metus. Scelerisque arcu egestas ac commodo, ac nibh. Pretium ac elit sed nulla nec.</p>
                     </div>
-                  </a>
-                  </article>
-
+                  </div>
+                </div>
+                </a>
               </div>
-              <div class="col-12 col-lg-4 mb-4" >
-                <!-- Blog item -->
-                <article class="card card-latest h-100 shadow-sm overflow-hidden">
-                  <a href="blog-single.html" class="w-100 h-100" aria-label="Read more">
+                <!-- Item -->
+                <div class="swiper-slide py-2">
+                  <a href="event-single.html" class="card card-latest mx-2" aria-label="Read more">
                   <div class="row g-0">
-                    <div class="col-4 col-lg-12 position-relative bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/blog/01.jpg); min-height: 15rem;">
+                    <div class="col-sm-4 col-lg-12 position-relative bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/photo-news.jpg); min-height: 15rem;">
                     
                     </div>
-                    <div class="col-8 col-lg-12">
+                    <div class="col-sm-8 col-lg-12">
                       <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
-                          <span class="badge fs-sm text-nav bg-secondary text-decoration-none">Interview</span>
+                        <div class="card-top">
+                          <span class="badge">Interview</span>
                           <span class="date">2 March 2022</span>
                         </div>
                         <h3 class="h4">
                           5 Bad Landing Page Examples
                         </h3>
-                        <p>Interdum risus mauris pulvinar et vel. Morbi tellus, scelerisque vel metus. Scelerisque arcu egestas ac commodo, ac nibh. Pretium ac elit sed nulla nec.</p>
-
+                        <p>Tellus sagittis dolor pellentesque vel porttitor magna aliquet arcu. Interdum risus mauris pulvinar et vel. Morbi tellus, scelerisque vel metus. Scelerisque arcu egestas ac commodo, ac nibh. Pretium ac elit sed nulla nec.</p>
                       </div>
                     </div>
                   </div>
-                </a>
-                </article>
-
-              </div>
-              <div class="col-12 col-lg-4 mb-4" >
-
-              <!-- Blog item -->
-              <article class="card card-latest h-100 shadow-sm overflow-hidden">
-                <a href="blog-single.html" class="w-100 h-100" aria-label="Read more">
-                <div class="row g-0">
-                  <div class="col-4 col-lg-12 position-relative bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/blog/01.jpg); min-height: 15rem;">
-                  
-                  </div>
-                  <div class="col-8 col-lg-12">
-                    <div class="card-body">
-                      <div class="d-flex align-items-center justify-content-between mb-2">
-                        <span class="badge fs-sm text-nav bg-secondary text-decoration-none">Interview</span>
-                        <span class="date">2 March 2022</span>
-                      </div>
-                      <h3 class="h4">
-                        5 Bad Landing Page Examples
-                      </h3>
-                      <p>Interdum risus mauris pulvinar et vel. Morbi tellus, scelerisque vel metus. Scelerisque arcu egestas ac commodo, ac nibh. Pretium ac elit sed nulla nec.</p>
-                    </div>
-                  </div>
+                  </a>
                 </div>
-              </a>
-              </article>
-    
-
-
-
-              </div>             
+                <!-- Item -->
+                <div class="swiper-slide py-2">
+                  <a href="event-single.html" class="card card-latest mx-2" aria-label="Read more">
+                  <div class="row g-0">
+                    <div class="col-sm-4 col-lg-12 position-relative bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/photo-news.jpg); min-height: 15rem;">
+                    
+                    </div>
+                    <div class="col-sm-8 col-lg-12">
+                      <div class="card-body">
+                        <div class="card-top">
+                          <span class="badge">Interview</span>
+                          <span class="date">2 March 2022</span>
+                        </div>
+                        <h3 class="h4">
+                          5 Bad Landing Page Examples
+                        </h3>
+                        <p>Tellus sagittis dolor pellentesque vel porttitor magna aliquet arcu. Interdum risus mauris pulvinar et vel. Morbi tellus, scelerisque vel metus. Scelerisque arcu egestas ac commodo, ac nibh. Pretium ac elit sed nulla nec.</p>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                </div>
+      
+      
+      
+              </div>
+      
+              <!-- Pagination (bullets) -->
+              <div class="swiper-pagination position-relative pt-2 mt-2"></div>
             </div>
-            <div class="d-flex align-items-center justify-content-end text-center text-md-end">
+            <div class="d-flex align-items-center justify-content-end">
               <a href="insights.html" class="btn btn-sm btn-outline-primary hover-arrow">
                 View all insights
               </a>
             </div>
+      
         </div>
-      </section>
+      </section> 
 
 
       <!-- Perspectives slider -->
@@ -1303,7 +1312,7 @@
 
     </div><!-- End swiper -->
           <!-- Pagination (bullets) -->
-          <div class="swiper-per-pagination position-relative pt-2 mt-4"></div>
+          <div class="swiper-per-pagination position-relative pt-2 mt-2"></div>
           <!-- End pagination -->
           <div class="d-flex align-items-center justify-content-end">
             <a href="insights.html" class="btn btn-sm btn-outline-primary hover-arrow">
@@ -1404,7 +1413,7 @@
           </div>
 
           <!-- Pagination (bullets) -->
-          <div class="swiper-pagination position-relative pt-2 mt-4"></div>
+          <div class="swiper-pagination position-relative pt-2 mt-2"></div>
         </div>
         <div class="d-flex align-items-center justify-content-end">
           <a href="events.html" class="btn btn-sm btn-outline-primary hover-arrow">
@@ -1558,7 +1567,7 @@
             </div>
   
             <!-- Pagination (bullets) -->
-            <div class="swiper-pagination position-relative pt-3 mt-3"></div>
+            <div class="swiper-pagination position-relative pt-2 mt-2"></div>
           </div>
           <div class="d-flex align-items-center justify-content-end">
             <a href="experts.html" class="btn btn-sm btn-outline-primary hover-arrow">

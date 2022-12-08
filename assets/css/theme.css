@@ -18177,7 +18177,7 @@ cursor: pointer;
   background: linear-gradient(0deg, #e5f5fb 0%, #fff 100%) !important;
 }
 #related-insights.slider-insight{
-  padding-bottom: 0!important;
+  /*padding-bottom: 0!important;*/
 }
 #related-cases{
   background: linear-gradient(0deg, #fff 0%, #e5f5fb 100%) !important;

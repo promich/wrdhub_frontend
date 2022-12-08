@@ -4456,7 +4456,9 @@ a.insight-card p{
   margin-bottom: 0.5rem;
   line-height: 1.25;
 }
-
+.insight-card .col-12{
+  min-height: 10.9rem;
+}
 
 .insight-card picture{
   display: block;

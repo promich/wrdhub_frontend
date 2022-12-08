@@ -4428,7 +4428,8 @@ a.insight-card:hover > div{
   background-color: #e5f5fb !important;
 }
 
-.insight-card .card-top {
+.insight-card .card-top,
+.card-top {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
@@ -5520,12 +5521,14 @@ padding-right: 0.5rem;
 .card-latest{
   border: 0 !important;
 }
-.card-latest a{
+.card-latest a,
+a.card-latest {
 text-decoration: none;
 color: #001118;
 transition: background-color 0.2s ease-in-out;
 }
 .card-latest a:hover,
+a.card-latest:hover,
 .card-event a:hover{
   background-color: #d9f0fa; /*15%*/
   background-color: #e5f5fb; /*10%*/
@@ -5535,6 +5538,7 @@ transition: background-color 0.2s ease-in-out;
 }
 
 .card-latest a:hover .badge,
+a.card-latest:hover .badge,
 .card-event a:hover .badge{
   background-color: #fff !important;
 }
@@ -15391,7 +15395,7 @@ hr.dropdown-divider {
    color: #009ddc;
 }
 .nav-link.active:not([data-bs-toggle=dropdown]) {
-  pointer-events: none;
+  /*pointer-events: none;*/
   cursor: default;
 }
 
@@ -15408,6 +15412,7 @@ hr.dropdown-divider {
 .nav-tabs .nav-link:hover:not(.active), .nav-tabs .nav-link.show:not(.active) {
   background-color: rgba(99, 102, 241, 0.12);
   color: #9b3c90;
+  color: #009ddc;
 }
 .nav-tabs .nav-link.disabled, .nav-tabs .nav-link[disabled] {
   background-color: #f3f6ff;
@@ -16075,13 +16080,14 @@ hr.dropdown-divider {
   background-color: #431a3e;
 }
 .navbar-light .nav-item:hover > .nav-link:not(.disabled) {
-  color: #9b3c90;
+  color: #009ddc;
+  
 }
 .navbar-light .nav-item.active > .nav-link:not(.disabled) {
-  color: #9b3c90;
+  color: #009ddc;
 }
 .navbar-light .dropdown:hover > .nav-link {
-  color: #9b3c90;
+  color: #009ddc;
 }
 
 .navbar-dark.navbar-stuck {
@@ -16091,13 +16097,13 @@ hr.dropdown-divider {
   background-color: rgba(255, 255, 255, 0.85);
 }
 .navbar-dark .nav-item:hover > .nav-link:not(.disabled) {
-  color: #9b3c90;
+  color: #009ddc;
 }
 .navbar-dark .nav-item.active > .nav-link:not(.disabled) {
-  color: #9b3c90;
+  color: #009ddc;
 }
 .navbar-dark .dropdown:hover > .nav-link {
-  color: #9b3c90;
+  color: #009ddc;
 }
 
 .card-header,
@@ -17353,6 +17359,7 @@ a.badge {
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 1.25rem;
+  bottom: 0;
 }
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
@@ -18131,6 +18138,12 @@ cursor: pointer;
   align-items: center !important;
   margin-bottom: 1.5rem;
 }
+.topic-top .icon-title img{
+   width:130px;
+   height:130px;
+   
+}
+
 .topic-top .icon-title > div{
     padding-left: 0.5rem !important;
 }
@@ -18141,14 +18154,51 @@ cursor: pointer;
     margin-bottom: 0 !important;
 }
 .topic-top .icon-title h2 {
-    margin-bottom: 0 !important;
+  line-height: 1.2;
+  margin-bottom: 0 !important;
 }
-
-
 
 #subtopic-zone{
   padding: 2rem 0 3rem 0;
-  
+}
+#subtopic-zone .btn{
+  width: 100% !important;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #009ddc;
+  border-color: #e8692e;
+}
+#subtopic-zone .btn:hover{
+  color: #fff;
+  background-color: #e8692e;
+}
+
+#related-insights.slider-insight{
+  background: linear-gradient(0deg, #e5f5fb 0%, #fff 100%) !important;
+}
+#related-insights.slider-insight{
+  padding-bottom: 0!important;
+}
+#related-cases{
+  background: linear-gradient(0deg, #fff 0%, #e5f5fb 100%) !important;
+}
+.slider-insight .swiper-slide {
+    height: auto !important;
+}
+
+.slider-insight .card{
+  border: 0 !important;
+  height: 100% !important;
+  text-decoration: none !important;
+  box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(19 16 34 / 5%), 0 0.125rem 0.4rem -0.0625rem rgb(19 16 34 / 3%) !important;
+  transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.slider-insight .card:hover {
+}
+.slider-insight .card .badge {
+    --bs-bg-opacity: 1;
+    background-color: #e5f5fb !important;
+    color: #431a3e !important;
 }
 
 

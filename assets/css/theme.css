@@ -7580,7 +7580,9 @@ span.date,
 .ratio-4x3 {
   --bs-aspect-ratio: 75%;
 }
-
+.ratio-9x16 {
+  --bs-aspect-ratio: 177.777778%;
+}
 
 .ratio-8x5 {
   --bs-aspect-ratio: 62.5%;
@@ -17790,6 +17792,22 @@ text-align: right;
   width: 4rem;
   margin-right: 1rem;
 }
+
+
+/* Hazard slider */
+.slider-hazards{
+  
+}
+.slider-hazards .hazard-thumb {
+    margin-bottom: 0;
+}
+.slider-hazards .hazard-thumb img {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+
+
 
 
 

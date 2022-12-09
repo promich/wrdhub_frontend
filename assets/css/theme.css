@@ -2213,7 +2213,7 @@ section:first-of-type{
 .form-label {
   margin-bottom: 0.3125rem;
   font-size: 0.875rem;
-  font-weight: 600;
+  /*font-weight: 600;*/
   color: #001118;
 }
 
@@ -3142,6 +3142,8 @@ textarea.form-control-lg {
   color: #000;
   background-color: #f1f4fc;
   border-color: #f1f3fc;
+  background-color: #a6ddf3;/*35%*/
+  border-color: #a6ddf3;/*35%*/
 }
 .btn-check:focus + .btn-secondary, .btn-secondary:focus {
   color: #000;
@@ -14697,6 +14699,8 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .btn-secondary.show {
   background-color: #cfd8f6;
   border-color: #cfd8f6;
+  background-color: #a6ddf3;/*35%*/
+  border-color: #a6ddf3;/*35%*/
   color: #fff;
 }
 
@@ -19036,7 +19040,7 @@ min-height: 205px;
   background-color: #fdf4ef !important;*/
 }
 .home-pillars .border-end-lg {
-    border-right: 1px solid #80ceed !important;
+    border-right: 1px solid #aadef3 !important; /*33%*/
 }
 
 

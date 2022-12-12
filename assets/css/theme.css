@@ -755,7 +755,7 @@ section:first-of-type{
     margin-top:67px !important;
   }
 }
-section:last-of-type{
+section:last-of-type:not(#banner-top){
   padding-bottom: 6rem !important;
 }
 

@@ -4209,6 +4209,8 @@ color: #fff;
 
 .library-top .swiper-pagination {
   justify-content: end;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
 }
 .library-top .swiper-pagination-bullet{
   background-color: #ffa871;
@@ -18451,9 +18453,14 @@ section.page-box{
   transition: background-color 0.2s ease-in-out;
 }
 
+.page-box h2,
+.page-box h3,
+.page-box p{
+  color: #fff !important;
+}
+
 .page-box h3{
   margin-bottom: 0.75rem;
-  color: #fff !important;
 }
 
 .page-box a:hover .btn-outline-white {
@@ -19345,12 +19352,7 @@ min-height: 205px;
 
 
 .home-three{
-  
-  
-  
-  
- /* --bs-bg-opacity: 1;
-  background-color: #fdf4ef !important;*/
+
 }
 .home-three .border-end-lg {
   border-color: #aadef3 !important; /*33%*/
@@ -19401,7 +19403,7 @@ min-height: 205px;
 }
 
 .home-three p {
-    font-size: 1.125rem !important;
+    font-size: 1.125rem;
     color: var(--bs-body-color) !important;
     margin-bottom: 0.75rem;
 }
@@ -19424,51 +19426,114 @@ min-height: 205px;
   border-top: none;
   margin: 0;
   padding: 0 1.25rem;
+  width: 100%!important;
 }
+.home-three .card-footer.row {
+  --bs-gutter-x: 0;
+  margin-top:0.75rem;
+}
+
+    
 
 @media (max-width: 991.98px) {
   .home-three .card-footer {
     padding-bottom: 2rem;
-    width: 100%;
+    width: 100%!important;
   }
 }
 
 .home-three .card-footer a{
     color: #009ddc;
+    line-height: 1.25;
 }
 .home-three .card-footer a:hover{
     color: #0e83b6;
 }
 
 
-.home-three .card h2, .home-three .card .h2, .home-three .card h3, .home-three .card .h3, .home-three .card p{
-  transition: color 0.2s ease-in-out;
+/* .practice-area */
+
+
+
+.home-three.practice-area a.home-three-card:hover .h3,
+.home-three.practice-area a.home-three-card:hover p{
+    color: #e8692e!important;
 }
 
-/*
-.home-three .card:hover {
-  color: #fff;
-  border-color: #009ddc !important;
-  background-color: #009ddc !important;
+.home-three.practice-area a.home-three-card .btn {
+  color: #e8692e!important;
+  border-color: #ff8b42 !important;
 }
-.home-three .card:hover h2, .home-three .card:hover .h2, .home-three .card:hover h3, .home-three .card:hover .h3, .home-three .card:hover p{
-  color: #fff;
+
+.home-three.practice-area a.home-three-card:hover .btn {
+    color: #fff!important;
+    background-color: #e8692e;
+    border-color: #e8692e!important;
 }
-*/
-.home-three .card a {
-  color: #009ddc;
+
+
+.home-three.practice-area .card-footer a{
+    color: #e8692e;
+    color: var(--bs-body-color);
+    color: #001118;
+    
+    line-height: 1.25;
+    font-size: 0.925rem !important;
+}
+.home-three.practice-area .card-footer a:hover{
+    
+    color: #ff8b42;
+}
+
+.home-three.practice-area .list-group-item {
+    border-color: #fce8e0;
+}
+.home-three.practice-area .border-end-lg {
+    border-color: #fce8e0!important;
+}
+
+
+/*Practice CC*/
+.practice-cross{
+  
+}
+.practice-cross a.card{
+  height: 100% !important;
+  border: #9b3c90 1px solid;
+  border-color: rgba(155, 60, 144, 0.75);
+}
+.practice-cross a.card:hover{
+  color: #fff;
+  border: #9b3c90 1px solid;
+  border-color: rgba(155, 60, 144, 0.75);
+  background-color: rgba(155, 60, 144, 0.75);
   text-decoration: none;
 }
-.home-three .card a.btn:hover {
+.practice-cross a.card:hover .h3{
   color: #fff;
 }
-/*
-.home-three .card a:hover,
-.home-three .card:hover a {
-  color: #fff;
-  text-decoration: none;
+
+
+.practice-cross .btn {
+  color: #9b3c90;
+  border-color: rgba(155, 60, 144, 0.75);
 }
-*/
+.practice-cross a.card:hover .btn {
+  color: #fff;
+  border-color: rgba(155, 60, 144, 0.75);
+  background-color: #9b3c90;
+}
+.practice-cross a.card:hover .btn:after {
+    transform: translate3d(6px,0,0);
+}
+
+.practice-library hr{
+  color: #fff;
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+
 /*In-page navigation*/
 
 .article-progress {

@@ -5429,6 +5429,7 @@ padding-right: 0.5rem;
 .card-body {
   flex: 1 1 auto;
   padding: 1.5rem 1.5rem;
+  padding: 0.5rem 0.5rem;
 }
 
 @media (min-width: 500px) {
@@ -5443,10 +5444,14 @@ padding-right: 0.5rem;
 }
 @media (min-width: 992px) {
   .card-body {
-    padding: 1.25rem 1.25rem;
+    padding: 1.2rem 1.25rem;
   }
 }
-
+@media (min-width: 1200px) {
+  .card-body {
+    padding: 1.333rem 1.5rem;
+  }
+}
 
 .card-title {
   margin-bottom: 0.75rem;
@@ -5548,15 +5553,18 @@ text-decoration: none;
 color: #001118;
 transition: background-color 0.2s ease-in-out;
 }
-.card-latest a:hover,
-a.card-latest:hover,
+
 .card-event a:hover{
   background-color: #d9f0fa; /*15%*/
   background-color: #e5f5fb; /*10%*/
   background-color: #f2fafd; /*5%*/
-  
-  
 }
+
+.card-latest a:hover,
+a.card-latest:hover{
+  background-color: #d9f0fa; /*15%*/
+}
+
 
 .card-latest a:hover .badge,
 a.card-latest:hover .badge,
@@ -5616,6 +5624,11 @@ section.events-landing{
   padding-bottom: 0 !important;
 }
 
+.events-landing .card-top{
+  margin-bottom: 1rem!important;
+}
+
+
 .events-nav .nav-tabs .nav-item {
     margin-bottom: 0;
 }
@@ -5643,9 +5656,10 @@ section.events-landing{
 
 .card-event .badge {
 	font-size: 0.875rem !important;
-    color: #431a3e;
-       --bs-bg-opacity: 0.75;
-    background-color: #fdf4ef !important;
+  color: #431a3e;
+  --bs-bg-opacity: 0.75;
+  background-color: #f5ebf4 !important; /*10%*/
+  background-color: #faf5f9 !important; /*5%*/
 }
 span.date,
 .card-event span.date,
@@ -6064,6 +6078,13 @@ span.date,
 .card-event a:hover .btn-featured{
   color:#fff;
   background-color: #431a3e !important;
+}
+
+.card-latest .badge {
+  font-size: 0.875rem !important;
+  color: #431a3e;
+  --bs-bg-opacity: 0.75;
+  background-color: #e5f5fb !important; /*10%*/
 }
 
 
@@ -17613,12 +17634,18 @@ a.badge {
   
 }    
 
+/*Home: 3 areas home-highlights*/
+
+.home-highlights{
+
+}
+
 
 
 /*Home: Women's Perspective slider*/
 
 .home-slider-perspec{
-  background: linear-gradient(0deg, #fdf4ef 0%, #fff 100%) !important;
+  background: linear-gradient(0deg, #fff 50%, #fdf4ef 100%) !important;
   }
 
 
@@ -17640,14 +17667,10 @@ a.badge {
   color: #009ddc;
 }
 
-
-
-
 .home-slider-perspec .pic-frame{
   overflow:hidden; 
   position:relative;
 }
-
 
 .home-slider-perspec picture{
   display: block;
@@ -17711,6 +17734,44 @@ text-align: right;
 .perspec-overlay p{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+/* home-latest */
+
+.home-latest{
+  background-color: #e5f5fb; /*10%*/
+  background: linear-gradient(0deg, #f2fafd 75%, #fff 100%) !important;
+}
+
+.home-latest .card-latest{
+  margin-bottom: 1.5rem;
+  overflow: hidden !important;
+  box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(19 16 34 / 5%), 0 0.125rem 0.4rem -0.0625rem rgb(19 16 34 / 3%) !important;
+  }
+
+@media (max-width: 767.98px){
+  .home-latest .card-latest{
+    margin-bottom: 1rem;
+  }
+}
+
+.home-latest .card-latest .row > * {
+min-height: 10rem;
+}
+
+
+
+.home-latest .feat-event .card-top{
+  margin-bottom: 1rem !important;
+}
+.home-latest .feat-event .badge{
+  background-color: #faf5f9 !important;
+}
+.home-latest .date{
+  color: #001118 !important;
+}
+.home-latest .feat-event .date{
+  font-size: var(--bs-body-font-size) !important;
 }
 
 /* Organizations page */
@@ -18212,6 +18273,30 @@ cursor: pointer;
     font-size: 1.125rem;
   }
 }
+
+/*pub-main*/
+
+.pub-main{
+  
+}
+.pub-main #page-side .side-buttons .btn {
+    border-color: #ef966d;
+    color: #431a3e !important;
+    margin-bottom: 0.5rem !important;
+}
+.pub-main #page-side .side-buttons .btn:hover {
+    border-color: #e8692e;
+    background-color: #e8692e;
+    color: #fff !important;
+}
+
+
+
+
+
+
+
+
 
 /*Topic page*/
 
@@ -19226,6 +19311,10 @@ min-height: 205px;
 
 
 .home-three{
+  
+  
+  
+  
  /* --bs-bg-opacity: 1;
   background-color: #fdf4ef !important;*/
 }

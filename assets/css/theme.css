@@ -4162,6 +4162,17 @@ color: #fff;
     margin-bottom: 1rem;
 }
 
+@media (max-width: 499.98px){
+  .library-top .badge {
+      margin-bottom: 0.5rem;
+  }
+}
+
+
+
+
+
+
 .library-top p{
   color:#fff;
   margin-bottom: 1rem;
@@ -5847,7 +5858,10 @@ span.date,
     align-items: center !important;
     margin-bottom: 0.5rem !important;
 }
-
+#page-content .card-list-pub p {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
 
 
 .card-list .badge {
@@ -5880,6 +5894,19 @@ span.date,
 	box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
 	      transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
+
+@media (max-width: 499.98px){
+  .pub-image img {
+    -webkit-transform: translate(-50%,0.5rem);
+    -ms-transform: translate(-50%,0.5rem);
+    transform: translate(-50%,0.5rem);
+    width: calc(100% - 1rem);
+    box-shadow: none !important;
+  }
+}
+
+
+
 
 .tags-row{
   width: 100%;
@@ -18238,12 +18265,10 @@ cursor: pointer;
 .pub-top-meta h6{
   font-weight: 500;
   font-size: 0.875rem;
-  margin: 0.25rem 0.25rem 0.25rem 0;
 }
 .pub-top-meta a.btn{
-  margin-left: 0.25rem !important;
+ /* margin-left: 0.25rem !important;*/
   margin-bottom: 0.25rem !important;
-  border-color: #d4d7e5;
   border-color: #ef966d;
   color: #431a3e !important;
   padding: 0.275rem 0.85rem;
@@ -18271,6 +18296,7 @@ cursor: pointer;
   }
   .pub-top a.pub-type-label {
     font-size: 1.125rem;
+    line-height: 1;
   }
 }
 

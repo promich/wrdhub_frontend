@@ -509,15 +509,15 @@
 
 
 
-            <!-- Selected Insights -->
+            <!--IF Selected Insights -->
             <hr>
             <div class="mb-4">
               <h6 class=" ">Further reading</h6>
               
-              <article class="card card-list overflow-hidden mb-4">
-              <a href="blog-single.html">
+              <article class="card card-list">
+              <a href="insight-single.html">
               <div class="row g-0">
-                <div class="col-8 col-xl-9">
+                <div class="col">
                   <div class="card-body">
                     <div class="card-top">
                       <span class="badge">Blog</span>
@@ -530,9 +530,10 @@
 
                   </div>
                 </div>
-                <div class="col-4 col-xl-3 position-relative bg-position-center bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/interview.jpg); min-height: 8rem;">
-
+                <!-- Display the below column ONLY IF insight thumb image exists-->
+                <div class="col-4 col-xl-3" style="background-image: url(assets/img/interview.jpg);">
                 </div>
+                <!--End display only -->
 
               </div>
             </a>

@@ -5688,6 +5688,15 @@ span.date,
     font-size: 0.875rem !important;
     color: #9b3c90;
 }
+@media (max-width: 499.98px){
+  span.date,
+  .card-event span.date,
+  .card-list span.date{
+    font-size: 0.75rem !important;
+  }
+}
+
+
 .card-event .h5 {
     line-height: 1.25rem;
     margin-bottom: 0.33rem;
@@ -18325,6 +18334,33 @@ cursor: pointer;
     background-color: #e8692e;
     color: #fff !important;
 }
+.pub-main .card-list {
+    margin-bottom: 1.5rem;
+    overflow: hidden !important;
+}
+.pub-main #page-content .card-list p {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.pub-main .card-list .col-4{
+  position: relative !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  min-height: 8rem;
+}
+@media (max-width: 499.98px){
+  .pub-main .card-list .col-4{
+    background-size: contain !important;
+    background-position: top !important;
+  }
+  .pub-main .card-list {
+      margin-bottom: 1rem !important;
+  }
+}
+
+
 
 
 

@@ -5567,6 +5567,20 @@ color: #001118;
 transition: background-color 0.2s ease-in-out;
 }
 
+/* Events page */
+
+
+.card-event{
+  height: 100% !important;
+  overflow: hidden !important;
+  
+}
+.card-event a {
+    text-decoration: none;
+    color: #001118;
+    margin-bottom: 1.5rem !important;
+}
+
 .card-event a:hover{
   background-color: #d9f0fa; /*15%*/
   background-color: #e5f5fb; /*10%*/
@@ -5585,6 +5599,10 @@ a.card-latest:hover .badge,
   background-color: #fff !important;
 }
 
+
+
+
+
 .card-latest .card-body p,
 .card-event .card-body p {
   margin-block-end: 0;
@@ -5593,7 +5611,7 @@ a.card-latest:hover .badge,
 
 
 
-/* Events page */
+
 
 section.event-top-featured{
   padding-top: 0 !important;
@@ -5640,6 +5658,59 @@ section.event-top-featured{
 
 
 
+#page-content a.card-event{
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+  margin-bottom: 1.5rem !important;
+  color: #001118;
+  background-color: #f2fafd;
+  transition: background-color 0.2s ease-in-out;
+}
+#page-content a.card-event .badge {
+    font-size: 0.8125em !important;
+    color: #431a3e !important;
+    background-color: #fff !important;
+}
+
+#page-content a.card-event p {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+#page-content a.card-event .col-4 {
+  position: relative !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  min-height: 10rem;
+}
+#page-content a.card-event:hover{
+  text-decoration: none;
+  background-color: #e5f5fb;
+}
+@media (min-width: 768px){
+  #page-content a.card-event .card-body {
+    padding: 1rem 1rem;
+  }    
+}
+@media (max-width: 499.98px){
+  #page-content a.card-event .card-body {
+    padding: 0.5rem 0.5rem;
+  }
+  #page-content a.card-event .col-4 {
+    background-size: contain !important;
+    background-position: top !important;
+  }
+  
+  
+  
+  
+  
+}
+
+
+
+
 section.events-landing{
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -5670,10 +5741,7 @@ section.events-landing{
   color: #9b3c90;
 }
 
-.card-event a {
-    text-decoration: none;
-    color: #001118;
-}
+
 
 .card-event .badge {
 	font-size: 0.875rem !important;
@@ -5681,7 +5749,24 @@ section.events-landing{
   --bs-bg-opacity: 0.75;
   background-color: #f5ebf4 !important; /*10%*/
   background-color: #faf5f9 !important; /*5%*/
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
+.card-event .badge.event-type{
+  background-color: #fff !important;
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  z-index: 5 !important;
+  margin-top: 0.5rem !important;
+  margin-right: 0.5rem !important;
+}
+.card-event a:hover .badge.event-type {
+  color: #fff;
+  background-color: #431a3e !important;
+}
+
+
+
 span.date,
 .card-event span.date,
 .card-list span.date {
@@ -5693,6 +5778,12 @@ span.date,
   .card-event span.date,
   .card-list span.date{
     font-size: 0.75rem !important;
+  }
+  .card-event .badge {
+    font-size: 0.75rem !important;
+  }
+  .card-event .badge.event-type{
+    margin-right: 0.25rem !important;
   }
 }
 
@@ -5970,18 +6061,32 @@ span.date,
   text-decoration: none !important;
   transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
+
+.related-events .card h3{
+  margin-bottom: 0.5rem;
+  line-height: 1.25;
+}
+.related-events .card p{
+  color: #001118;
+  font-size: 0.875em;
+  margin-bottom: 0;
+}
+
+
 .related-events .card:hover{
   transform: translateY(-0.25rem);
   box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(0 157 220 / 7%), 0 0.125rem 0.4rem -0.0625rem rgb(0 157 220 / 4%);
 }
 
-.related-events .card span{
-  font-size: 0.875rem !important;
-}
 .related-events .card .badge {
     --bs-bg-opacity: 1;
     background-color: #e5f5fb !important;
     color: #431a3e !important;
+}
+@media (max-width: 499.98px){
+  .related-events .card .badge {
+    font-size: 0.75em;
+  }
 }
 
 
@@ -6343,6 +6448,10 @@ span.date,
 }
 
 
+.bread{
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
 
 .breadcrumb {
   display: flex;
@@ -6351,6 +6460,7 @@ span.date,
   padding: 0 0;
   padding: 0 0.25rem;
   margin-bottom: 1rem;
+  margin-bottom: 0;
   font-size: 0.875rem;
   list-style: none;
 

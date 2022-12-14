@@ -18548,7 +18548,7 @@ cursor: pointer;
 }
 
 .pub-box {
-    color: #001118;
+    color: #001118 !important;
     background-color: #fdf4ef;
     display: block;
     width:100%;
@@ -18560,6 +18560,23 @@ cursor: pointer;
 a.pub-box:hover {
     background-color: #fce8e0;
 }
+
+.pub-box .btn-outline-primary {
+    color: #e8692e;
+    border-color: rgba(232, 105, 46, 0.75);
+}
+
+a.pub-box:hover .btn-outline-primary {
+    color: #fff;
+    background-color: #e8692e;
+    border-color: #e8692e;
+}
+
+a.pub-box:hover .hover-arrow:after {
+    transform: translate3d(6px,0,0);
+}
+
+
 .pub-box img {
     box-shadow: 0 10px 16px 0 rgb(180 82 36 / 20%), 0 6px 20px 0 rgb(180 82 36 / 19%) !important;
 }

@@ -733,6 +733,13 @@ section:not(:first-of-type) {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
 }
+@media (max-width: 499.98px){
+  section:not(:first-of-type) {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+}
+
 section.pt-0 {
   padding-top: 0 !important;
 }
@@ -743,6 +750,8 @@ section:first-of-type{
 .article-progress + section:first-of-type{
   margin-top:0 !important;
 }
+
+
 
 
 @media (max-width: 767.98px) {

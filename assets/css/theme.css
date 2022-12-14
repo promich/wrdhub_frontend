@@ -18484,6 +18484,10 @@ cursor: pointer;
 
 /* Topic single*/
 
+.topic-top .h2 {
+  margin-bottom: 1.5rem;
+}
+
 .topic-top .icon-title{
   display: flex !important;
   position: relative !important;
@@ -18567,6 +18571,9 @@ a.pub-box:hover {
 
   
 @media (min-width: 992px){  
+  .pub-box {
+    padding: 1.25rem;
+  }
   .pub-box-inner{
     padding: 0 !important;
     padding-top: 1.5rem !important;
@@ -18609,6 +18616,8 @@ a.pub-box:hover {
 }
 .slider-insight .swiper-slide {
     height: auto !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
 }
 
 .slider-insight .card{
@@ -18620,6 +18629,17 @@ a.pub-box:hover {
 }
 .slider-insight .card:hover {
 }
+
+.slider-insight .card .col-sm-4{
+  position: relative !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  min-height: 15rem;
+}
+
+
+
 .slider-insight .card .badge {
     --bs-bg-opacity: 1;
     background-color: #e5f5fb !important;

@@ -27,6 +27,7 @@
     <!-- Vendor Styles-->
     <link type="text/css" rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
     <link type="text/css" rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery.js/dist/css/lightgallery.min.css"/>
 
     <!-- Main Theme Styles + Bootstrap-->
     <link type="text/css" rel="stylesheet" media="screen" href="assets/css/theme.css">
@@ -145,9 +146,6 @@
         <div class="page-spinner"></div><span>Loading...</span>
       </div>
     </div>
-   
-
-    
 
     <!-- Page wrapper for sticky footer -->
     <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
@@ -218,7 +216,7 @@
                   <a class="nav-link collapsed" href="#menu-4" data-bs-toggle="collapse" role="button" aria-expanded="false"
                     aria-controls="menu-4"> </a>
                   <ul class="dropdown-menu collapse" id="menu-4" data-bs-parent="#navbarNav">
-                      <li><a href="account-details.html" class="dropdown-item">Community of Practice</a></li>
+                      <li><a href="engage.html" class="dropdown-item">Community of Practice</a></li>
                       <li><a href="experts.html" class="dropdown-item">Expert Register</a></li>
                       <li><a href="events.html" class="dropdown-item">Events</a></li>
                       <li><a href="platforms.html" class="dropdown-item">Recommended Platforms</a></li>
@@ -226,7 +224,7 @@
                   </ul>               
                 </li>
                 <li class="nav-item">
-                  <a href="docs/getting-started.html" class="nav-link"><span class="d-none d-lg-block">FR</span><span class="d-md-block d-lg-none">En français</span></a>
+                  <a href="#" class="nav-link"><span class="d-none d-lg-block">FR</span><span class="d-md-block d-lg-none">En français</span></a>
                 </li>
 
               </ul>
@@ -360,7 +358,7 @@
 
 
 
-
+<!-- This is a deluxe-page. It begins with a Hero section -->
 
 <!-- Hero -->
 <section id="banner-top" class="explore-top jarallax dark-mode bg-dark py-2 py-lg-3" data-jarallax data-speed="0.85">
@@ -369,8 +367,8 @@
   <div class="container position-relative zindex-5 ">
 
     <!-- Breadcrumb -->
-    <nav class="pb-4" aria-label="breadcrumb">
-      <ol class="breadcrumb mb-0">
+    <nav class="bread" aria-label="breadcrumb">
+      <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="index.html">Home</a>
         </li>
@@ -378,9 +376,6 @@
       </ol>
     </nav>
 
-
-    
-    
     <!-- Title -->
     <div class="row position-absolute bottom-0">
       <div class="col-12 col-lg-8 col-xl-6">
@@ -388,22 +383,47 @@
       </div>
     </div>
 
-
-
   </div>
 </section>
 
-
+<!-- Next, a deluxe-page, has a repeater 'section' each with its own WYSIWYG area -->
 
   
 <!-- What? -->
-<section class="">
+<section class="deluxe-section">
 <div class="container">
   <h2>What is the WRD Knowledge Hub?</h2>
   <div class="row">
  
-    <div class="col-12 col-lg-9">
-      <p>The Women’s Resilience to Disasters Knowledge Hub brings together a community of practitioners who support women and girls affected by disasters, climate change, and other threats such as COVID-19.</p>
+    <div class="col-12">
+      <p>The Women’s Resilience to Disasters Knowledge Hub brings together a community of practitioners who support women and girls affected by disasters, climate change, and other threats such as COVID-19. It aims to:</p>
+<ul>
+      <li>Share evidence on the gender and intersectional dimensions of disaster and climate risks;
+      </li>
+      <li>
+      Champion women’s agency, leadership, and participation in disaster risk reduction and resilience building;
+      </li>
+      <li>
+      Advocate for deep seated, system-wide change to tackle the underlying drivers of risk including gender inequality and discrimination;
+      </li>
+      <li>
+      Share women’s perspectives, experiences, and good practices;
+      </li>
+      <li>
+      Provide consolidated access to data, research, resources, tools, and expertise; and
+      </li>
+      <li>
+      Bridge the gaps between gender equality, social inclusion, disaster risk reduction, climate change adaptation, and resilience.
+      </li>
+</ul>
+
+<p>The WRD Knowledge Hub is a central element of UN Women’s flagship programme – the <a href="programme.html">Women’s Resilience to Disasters Programme</a>.</p>
+
+<blockquote>
+  <p>
+  The Women’s Resilience to Disasters Knowledge Hub, is the first online platform to offer a “one-stop-shop” for all gender-related disaster and climate resilience knowledge.
+  </p>
+</blockquote>
 
     </div> 
   </div>
@@ -411,13 +431,32 @@
 </section>
 
 <!-- Who? -->
-<section class="">
+<section class="deluxe-section">
 <div class="container">
-  <h2>Who is the WRD Knowledge Hub for?</h2>
   <div class="row">
- 
-    <div class="col-12 col-lg-9">
+   
+    <div class="col-12 clearfix">
+      <h2>Who is the WRD Knowledge Hub for?</h2>
+      
+      
+      <!-- If photo side -->
+      <div class="col-xl-5 col-lg-5 col-md-12 col-12 float-lg-end ">
+        <aside id="region-side" class="ms-md-0 ms-lg-4 mb-4" >        
+          <div class="gallery">
+            <a href="assets/img/about-02.jpg" class="gallery-item " data-sub-html="<h6 class=&quot;fs-sm text-light&quot;>Photo: UN Women/Rahel Steinbach</h6>">
+              <img src="assets/img/about-02.jpg" alt="Photo of six girls posing at the beach.">
+              <div class="gallery-item-caption fs-sm">Photo: UN Women/Rahel Steinbach</div>
+            </a>
+          </div>        
+        </aside>
+      </div>
+      <!-- END If photo side -->      
+      
+      
       <p>The WRD Knowledge Hub has been developed for disaster risk reduction, climate change adaptation, gender, social inclusion, resilience, women’s rights organisations, policy-makers, and practitioners worldwide, while providing useful material to all those interested in learning more about gender-responsive disaster prevention, mitigation, preparedness, response, recovery, and risk informed development.</p>
+
+
+      
 
     </div> 
   </div>
@@ -425,14 +464,121 @@
 </section>
 
 <!-- Why? -->
-<section class="">
+<section class="deluxe-section">
 <div class="container">
   <h2>Why a WRD Knowledge Hub?</h2>
   <div class="row">
  
-    <div class="col-12 col-lg-9">
-      <p>Disasters are not uniformly felt by everyone.
+    <div class="col-12">
+      <h4>Disasters are not uniformly felt by everyone.</h4>
+      
+      
+      <div class="col-xl-3 col-lg-4 col-md-12 col-12 float-lg-end ">
+        <aside id="page-side" class="ms-md-0 ms-lg-5 mb-4">
+        <div class="swiper" data-swiper-options='{
+          "slidesPerView": 1,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          }
+        }'>
+            <div class="swiper-wrapper">
+        
+              <!-- Item -->
+
+                <a href="pub-single.html" class="swiper-slide pub-box" aria-label="Read more">
+                  <div class="row g-0">
+                  <div class="col-4 col-md-3 col-lg-12">
+                    <img src="assets/img/pub-cover.jpg" alt="Publication title">
+                  </div>
+                  <div class="col-8 col-md-9 col-lg-12">
+                    
+                    <div class="pub-box-inner">
+                      <div>
+                        <h4 class="h5">Gender and age inequality of disaster risk</h4>
+                      </div>  
+                      <div class="align-self-end">
+                        <span class="btn btn-sm btn-outline-primary hover-arrow">Learn more</span>
+                      </div>
+                    
+                    </div>
+                    
+                  </div>
+                  </div>
+                </a>
+                
+
+
+              <!-- Item -->
+                <a href="pub-single.html" class="swiper-slide pub-box" aria-label="Read more">
+                <div class="row g-0">
+                <div class="col-4 col-md-3 col-lg-12">
+                  <img src="assets/img/pub-cover.jpg" alt="Publication title">
+                </div>
+                <div class="col-8 col-md-9 col-lg-12">
+                  
+                  <div class="pub-box-inner">
+                    <div>
+                      <h4 class="h5">Gender and age inequality of disaster risk</h4>
+                    </div>  
+                    <div class="align-self-end">
+                      <span class="btn btn-sm btn-outline-primary hover-arrow">Learn more</span>
+                    </div>
+                  
+                  </div>
+                  
+                </div>
+                </div>
+              </a>
+        
+            </div>
+        
+            <!-- Pagination (bullets) -->
+            <div class="swiper-pagination position-relative pt-3"></div>
+          </div>            
+        
+        </aside>
+      </div>
+      
+      
+      
+      
+      
+      <p>
         Gender, age, disability, ethnicity, sexual orientation, income, geography, age, social marginalisation, and other socioeconomic factors shape an individual’s vulnerability to disaster and climate risks. Recent research highlights differential disaster impacts for women and girls. Across the board, from life expectancy to education, health, safety, job security, and nutrition - women and girls are disproportionately impacted. </p>
+
+        <blockquote>
+          <p>
+          Both slow-onset climate changes (such as drought) and sudden-onset weather events (such as flash floods) have complex and differentiated gender impacts.
+          </p>
+        </blockquote>
+
+        <h4>Structural gender inequalities are at the root of disproportionate disaster and climate impacts.</h4>
+        <p>
+        They limit the capacities of women and girls to reduce risks and to prepare and recover from disasters.  Gender-specific barriers (linked to socioeconomic and political realities, as well as cultural norms), obstruct women and girls from acquiring and accessing the means and capacities needed to build resilience to disasters; reinforcing  vulnerabilities. For example, early warning systems, which do not consider gender differences have proven ineffective and heighten women’s disaster risks. </p>
+
+        <blockquote>
+          <p>
+          Disasters exacerbate many of the gender inequalities that exist in societies
+          </p>
+        </blockquote>
+
+        
+        <h4>Women’s empowerment and leadership is missing in disaster and climate risk governance.</h4>
+        <p>Women have been shown to demonstrate extraordinary powers of resilience during disasters, but are consistently under-represented in disaster risk reduction, climate change adaptation, and resilience decision making processes at all levels.  Yet, women are key agents of change, with unique knowledge. They can play key roles in more effectively and sustainably reducing risks, preparing for multiple hazards, ensuring risk informed recovery from disasters, and increasing community resilience to future disasters and threats. </p>
+
+        <blockquote>
+          <p>
+          Women’s leadership brings essential knowledge, skills, resources, and experiences to resilience building.
+          </p>
+        </blockquote>
+        
+        <h4>Women’s grassroots organisations are key to addressing disaster and climate risk.</h4>
+        <p>Women’s local and national representative organisations and gender advocates are often the most knowledgeable of the specific risks, needs, and priorities of communities. Their absence from relevant planning and implementation processes and processes undermines achievement of critical ambitious identified in the post-2015 agreements.</p>
+        
+
+
+
 
     </div> 
   </div>
@@ -440,14 +586,81 @@
 </section>
 
 <!-- What gaps? -->
-<section class="">
+<section class="deluxe-section">
 <div class="container">
   <h2>What gaps will the WRD knowledge hub fill?</h2>
   <div class="row">
  
-    <div class="col-12 col-lg-9">
-      <p>Critical gaps remain in the evidence base. 
-        A recent UN Women and UNICEF study, Gender and age inequality of disaster risk, found significant gaps in the availability, quality, comparability, and relevance of quantitative and qualitative data - disaggregated by gender, age, and disability. This represents a significant barrier to understanding and analysing the granularity between groups and their differential risk impacts to inform decision making.  </p>
+    <div class="col-12">
+      
+      <!-- If photo side -->
+      <div class="col-xl-5 col-lg-5 col-md-12 col-12 float-lg-end ">
+        <aside id="" class="ms-md-0 ms-lg-4 mb-4" >        
+          <div class="gallery">
+            <a href="assets/img/about-04.jpg" class="gallery-item " data-sub-html="<h6 class=&quot;fs-sm text-light&quot;>Photo: UN Women/Fiji MCO</h6>">
+              <img src="assets/img/about-04.jpg" alt="Photo of five women sitting on a matted floor in a room .">
+              <div class="gallery-item-caption fs-sm">Photo: UN Women/Fiji MCO</div>
+            </a>
+          </div>        
+        </aside>
+      </div>
+      <!-- END If photo side --> 
+      
+      
+      <h4>Critical gaps remain in the evidence base.</h4>
+        <p>A recent UN Women and UNICEF study, <a href="">Gender and age inequality of disaster risk</a>, found significant gaps in the availability, quality, comparability, and relevance of quantitative and qualitative data - disaggregated by gender, age, and disability. This represents a significant barrier to understanding and analysing the granularity between groups and their differential risk impacts to inform decision making.  </p>
+        <p>
+          
+  <blockquote>
+    <p>
+    The WRD team is supporting research and capacity development to fill these gaps in the knowledge and evidence base across the <a href="">WRD Thematic Framework</a>
+    </p>
+  </blockquote>        
+          
+        <h4>Critical gaps in knowledge management, access, and uptake of tools on the gender dimensions of risk.</h4>
+        <p>Until now, existing information has been spread among different custodian agencies, projects and platforms limiting opportunities for peer learning, and sharing stories, women’s voices, good practices, lessons, and tools across regions to support replication and upscaling.</p>
+
+        <blockquote>
+          <p>
+          The WRD knowledge hub centralises knowledge, expertise, and increases access to tools on women’s resilience to disasters. 
+          </p>
+        </blockquote> 
+        
+        <h4>Critical governance and systems-levels gaps.</h4>
+        <p>Significant governance and systems-level gaps including gender-responsive legal, policy, and financial frameworks, systems, and processes impede inclusive and gender-responsive resilience.  Building an enabling environment for gender-responsive decision making and action requires several "enablers of change."  The WRD Knowledge Hub shares the latest research and tools for building the enabling governance environment for women’s resilience to disasters.</p>
+        
+        <img src="assets/img/about-graphic.png"/>
+        
+        <h4>Critical gaps in gender-responsive and transformative action.</h4>
+        <p>Despite increased recognition of the importance of gender equality and inclusion for resilience building and recent progress developing gender-responsive normative frameworks and commitments; this is not always translated into concrete plans and action.  Implementation of action plans and delivery of commitments to gender equality and social inclusion remains an important gap.  If disaster and climate risk reduction, and resilience are not gender-responsive and do not include and empower women, the impacts of disasters and threats will compound and aggravate existing gender inequalities.</p>
+        
+        <h4>A multi-hazard, coordinated and gender-responsive approach is needed</h4>
+        
+        <p>One which cuts across traditional silos and:</p> 
+        <ul>
+          <li>
+        tackles the underlying root causes of vulnerability to disasters and threats; 
+          </li>
+          <li>
+        amplifies women’s voices, collective influencing, and advocacy;
+        </li>
+        <li>
+        promotes women’s leadership, meaningful participation, and agency;
+        </li>
+        <li>
+        supports coordinated action across stakeholders and levels; and
+        </li>
+        <li>
+        ensures a continuum of support across risk prevention, mitigation, preparedness, response, recovery, and resilient development.
+        </li>
+        </ul>
+        
+        <blockquote>
+          <p>
+          The WRD knowledge hub will support transformative action for women’s resilience to disasters. 
+          </p>
+        </blockquote> 
+
 
     </div> 
   </div>
@@ -904,7 +1117,12 @@
     <script src="assets/vendor/jarallax/dist/jarallax-element.min.js"></script>
     <script src="assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  
+
+    <script src="assets/vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <script src="assets/vendor/lg-fullscreen.js/dist/lg-fullscreen.min.js"></script>
+    <script src="assets/vendor/lg-zoom.js/dist/lg-zoom.min.js"></script>
+    <script src="assets/vendor/lg-video.js/dist/lg-video.min.js"></script>
+    <script src="assets/vendor/lg-thumbnail.js/dist/lg-thumbnail.min.js"></script>  
 
     <!-- Main Theme Script <script src="assets/js/theme.min.js"></script>-->
     <script src="assets/js/theme.min.js"></script>
@@ -925,9 +1143,6 @@
   
 
 
-
-
-  </script>
 
   </body>
 </html>

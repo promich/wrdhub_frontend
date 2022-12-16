@@ -17911,8 +17911,8 @@ a.badge {
 .home-slider-perspec p {
   transition: color 0.4s;
 }
-  .home-slider-perspec a.swiper-slide:hover blockquote .h1,
-  .home-slider-perspec a.swiper-slide:hover blockquote p {
+  .home-slider-perspec a.swiper-slide:hover .text-box .h1,
+  .home-slider-perspec a.swiper-slide:hover .text-box p {
   color: #009ddc;
 }
 
@@ -19903,7 +19903,10 @@ min-height: 205px;
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important;
 }
+.practice-library p{
+  color: #001118;
 
+}
 
 /*In-page navigation*/
 

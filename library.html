@@ -880,14 +880,12 @@
     <script src="assets/vendor/jarallax/dist/jarallax-element.min.js"></script>
     <script src="assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
   
 
     <!-- Main Theme Script <script src="assets/js/theme.min.js"></script>-->
     <script src="assets/js/theme.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script>
-	    
+  <script>
 	   
 	$(document).on('click', '.navbar-toggler', function(){
 	   $('#togglenav').toggleClass('menu-open')
@@ -895,98 +893,8 @@
 	$(document).on('click', '.offcanvas-backdrop', function(){
 	   $('#togglenav').toggleClass('menu-open')
 	})	
-	
-	   
-	    
-	    
-	    
-$(".caribbean").hover(
-  function () {
-    $('.caribbean').addClass('reg-active');
-    $(".accordion-header.region").parent('.accordion-item').children('.caribbean-ac.collapse').collapse('show');
-  },
-  function () {
-    $('.caribbean').removeClass('reg-active');
-    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.caribbean-ac').collapse('hide');
-  }
-);
-$(".wc-africa").hover(
-  function () {
-    $('.wc-africa').addClass('reg-active');
-    $(".accordion-header.region").parent('.accordion-item').children('.wc-africa-ac.collapse').collapse('show');
-  },
-  function () {
-    $('.wc-africa').removeClass('reg-active');
-    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.wc-africa-ac').collapse('hide');
-  }
-);
-$(".se-asia").hover(
-  function () {
-    $('.se-asia').addClass('reg-active');
-    $(".accordion-header.region").parent('.accordion-item').children('.se-asia-ac.collapse').collapse('show');
-  },
-  function () {
-    $('.se-asia').removeClass('reg-active');
-    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.se-asia-ac').collapse('hide');
-  }
-);    
-$(".pacific").hover(
-  function () {
-    $('.pacific').addClass('reg-active');
-    $(".accordion-header.region").parent('.accordion-item').children('.pacific-ac.collapse').collapse('show');
-  },
-  function () {
-    $('.pacific').removeClass('reg-active');
-    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.pacific-ac').collapse('hide');
-  }
-);  
-
-$('.caribbean-ac').on('shown.bs.collapse', function () {
-    $('.caribbean').addClass('reg-active');
-});
-$('.caribbean-ac').on('hidden.bs.collapse', function () {
-   $(".caribbean").removeClass("reg-active")
-});
-
-$('.wc-africa-ac').on('shown.bs.collapse', function () {
-    $('.wc-africa').addClass('reg-active');
-});
-$('.wc-africa-ac').on('hidden.bs.collapse', function () {
-   $(".wc-africa").removeClass("reg-active")
-});
-
-$('.se-asia-ac').on('shown.bs.collapse', function () {
-    $('.se-asia').addClass('reg-active');
-});
-$('.se-asia-ac').on('hidden.bs.collapse', function () {
-   $(".se-asia").removeClass("reg-active")
-});
-
-$('.pacific-ac').on('shown.bs.collapse', function () {
-    $('.pacific').addClass('reg-active');
-});
-$('.pacific-ac').on('hidden.bs.collapse', function () {
-   $(".pacific").removeClass("reg-active")
-});
-
-
-
-      </script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-var typed = new Typed('.typed-element', {
-  strings: ["Securing gender-responsive systems", "Enabling women’s leadership","Supporting women’s voice and agency","Addressing underlying inequalities", "Sharing knowledge and tools"],
-  typeSpeed: 40,
-  backSpeed: 10,
-  loop: true,
-  fadeOut: true,
-  backDelay: 4000
-});
-
-
-
-
   </script>
+
 
   </body>
 </html>

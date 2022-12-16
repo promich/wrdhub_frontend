@@ -5582,8 +5582,25 @@ transition: background-color 0.2s ease-in-out;
 .card-event{
   height: 100% !important;
   overflow: hidden !important;
+}
+
+.card-event .col-4{
+  position: relative !important;
+  min-height: 10rem;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+@media (max-width: 499.98px){
+  .card-event .col-4{
+    background-size: contain !important;
+    background-position: top !important;
+  }
+
   
 }
+
+
 .card-event a {
     text-decoration: none;
     color: #001118;
@@ -5659,7 +5676,7 @@ section.event-top-featured{
 }
 
 .event-top-featured a:hover .btn-featured {
-  color: #fff;
+  color: #fff !important;
   background-color: #431a3e !important;
 }
 
@@ -6240,6 +6257,12 @@ span.date,
   margin-right: 1rem;
   box-shadow: unset;
 }
+ a:hover .btn-featured {
+  color: #fff !important;
+  background-color: #431a3e !important;
+}
+
+
 @media (max-width: 499.98px) {
   .btn-featured{
     margin-top: 0.5rem;
@@ -14367,6 +14390,10 @@ body {
   background-position-x: left !important;
 }
 
+.footer  i.bx,
+.footer .bx-envelope {
+    color: #009ddc !important;
+}
 
 
 .footer .footer-brand > img {
@@ -19817,9 +19844,9 @@ min-height: 205px;
 
 
 .home-three.practice-area .card-footer a{
-    color: #e8692e;
+    /*color: #e8692e;
     color: var(--bs-body-color);
-    color: #001118;
+    color: #001118;*/
     
     line-height: 1.25;
     font-size: 0.925rem !important;

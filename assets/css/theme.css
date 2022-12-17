@@ -14409,7 +14409,7 @@ body {
   background-position-x: left !important;
 }
 
-.footer  i.bx,
+
 .footer .bx-envelope {
     color: #009ddc !important;
 }
@@ -17902,13 +17902,21 @@ a.badge {
   margin-top: -100px;
 }
 
-@media (max-width: 499.98px) {
+@media (max-width: 599.98px) {
   .home-highlights .col-5{
-    margin-top: -75px!important;
+    margin-top: -62.5px!important;
   }`
 }
-
-
+@media (min-width: 1200px) {
+  .home-highlights .col-5{
+    margin-top: -125px!important;
+  }`
+}
+@media (min-width: 1500px) {
+  .home-highlights .col-5{
+    margin-top: -150px!important;
+  }`
+}
 
 /*Home: Women's Perspective slider*/
 

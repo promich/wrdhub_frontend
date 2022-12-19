@@ -20100,6 +20100,7 @@ min-height: 205px;
   height: 100% !important;
   border: #9b3c90 1px solid;
   border-color: rgba(155, 60, 144, 0.75);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 .practice-cross a.card:hover{
   color: #fff;

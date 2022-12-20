@@ -4789,6 +4789,7 @@ padding-right: 0.5rem;
 .nav-link:hover, .nav-link:focus {
   color: #9b3c90;
   color: #009ddc;
+  text-decoration: none;
 }
 .nav-link.disabled {
   color: #9397ad;
@@ -18278,9 +18279,16 @@ min-height: 10rem;
 
 /* Hazards page */
 
-.hazard-thumb{
+/*.hazard-thumb{
   margin-bottom: 1.5rem;
 }
+@media (max-width: 499.98px){
+  .hazard-thumb{
+    margin-bottom: 1rem;
+  }
+}
+*/
+
 
 .hazard-thumb .pic-frame{
   overflow: hidden;
@@ -18323,15 +18331,15 @@ min-height: 10rem;
     position: absolute !important;
     left: 0;
     bottom: 0;
-    padding: 1rem;
+    padding: 0.667rem;
     display: inline-flex;
     align-items: center !important;
 }
 .hazard-thumb img{
   background-color: #c51127;
-  height: 3rem;
-  width: 3rem;
-  margin-right: 0.66rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 0.5rem;
 }
 .hazard-thumb h2 {
   color: #fff;
@@ -18940,7 +18948,10 @@ a.pub-box:hover .hover-arrow:after {
   border: 0 !important;
   height: 100% !important;
   text-decoration: none !important;
+
+  
   box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(19 16 34 / 5%), 0 0.125rem 0.4rem -0.0625rem rgb(19 16 34 / 3%) !important;
+  box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(0 157 220 / 5%), 0 0.125rem 0.4rem -0.0625rem rgb(0 157 220 / 3%) !important;
   transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 .slider-insight .card:hover {

@@ -18080,6 +18080,16 @@ a.badge {
   }`
 }
 
+.home-highlights picture{
+  display: block;
+  position: relative;
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  height: 100%; 
+}
+
+
 /*Home: Women's Perspective slider*/
 
 .home-slider-perspec{

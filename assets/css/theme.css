@@ -21386,7 +21386,7 @@ img-comparison-slider:focus {
   height: auto;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #raindropSVG {
     margin-top: -4rem;
   }

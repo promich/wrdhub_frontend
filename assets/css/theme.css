@@ -16880,7 +16880,7 @@ a.badge {
     justify-content: center;
     color: #fff;
     text-decoration: none;
-    background-color: #9b3c90;
+    background-color: #00b69e;
     border: 0;
 }
 
@@ -16899,9 +16899,9 @@ a.badge {
 .wrd-framework .list-group.cross-cutting .list-group-item-action:first-child:hover, 
 .wrd-framework .list-group.cross-cutting .list-group-item-action:first-child:focus {
   z-index: 1;
-  color: #792f70;
+  color: #00a28c;
   text-decoration: none;
-  background-color: #debeda;
+  background-color: #bfede7; /*25%*/
 }
 
 
@@ -17061,7 +17061,8 @@ a.badge {
 }
     
 .wrd-framework .wrd-f-title span.wrd-f-title-cc{
-  color:#9b3c90;
+  color:#00b69e;
+  color:#00a28c;
 }
 
 
@@ -17204,7 +17205,7 @@ a.badge {
   color: #fff;
   font-weight: 600;
   text-align: center !important;
-  background-color: #9b3c90;
+  background-color: #00b69e;
   line-height: 1.25;
   border: 0;
   position: relative;
@@ -17234,7 +17235,7 @@ a.badge {
 .wrd-framework .cc-item:hover,
 .wrd-framework .cc-item:focus{
   text-decoration: none;
-  background-color: #a7549e;
+  background-color: #00a28c;
 }
 .wrd-framework .cc-item:nth-of-type(1):hover,
 .wrd-framework .cc-item:nth-of-type(1):focus{
@@ -19069,7 +19070,7 @@ section.page-box{
   transition: background-color 0.2s ease-in-out;
 }
 
-.page-box h2,
+.page-box.bg-secondary h2,
 .page-box h3,
 .page-box p{
   color: #fff !important;
@@ -20117,17 +20118,24 @@ min-height: 205px;
 .practice-cross{
   
 }
+.practice-cross a{
+  color: #008e7b;
+}
+
+
 .practice-cross a.card{
   height: 100% !important;
-  border: #9b3c90 1px solid;
+  border: #00b69e 1px solid;
   border-color: rgba(155, 60, 144, 0.75);
+  border-color: rgba(0, 182, 158, 0.75);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
-.practice-cross a.card:hover{
+.practice-cross a.card:hover,
+.practice-cross a.card:focus{
   color: #fff;
-  border: #9b3c90 1px solid;
-  border-color: rgba(155, 60, 144, 0.75);
-  background-color: rgba(155, 60, 144, 0.75);
+  border: #00b69e 1px solid;
+  border-color: #00a28c;
+  background-color: #00a28c;
   text-decoration: none;
 }
 .practice-cross a.card:hover .h3{
@@ -20136,13 +20144,15 @@ min-height: 205px;
 
 
 .practice-cross .btn {
-  color: #9b3c90;
+  color: #00b69e;
   border-color: rgba(155, 60, 144, 0.75);
+  border-color: rgba(0, 182, 158, 0.75);
 }
 .practice-cross a.card:hover .btn {
   color: #fff;
   border-color: rgba(155, 60, 144, 0.75);
-  background-color: #9b3c90;
+  border-color: rgba(0, 182, 158, 0.75);
+  background-color: #00b69e;
 }
 .practice-cross a.card:hover .btn:after {
     transform: translate3d(6px,0,0);

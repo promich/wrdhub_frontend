@@ -835,9 +835,34 @@
                             "loop": true
                           }'>
         <div class="swiper-wrapper">
+
+        <!-- Item 1-->
+        <a href="insight-single.html" class="swiper-slide">
+                    <div class="row">
+                      <div class="col-xl-5 col-lg-6 col-md-7 offset-xl-1 order-2 order-md-1" >
+                          <div class="text-box pt-3 pt-lg-5">
+                              <h4 class="h1">Women are coordinating and strengthening resilience networks</h4>
+                                  <p class="">The Network of Women-led Organisations in Nigeria coordinates and strengthens the collaboration among members and partners, insuring the inclusion of women and girls in programs and projects.</p>
+                          </div>
+                      </div>
+                
+                      <div class="col-xl-5 col-lg-6 col-md-5 offset-xl-1 order-1 order-md-2 position-relative">
+                          <div class="pic-frame">
+                            <picture class="ratio" style="background-image: url(assets/img/interview.jpg); ">
+                            </picture>
+                            <span class="bg-hero-top"></span>
+                            <div class="perspec-overlay">
+                              <h3>Dilanthi Amaratunga</h3>
+                              <p>Executive Director of Best Initiative National Development Unification, Bangladesh</p>
+                            </div>
+                            
+                          </div>
+                      </div>
+                    </div>
+                </a>
             
-            <!-- Item -->
-                <a href="#" class="swiper-slide">
+        <!-- Item 2-->
+        <a href="insight-single.html" class="swiper-slide">
                     <div class="row">
                       <div class="col-xl-5 col-lg-6 col-md-7 offset-xl-1 order-2 order-md-1" >
                           <div class="text-box pt-3 pt-lg-5">
@@ -860,10 +885,9 @@
                       </div>
                     </div>
                 </a>
-            
-                <!-- Item  margin-top: -100px;-->
-            <!-- Item -->
-                <a href="#" class="swiper-slide">
+
+        <!-- Item 3-->
+        <a href="insight-single.html" class="swiper-slide">
                     <div class="row">
                       <div class="col-xl-5 col-lg-6 col-md-7 offset-xl-1 order-2 order-md-1" >
                           <div class="text-box pt-3 pt-lg-5">
@@ -889,16 +913,12 @@
                     </div>
                 </a>
             
-                <!-- Item 3-->
-
+        </div><!-- End slider-wrapper -->
             
-            
-                </div><!-- End slider-wrapper -->
-            
-                </div><!-- End swiper -->
-                      <!-- Pagination (bullets) -->
-        <div id="swiper-per-pagination" class="swiper-pagination position-relative pt-3 "></div>
-                      <!-- End pagination -->
+      </div><!-- End swiper -->
+      <!-- Pagination (bullets) -->
+      <div id="swiper-per-pagination" class="swiper-pagination position-relative pt-3 "></div>
+      <!-- End pagination -->
 
         <div class="d-flex align-items-center justify-content-end">
           <a href="insights.html" class="btn btn-outline-primary hover-arrow">
@@ -949,7 +969,9 @@
           <div class="col">
 
             <!-- Display three most recent insight items-->
-            <!-- If insight has people item(s) (of people type author), display the first one-->
+            <!-- If insight has people item(s) (of people type author), display only the first one-->
+            <!-- If insight has no author(s)/(people item(s) of people type author), omit everything in the card-person div-->
+            <!-- If insight has no thumb-image, omit everything in the col-4 div-->
             <!-- Insight item-->
             <article class="card card-latest">
               <a href="insight-single.html">
@@ -966,25 +988,13 @@
                     <p class="small mb-1 ">Meet Varanisese Maisamoa, who is helping increase women's access to resilient infrastructure in Fiji.</p>
                     
                     <div class="card-person d-none d-xl-block">
-                      <hr class="my-2 mt-3">
-                      <div class="d-flex flex-nowrap align-items-center">
-                        <div class="d-flex align-items-center position-relative me-3">
-                          <img src="assets/img/avatar/08.jpg" class="rounded-circle me-3" width="48" alt="Photo of person name.">
-                          <div>
-                            <span class="nav-link p-0 fw-bold text-decoration-none stretched-link"> Annette Black</span>
-                            
-                          </div>
-                        </div>
-                      
+                      <hr>
+                      <div class="d-flex flex-nowrap align-items-center position-relative">
+                          <img src="assets/img/avatar/08.jpg" alt="Photo of person name.">
+                          <span>Annette Black Annette Black Annette Black</span>
                       </div>
-                      
-                      
-                    </div>
-                    
-
-                    
-                    
-                    
+                    </div><!--End card-person  -->
+                   
                   </div>
                 </div>
                 <div class="col-4" style="background-image: url(assets/img/interview.jpg);">
@@ -1011,20 +1021,12 @@
                     </h3>
                     <p class="small mb-1">How international commitments and recommendations are being translated into national DRR frameworks</p>
                     <div class="card-person d-none d-xl-block">
-                      <hr class="my-2 mt-3">
-                      <div class="d-flex flex-nowrap align-items-center">
-                        <div class="d-flex align-items-center position-relative me-3">
-                          <img src="assets/img/avatar/08.jpg" class="rounded-circle me-3" width="48" alt="Photo of person name.">
-                          <div>
-                            <span class="nav-link p-0 fw-bold text-decoration-none stretched-link"> Annette Black</span>
-                            
-                          </div>
-                        </div>
-                      
+                      <hr>
+                      <div class="d-flex flex-nowrap align-items-center position-relative">
+                          <img src="assets/img/avatar/08.jpg" alt="Photo of person name.">
+                          <span>Annette Blackette</span>
                       </div>
-                      
-                      
-                    </div>
+                    </div><!--End card-person  -->
                   </div>
                 </div>
                 <div class="col-4" style="background-image: url(assets/img/interview.jpg);">
@@ -1050,20 +1052,12 @@
                     </h3>
                     <p class="small mb-1">Meet Varanisese Maisamoa, who is helping increase women's access to resilient infrastructure in Fiji.</p>
                     <div class="card-person d-none d-xl-block">
-                      <hr class="my-2 mt-3">
-                      <div class="d-flex flex-nowrap align-items-center">
-                        <div class="d-flex align-items-center position-relative me-3">
-                          <img src="assets/img/avatar/08.jpg" class="rounded-circle me-3" width="48" alt="Photo of person name.">
-                          <div>
-                            <span class="nav-link p-0 fw-bold text-decoration-none stretched-link"> Annette Black</span>
-                            
-                          </div>
-                        </div>
-                      
+                      <hr>
+                      <div class="d-flex flex-nowrap align-items-center position-relative">
+                          <img src="assets/img/avatar/08.jpg" alt="Photo of person name.">
+                          <span>Annette Blackette</span>
                       </div>
-                      
-                      
-                    </div>
+                    </div><!--End card-person  -->
                   </div>
                 </div>
 
@@ -4023,26 +4017,26 @@
                 <div class="col-xl-3 col-lg-4 col-md-4 ">
     
                   <div class="list-group">
-                    <a href="/practice/systems" class="pillar-item">
+                    <a href="/practice/topics/systems" class="pillar-item">
                       <img src="assets/img/pillar-b_wh.svg">
                       <div>
                       <span class="badge">Pillar B</span>
                       <h3 class="h2">Systems</h3>
                       </div>
                     </a>
-                    <a href="/practice/systems/policies" class="topic-item">
+                    <a href="/practice/topics/policies" class="topic-item">
                       <span class="h5">6.</span>
                       Legislation, policies, strategies, plans &amp; projects</a>
-                    <a href="/practice/systems/budgets" class="topic-item">
+                    <a href="/practice/topics/budgets" class="topic-item">
                       <span class="h5">7.</span>
                       Budgets, expenditure &amp; funding</a>
-                    <a href="/practice/systems/information-management-systems" class="topic-item">
+                    <a href="/practice/topics/information-management-systems" class="topic-item">
                       <span class="h5">8.</span>
                       Information management systems</a>
-                    <a href="/practice/systems/early-warning-preparedness-risk-communication-systems" class="topic-item">
+                    <a href="/practice/topics/early-warning-preparedness-risk-communication-systems" class="topic-item">
                       <span class="h5">9.</span>
                       Early warning, preparedness &amp; risk communication systems</a>
-                    <a href="/practice/systems/coordination" class="topic-item">
+                    <a href="/practice/topics/coordination" class="topic-item">
                       <span class="h5">10.</span>
                       Coordination mechanisms, networks, &amp; partnerships</a>
                   </div>
@@ -4064,16 +4058,16 @@
                     <a href="topic-single.html" class="topic-item">
                       <span class="h5">11.</span>
                       Access to finance</a>
-                    <a href="/practice/action/access-services" class="topic-item">
+                    <a href="/practice/topics/access-services" class="topic-item">
                       <span class="h5">12.</span>
                       Access to services</a>
-                    <a href="/practice/action/access-resilient-infrastructure" class="topic-item">
+                    <a href="/practice/topics/access-resilient-infrastructure" class="topic-item">
                       <span class="h5">13.</span>
                       Access to resilient infrastructure</a>
-                    <a href="/practice/action/resilient-livelihoods" class="topic-item">
+                    <a href="/practice/topics/resilient-livelihoods" class="topic-item">
                       <span class="h5">14.</span>
                       Women’s resilient livelihoods &amp; businesses</a>
-                    <a href="/practice/action/freedom-from-violence" class="topic-item">
+                    <a href="/practice/topics/freedom-from-violence" class="topic-item">
                       <span class="h5">15.</span>
                       Women’s freedom from violence</a>
                   </div>
@@ -4081,9 +4075,9 @@
     
                 </div>
                 
-    <a href="topic.html" class="cc-item">Global frameworks</a>
-    <a href="topic.html" class="cc-item">Women's leadership, voice, agency, participation &amp; advocacy</a>
-    <a href="topic.html" class="cc-item">Capabilities, awareness, knowledge &amp; skills</a>
+    <a href="topic-single.html" class="cc-item">Global frameworks</a>
+    <a href="topic-single.html" class="cc-item">Women's leadership, voice, agency, participation &amp; advocacy</a>
+    <a href="topic-single.html" class="cc-item">Capabilities, awareness, knowledge &amp; skills</a>
     
                
               </div><!--Close row -->

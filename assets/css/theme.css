@@ -18198,6 +18198,21 @@ text-align: right;
   box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(0 157 220 / 5%), 0 0.125rem 0.4rem -0.0625rem rgb(0 157 220 / 3%) !important;
   }
 
+.home-latest .card-latest .card-person hr{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.home-latest .card-latest .card-person img{
+    border-radius: 50% !important;
+    margin-right: 1rem !important;
+    width: 48px;
+}
+.home-latest .card-latest .card-person span{
+    font-weight: 800 !important;
+    line-height: 1.125;
+}
+
+
 @media (max-width: 767.98px){
   .home-latest .card-latest{
     margin-bottom: 1rem;

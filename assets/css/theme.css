@@ -5818,6 +5818,7 @@ span.date,
 .card-list span.date {
     font-size: 0.875rem !important;
     color: #9b3c90;
+    text-align: right;
 }
 @media (max-width: 499.98px){
   span.date,
@@ -6169,12 +6170,20 @@ span.date,
 
 #events-archive .card span{
   font-size: 0.875rem !important;
+  line-height: 1.125;
 }
 #events-archive .card .badge{
   --bs-bg-opacity: 1;
-  background-color: #e5f5fb !important;
+  background-color: #e5f5fb;
   color: #431a3e !important;
+  transition: background-color 0.2s ease-in-out;
 }
+
+#events-archive .card:hover .badge{
+  background-color: #fff;
+}
+
+
 
 #events-archive{
 	
@@ -6248,15 +6257,12 @@ span.date,
     padding-bottom: calc(var(--bs-gutter-x) * 0.5);
     
     
-    transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 #events-archive .card:hover {
-	/*background: radial-gradient(#fce8e0 0, transparent 70% );
-	box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(0 157 220 / 7%), 0 0.125rem 0.4rem -0.0625rem rgb(0 157 220 / 4%);*/
 	background-color: rgba(0,157,220,0.075);
 }
-
 
 
 
@@ -18201,6 +18207,9 @@ text-align: right;
 .home-latest .card-latest .card-person hr{
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+}
+.home-latest .card-latest a:hover .card-person hr{
+  color:#fff;
 }
 .home-latest .card-latest .card-person img{
     border-radius: 50% !important;

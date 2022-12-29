@@ -3389,8 +3389,9 @@ textarea.form-control-lg {
   color: #009ddc;
   border-color: #009ddc;
 }
-.btn-outline-primary:hover {
-  color: #000;
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  color: #fff;
   background-color: #009ddc;
   border-color: #009ddc;
 }
@@ -7666,7 +7667,12 @@ span.date,
   .offcanvas-header, .offcanvas-footer {
     padding: 1.125rem 1.5rem;
   }
-  
+}
+
+@media (max-width: 499.98px) {
+  .offcanvas-footer .form-label{
+    display: none;
+  }
 }
 
 

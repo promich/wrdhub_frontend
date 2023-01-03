@@ -18339,9 +18339,29 @@ min-height: 10rem;
 
 
 
-/* Region page */
+/* Region-single page */
+.region-top{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+#region-side{
+  top: 180px !important;
+  margin-bottom: 3rem;
+}
+
+
+
 
 /* Hazards page */
+
+.hazard-top{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+#hazard-side{
+  top: 180px !important;
+  margin-bottom: 3rem;
+}
 
 /*.hazard-thumb{
   margin-bottom: 1.5rem;

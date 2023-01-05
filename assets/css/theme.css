@@ -306,7 +306,6 @@ a.btn:hover {
   transform: rotate(-180deg);
 }
 
-
     [class*='hover-'] {
       transition: background-color 0.1s ease,color 0.1s ease,box-shadow 0.1s ease,transform 0.1s ease;
   }
@@ -331,7 +330,6 @@ a.btn:hover {
 
   .btn.hover-arrow:after {
     font-size: 1.5em;
-
   }
 
 .caption-bottom-right {
@@ -339,7 +337,7 @@ a.btn:hover {
   font-size: 0.75rem;
   line-height: 1rem;
   position: absolute;
-  padding: 0.5rem 0.66rem;
+  padding: 0.5rem 0.75rem;
   
     transform-origin:bottom right;
     right:0;
@@ -352,7 +350,11 @@ a.btn:hover {
     display:none;
   }
 }
-
+@media (max-width: 997.98px) {
+  .explore-top .caption-bottom-right {
+    display:none;
+  }
+}
 
 
 /*colours*/
@@ -17336,6 +17338,29 @@ a.badge {
   }
 }
 /* banner-top */
+#banner-top .banner-title{
+  bottom: 0 !important;
+  position: absolute !important;
+}
+
+#banner-top .banner-title h1{
+  margin-bottom: 0 !important;
+}
+#banner-top .banner-title p{
+  color: #fff !important;
+}
+@media (max-width: 991.98px) {
+  #banner-top .banner-title{
+    max-width: calc(100% - 1.25rem);
+  }
+  #banner-top .banner-title p{
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+
+
 #banner-top .container{
   min-height: 350px;
 }

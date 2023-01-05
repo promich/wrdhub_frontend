@@ -334,6 +334,27 @@ a.btn:hover {
 
   }
 
+.caption-bottom-right {
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  position: absolute;
+  padding: 0.5rem 0.66rem;
+  
+    transform-origin:bottom right;
+    right:0;
+    bottom:0;
+    transform: rotate(-90deg) translateX(100%);
+}
+
+@media (max-width: 767.98px) {
+  .caption-bottom-right {
+    display:none;
+  }
+}
+
+
+
 /*colours*/
 .blue{color:var(--bs-blue);}
 .cyan{color:var(--bs-cyan);}
@@ -6534,8 +6555,11 @@ span.date,
 
 
 .bread {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#banner-top .bread {
+  padding-top: 0;
 }
 
 .breadcrumb {

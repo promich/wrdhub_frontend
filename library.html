@@ -491,12 +491,13 @@
 <section id="library-search-sec" class="">
 
 <div id="library-search" class="container">
+  
 
             <div class="input-group input-group-lg ">
                 <input type="text" class="form-control w-50" placeholder="Search resources...">
 
                 <select class="form-select form-resources">
-                  <option value="" selected="" disabled="">All resources</option>
+                  <option value="" selected="">All resources</option>
                   <option value="Publications">Publications</option>
                   <option value="Tools">Tools</option>
                   <option value="Frameworks">Legal &amp; Policy Frameworks</option>
@@ -509,121 +510,101 @@
             </div>
 
 
+<button id="btnLibrary" class="btn-library-mobile" type="button" data-bs-toggle="collapse" data-bs-target="#libraryOptions" aria-expanded="false" aria-controls="libraryOptions">Modify your search</button>
 
+            <div id="libraryOptions" class="collapse" aria-labelledby="btnLibrary" data-bs-parent="#btnLibrary">
 <form class="">
-
-
-              <div class="input-group input-group-lg" style="margin-top:-1px;">
-
-                  <select class="form-select ">
-                    <option value="" selected="" disabled="">Topics: Risk</option>
-                    <option value="Web Development">Web Development</option>
-                    <option value="Mobile Development">Mobile Development</option>
-                    <option value="Programming">Programming</option>
-                    <option value="Game Development">Game Development</option>
-                    <option value="Software Testing">Software Testing</option>
-                    <option value="Software Engineering">Software Engineering</option>
-                    <option value="Network &amp; Security">Network &amp; Security</option>
-                  </select>
-                  <select class="form-select ">
-                    <option value="" selected="" disabled="">Topics: Systems</option>
-                    <option value="Web Development">Laws, policies, strategies, plans & projects</option>
-                    <option value="Mobile Development">Mobile Development</option>
-                    <option value="Programming">Programming</option>
-                    <option value="Game Development">Game Development</option>
-                    <option value="Software Testing">Software Testing</option>
-                    <option value="Software Engineering">Software Engineering</option>
-                    <option value="Network &amp; Security">Network &amp; Security</option>
-                  </select>
-                  <select class="form-select ">
-                    <option value="" selected="" disabled="">Topics: Action</option>
-                    <option value="Web Development">Access to finance</option>
-                    <option value="Mobile Development">Access to services</option>
-                    <option value="Programming">Programming</option>
-                    <option value="Game Development">Game Development</option>
-                    <option value="Software Testing">Software Testing</option>
-                    <option value="Software Engineering">Software Engineering</option>
-                    <option value="Network &amp; Security">Network &amp; Security</option>
-                  </select>
-
-                  <select class="form-select">
-                    <option value="" selected="" disabled="">By Cross-cutting Issues</option>
-                    <option value="Web Development">France</option>
-                    <option value="Mobile Development">Germany</option>
-                    <option value="Programming">Italy</option>
-                    <option value="Game Development">Game Development</option>
-                    <option value="Software Testing">Software Testing</option>
-                    <option value="Software Engineering">Software Engineering</option>
-                    <option value="Network &amp; Security">Network &amp; Security</option>
-                    <option value="Web Development">France</option>
-                    <option value="Mobile Development">Germany</option>
-                    <option value="Programming">Italy</option>
-                    <option value="Web Development">France</option>
-                    <option value="Mobile Development">Germany</option>
-                    <option value="Programming">Italy</option>
-                    <option value="Web Development">France</option>
-                    <option value="Mobile Development">Germany</option>
-                    <option value="Programming">Italy</option>
-                    <option value="Web Development">France</option>
-                    <option value="Mobile Development">Germany</option>
-                    <option value="Programming">Italy</option>
-                    <option value="Web Development">France</option>
-                    <option value="Mobile Development">Germany</option>
-                    <option value="Programming">Italy</option>
-                    <option value="Web Development">France</option>
-                    <option value="Mobile Development">Germany</option>
-                    <option value="Programming">Italy</option>
-                    <option value="Web Development">France</option>
-                    <option value="Mobile Development">Germany</option>
-                    <option value="Programming">Italy</option>
-                  </select>
-                <select class="form-select">
-                    <option value="" selected="" disabled="">All regions</option>
-                    <option value="Web Development">Asia</option>
-                    <option value="Mobile Development">Pacific</option>
-                    <option value="Programming">Americas &amp; Caribbean</option>
-                    <option value="Game Development">Eastern &amp; Southern Africa</option>
-                    <option value="Software Testing">West &amp; Central Africa</option>
-                    <option value="Software Engineering">Europe &amp; Central Asia</option>
-                    <option value="Network &amp; Security">Northern Africa &amp; Middle East</option>
-                  </select>
-                  <select class="form-select">
-                    <option value="" selected="" disabled="">All hazards</option>
-                    <option value="Web Development">Floods</option>
-                    <option value="Web Development">Epidemic</option>
-                    <option value="Mobile Development">Drought</option>
-                    <option value="Programming">German</option>
-                    <option value="Game Development">Earthquake</option>
-                    <option value="Software Testing">Swahili</option>
-                    <option value="Software Engineering">Turkish</option>
-                  </select>
-
-                </div>
+            
+            
+                          <div class="input-group input-group-lg" style="margin-top:-1px;">
+            
+                              <select class="form-select ">
+                                <option value="" selected="" >By Topic</option>
+                                <option value="Web Development">Web Development</option>
+                                <option value="Mobile Development">Mobile Development</option>
+                                <option value="Programming">Programming</option>
+                                <option value="Game Development">Game Development</option>
+                                <option value="Software Testing">Software Testing</option>
+                                <option value="Software Engineering">Software Engineering</option>
+                                <option value="Network &amp; Security">Network &amp; Security</option>
+                              </select>
+            
+            
+                              <select class="form-select">
+                                <option value="" selected="" >By Cross-cutting Issue</option>
+                                <option value="Web Development">Women’s leadership</option>
+                                <option value="Mobile Development">Global frameworks</option>
+                                <option value="Programming">Capabilities</option>
+                              </select>
+                            <select class="form-select">
+                                <option value="" selected="">All regions</option>
+                                <option value="Web Development">Asia</option>
+                                <option value="Mobile Development">Pacific</option>
+                                <option value="Programming">Americas &amp; Caribbean</option>
+                                <option value="Game Development">Eastern &amp; Southern Africa</option>
+                                <option value="Software Testing">West &amp; Central Africa</option>
+                                <option value="Software Engineering">Europe &amp; Central Asia</option>
+                                <option value="Network &amp; Security">Northern Africa &amp; Middle East</option>
+                              </select>
+                              <select class="form-select">
+                                <option value="" selected="">All hazards</option>
+                                <option value="Web Development">Floods</option>
+                                <option value="Web Development">Epidemic</option>
+                                <option value="Mobile Development">Drought</option>
+                                <option value="Programming">German</option>
+                                <option value="Game Development">Earthquake</option>
+                                <option value="Software Testing">Swahili</option>
+                                <option value="Software Engineering">Turkish</option>
+                              </select>
+                              <select class="form-select"><!-- organization-->
+                                <option value="" selected="">All publishers</option>
+                                <option value="Web Development">UNEP</option>
+                                <option value="Web Development">UNDRR</option>
+                                <option value="Mobile Development">UNDP</option>
+                                <option value="Programming">UN Women</option>
+                                <option value="Game Development">WMO</option>
+                              </select>
+                              <select class="form-select">
+                                <option value="" selected="" disabled="">All tools</option>
+                                <option value="Web Development">Training</option>
+                                <option value="Web Development">Assessment</option>
+                                <option value="Mobile Development">Advocacy/Outreach</option>
+                                <option value="Programming">Checklist</option>
+                              </select>
+            
+                            </div>
+            
+            
+            
+            </form>
+            
+            <div class="filter-tokens pt-3">
+            
+                <button type="button" class="btn btn-token btn-danger">Clear filters</button>
+            
+                <button type="button" class="btn btn-token">West and Central Africa</button>
+                <button type="button" class="btn btn-token">South-east Asia</button>
+                <button type="button" class="btn btn-token">West and Central Africa</button>
+                <button type="button" class="btn btn-token">South-east Asia</button>
+                <button type="button" class="btn btn-token">West and Central Africa</button>
+                <button type="button" class="btn btn-token">South-east Asia</button>
+                <button type="button" class="btn btn-token">West and Central Africa</button>
+                <button type="button" class="btn btn-token">South-east Asia</button>
+                <button type="button" class="btn btn-token">West and Central Africa</button>
+                <button type="button" class="btn btn-token">South-east Asia</button>
+                <button type="button" class="btn btn-token">West and Central Africa</button>
+                <button type="button" class="btn btn-token">South-east Asia</button>
+                <button type="button" class="btn btn-token">West and Central Africa</button>
+                <button type="button" class="btn btn-token">South-east Asia</button>
+                                
+            </div>
+            </div><!--close #libraryOptions-->
 
 
 
-</form>
 
-<div class="filter-tokens pt-3">
 
-    <button type="button" class="btn btn-token btn-danger">Clear filters</button>
 
-    <button type="button" class="btn btn-token">West and Central Africa</button>
-    <button type="button" class="btn btn-token">South-east Asia</button>
-    <button type="button" class="btn btn-token">West and Central Africa</button>
-    <button type="button" class="btn btn-token">South-east Asia</button>
-    <button type="button" class="btn btn-token">West and Central Africa</button>
-    <button type="button" class="btn btn-token">South-east Asia</button>
-    <button type="button" class="btn btn-token">West and Central Africa</button>
-    <button type="button" class="btn btn-token">South-east Asia</button>
-    <button type="button" class="btn btn-token">West and Central Africa</button>
-    <button type="button" class="btn btn-token">South-east Asia</button>
-    <button type="button" class="btn btn-token">West and Central Africa</button>
-    <button type="button" class="btn btn-token">South-east Asia</button>
-    <button type="button" class="btn btn-token">West and Central Africa</button>
-    <button type="button" class="btn btn-token">South-east Asia</button>
-                    
-</div>
 
 </div>
 </section>

@@ -18197,6 +18197,11 @@ a.badge {
   overflow: hidden;
 }
 .slider-perspec p{
+
+}
+
+
+.slider-perspec .swiper-slide p{
   color: #001118;
   font-size: 1.125rem;
   margin-bottom: 0; 
@@ -18218,7 +18223,7 @@ a.badge {
   transform: scale(1.025, 1.025);
 }
 
-.slider-perspec .perspec-cap {
+.slider-perspec p.perspec-cap {
   color: #fff;
   font-size: 0.75rem;
   text-align: right;
@@ -20718,6 +20723,12 @@ img-comparison-slider:focus {
 }
 
 #regions-map{}
+
+#regions-map h2,
+#regions-map p{
+  color: #fff !important;
+}
+
 
 #regions-map #mapcontrol{
   background-color: #008cc4;

@@ -204,13 +204,14 @@ blockquote {
   border-left: 5px solid #ff8b42;
 }
 
-blockquote p{
+blockquote p,
+#page-content blockquote p{
   width: 100% !important;
   color: #e8692e;
   font-size: 2rem;
   font-size: calc(1.325rem + 0.9vw);
   font-size: calc(1.3rem + 0.6vw);
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 blockquote a{
   color: #e8692e;
@@ -4783,7 +4784,11 @@ padding-right: 0.5rem;
   line-height: 1rem;
 }
 
-
+.field--name-field-insight-details{
+  padding: 1rem;
+  background: #f2fafd;
+  margin-top: 2rem;
+}
 
 
 

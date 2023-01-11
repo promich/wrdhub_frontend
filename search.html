@@ -200,12 +200,12 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                  <a href="practice.html" class="nav-link active dropdown-toggle" data-toggle="dropdown">Practice</a>
+                  <a href="practice.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Practice</a>
                   <a class="nav-link collapsed" href="#menu-3" data-bs-toggle="collapse" role="button" aria-expanded="false"
                     aria-controls="menu-3"> </a>
                   <ul class="dropdown-menu collapse" id="menu-3" data-bs-parent="#navbarNav">
                     <li><a href="topics.html" class="dropdown-item">Topics</a></li>
-                    <li><a href="library.html" class="dropdown-item active">Library</a></li>
+                    <li><a href="library.html" class="dropdown-item">Library</a></li>
                     <li><a href="library.html" class="dropdown-item">Tools</a></li>
                     <li><a href="tracker.html" class="dropdown-item">Policy Tracker</a></li>  
                   </ul>               
@@ -355,280 +355,192 @@
   </div>
 </div>
 
-
-<section class="library-top">
-  <div class="container">
-
-    <!-- Breadcrumb - hidden on mobile -->
-    <nav class="py-3 " aria-label="breadcrumb">
-      <ol class="breadcrumb mb-0">
-        <li class="breadcrumb-item">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="breadcrumb-item" aria-current="page"><a href="practice.html">Practice</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Library</li>
-      </ol>
-    </nav> 
+<section id="global-search" class="main-search">
+<div class="container">
+    
+  <!-- Breadcrumb -->
+  <nav class="bread" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">Search results</li>
+    </ol>
+  </nav>   
+  
+  
+  <div class="input-group input-group-xl ">
+    <input type="text" class="form-control " placeholder="What are you looking for?">
+    <button type="submit" class="btn btn-icon btn-primary btn-xl">
+      <i class="bx bx-search"></i>
+    </button>
+  </div>
 
 
 
 <div class="row">
-  <div class="col-lg-9 col-xl-9 border-end-lg">
-<h3 class="top-label">Featured highlights</h3>
-<!-- Pagination: Bullets -->
-  <div class="swiper swiper-nav-onhover" data-swiper-options='{
-    "spaceBetween": 20,
-    "loop": true,
-    "pagination": {
-      "el": ".swiper-pagination",
-      "clickable": true
-    }
-  }'>
-    <div class="swiper-wrapper">
-      
   
-      <!-- Item 1-->
-          <a href="pub-single.html" class="swiper-slide featured-pub-slide">
-            <div class="row g-0">
-              <div class="col-5 position-relative" style="">
-                <div class="ratio ratio-1x1">
-                <div class="pub-image">
-                  <img src="assets/img/pub-cover-03.jpg" alt="Publication title">
-                </div>
-                </div>
-              </div>
-                    <div class="col-7">
-                        <div class="p-0 p-md-3 px-lg-4 ">
-                          <span class="badge">Tool</span>
-                            <h2 class="featured-pub-title" >Gender analysis in non-traditional sectors: climate and disaster risk finance and insurance</h2>
-                        </div>
-                    </div>
-            </div>
-          </a>
+  <div class="col-12 col-md-4 col-xl-3">
+   <aside id="" class="sticky-top " style="top: 120px !important;">
+   <div id="" class="">
+   
+   
+   <button id="btnSearch" class="btn-search-mobile" type="button" data-bs-toggle="collapse" data-bs-target="#searchOptions" aria-expanded="false" aria-controls="searchOptions">Modify your search</button>
+   
+               <div id="searchOptions" class="collapse" aria-labelledby="btnSearch" data-bs-parent="#btnSearch">
+   <form class="">
+               
+               
+                             <div>
+               
+                                 <select class="form-select">
+                                   <option value="" selected="">All content</option>
+                                   <option value="Page">Pages</option>
+                                   <option value="News">News</option>
+                                   <option value="Blog">Blogs</option>
+                                   <option value="Interviews">Interviews</option>
+                                   <option value="Perspectives">Women's Perspectives</option>
+                                   <option value="Publications">Publications</option>
+                                   <option value="Tools">Tools</option>
+                                   <option value="Frameworks">Legal &amp; Policy Frameworks</option>
+                                 </select>
+                                 <select class="form-select ">
+                                   <option value="" selected="" >All topics</option>
+                                   <option value="Risk">RISK</option>
+                                   <option value="Gender dimensions of disasters">Gender dimensions of disasters</option>
+                                   <option value="Intersectionality">Intersectionality</option>
+                                   <option value="Gender data">Gender data</option>
+                                   <option value="Gender-responsive risk assessment">Gender-responsive risk assessment</option>
+                                   <option value="Gender-responsive needs assessment">Gender-responsive needs assessment</option>
+                                   <option value="Systems">SYSTEMS</option>
+                                   <option value="Policies">Legislation, policies, strategies, plans & projects</option>
+                                   <option value="Budgets">Gender-responsive budgets, expenditure, and funding</option>
+                                   <option value="Information management systems">Gender-responsive information management systems</option>
+                                   <option value="Early warning preparedness">Gender-responsive early warning, preparedness & risk communication systems</option>
+                                   <option value="Coordination">Gender-responsive coordination mechanisms, networks & partnerships</option>
+                                   <option value="Action">ACTION</option>
+                                   <option value="Finance">Access to finance</option>
+                                   <option value="Services">Access to services</option>
+                                   <option value="Infrastructure">Access to resilient infrastructure</option>
+                                   <option value="Livelihoods">Women's resilient livelihoods and businesses</option>
+                                   <option value="Freedom from violence">Women's freedom from violence</option>
+                                 </select>
+               
+               
+                                 <select class="form-select">
+                                   <option value="" selected="" >All cross-cutting issues</option>
+                                   <option value="Web Development">Women’s leadership</option>
+                                   <option value="Mobile Development">Global frameworks</option>
+                                   <option value="Programming">Capabilities</option>
+                                 </select>
+                               <select class="form-select">
+                                   <option value="" selected="">All regions</option>
+                                   <option value="Web Development">Asia</option>
+                                   <option value="Mobile Development">Pacific</option>
+                                   <option value="Programming">Americas &amp; Caribbean</option>
+                                   <option value="Game Development">Eastern &amp; Southern Africa</option>
+                                   <option value="Software Testing">West &amp; Central Africa</option>
+                                   <option value="Software Engineering">Europe &amp; Central Asia</option>
+                                   <option value="Network &amp; Security">Northern Africa &amp; Middle East</option>
+                                 </select>
+                                 <select class="form-select">
+                                   <option value="" selected="">All hazards</option>
+                                   <option value="Web Development">Floods</option>
+                                   <option value="Web Development">Epidemic</option>
+                                   <option value="Mobile Development">Drought</option>
+                                   <option value="Programming">German</option>
+                                   <option value="Game Development">Earthquake</option>
+                                   <option value="Software Testing">Swahili</option>
+                                   <option value="Software Engineering">Turkish</option>
+                                 </select>
+               
+                               </div>
+               
+               
+               
+               </form>
+               
+               <div class="filter-tokens pt-3">
+               
+                   <button type="button" class="btn btn-token btn-danger">Clear filters</button>
+               
+                   <button type="button" class="btn btn-token">West and Central Africa</button>
+                   <button type="button" class="btn btn-token">South-east Asia</button>
+                   <button type="button" class="btn btn-token">West and Central Africa</button>
+                   <button type="button" class="btn btn-token">South-east Asia</button>
+                   <button type="button" class="btn btn-token">West and Central Africa</button>
 
-  <!-- Item 2-->
-  <a href="pub-single.html" class="swiper-slide featured-pub-slide">
-    <div class="row g-0">
-      <div class="col-5 position-relative" style="">
-        <div class="ratio ratio-1x1">
-        <div class="pub-image">
-          <img src="assets/img/pub-cover-01.jpg" alt="Publication title">
+                                   
+               </div>
+               </div><!--close #libraryOptions-->
+   
+   
+   
+   
+   
+   
+   
+   </div>
+   </aside>
+    
+  </div>
+  
+  
+  <div class="col-12 col-md-8 col-xl-9">
+
+<p class="rearch-result-details">1200 results</p>
+<hr>
+
+<!--search result item -->
+  <a href="#" class="card card-list">
+        <div class="card-body">
+          <div class="card-top">
+            <span class="badge">Page</span>
+            <span class="date">Nov 2022</span>
+          </div>
+          
+          <h3 class="h5">
+            Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+          </h3>
+          <p>How international commitments and recommendations are being translated into national DRR frameworks</p>
+  
         </div>
-        </div>
-      </div>
-            <div class="col-7">
-                <div class="p-0 p-md-3 px-lg-4 ">
-                  <span class="badge">Publication</span>
-                    <h2 class="featured-pub-title" >Inclusive infrastructure for climate action</h2>
-                </div>
-            </div>
-    </div>
   </a>
-      <!-- Item 3-->
-  <a href="pub-single.html" class="swiper-slide featured-pub-slide">
-    <div class="row g-0">
-      <div class="col-5 position-relative" style="">
-        <div class="ratio ratio-1x1">
-        <div class="pub-image">
-          <img src="assets/img/pub-cover.jpg" alt="Publication title">
+
+<!--search result item -->
+  <a href="#" class="card card-list">
+        <div class="card-body">
+          <div class="card-top">
+            <span class="badge">Publication</span>
+            <span class="date">Nov 2022</span>
+          </div>
+          
+          <h3 class="h5">
+            Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+          </h3>
+          <p>How international commitments and recommendations are being translated into national DRR frameworks</p>
+  
         </div>
-        </div>
-      </div>
-            <div class="col-7">
-                <div class="p-0 p-md-3 px-lg-4 ">
-                  <span class="badge">Publication</span>
-                    <h2 class="featured-pub-title" >Closing the funding gap for women-focused organizations responding to COVID-19 in Asia and the Pacific</h2>
-                </div>
-            </div>
-    </div>
   </a>
-<span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-primary-translucent" style="
-      z-index: 999; width:300%;
-  "></span>
-    </div>
 
+<!--search result item -->
+  <a href="#" class="card card-list">
+        <div class="card-body">
+          <div class="card-top">
+            <span class="badge">Blog</span>
+            <span class="date">Nov 2022</span>
+          </div>
+          
+          <h3 class="h5">
+            Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+          </h3>
+          <p>How international commitments and recommendations are being translated into national DRR frameworks</p>
   
-    <!-- Pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
+        </div>
+  </a>
 
-
-  </div>
-  <div class="col-lg-3 col-xl-3">
-    
-    
-    <div class="row pt-4 pt-lg-0 border-lg-top">
-      <div class="col-12 col-sm-6 col-md-8 col-lg-12">
-        <p>Our library features over 1,000 key resources, including from PreventionWeb and UN Women, for building women's resilience to disasters and threats.</p>
-
-        <a href="#" class="btn hover-arrow">
-         Recommend a resource
-        </a> 
-
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-12">
-        <a href="https://preventionweb.net" target="_blank" class="btn btn-pwlink btn-lg">
-           <span>Powered by</span>
-           <img src="assets/img/logo-pw_wh.svg" alt="Prevention Web">
-         </a>
-      </div>
-    </div>
-    
-    
-    
-
-     
-
-     
-
-
-  </div>
-</div>
-
-</div>
-
-</section>
-<section id="library-search-sec" class="">
-
-<div id="library-search" class="container">
-  
-
-            <div class="input-group input-group-lg ">
-                <input type="text" class="form-control w-50" placeholder="Search resources...">
-
-                <select class="form-select form-resources">
-                  <option value="" selected="">All resources</option>
-                  <option value="Publications">Publications</option>
-                  <option value="Tools">Tools</option>
-                  <option value="Frameworks">Legal &amp; Policy Frameworks</option>
-                </select>
-
-                <button type="submit" class="btn btn-icon btn-primary btn-lg">
-                  <i class="bx bx-search"></i>
-                </button>
-
-            </div>
-
-
-<button id="btnLibrary" class="btn-library-mobile" type="button" data-bs-toggle="collapse" data-bs-target="#libraryOptions" aria-expanded="false" aria-controls="libraryOptions">Modify your search</button>
-
-            <div id="libraryOptions" class="collapse" aria-labelledby="btnLibrary" data-bs-parent="#btnLibrary">
-<form class="">
-            
-            
-                          <div class="input-group input-group-lg" style="margin-top:-1px;">
-            
-                              <select class="form-select ">
-                                <option value="" selected="" >All topics</option>
-                                <option value="Risk">RISK</option>
-                                <option value="Gender dimensions of disasters">Gender dimensions of disasters</option>
-                                <option value="Intersectionality">Intersectionality</option>
-                                <option value="Gender data">Gender data</option>
-                                <option value="Gender-responsive risk assessment">Gender-responsive risk assessment</option>
-                                <option value="Gender-responsive needs assessment">Gender-responsive needs assessment</option>
-                                <option value="Systems">SYSTEMS</option>
-                                <option value="Policies">Legislation, policies, strategies, plans & projects</option>
-                                <option value="Budgets">Gender-responsive budgets, expenditure, and funding</option>
-                                <option value="Information management systems">Gender-responsive information management systems</option>
-                                <option value="Early warning preparedness">Gender-responsive early warning, preparedness & risk communication systems</option>
-                                <option value="Coordination">Gender-responsive coordination mechanisms, networks & partnerships</option>
-                                <option value="Action">ACTION</option>
-                                <option value="Finance">Access to finance</option>
-                                <option value="Services">Access to services</option>
-                                <option value="Infrastructure">Access to resilient infrastructure</option>
-                                <option value="Livelihoods">Women's resilient livelihoods and businesses</option>
-                                <option value="Freedom from violence">Women's freedom from violence</option>
-                              </select>
-            
-            
-                              <select class="form-select">
-                                <option value="" selected="" >All cross-cutting issues</option>
-                                <option value="Web Development">Women’s leadership</option>
-                                <option value="Mobile Development">Global frameworks</option>
-                                <option value="Programming">Capabilities</option>
-                              </select>
-                            <select class="form-select">
-                                <option value="" selected="">All regions</option>
-                                <option value="Web Development">Asia</option>
-                                <option value="Mobile Development">Pacific</option>
-                                <option value="Programming">Americas &amp; Caribbean</option>
-                                <option value="Game Development">Eastern &amp; Southern Africa</option>
-                                <option value="Software Testing">West &amp; Central Africa</option>
-                                <option value="Software Engineering">Europe &amp; Central Asia</option>
-                                <option value="Network &amp; Security">Northern Africa &amp; Middle East</option>
-                              </select>
-                              <select class="form-select">
-                                <option value="" selected="">All hazards</option>
-                                <option value="Web Development">Floods</option>
-                                <option value="Web Development">Epidemic</option>
-                                <option value="Mobile Development">Drought</option>
-                                <option value="Programming">German</option>
-                                <option value="Game Development">Earthquake</option>
-                                <option value="Software Testing">Swahili</option>
-                                <option value="Software Engineering">Turkish</option>
-                              </select>
-                              <select class="form-select"><!-- organization-->
-                                <option value="" selected="">All publishers</option>
-                                <option value="Web Development">UNEP</option>
-                                <option value="Web Development">UNDRR</option>
-                                <option value="Mobile Development">UNDP</option>
-                                <option value="Programming">UN Women</option>
-                                <option value="Game Development">WMO</option>
-                              </select>
-                              <select class="form-select">
-                                <option value="" selected="">All tools</option>
-                                <option value="Web Development">Training</option>
-                                <option value="Web Development">Assessment</option>
-                                <option value="Mobile Development">Advocacy/Outreach</option>
-                                <option value="Programming">Checklist</option>
-                              </select>
-            
-                            </div>
-            
-            
-            
-            </form>
-            
-            <div class="filter-tokens pt-3">
-            
-                <button type="button" class="btn btn-token btn-danger">Clear filters</button>
-            
-                <button type="button" class="btn btn-token">West and Central Africa</button>
-                <button type="button" class="btn btn-token">South-east Asia</button>
-                <button type="button" class="btn btn-token">West and Central Africa</button>
-                <button type="button" class="btn btn-token">South-east Asia</button>
-                <button type="button" class="btn btn-token">West and Central Africa</button>
-                <button type="button" class="btn btn-token">South-east Asia</button>
-                <button type="button" class="btn btn-token">West and Central Africa</button>
-                <button type="button" class="btn btn-token">South-east Asia</button>
-                <button type="button" class="btn btn-token">West and Central Africa</button>
-                <button type="button" class="btn btn-token">South-east Asia</button>
-                <button type="button" class="btn btn-token">West and Central Africa</button>
-                <button type="button" class="btn btn-token">South-east Asia</button>
-                <button type="button" class="btn btn-token">West and Central Africa</button>
-                <button type="button" class="btn btn-token">South-east Asia</button>
-                                
-            </div>
-            </div><!--close #libraryOptions-->
-
-
-
-
-
-
-
-</div>
-</section>
-
-      <section id="related-perspectives" class="expert-listing">
-        <div class="container">
-<div class="row">
-  <div class="col-12 col-xl-10 offset-xl-1">
-
-<!--resource item : default display 10-->
-  <a href="pub-single.html" class="card card-list card-list-pub">
-    <div class="row g-0">
-      <div class="col-8 col-xl-9">
+<!--search result item -->
+  <a href="#" class="card card-list">
         <div class="card-body">
           <div class="card-top">
             <span class="badge">Framework</span>
@@ -638,22 +550,93 @@
           <h3 class="h5">
             Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
           </h3>
-          <p class="small">How international commitments and recommendations are being translated into national DRR frameworks</p>
+          <p>How international commitments and recommendations are being translated into national DRR frameworks</p>
   
         </div>
-      </div>
-      <div class="col-4 col-xl-3">
-        <div class="pub-image">
-          <img src="assets/img/pub-cover.jpg" alt="Publication title">
-        </div>
-      </div>
-    </div>
   </a>
 
-<!--resource item -->
-  <a href="pub-single.html" class="card card-list card-list-pub">
-    <div class="row g-0">
-      <div class="col-8 col-xl-9">
+<!--search result item -->
+  <a href="#" class="card card-list">
+        <div class="card-body">
+          <div class="card-top">
+            <span class="badge">Page</span>
+            <span class="date">Nov 2022</span>
+          </div>
+          
+          <h3 class="h5">
+            Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+          </h3>
+          <p>How international commitments and recommendations are being translated into national DRR frameworks</p>
+  
+        </div>
+  </a>
+
+<!--search result item -->
+    <a href="#" class="card card-list">
+          <div class="card-body">
+            <div class="card-top">
+              <span class="badge">Framework</span>
+              <span class="date">Nov 2022</span>
+            </div>
+            
+            <h3 class="h5">
+              Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+            </h3>
+            <p>How international commitments and recommendations are being translated into national DRR frameworks</p>
+    
+          </div>
+    </a> 
+  
+  <!--search result item -->
+    <a href="#" class="card card-list">
+          <div class="card-body">
+            <div class="card-top">
+              <span class="badge">Page</span>
+              <span class="date">Nov 2022</span>
+            </div>
+            
+            <h3 class="h5">
+              Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+            </h3>
+            <p>How international commitments and recommendations are being translated into national DRR frameworks</p>
+    
+          </div>
+    </a>
+
+<!--search result item -->
+  <a href="#" class="card card-list">
+        <div class="card-body">
+          <div class="card-top">
+            <span class="badge">Publication</span>
+            <span class="date">Nov 2022</span>
+          </div>
+          
+          <h3 class="h5">
+            Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+          </h3>
+          <p>How international commitments and recommendations are being translated into national DRR frameworks</p>
+  
+        </div>
+  </a>
+
+<!--search result item -->
+  <a href="#" class="card card-list">
+        <div class="card-body">
+          <div class="card-top">
+            <span class="badge">Blog</span>
+            <span class="date">Nov 2022</span>
+          </div>
+          
+          <h3 class="h5">
+            Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+          </h3>
+          <p>How international commitments and recommendations are being translated into national DRR frameworks</p>
+  
+        </div>
+  </a>
+
+<!--search result item -->
+  <a href="#" class="card card-list">
         <div class="card-body">
           <div class="card-top">
             <span class="badge">Framework</span>
@@ -663,44 +646,10 @@
           <h3 class="h5">
             Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
           </h3>
-          <p class="small">How international commitments and recommendations are being translated into national DRR frameworks</p>
+          <p>How international commitments and recommendations are being translated into national DRR frameworks</p>
   
         </div>
-      </div>
-      <div class="col-4 col-xl-3">
-        <div class="pub-image">
-          <img src="assets/img/pub-cover.jpg" alt="Publication title">
-        </div>
-      </div>
-    </div>
   </a>
-
-<!--resource item -->
-  <a href="pub-single.html" class="card card-list card-list-pub">
-    <div class="row g-0">
-      <div class="col-8 col-xl-9">
-        <div class="card-body">
-          <div class="card-top">
-            <span class="badge">Framework</span>
-            <span class="date">Nov 2022</span>
-          </div>
-          
-          <h3 class="h5">
-            Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
-          </h3>
-          <p class="small">How international commitments and recommendations are being translated into national DRR frameworks</p>
-  
-        </div>
-      </div>
-      <div class="col-4 col-xl-3">
-        <div class="pub-image">
-          <img src="assets/img/pub-cover.jpg" alt="Publication title">
-        </div>
-      </div>
-    </div>
-  </a>
-
-
 
   </div>
 </div>

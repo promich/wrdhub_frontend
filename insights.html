@@ -478,116 +478,109 @@
   </div>
 </section>
 
+<section id="" class="insights-main">
 
+<div id="insights-search" class="container">
 
-<section id="library-search-sec" class="">
-
-<div id="library-search" class="container">
-
-            <div class="input-group input-group-lg ">
+    <div class="insight-search input-group input-group-lg ">
                 <input type="text" class="form-control w-50" placeholder="Search insights...">
-
-                <select class="form-select form-resources">
-                  <option value="" selected="" disabled="">All insights</option>
-                  <option value="News">News</option>
-                  <option value="Case Studies">Case Studies</option>
+                <select class="form-select">
+                  <option value="" selected="">All insights</option>
+                  <option value="blogs">Blogs</option>
+                  <option value="case studies">Case Studies</option>
                   <option value="Interviews">Interviews</option>
+                  <option value="News">News</option>
                   <option value="Perspectives">Women's Perspectives</option>
                 </select>
-
                 <button type="submit" class="btn btn-icon btn-primary btn-lg">
                   <i class="bx bx-search"></i>
                 </button>
-
             </div>
 
 
+<button id="btninsights" class="btn-insights-mobile" type="button" data-bs-toggle="collapse" data-bs-target="#insightsOptions" aria-expanded="false" aria-controls="insightsOptions">Modify your search</button>
 
+            <div id="insightsOptions" class="collapse" aria-labelledby="btninsights" data-bs-parent="#btninsights">
 <form class="">
+            
+            
+                          <div class="input-group input-group-lg" style="margin-top:-1px;">
 
+                              <select class="form-select ">
+                                <option value="" selected="" >All topics</option>
+                                <option value="Risk">RISK</option>
+                                <option value="Gender dimensions of disasters">Gender dimensions of disasters</option>
+                                <option value="Intersectionality">Intersectionality</option>
+                                <option value="Gender data">Gender data</option>
+                                <option value="Gender-responsive risk assessment">Gender-responsive risk assessment</option>
+                                <option value="Gender-responsive needs assessment">Gender-responsive needs assessment</option>
+                                <option value="Systems">SYSTEMS</option>
+                                <option value="Policies">Legislation, policies, strategies, plans & projects</option>
+                                <option value="Budgets">Gender-responsive budgets, expenditure, and funding</option>
+                                <option value="Information management systems">Gender-responsive information management systems</option>
+                                <option value="Early warning preparedness">Gender-responsive early warning, preparedness & risk communication systems</option>
+                                <option value="Coordination">Gender-responsive coordination mechanisms, networks & partnerships</option>
+                                <option value="Action">ACTION</option>
+                                <option value="Finance">Access to finance</option>
+                                <option value="Services">Access to services</option>
+                                <option value="Infrastructure">Access to resilient infrastructure</option>
+                                <option value="Livelihoods">Women's resilient livelihoods and businesses</option>
+                                <option value="Freedom from violence">Women's freedom from violence</option>
+                              </select>
 
-              <div class="input-group input-group-lg" style="margin-top:-1px;">
+                              <select class="form-select">
+                                <option value="" selected="" >All cross-cutting issues</option>
+                                <option value="Web Development">Women’s leadership</option>
+                                <option value="Mobile Development">Global frameworks</option>
+                                <option value="Programming">Capabilities</option>
+                              </select>
 
-                  <select class="form-select ">
-                    <option value="" selected="" >Topics: Risk</option>
-                    <option value="Web Development">Web Development</option>
-                    <option value="Mobile Development">Mobile Development</option>
-                    <option value="Programming">Programming</option>
-                    <option value="Game Development">Game Development</option>
-                    <option value="Software Testing">Software Testing</option>
-                    <option value="Software Engineering">Software Engineering</option>
-                    <option value="Network &amp; Security">Network &amp; Security</option>
-                  </select>
-                  <select class="form-select ">
-                    <option value="" selected="" >Topics: Systems</option>
-                    <option value="Web Development">Laws, policies, strategies, plans & projects</option>
-                    <option value="Mobile Development">Mobile Development</option>
-                    <option value="Programming">Programming</option>
-                    <option value="Game Development">Game Development</option>
-                    <option value="Software Testing">Software Testing</option>
-                    <option value="Software Engineering">Software Engineering</option>
-                    <option value="Network &amp; Security">Network &amp; Security</option>
-                  </select>
-                  <select class="form-select ">
-                    <option value="" selected="" >Topics: Action</option>
-                    <option value="Web Development">Access to finance</option>
-                    <option value="Mobile Development">Access to services</option>
-                    <option value="Programming">Programming</option>
-                    <option value="Game Development">Game Development</option>
-                    <option value="Software Testing">Software Testing</option>
-                    <option value="Software Engineering">Software Engineering</option>
-                    <option value="Network &amp; Security">Network &amp; Security</option>
-                  </select>
+                            <select class="form-select">
+                                <option value="" selected="">All regions</option>
+                                <option value="Web Development">Asia</option>
+                                <option value="Mobile Development">Pacific</option>
+                                <option value="Programming">Americas &amp; Caribbean</option>
+                                <option value="Game Development">Eastern &amp; Southern Africa</option>
+                                <option value="Software Testing">West &amp; Central Africa</option>
+                                <option value="Software Engineering">Europe &amp; Central Asia</option>
+                                <option value="Network &amp; Security">Northern Africa &amp; Middle East</option>
+                              </select>
 
-                  <select class="form-select">
-                    <option value="" selected="" >All Cross-cutting Issues</option>
-                    <option value="Web Development">France</option>
-                    <option value="Mobile Development">Germany</option>
-                    <option value="Programming">Italy</option>
-                    <option value="Game Development">Game Development</option>
-                    <option value="Software Testing">Software Testing</option>
-                  </select>
-                <select class="form-select">
-                    <option value="" selected="" >All regions</option>
-                    <option value="Web Development">Asia</option>
-                    <option value="Mobile Development">Pacific</option>
-                    <option value="Programming">Americas &amp; Caribbean</option>
-                    <option value="Game Development">Eastern &amp; Southern Africa</option>
-                    <option value="Software Testing">West &amp; Central Africa</option>
-                    <option value="Software Engineering">Europe &amp; Central Asia</option>
-                    <option value="Network &amp; Security">Northern Africa &amp; Middle East</option>
-                  </select>
-                  <select class="form-select">
-                    <option value="" selected="" >All hazards</option>
-                    <option value="Web Development">Floods</option>
-                    <option value="Web Development">Epidemic</option>
-                    <option value="Mobile Development">Drought</option>
-                    <option value="Programming">German</option>
-                    <option value="Game Development">Earthquake</option>
-                    <option value="Software Testing">Swahili</option>
-                    <option value="Software Engineering">Turkish</option>
-                  </select>
+                              <select class="form-select">
+                                <option value="" selected="">All hazards</option>
+                                <option value="Web Development">Floods</option>
+                                <option value="Web Development">Epidemic</option>
+                                <option value="Mobile Development">Drought</option>
+                                <option value="Programming">German</option>
+                                <option value="Game Development">Earthquake</option>
+                                <option value="Software Testing">Swahili</option>
+                                <option value="Software Engineering">Turkish</option>
+                              </select>
 
-                </div>
+            
+                            </div>
+            
+            
+            
+            </form>
+            
+            <div class="filter-tokens pt-3">
+            
+                <button type="button" class="btn btn-token btn-danger">Clear filters</button>
+            
+                <button type="button" class="btn btn-token">West and Central Africa</button>
+                <button type="button" class="btn btn-token">South-east Asia</button>
+                <button type="button" class="btn btn-token">West and Central Africa</button>
+                <button type="button" class="btn btn-token">South-east Asia</button>
+                <button type="button" class="btn btn-token">West and Central Africa</button>
+                <button type="button" class="btn btn-token">South-east Asia</button>
+                                
+            </div>
+            </div><!--close #insightsOptions-->
 
+</div><!--close #insights-search-->
 
-
-</form>
-
-<div class="filter-tokens pt-3">
-
-    <button type="button" class="btn btn-token btn-danger">Clear filters</button>
-
-    <button type="button" class="btn btn-token">West and Central Africa</button>
-    <button type="button" class="btn btn-token">South-east Asia</button>
-  
-</div>
-
-</div>
-</section>
-
-<section id="" class="insights-listing">
-<div class="container">
+<div id="insights-listing" class="container">
   <div class="row">
     <div class="col-12 col-xl-10 offset-xl-1">
 

@@ -6814,7 +6814,11 @@ span.date,
 @media (max-width: 991.98px){
   .bread,
   .breadcrumb {
-  display: none;
+    visibility: hidden;
+  }
+  .bread{
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -21050,6 +21054,15 @@ img-comparison-slider:focus {
 
 #regions-map{}
 
+#regions-map .breadcrumb-item > a,
+#regions-map .breadcrumb-item::before {
+    color: rgba(255, 255, 255, 0.85);
+}
+#regions-map .breadcrumb-item.active {
+    color: #fff;
+}
+
+#regions-map h1,
 #regions-map h2,
 #regions-map p{
   color: #fff !important;

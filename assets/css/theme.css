@@ -18823,9 +18823,16 @@ min-height: 10rem;
 }
 
 
-
-
 /* Hazards page */
+.hazards-group h2{
+  line-height: 1.125;  
+}
+.hazards-group .container .row:first-of-type{
+  margin-bottom: 1rem;  
+}
+
+
+/* Hazard page */
 
 .hazard-top{
   padding-top: 1.5rem;

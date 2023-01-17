@@ -17374,6 +17374,9 @@ a.badge {
     margin: 0 0 .5rem 0;
   }
 }
+.wrd-framework .list-group.cross-cutting .list-group-item-action{
+    transition: background-color 0.15s ease,color 0.15s ease,transform 0.15s ease;
+}
 .wrd-framework .list-group.cross-cutting .list-group-item-action:hover, 
 .wrd-framework .list-group.cross-cutting .list-group-item-action:focus,
 .wrd-framework .list-group.cross-cutting .list-group-item-action:first-child:hover, 
@@ -17382,6 +17385,7 @@ a.badge {
   color: #00a28c;
   text-decoration: none;
   background-color: #bfede7; /*25%*/
+  transform: scale(1.025) !important;
 }
 
 
@@ -18924,6 +18928,7 @@ min-height: 10rem;
 }
 .hazard-top-title h1{
   margin-bottom: 0 !important;
+  line-height: 1 !important;
 }
 .hazard-top-title img{
   background-color: #c51127;

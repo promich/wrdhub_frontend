@@ -18599,7 +18599,7 @@ a.badge {
   background-size: cover !important;
   background-position: top center !important;
   background-repeat: no-repeat !important;
-  height: 100%; 
+  height: auto; 
 }
 
 
@@ -18702,6 +18702,16 @@ text-align: right;
 .home-latest{
   background-color: #e5f5fb; /*10%*/
   background: linear-gradient(0deg, #f2fafd 75%, #fff 100%) !important;
+}
+
+.home-latest picture.card-img-top{
+  display: block;
+  position: relative;
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  height: auto;
+  --bs-aspect-ratio: 62.5%;
 }
 
 .home-latest .card-latest{

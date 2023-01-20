@@ -5962,8 +5962,10 @@ section.event-top-featured{
   background-color: #431a3e !important;
 }
 
-
-
+/*For video embedded in insight-single wysiwyg*/
+#page-content .video-embed-field-responsive-video{
+margin: 2rem 0;
+}
 
 
 #page-content a.card-event{
@@ -6233,6 +6235,13 @@ span.date,
 	padding-bottom: 0.5rem !important;
 	margin-bottom: 1.5rem !important;
 }
+
+#page-content p:last-of-type{
+  margin-bottom: 2.5rem !important;
+}
+
+
+
 
 #page-content hr{
 	margin-top: 2.5rem !important;

@@ -6273,6 +6273,11 @@ span.date,
 .card-list-pub a:hover {
     background-color: #fce8e0; /*orange 15%*/
 }
+
+a.card-list-pub .pub-image{
+  min-height: 10rem;
+}
+
 .card-list-pub a:hover .pub-image img{
     -webkit-transform: translate(-50%,1rem);
     -ms-transform: translate(-50%,1rem);
@@ -6961,8 +6966,8 @@ span.date,
   border-bottom-right-radius: 0.375rem;
 }*/
 .page-item:first-child .page-link {
-    border-top-left-radius: 0 !important;
-    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 200% !important;
+    border-bottom-left-radius: 200% !important;
 }
 
 

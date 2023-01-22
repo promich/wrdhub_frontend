@@ -388,8 +388,8 @@
 
 
       <!-- Hero -->
-      <section class="overflow-hidden" style="background: radial-gradient(116.18% 118% at 50% 100%, rgba(232, 105, 46, 0.1) 0%, rgba(241, 165, 130, 0.05) 41.83%, rgba(252, 232, 224, 0.07) 82.52%);">
-        <div class="container">
+<section id="tool-top">
+  <div class="container">
 	        
 	<nav class="bread" aria-label="breadcrumb">
       <ol class="breadcrumb">
@@ -406,17 +406,17 @@
 	        
           <div class="row">
             <div class="col-md-12 col-lg-9 col-xl-8 pb-3">
-              <h1 class="display-4 py-3">The WRD Policy Tracker</h1>
-              <span class="fs-sm">Last updated 23 Nov 2022</span>
+              <h1 class="display-4">The WRD Policy Tracker</h1>
+              <p class="update">Last updated 23 Nov 2022</p>
               <p class="fs-lg pb-2 mb-4">The WRD Policy Tracker follows the progress of gender-responsive and inclusive legal, policy, and planning frameworks in 193 UN Member States. It helps analyse comparative progress across regions and countries, and highlights good practice.</p>
               
 
                 <a href="#" class="btn btn-sm btn-outline-primary hover-arrow mb-2">
                   Learn more
-                </a>
+                </a><!--
                 <a href="#" class="btn btn-sm btn-outline-primary hover-arrow mb-2">
                   Summary of current findings
-                </a>
+                </a>-->
                 <a href="contact.html" class="btn btn-sm btn-outline-primary hover-arrow mb-2">
                   Suggest a framework
                 </a>    
@@ -466,11 +466,11 @@
             </div>
           </div>
         </div>
-      </section>
+</section>
 
 
 
-<section id="tool" class="py-5">
+<section id="tool-main" class="py-5">
 	<div class="container">
 		
 
@@ -480,30 +480,25 @@
 
     <div class="tab-content pt-1">
       <div class="tab-pane fade active show" id="pagetitlenav" role="tabpanel" >
-        <ul class="nav nav-tabs-alt mb-4" role="tablist">
+        <ul class="nav nav-tabs-main nav-tabs-alt mb-4" role="tablist">
           <li class="nav-item" role="presentation">
-            <a class="nav-link active" href="#t-main-1" id="pills-t-main-1" data-bs-toggle="tab" role="tab" aria-controls="t-main-1" aria-selected="true">
+            <a class="nav-link active" href="#global-map" id="pills-global-map" data-bs-toggle="tab" role="tab" aria-controls="global-map" aria-selected="true">
               Global Map
             </a>
           </li>
           <li class="nav-item" role="presentation">
-            <a class="nav-link" href="#t-main-2" id="pills-t-main-2" data-bs-toggle="tab" role="tab" aria-controls="t-main-2" aria-selected="false" tabindex="-1">
+            <a class="nav-link" href="#global-analysis" id="pills-global-analysis" data-bs-toggle="tab" role="tab" aria-controls="global-analysis" aria-selected="false" tabindex="-1">
               Global Analysis
             </a>
           </li>
           <li class="nav-item" role="presentation">
-            <a class="nav-link" href="#t-main-3" id="pills-t-main-3" data-bs-toggle="tab" role="tab" aria-controls="t-main-3" aria-selected="false" tabindex="-1">
+            <a class="nav-link" href="#regional-analysis" id="pills-regional-analysis" data-bs-toggle="tab" role="tab" aria-controls="regional-analysis" aria-selected="false" tabindex="-1">
               Regional Analysis
             </a>
           </li>
           <li class="nav-item" role="presentation">
-            <a class="nav-link" href="#t-main-4" id="pills-t-main-4" data-bs-toggle="tab" role="tab" aria-controls="t-main-4" aria-selected="false" tabindex="-1">
+            <a class="nav-link" href="#group-analysis" id="pills-group-analysis" data-bs-toggle="tab" role="tab" aria-controls="group-analysis" aria-selected="false" tabindex="-1">
               High-risk Groups Analysis
-            </a>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" href="#t-main-5" id="pills-t-main-5" data-bs-toggle="tab" role="tab" aria-controls="t-main-5" aria-selected="false" tabindex="-1">
-              Good Practice
             </a>
           </li>
           <li class="nav-item" role="presentation">
@@ -511,10 +506,16 @@
               LGBTIQ+
             </a>
           </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" href="#t-main-5" id="pills-t-main-5" data-bs-toggle="tab" role="tab" aria-controls="t-main-5" aria-selected="false" tabindex="-1">
+              Findings & Good Practice
+            </a>
+          </li>
+
 
         </ul>
         <div class="tab-content">
-          <div class="tab-pane fade active show" id="t-main-1" role="tabpanel" aria-labelledby="pills-t-main-1">
+          <div class="tab-pane fade active show" id="global-map" role="tabpanel" aria-labelledby="pills-global-map">
             <!--<h2>Map View</h2>-->
             
             <div class="row">
@@ -547,8 +548,7 @@
 <p class="fs-xxs text-end">* The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations</p>
 
 <div class="row">
-<div class="col-md-12 col-lg-5">
-
+<div class="col-12">
 <!-- Legend for table -->
 <dv class="map-legend">
  <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Law: This includes constitutions, legislations, regulations, decrees and local by-laws. These are based on a country’s constitution and are passed by the legislature, or may be regulations or decrees made by government ministers authorised under legislation.">
@@ -1051,7 +1051,7 @@
  
             
           </div>
-          <div class="tab-pane fade" id="t-main-2" role="tabpanel" aria-labelledby="pills-t-main-2">
+          <div class="tab-pane fade" id="global-analysis" role="tabpanel" aria-labelledby="pills-global-analysis">
             
             <p>Explore the global distribution of gender-responsive and inclusive DRR/DRM frameworks through the following.</p>
             
@@ -1216,7 +1216,7 @@
             
             
           </div>
-          <div class="tab-pane fade" id="t-main-3" role="tabpanel" aria-labelledby="pills-t-main-3">
+          <div class="tab-pane fade" id="regional-analysis" role="tabpanel" aria-labelledby="pills-regional-analysis">
             <h2>Regional Analysis</h2>
             <p>Est quis nulla laborum officia ad nisi ex nostrud culpa Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut duis ipsum nisi elit fugiat commodo sunt reprehenderit laborum veniam eu veniam. Eiusmod minim exercitation fugiat irure ex labore incididunt do fugiat commodo aliquip sit id deserunt reprehenderit aliquip nostrud. Amet ex cupidatat excepteur aute veniam incididunt mollit cupidatat esse irure officia elit do ipsum ullamco Lorem. Ullamco ut ad minim do mollit labore ipsum laboris ipsum commodo sunt tempor enim incididunt. Commodo quis sunt dolore aliquip aute tempor irure magna enim minim reprehenderit. Ullamco consectetur culpa veniam sint cillum aliqua incididunt velit ullamco sunt ullamco quis quis commodo voluptate. Mollit nulla nostrud adipisicing aliqua cupidatat aliqua pariatur mollit voluptate voluptate consequat non.</p>
 
@@ -1316,7 +1316,7 @@
             
             
           </div>
-          <div class="tab-pane fade" id="t-main-4" role="tabpanel" aria-labelledby="pills-t-main-4">
+          <div class="tab-pane fade" id="group-analysis" role="tabpanel" aria-labelledby="pills-group-analysis">
             <h2>High-risk Groups Analysis</h2>
             <p>Est quis nulla laborum officia ad nisi ex nostrud culpa Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut duis ipsum nisi elit fugiat commodo sunt reprehenderit laborum veniam eu veniam. Eiusmod minim exercitation fugiat irure ex labore incididunt do fugiat commodo aliquip sit id deserunt reprehenderit aliquip nostrud. Amet ex cupidatat excepteur aute veniam incididunt mollit cupidatat esse irure officia elit do ipsum ullamco Lorem. Ullamco ut ad minim do mollit labore ipsum laboris ipsum commodo sunt tempor enim incididunt. Commodo quis sunt dolore aliquip aute tempor irure magna enim minim reprehenderit. Ullamco consectetur culpa veniam sint cillum aliqua incididunt velit ullamco sunt ullamco quis quis commodo voluptate. Mollit nulla nostrud adipisicing aliqua cupidatat aliqua pariatur mollit voluptate voluptate consequat non.</p>
  
@@ -1400,100 +1400,7 @@
             
             
           </div>
-          <div class="tab-pane fade" id="t-main-5" role="tabpanel" aria-labelledby="pills-t-main-5">
-            <h2>Good practice</h2>
-            <p>Est quis nulla laborum officia ad nisi ex nostrud culpa Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut duis ipsum nisi elit fugiat commodo sunt reprehenderit laborum veniam eu veniam. Eiusmod minim exercitation fugiat irure ex labore incididunt do fugiat commodo aliquip sit id deserunt reprehenderit aliquip nostrud. Amet ex cupidatat excepteur aute veniam incididunt mollit cupidatat esse irure officia elit do ipsum ullamco Lorem. Ullamco ut ad minim do mollit labore ipsum laboris ipsum commodo sunt tempor enim incididunt. Commodo quis sunt dolore aliquip aute tempor irure magna enim minim reprehenderit. Ullamco consectetur culpa veniam sint cillum aliqua incididunt velit ullamco sunt ullamco quis quis commodo voluptate. Mollit nulla nostrud adipisicing aliqua cupidatat aliqua pariatur mollit voluptate voluptate consequat non.</p>
 
-
-
- 
-<ul class="nav nav-tabs-alt mb-4" role="tablist">
-    <li class="nav-item" role="presentation">
-      <a class="nav-link active" href="#t-five-1" id="pills-t-five-1" data-bs-toggle="tab" role="tab" aria-controls="t-five-1" aria-selected="true">
-        Inclusion of all high-risk groups
-      </a>
-    </li>
-    <li class="nav-item" role="presentation">
-      <a class="nav-link" href="#t-five-2" id="pills-t-five-2" data-bs-toggle="tab" role="tab" aria-controls="t-five-2" aria-selected="false" tabindex="-1">
-        Individual high-risk group
-      </a>
-    </li>
-    <li class="nav-item" role="presentation">
-      <a class="nav-link" href="#t-five-3" id="pills-t-five-3" data-bs-toggle="tab" role="tab" aria-controls="t-five-3" aria-selected="false" tabindex="-1">
-        Gender responsive
-      </a>
-    </li>  
-  </ul>
-  <div class="tab-content">
-    <div class="tab-pane fade active show" id="t-five-1" role="tabpanel" aria-labelledby="pills-t-five-1">
-      
-      <p>Inclusion of all high-risk groups</p>   
-      
-      <!-- Basic table -->
-<div class="table-responsive">
-  <table class="table">
-    <thead>
-      <tr>
-        <th></th>
-        <th>LAWS</th>
-        <th>POLICY</th>
-        <th>STRATEGY</th>
-        <th>PLAN</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">Papua New Guinea</th>
-        <td>john</td>
-        <td>Doe</td>
-        <td>CEO, Founder</td>
-        <td>+3 555 68 70</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Anna</td>
-        <td>Cabana</td>
-        <td>Designer</td>
-        <td><i class='bx bxs-circle'></i></td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Kale</td>
-        <td>Thornton</td>
-        <td>Developer</td>
-        <td>+3 285 42 88</td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>Jane</td>
-        <td>Birkins</td>
-        <td>Support</td>
-        <td>+3 774 28 50</td>
-      </tr>
-    </tbody>
-  </table>
-</div>       
-      
-
-    </div>
-    <div class="tab-pane fade" id="t-five-2" role="tabpanel" aria-labelledby="pills-t-five-2">
-      
-      <p>Individual high-risk group</p>
-
-
-    </div>
-    <div class="tab-pane fade" id="t-five-3" role="tabpanel" aria-labelledby="pills-t-five-3">
-      <h2>Gender responsive</h2>
-
-    </div>
-
-
-
-  </div>
-
-         
-            
-          </div>
           <div class="tab-pane fade" id="t-main-6" role="tabpanel" aria-labelledby="pills-t-main-6">
             <h2>LGBTIQ+</h2>
             <p>Est quis nulla laborum officia ad nisi ex nostrud culpa Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut duis ipsum nisi elit fugiat commodo sunt reprehenderit laborum veniam eu veniam. Eiusmod minim exercitation fugiat irure ex labore incididunt do fugiat commodo aliquip sit id deserunt reprehenderit aliquip nostrud. Amet ex cupidatat excepteur aute veniam incididunt mollit cupidatat esse irure officia elit do ipsum ullamco Lorem. Ullamco ut ad minim do mollit labore ipsum laboris ipsum commodo sunt tempor enim incididunt. Commodo quis sunt dolore aliquip aute tempor irure magna enim minim reprehenderit. Ullamco consectetur culpa veniam sint cillum aliqua incididunt velit ullamco sunt ullamco quis quis commodo voluptate. Mollit nulla nostrud adipisicing aliqua cupidatat aliqua pariatur mollit voluptate voluptate consequat non.</p>
@@ -1667,7 +1574,100 @@
 
 
           </div>
-
+          <div class="tab-pane fade" id="t-main-5" role="tabpanel" aria-labelledby="pills-t-main-5">
+                      <h2>Good practice</h2>
+                      <p>Est quis nulla laborum officia ad nisi ex nostrud culpa Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut duis ipsum nisi elit fugiat commodo sunt reprehenderit laborum veniam eu veniam. Eiusmod minim exercitation fugiat irure ex labore incididunt do fugiat commodo aliquip sit id deserunt reprehenderit aliquip nostrud. Amet ex cupidatat excepteur aute veniam incididunt mollit cupidatat esse irure officia elit do ipsum ullamco Lorem. Ullamco ut ad minim do mollit labore ipsum laboris ipsum commodo sunt tempor enim incididunt. Commodo quis sunt dolore aliquip aute tempor irure magna enim minim reprehenderit. Ullamco consectetur culpa veniam sint cillum aliqua incididunt velit ullamco sunt ullamco quis quis commodo voluptate. Mollit nulla nostrud adipisicing aliqua cupidatat aliqua pariatur mollit voluptate voluptate consequat non.</p>
+          
+          
+          
+           
+          <ul class="nav nav-tabs-alt mb-4" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" href="#t-five-1" id="pills-t-five-1" data-bs-toggle="tab" role="tab" aria-controls="t-five-1" aria-selected="true">
+                  Inclusion of all high-risk groups
+                </a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#t-five-2" id="pills-t-five-2" data-bs-toggle="tab" role="tab" aria-controls="t-five-2" aria-selected="false" tabindex="-1">
+                  Individual high-risk group
+                </a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#t-five-3" id="pills-t-five-3" data-bs-toggle="tab" role="tab" aria-controls="t-five-3" aria-selected="false" tabindex="-1">
+                  Gender responsive
+                </a>
+              </li>  
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade active show" id="t-five-1" role="tabpanel" aria-labelledby="pills-t-five-1">
+                
+                <p>Inclusion of all high-risk groups</p>   
+                
+                <!-- Basic table -->
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>LAWS</th>
+                  <th>POLICY</th>
+                  <th>STRATEGY</th>
+                  <th>PLAN</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Papua New Guinea</th>
+                  <td>john</td>
+                  <td>Doe</td>
+                  <td>CEO, Founder</td>
+                  <td>+3 555 68 70</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Anna</td>
+                  <td>Cabana</td>
+                  <td>Designer</td>
+                  <td><i class='bx bxs-circle'></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Kale</td>
+                  <td>Thornton</td>
+                  <td>Developer</td>
+                  <td>+3 285 42 88</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Jane</td>
+                  <td>Birkins</td>
+                  <td>Support</td>
+                  <td>+3 774 28 50</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>       
+                
+          
+              </div>
+              <div class="tab-pane fade" id="t-five-2" role="tabpanel" aria-labelledby="pills-t-five-2">
+                
+                <p>Individual high-risk group</p>
+          
+          
+              </div>
+              <div class="tab-pane fade" id="t-five-3" role="tabpanel" aria-labelledby="pills-t-five-3">
+                <h2>Gender responsive</h2>
+          
+              </div>
+          
+          
+          
+            </div>
+          
+                   
+                      
+                    </div>
         </div>
       </div>
 	</div>
@@ -2499,9 +2499,15 @@ options: {
 
 
 </script>
+<script>
+//Add hashtags to active tabs
+document.addEventListener("DOMContentLoaded", () => {
+  const trigger = document.querySelector(`ul.nav-tabs-main a[href="${window.location.hash}"]`)
+  const tab = new bootstrap.Tab(trigger)
+  tab.show()
+})
 
-
-    
+</script>   
     <script>
 	    
 	   

@@ -16989,6 +16989,13 @@ color: rgba(255, 255, 255, 0.85) !important;
   margin-top: 0.0625rem;
   font-size: 1.425em;
 }
+
+.pagination .page-link > i.bx-chevron-right,
+.pagination .page-link > i.bx-chevron-left {
+  margin-right: -0.333rem !important;
+  margin-left: -0.333rem !important;
+}
+
 .pagination .page-item {
   margin: 0 0.125rem;
 }
@@ -22004,6 +22011,21 @@ img-comparison-slider:focus {
 }
 
 /*Tool Tracker*/
+
+#tool-top{
+  overflow: hidden !important;
+  background: radial-gradient(116.18% 118% at 50% 100%, rgba(232, 105, 46, 0.1) 0%, rgba(241, 165, 130, 0.05) 41.83%, rgba(252, 232, 224, 0.07) 82.52%);
+}
+
+#tool-top h1{
+    padding-top: 0.5rem !important;
+}
+#tool-top .update{
+    margin-bottom: 1rem !important;
+    font-size: 0.875rem !important;
+}
+
+
 #raindropSVG {
   width: 100%;
   height: auto;
@@ -22139,17 +22161,17 @@ img-comparison-slider:focus {
       display: none;
     }
  
- #tool .table thead th, .table tbody th {
+ #tool-main .table thead th, .table tbody th {
     font-size: .875rem;
     line-height: 1.25;
     }
-   #tool .table > :not(caption) > * > * {
+   #tool-main .table > :not(caption) > * > * {
     padding: 0.5rem 0.75rem;
     font-size: .875rem;
     line-height: 1.25rem;
     }
     
-    #tool .h4{
+    #tool-main .h4{
       margin-bottom: 0;
       margin-top: 1rem;
     }

@@ -362,10 +362,10 @@ a.btn:hover {
 /*colours*/
 .blue{color:var(--bs-blue);}
 .cyan{color:var(--bs-cyan);}
-.red{color:var(--bs-red);}
-.orange{color:var(--bs-orange);}
-.purple{color:var(--bs-purple);}
-.green{color:var(--bs-green);}
+.red, .law{color:var(--bs-red);}
+.orange, .policy{color:var(--bs-orange);}
+.purple, .strategy{color:var(--bs-purple);}
+.green, .plan{color:var(--bs-green);}
 /*
 	  --bs-blue: #009ddc;
   --bs-indigo: #6610f2;

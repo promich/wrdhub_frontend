@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Women's Resilience to Disasters Knowledge Hub </title>
+
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Women's Resilience to Disasters Knowledge Hub. The Women's Resilience to Disasters programme proposes a comprehensive package to strengthen women's resilience to disasters and threats, including climate change and COVID-19.  The WRD programme aims to render the lives and livelihoods of women and girls resilient to disasters and threats, contributing to sustainable, secure, and thriving communities. The objective is for WRD countries to adopt gender-responsive decision-making and governance systems, and enable targeted action to build the resilience of women and girls.">
+    <meta name="keywords" content="disasters, resilience, women, knowledge, local knowledge, UN Women, united nations">
+    <meta name="author" content="UN Women">
+
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" media="all" href="https://use.typekit.net/qtp3bsv.css">
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #131022;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== undefined && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+   
+
+    
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <header class="header navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            <img src="assets/img/wrd_logo.svg" alt="Women's Resilience to Disasters Knowledge Hub graphic">
+            <h1 class="d-none">Women's Resilience to Disasters Knowledge Hub</h1>
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <!--<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>-->
+
+            
+              
+              
+              
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                <li class="nav-item dropdown">
+                  <a href="about-v1.html" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
+                  <a class="nav-link collapsed" href="#menu-1" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-1"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-1" data-bs-parent="#navbarNav">
+                      <li><a href="programme.html" class="dropdown-item">Women’s Resilience to Disasters Programme</a></li>
+                      <li><a href="partners.html" class="dropdown-item">Partners</a></li>
+                      <li><a href="donors.html" class="dropdown-item">Donors</a></li>
+                  </ul>               
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="explore.html" class="nav-link active dropdown-toggle" data-toggle="dropdown">Explore</a>
+                  <a class="nav-link collapsed" href="#menu-2" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-2"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-2" data-bs-parent="#navbarNav">
+                      <li><a href="insights.html" class="dropdown-item active">Insights</a></li>
+                      <li><a href="insights.html" class="dropdown-item">Women’s perspectives</a></li>
+                      <li><a href="insights.html" class="dropdown-item">Case Studies</a></li>
+                      <li><a href="regions.html" class="dropdown-item">Regions</a></li>
+                      <li><a href="hazards.html" class="dropdown-item">Hazards</a></li>
+                      
+                  </ul>               
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="practice.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Practice</a>
+                  <a class="nav-link collapsed" href="#menu-3" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-3"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-3" data-bs-parent="#navbarNav">
+                    <li><a href="topics.html" class="dropdown-item">Topics</a></li>
+                    <li><a href="library.html" class="dropdown-item">Library</a></li>
+                    <li><a href="library.html" class="dropdown-item">Tools</a></li>
+                    <li><a href="tracker.html" class="dropdown-item">Policy Tracker</a></li>  
+                  </ul>               
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="engage.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Engage</a>
+                  <a class="nav-link collapsed" href="#menu-4" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="menu-4"> </a>
+                  <ul class="dropdown-menu collapse" id="menu-4" data-bs-parent="#navbarNav">
+                      <li><a href="engage.html" class="dropdown-item">Community of Practice</a></li>
+                      <li><a href="experts.html" class="dropdown-item">Expert Roster</a></li>
+                      <li><a href="events.html" class="dropdown-item">Events</a></li>
+                      <li><a href="platforms.html" class="dropdown-item">Recommended Platforms</a></li>
+                  </ul>               
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"><span class="d-none d-lg-block">FR</span><span class="d-md-block d-lg-none">En français</span></a>
+                </li>
+
+              </ul>
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="offcanvas-footer border-top">
+
+
+
+
+ <form>
+  <label for="mobile-search" class="form-label">Search our website</label>
+  <div class="grouped-inputs p-1 rounded-pill border">
+
+  <div class="input-group">
+    <input type="text" id="mobile-search" class="form-control rounded-start" aria-label="Text input with button" placeholder="Search" >
+    <button type="submit" class="btn btn-primary btn-icon rounded-circle"><i
+      class="bx bx-search fs-lg "></i></button>
+  </div>
+</div>
+</form>
+ 
+              <div class="d-flex mt-4">
+
+                <div class="">
+                  <a href="#" class="btn btn-icon btn-primary btn-linkedin rounded-circle me-2">
+                    <i class="bx bxl-linkedin"></i>
+                  </a>
+                </div>
+                <div class="">
+                  <a href="#" class="btn btn-icon btn-primary btn-twitter rounded-circle me-2">
+                    <i class="bx bxl-twitter"></i>
+                  </a>
+                </div>
+                <div class="flex-grow-1 ">
+                  <a href="#" class="btn btn-primary w-100 ">
+                    <i class="bx bxs-envelope fs-4 lh-1 me-1"></i>
+                    &nbsp;Get in touch
+                  </a>
+                </div>
+              </div>
+
+
+ 
+ 
+            </div>      
+          </div>
+
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+          	<!-- new hamburger-->
+			
+			<div id="togglenav" class="burger-wrapper">
+			  <div class="hamburger"></div>
+			</div>
+			 <!-- 
+          end new hamburger-->  
+
+          </button>
+          
+          
+          <!--
+          <button class="btn btn-outline-primary btn-icon rounded-circle d-none d-lg-inline-flex" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAccess"><i class="bx bx-body "></i></button>
+-->
+          <button class="btn btn-outline-primary btn-icon rounded-circle d-none d-lg-inline-flex ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch"><i class="bx bx-search "></i></button>
+
+        </div>
+
+
+
+
+
+
+
+
+      </header>
+
+<!-- Offcanvas Search-->
+<div class="offcanvas offcanvas-top" id="offcanvasSearch" tabindex="-1">
+  <div class="offcanvas-header">
+	  <div class="container">
+      <h5 class="offcanvas-title"> </h5>
+      <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+	  </div>
+  </div>
+  <div class="offcanvas-body d-flex align-items-center ">
+
+    <div class="container ">
+      <div class="row d-flex justify-content-center">
+        <div class="col-xl-10 col-lg-12 pb-5">
+          <form>
+            <label for="top-search" class="form-label">Search our website</label>
+            <div class="input-group">
+              <input type="text" id="top-search" class="form-control form-control-lg rounded-start ps-5" placeholder="What are you looking for?" >
+              <i class="bx bx-search fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+              <button type="submit" class="btn btn-lg btn-primary">Search</button>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Offcanvas accessibility -->
+<div class="offcanvas offcanvas-start" id="offcanvasAccess" tabindex="-1">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title">Accessibility menu</h5>
+    <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.</p>
+    <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+      <input type="checkbox" class="form-check-input" id="theme-mode">
+      <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+      <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+    </div>
+  </div>
+</div>
+
+
+
+
+<section class="insights-top">
+  <div class="container">
+    
+  <!-- Breadcrumb - hidden on mobile -->
+  <nav class="py-3 " aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item" aria-current="page"><a href="explore.html">Explore</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Insights</li>
+    </ol>
+  </nav>   
+  <h3 class="top-label">Featured highlights</h3>
+    
+    <!-- WP Slider -->
+    <div class="swiper " data-swiper-options='{
+                          "pagination": {
+                            "el": ".swiper-pagination",
+                            "clickable": true
+                          },
+                          "spaceBetween": 24,
+                          "loop": true
+                        }'>
+      <div class="swiper-wrapper">
+          
+          <!-- Item -->
+              <a href="insight-single.html" class="swiper-slide ">
+                  <div class="row">
+                    <div class="col-lg-8 col-md-7 order-2 order-md-1" >
+                        <div class="pt-3 pt-lg-4">
+                          <span class="badge">Blog</span>
+                            <h4 class="h1">Women are coordinating and strengthening resilience networks</h4>
+                                <p class="">The Network of Women-led Organisations in Nigeria coordinates and strengthens the collaboration among members and partners, insuring the inclusion of women and girls in programs and projects.</p>
+                        </div>
+                    </div>
+              
+                    <div class="col-lg-4 col-md-5 order-1 order-md-2 position-relative">
+                        <div class="pic-frame">
+                          <picture class="ratio" style="background-image: url(assets/img/user-1.jpg); ">
+                          </picture>
+                          <span class="bg-hero-top"></span>
+                          <div class="insight-overlay">
+                            <h3>Dilanthi Amaratunga</h3>
+                            <p>Executive Director of Best Initiative National Development Unification, Bangladesh</p>
+                          </div>
+                          
+                        </div>
+                    </div>
+                  </div>
+              </a>
+          
+          <!-- Item 2-->
+              <a href="insight-single.html" class="swiper-slide">
+                  <div class="row">
+                    <div class="col-lg-8 col-md-7 order-2 order-md-1" >
+                        <div class="pt-3 pt-lg-4">
+                          <span class="badge">Interview</span>
+                            <h4 class="h1">Women are disaster risk management leaders</h4>
+                                <p class="">Vasiti Soko, the first woman Director of Fiji’s National Disaster Management Office, and the winner of the WIN DRR leadership award 2021 reflects on the benefits of women's leadership in reducing disaster risks.</p>
+                        </div>
+                    </div>
+              
+                    <div class="col-lg-4 col-md-5 order-1 order-md-2 position-relative">
+                        <div class="pic-frame">
+                          <picture class="ratio" style="background-image: url(assets/img/perspective.jpg); ">
+                          </picture>
+                          <span class="bg-hero-top"></span>
+                          <div class="insight-overlay">
+                            <h3>Dilanthi Amaratunga</h3>
+                            <p>Executive Director of Best Initiative National Development Unification, Bangladesh</p>
+                          </div>
+                          
+                          
+                          
+                        </div>
+                    </div>
+                  </div>
+              </a>
+          
+          <!-- Item 3-->
+              <a href="insight-single.html" class="swiper-slide ">
+                  <div class="row">
+                    <div class="col-lg-8 col-md-7 order-2 order-md-1" >
+                        <div class="pt-3 pt-lg-4">
+                          <span class="badge">Case Study</span>
+                            <h4 class="h1">From victims to leaders: ending gender-based violence in the Lake Chad Basin</h4>
+                                <p class="">The Network of Women-led Organisations in Nigeria coordinates and strengthens the collaboration among members and partners, insuring the inclusion of women and girls in programs and projects.</p>
+                        </div>
+                    </div>
+              
+                    <div class="col-lg-4 col-md-5 order-1 order-md-2 position-relative">
+                        <div class="pic-frame">
+                          <picture class="ratio" style="background-image: url(assets/img/user-1.jpg); ">
+                          </picture>
+                          <span class="bg-hero-top"></span>
+                          <div class="insight-overlay">
+                            <h3>Dilanthi Amaratunga</h3>
+                            <p>Executive Director of Best Initiative National Development Unification, Bangladesh</p>
+                          </div>
+                          
+                        </div>
+                    </div>
+                  </div>
+              </a>
+
+          
+          
+              </div><!-- End slider-wrapper -->
+          
+              </div><!-- End swiper -->
+                    <!-- Pagination (bullets) <div class="swiper-pagination"></div>-->
+      <div id="swiper-per-pagination" class="swiper-pagination position-relative py-3 bottom-0 "></div>
+      
+                    <!-- End pagination -->
+
+                    
+  </div>
+</section>
+
+
+
+<section id="library-search-sec" class="">
+
+<div id="library-search" class="container">
+
+            <div class="input-group input-group-lg ">
+                <input type="text" class="form-control w-50" placeholder="Search insights...">
+
+                <select class="form-select form-resources">
+                  <option value="" selected="" disabled="">All insights</option>
+                  <option value="News">News</option>
+                  <option value="Case Studies">Case Studies</option>
+                  <option value="Interviews">Interviews</option>
+                  <option value="Perspectives">Women's Perspectives</option>
+                </select>
+
+                <button type="submit" class="btn btn-icon btn-primary btn-lg">
+                  <i class="bx bx-search"></i>
+                </button>
+
+            </div>
+
+
+
+<form class="">
+
+
+              <div class="input-group input-group-lg" style="margin-top:-1px;">
+
+                  <select class="form-select ">
+                    <option value="" selected="" >Topics: Risk</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Mobile Development">Mobile Development</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Game Development">Game Development</option>
+                    <option value="Software Testing">Software Testing</option>
+                    <option value="Software Engineering">Software Engineering</option>
+                    <option value="Network &amp; Security">Network &amp; Security</option>
+                  </select>
+                  <select class="form-select ">
+                    <option value="" selected="" >Topics: Systems</option>
+                    <option value="Web Development">Laws, policies, strategies, plans & projects</option>
+                    <option value="Mobile Development">Mobile Development</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Game Development">Game Development</option>
+                    <option value="Software Testing">Software Testing</option>
+                    <option value="Software Engineering">Software Engineering</option>
+                    <option value="Network &amp; Security">Network &amp; Security</option>
+                  </select>
+                  <select class="form-select ">
+                    <option value="" selected="" >Topics: Action</option>
+                    <option value="Web Development">Access to finance</option>
+                    <option value="Mobile Development">Access to services</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Game Development">Game Development</option>
+                    <option value="Software Testing">Software Testing</option>
+                    <option value="Software Engineering">Software Engineering</option>
+                    <option value="Network &amp; Security">Network &amp; Security</option>
+                  </select>
+
+                  <select class="form-select">
+                    <option value="" selected="" >All Cross-cutting Issues</option>
+                    <option value="Web Development">France</option>
+                    <option value="Mobile Development">Germany</option>
+                    <option value="Programming">Italy</option>
+                    <option value="Game Development">Game Development</option>
+                    <option value="Software Testing">Software Testing</option>
+                  </select>
+                <select class="form-select">
+                    <option value="" selected="" >All regions</option>
+                    <option value="Web Development">Asia</option>
+                    <option value="Mobile Development">Pacific</option>
+                    <option value="Programming">Americas &amp; Caribbean</option>
+                    <option value="Game Development">Eastern &amp; Southern Africa</option>
+                    <option value="Software Testing">West &amp; Central Africa</option>
+                    <option value="Software Engineering">Europe &amp; Central Asia</option>
+                    <option value="Network &amp; Security">Northern Africa &amp; Middle East</option>
+                  </select>
+                  <select class="form-select">
+                    <option value="" selected="" >All hazards</option>
+                    <option value="Web Development">Floods</option>
+                    <option value="Web Development">Epidemic</option>
+                    <option value="Mobile Development">Drought</option>
+                    <option value="Programming">German</option>
+                    <option value="Game Development">Earthquake</option>
+                    <option value="Software Testing">Swahili</option>
+                    <option value="Software Engineering">Turkish</option>
+                  </select>
+
+                </div>
+
+
+
+</form>
+
+<div class="filter-tokens pt-3">
+
+    <button type="button" class="btn btn-token btn-danger">Clear filters</button>
+
+    <button type="button" class="btn btn-token">West and Central Africa</button>
+    <button type="button" class="btn btn-token">South-east Asia</button>
+  
+</div>
+
+</div>
+</section>
+
+<section id="" class="insights-listing">
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-xl-10 offset-xl-1">
+
+    <!-- item -->
+    <a href="insight-single.html" class="insight-card">
+      <div class="row g-0">
+              <div class="col-9">
+                  <div class="p-2 p-md-3 px-lg-4 ">
+                    <div class="card-top">
+                      <span class="badge">Blog</span>
+                      <span class="date">30 Nov 2022</span>
+                    </div>
+                    <h2 class="h5">
+                      Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+                    </h3>
+                    <p class="small">How international commitments and recommendations are being translated into national DRR frameworks</p>
+                  </div>
+              </div>
+        
+              <div class="col-3 position-relative" style="">
+                <picture class="" style="background-image: url(assets/img/user-1.jpg); ">
+                </picture>
+                
+              </div>
+      </div>
+    </a>
+
+    <!-- item 2-->
+    <a href="insight-single.html" class="insight-card">
+      <div class="row g-0">
+              <div class="col-9">
+                  <div class="p-2 p-md-3 px-lg-4 ">
+                    <div class="card-top">
+                      <span class="badge">News</span>
+                      <span class="date">22 Nov 2022</span>
+                    </div>
+                    <h2 class="h5">
+                      Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+                    </h3>
+                    <p class="small">How international commitments and recommendations are being translated into national DRR frameworks</p>
+                  </div>
+              </div>
+        
+              <div class="col-3 position-relative" style="">
+                <picture class="" style="background-image: url(assets/img/perspective.jpg); ">
+                </picture>
+                
+              </div>
+      </div>
+    </a>
+
+    <!-- item WITHOUT a thumbnail image-->
+    <a href="insight-single.html" class="insight-card">
+      <div class="row g-0">
+              <div class="col-12">
+                  <div class="p-2 p-md-3 px-lg-4 ">
+                    <div class="card-top">
+                      <span class="badge">News</span>
+                      <span class="date">05 Nov 2022</span>
+                    </div>
+                    <h2 class="h5">
+                      Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+                    </h3>
+                    <p class="small">How international commitments and recommendations are being translated into national DRR frameworks</p>
+                  </div>
+              </div>
+        
+      </div>
+    </a>
+
+    <!-- item -->
+    <a href="insight-single.html" class="insight-card">
+      <div class="row g-0">
+              <div class="col-9">
+                  <div class="p-2 p-md-3 px-lg-4 ">
+                    <div class="card-top">
+                      <span class="badge">Interview</span>
+                      <span class="date">05 Nov 2022</span>
+                    </div>
+                    <h2 class="h5">
+                      Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+                    </h3>
+                    <p class="small">How international commitments and recommendations are being translated into national DRR frameworks</p>
+                  </div>
+              </div>
+        
+              <div class="col-3 position-relative" style="">
+                <picture class="" style="background-image: url(assets/img/user-1.jpg); ">
+                </picture>
+                
+              </div>
+      </div>
+    </a>
+    
+    <!-- item 2-->
+    <a href="insight-single.html" class="insight-card">
+      <div class="row g-0">
+              <div class="col-9">
+                  <div class="p-2 p-md-3 px-lg-4 ">
+                    <div class="card-top">
+                      <span class="badge">Case Study</span>
+                      <span class="date">01 Nov 2022</span>
+                    </div>
+                    <h2 class="h5">
+                      Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+                    </h3>
+                    <p class="small">How international commitments and recommendations are being translated into national DRR frameworks</p>
+                  </div>
+              </div>
+        
+              <div class="col-3 position-relative" style="">
+                <picture class="" style="background-image: url(assets/img/perspective.jpg); ">
+                </picture>
+                
+              </div>
+      </div>
+    </a>
+
+    <!-- item -->
+    <a href="insight-single.html" class="insight-card">
+      <div class="row g-0">
+              <div class="col-9">
+                  <div class="p-2 p-md-3 px-lg-4 ">
+                    <div class="card-top">
+                      <span class="badge">News</span>
+                      <span class="date">19 Oct 2022</span>
+                    </div>
+                    <h2 class="h5">
+                      Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+                    </h3>
+                    <p class="small">How international commitments and recommendations are being translated into national DRR frameworks</p>
+                  </div>
+              </div>
+        
+              <div class="col-3 position-relative" style="">
+                <picture class="" style="background-image: url(assets/img/user-1.jpg); ">
+                </picture>
+                
+              </div>
+      </div>
+    </a>
+    
+    <!-- item 2-->
+    <a href="insight-single.html" class="insight-card">
+      <div class="row g-0">
+              <div class="col-9">
+                  <div class="p-2 p-md-3 px-lg-4 ">
+                    <div class="card-top">
+                      <span class="badge">Blog</span>
+                      <span class="date">5 Oct 2022</span>
+                    </div>
+                    <h2 class="h5">
+                      Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+                    </h3>
+                    <p class="small">How international commitments and recommendations are being translated into national DRR frameworks</p>
+                  </div>
+              </div>
+        
+              <div class="col-3 position-relative" style="">
+                <picture class="" style="background-image: url(assets/img/perspective.jpg); ">
+                </picture>
+                
+              </div>
+      </div>
+    </a>
+
+    <!-- item -->
+    <a href="insight-single.html" class="insight-card">
+      <div class="row g-0">
+              <div class="col-9">
+                  <div class="p-2 p-md-3 px-lg-4 ">
+                    <div class="card-top">
+                      <span class="badge">Interview</span>
+                      <span class="date">1 Oct 2022</span>
+                    </div>
+                    <h2 class="h5">
+                      Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+                    </h3>
+                    <p class="small">How international commitments and recommendations are being translated into national DRR frameworks</p>
+                  </div>
+              </div>
+        
+              <div class="col-3 position-relative" style="">
+                <picture class="" style="background-image: url(assets/img/user-1.jpg); ">
+                </picture>
+                
+              </div>
+      </div>
+    </a>
+    
+    <!-- item 2-->
+    <a href="insight-single.html" class="insight-card">
+      <div class="row g-0">
+              <div class="col-9">
+                  <div class="p-2 p-md-3 px-lg-4 ">
+                    <div class="card-top">
+                      <span class="badge">Case Study</span>
+                      <span class="date">22 Nov 2022</span>
+                    </div>
+                    <h2 class="h5">
+                      Gender-responsive and disability-inclusion in disaster risk reduction in Asia Pacific
+                    </h3>
+                    <p class="small">How international commitments and recommendations are being translated into national DRR frameworks</p>
+                  </div>
+              </div>
+        
+              <div class="col-3 position-relative" style="">
+                <picture class="" style="background-image: url(assets/img/perspective.jpg); ">
+                </picture>
+                
+              </div>
+      </div>
+    </a>
+
+
+  </div>
+</div>
+
+<nav aria-label="Insights page navigation">
+  <ul class="pagination justify-content-center pt-lg-3 pt-1">
+    <li class="page-item">
+      <a href="#" class="page-link">
+        <i class="bx bx-chevron-left mx-n1"></i>
+      </a>
+    </li>
+    <li class="page-item disabled d-sm-none">
+      <span class="page-link text-body">2 / 4</span>
+    </li>
+    <li class="page-item d-none d-sm-block">
+      <a href="#" class="page-link">1</a>
+    </li>
+    <li class="page-item active d-none d-sm-block" aria-current="page">
+      <span class="page-link">
+        2
+        <span class="visually-hidden">(current)</span>
+      </span>
+    </li>
+    <li class="page-item d-none d-sm-block">
+      <a href="#" class="page-link">3</a>
+    </li>
+    <li class="page-item d-none d-sm-block">
+      <a href="#" class="page-link">4</a>
+    </li>
+    <li class="page-item">
+      <a href="#" class="page-link">
+        <i class="bx bx-chevron-right mx-n1"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+          
+          
+    </div>
+</section>
+
+
+ 
+  </main>
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer text-light pt-5 pb-4 pb-lg-5">
+
+      <div class="container ">
+        <div class="row d-flex flex-column flex-sm-row align-items-start justify-content-between position-relative">
+          <div class="col-auto">
+            <!--<h5 class="h5">Navigation</h5>-->
+            <div id="useful-links" >
+              <ul class="nav pb-lg-1  d-flex flex-column flex-sm-row">
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Explore</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Practice</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Engage</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Contact</a></li>
+              </ul>
+            </div>
+
+
+            <h4 class="h5">Connect with us</h4>
+            <div class="d-flex mb-4 mb-sm-0">
+              <a href="#" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-2">
+                <i class="bx bxl-linkedin"></i>
+              </a>
+              <a href="#" class="btn btn-icon btn-secondary btn-twitter rounded-circle me-2">
+                <i class="bx bxl-twitter"></i>
+              </a>
+              <a href="#" class="btn btn-icon btn-secondary btn-youtube rounded-circle me-2">
+                <i class="bx bxl-youtube"></i>
+              </a><!--
+              <a href="#" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-2">
+                <i class="bx bxl-facebook"></i>
+              </a>-->
+            </div>
+
+
+          </div>
+
+
+          <div class="col-auto d-none d-md-block">
+          <div class="footer-brand p-0 me-0 mb-3">
+            <img src="assets/img/wrdp_logo_wh.svg" alt="Women's Resilience to Disasters Programme">
+          </div>
+        </div>
+
+        </div>
+
+
+
+        <div class="row d-flex flex-column flex-sm-row align-items-start align-items-sm-end justify-content-between position-relative pb-5">
+
+          <div class="col-md-8 col-lg-4 ">
+
+
+
+
+            <form class="needs-validation" novalidate>
+              <label for="subscr-email" class="form-label">Subscribe to our newsletter</label>
+              <div class="input-group">
+                <input type="email" id="subscr-email" class="form-control rounded-start ps-5" placeholder="Your email" required>
+                <i class="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+                <div class="invalid-tooltip position-absolute top-100 start-0">Please provide a valid email address.</div>
+                <button type="submit" class="btn btn-footer">Subscribe</button>
+              </div>
+            </form>
+
+
+            <h5 class="h5">Contact us</h5>
+
+            <a href="mailto:wrd@unwomen.org" class="nav-link fs-xl fw-semibold p-0">
+              wrd@unwomen.org
+              <i class="bx bx-right-arrow-circle fs-4 ms-2"></i>
+            </a>
+
+          </div>
+
+
+
+          <div class="col-auto ">
+          <h5 class="h5">Supported by</h5>
+          <div class="d-flex supporters flex-column flex-md-row mt-4">
+          <a href="" target="_blank" class="card-hover-grow p-0 ps-2 ps-sm-2 ps-md-0 me-0 mb-3 mb-lg-0">
+            <img src="assets/img/logo-australian_wh.svg"  alt="">
+          </a>
+          <a href="" target="_blank" class="card-hover-grow ps-0 ps-sm-2 mb-3 mb-lg-0">
+            <img src="assets/img/logo-pw_wh.svg" class="ps-0 ps-md-3 py-2" alt="Prevention Web">
+          </a>
+          <a href="" target="_blank" class="card-hover-grow ps-2 ps-md-4 mb-3 mb-lg-0">
+            <img src="assets/img/logo-unwomen_wh.svg" class="py-2" alt="UN Women">
+          </a>
+        </div>
+        </div>
+        </div>
+
+
+
+        <p class="fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+         Copyright &copy; 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">UN Women</a> | 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">Information Security</a> | 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">Privacy Policy</a> | 
+          <a class="nav-link d-inline-block p-0" href="https://unwomen.org" target="_blank" rel="noopener">Terms of Use</a>
+        </p>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+  
+
+    <!-- Main Theme Script <script src="assets/js/theme.min.js"></script>-->
+    <script src="assets/js/theme.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+	    
+	   
+	$(document).on('click', '.navbar-toggler', function(){
+	   $('#togglenav').toggleClass('menu-open')
+	}) 
+	$(document).on('click', '.offcanvas-backdrop', function(){
+	   $('#togglenav').toggleClass('menu-open')
+	})	
+	
+	   
+	    
+	    
+	    
+$(".caribbean").hover(
+  function () {
+    $('.caribbean').addClass('reg-active');
+    $(".accordion-header.region").parent('.accordion-item').children('.caribbean-ac.collapse').collapse('show');
+  },
+  function () {
+    $('.caribbean').removeClass('reg-active');
+    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.caribbean-ac').collapse('hide');
+  }
+);
+$(".wc-africa").hover(
+  function () {
+    $('.wc-africa').addClass('reg-active');
+    $(".accordion-header.region").parent('.accordion-item').children('.wc-africa-ac.collapse').collapse('show');
+  },
+  function () {
+    $('.wc-africa').removeClass('reg-active');
+    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.wc-africa-ac').collapse('hide');
+  }
+);
+$(".se-asia").hover(
+  function () {
+    $('.se-asia').addClass('reg-active');
+    $(".accordion-header.region").parent('.accordion-item').children('.se-asia-ac.collapse').collapse('show');
+  },
+  function () {
+    $('.se-asia').removeClass('reg-active');
+    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.se-asia-ac').collapse('hide');
+  }
+);    
+$(".pacific").hover(
+  function () {
+    $('.pacific').addClass('reg-active');
+    $(".accordion-header.region").parent('.accordion-item').children('.pacific-ac.collapse').collapse('show');
+  },
+  function () {
+    $('.pacific').removeClass('reg-active');
+    $(".accordion-header").parent('.accordion-item').children('.collapse').not('.pacific-ac').collapse('hide');
+  }
+);  
+
+$('.caribbean-ac').on('shown.bs.collapse', function () {
+    $('.caribbean').addClass('reg-active');
+});
+$('.caribbean-ac').on('hidden.bs.collapse', function () {
+   $(".caribbean").removeClass("reg-active")
+});
+
+$('.wc-africa-ac').on('shown.bs.collapse', function () {
+    $('.wc-africa').addClass('reg-active');
+});
+$('.wc-africa-ac').on('hidden.bs.collapse', function () {
+   $(".wc-africa").removeClass("reg-active")
+});
+
+$('.se-asia-ac').on('shown.bs.collapse', function () {
+    $('.se-asia').addClass('reg-active');
+});
+$('.se-asia-ac').on('hidden.bs.collapse', function () {
+   $(".se-asia").removeClass("reg-active")
+});
+
+$('.pacific-ac').on('shown.bs.collapse', function () {
+    $('.pacific').addClass('reg-active');
+});
+$('.pacific-ac').on('hidden.bs.collapse', function () {
+   $(".pacific").removeClass("reg-active")
+});
+
+
+
+      </script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+var typed = new Typed('.typed-element', {
+  strings: ["Securing gender-responsive systems", "Enabling women’s leadership","Supporting women’s voice and agency","Addressing underlying inequalities", "Sharing knowledge and tools"],
+  typeSpeed: 40,
+  backSpeed: 10,
+  loop: true,
+  fadeOut: true,
+  backDelay: 4000
+});
+
+
+
+
+  </script>
+
+  </body>
+</html>

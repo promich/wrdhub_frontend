@@ -18290,6 +18290,7 @@ a.badge {
 .btn-prev, .btn-next {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out;
   border-radius: 50%;
+  border-color: transparent !important;
   background-color: transparent;
   color: #431a3e !important;
   box-shadow: none;

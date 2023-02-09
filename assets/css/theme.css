@@ -4934,7 +4934,9 @@ padding-right: 0.5rem;
   background: #f2fafd;
   margin-top: 2rem;
 }
-
+.field--name-field-insight-details p{
+  margin-bottom: 0.5rem !important;
+}
 
 
 
@@ -6244,8 +6246,14 @@ span.date,
 #page-content p:last-of-type{
   margin-bottom: 2.5rem !important;
 }
+#page-content blockquote p:last-of-type{
+  margin-bottom: 0;
+}
 
-
+#page-content .caption > figcaption{
+  font-size: 75% !important;
+  line-height: 1.2 !important;
+}
 
 
 #page-content hr{

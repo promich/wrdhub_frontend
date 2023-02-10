@@ -200,7 +200,7 @@ dd {
 }
 
 blockquote {
-  margin: 1.75rem 0 2rem;
+  margin: 1.75rem 0 2rem !important;
   padding: 0.5rem 0 0.5rem 1.3334rem;
   border-left: 5px solid #ff8b42;
 }
@@ -214,6 +214,12 @@ blockquote p,
   font-size: calc(1.3rem + 0.6vw);
   margin-bottom: 0 !important;
 }
+
+#page-content blockquote p:last-of-type {
+  margin-bottom: 0 !important;
+}
+
+
 blockquote a{
   color: #e8692e;
   text-decoration: underline;
@@ -19445,6 +19451,7 @@ cursor: pointer;
   font-size: 1rem;
   color: #009ddc;
   border-color: #e8692e;
+  white-space: normal;
 }
 #subtopic-zone .btn:hover{
   color: #fff;

@@ -806,6 +806,12 @@ section:first-of-type{
   margin-top:0 !important;
 }
 
+@media (min-width: 992px){
+  .article-progress + section:first-of-type{ 
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+  }
+}
 
 
 
@@ -19668,6 +19674,18 @@ section.deluxe-section{
 .deluxe-section h5:not(:first-of-type){
   margin-top: 3rem;
 }
+@media (min-width: 1200px){
+  .deluxe-section .sticker-top{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 120px;
+    z-index: 999;
+  }
+}
+
+
+
+
 
 section.page-box{
 }

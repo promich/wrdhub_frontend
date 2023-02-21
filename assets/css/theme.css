@@ -2202,6 +2202,18 @@ section:last-of-type:not(#banner-top):not(.topic-top)   {
   border-top: 2px solid currentColor;
 }
 
+tr {
+    background: #fff !important;
+}
+tr.odd {
+    background: rgba(232, 105, 46, 0.0375) !important;
+}
+
+.dataTables_info{
+  font-size: 0.75rem;
+}
+
+
 .caption-top {
   caption-side: top;
 }
@@ -4564,7 +4576,7 @@ color: #fff;
   }
   .insights-top a.swiper-slide .bg-hero-top,
   .insights-top a.swiper-slide .insight-overlay{
-    opacity: 0;
+    opacity: 0.33;
     transition: opacity 0.3s ease-in-out;
   }
   .insights-top a.swiper-slide:hover .bg-hero-top,
@@ -17460,6 +17472,14 @@ a.badge {
     border-left-width: 1px;
   }
 }
+
+  .list-group-horizontal-md > .list-group-item{
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+  }
+
 @media (min-width: 768px) {
   .list-group-horizontal-md {
     flex-direction: row;
@@ -21185,6 +21205,7 @@ img-comparison-slider:focus {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    --bs-list-group-border-radius: 0 !important;
 }
 #regions-map #mapcontrol .list-group-item a:hover,
 #regions-map #mapcontrol .list-group-item a:focus,

@@ -19420,6 +19420,11 @@ cursor: pointer;
     background-color: #e8692e;
     color: #fff !important;
 }
+
+.pub-main hr{
+    margin-bottom: 1.5rem;
+}
+
 .pub-main .card-list {
     margin-bottom: 1.5rem;
     overflow: hidden !important;

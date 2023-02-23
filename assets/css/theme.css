@@ -368,12 +368,12 @@ a.btn:hover {
 /*colours*/
 .blue{color:var(--bs-blue);}
 .cyan{color:var(--bs-cyan);}
-.red, .law{color:var(--bs-red);}
+.red, .law, .legislation{color:var(--bs-red);}
 .orange, .policy{color:var(--bs-orange);}
 .purple, .strategy{color:var(--bs-purple);}
 .green, .plan{color:var(--bs-green);}
 /*
-	  --bs-blue: #009ddc;
+	--bs-blue: #009ddc;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -459,6 +459,22 @@ th {
   text-align: inherit;
   text-align: -webkit-match-parent;
 }
+/*overriding table module styles*/
+table tr th {
+  background: #fff !important;
+}
+.table > :not(caption) > * > * {
+    background-color: #fff !important;
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background: rgba(232, 105, 46, 0.0375) !important;
+}
+
+.dataTables_info {
+    font-size: .875rem !important;
+}
+
+
 
 thead,
 tbody,
@@ -17420,6 +17436,8 @@ a.badge {
     text-decoration: none;
     background-color: #00b69e;
     border: 0;
+    border-top-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 }
 
 .wrd-framework .list-group.cross-cutting .list-group-item:first-child{
@@ -17485,12 +17503,16 @@ a.badge {
     flex-direction: row;
   }
   .list-group-horizontal-md > .list-group-item:first-child {
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 0;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
   }
   .list-group-horizontal-md > .list-group-item:last-child {
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 0;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
   }
   .list-group-horizontal-md > .list-group-item.active {
     margin-top: 0;
@@ -19357,13 +19379,12 @@ cursor: pointer;
   padding: 0.275rem 0.85rem;
   font-size: 0.75rem;
 }
-.pub-top-meta a.btn:hover{
+.pub-top-meta a.btn:hover,
+.pub-top-meta a.btn:focus{
   background-color: #e8692e;
   color: #fff !important;
   border-color: #e8692e;
 }
-
-
 
 .pub-top-meta div {
     margin-bottom: 0.5rem !important;
@@ -19393,7 +19414,8 @@ cursor: pointer;
     color: #431a3e !important;
     margin-bottom: 0.5rem !important;
 }
-.pub-main #page-side .side-buttons .btn:hover {
+.pub-main #page-side .side-buttons .btn:hover,
+.pub-main #page-side .side-buttons .btn:focus {
     border-color: #e8692e;
     background-color: #e8692e;
     color: #fff !important;
@@ -21206,6 +21228,7 @@ img-comparison-slider:focus {
     align-items: center !important;
     justify-content: center !important;
     --bs-list-group-border-radius: 0 !important;
+    border-top-left-radius: 0 !important;
 }
 #regions-map #mapcontrol .list-group-item a:hover,
 #regions-map #mapcontrol .list-group-item a:focus,

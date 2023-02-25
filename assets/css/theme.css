@@ -6009,6 +6009,10 @@ section.event-top-featured{
   background-color: #431a3e !important;
 }
 
+#event-content hr{
+  margin-bottom: 1.5rem;
+}
+
 /*For video embedded in insight-single wysiwyg*/
 #page-content .video-embed-field-responsive-video{
 margin: 2rem 0;

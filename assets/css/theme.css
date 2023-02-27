@@ -6009,9 +6009,12 @@ section.event-top-featured{
   background-color: #431a3e !important;
 }
 
-#event-content hr{
-  margin-bottom: 1.5rem;
+
+#event-content hr {
+    margin-top: 2.5rem !important;
+    margin-bottom: 1.5rem !important;
 }
+
 
 /*For video embedded in insight-single wysiwyg*/
 #page-content .video-embed-field-responsive-video{
@@ -6180,6 +6183,12 @@ span.date,
   padding-right: 0.5rem;
 }
 
+@media (max-width: 991.98px){
+  .event-single-top .bread, .breadcrumb {
+      visibility: hidden;
+      display: none !important;
+  }
+}
 
 .event-single-top .jarallax-img{
   background-color: #e5f5fb;
@@ -6227,6 +6236,7 @@ span.date,
     text-align: left;
     line-height: 1.25;
     white-space: normal;
+    margin-bottom: 0.5rem !important;
 }
 
 
@@ -6313,7 +6323,7 @@ span.date,
     color: #001118;
     background-color: #ecf8fc; /*blue 5%*/
     transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-   
+    margin-bottom: 1.5rem !important;
 }
 .card-list a:hover {
     background-color: #d9f0fa; /*blue 15%*/

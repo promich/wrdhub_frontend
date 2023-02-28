@@ -6447,6 +6447,22 @@ a.card-list-pub .pub-image{
 .related-events{
   background-color: #e5f5fb; /*blue 10% */
 }
+
+/* style h2 as h3*/
+.related-events h2, .related-events .h2 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  .related-events h2, .related-events .h2 {
+    font-size: 1.75rem;
+  }
+}
+
+
+
+
+
+
 .related-events .swiper-slide{
   height:auto !important;
 }
@@ -6960,10 +6976,6 @@ a.card-list-pub .pub-image{
 .breadcrumb-item:hover > a {
   color: #e8692e;
 }
-
-
-
-
 
 
 

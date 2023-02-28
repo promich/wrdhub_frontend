@@ -6492,9 +6492,19 @@ a.card-list-pub .pub-image{
 #events-archive-top{
 }
 
+#events-search .input-group,
+#events-search .input-group .form-control{
+  border-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 #events-search .input-group .btn{
   border-radius: 0;
 }
+
+
+
 
 @media (max-width: 991.98px){
   #events-search .w-50{
@@ -17073,11 +17083,12 @@ color: rgba(255, 255, 255, 0.85) !important;
   font-size: 1.25rem !important;
 }
 
-
+/*
 .pagination .page-item:first-child .page-link,
 .pagination .page-item:last-child .page-link {
 	padding: 0 0.75rem;
 }
+*/
 
 
 .pagination .page-item:last-child {

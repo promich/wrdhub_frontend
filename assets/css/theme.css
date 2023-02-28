@@ -6970,6 +6970,7 @@ a.card-list-pub .pub-image{
 
 .pagination {
   display: flex;
+  flex-wrap: wrap; /*new*/
   padding-left: 0;
   list-style: none;
 }

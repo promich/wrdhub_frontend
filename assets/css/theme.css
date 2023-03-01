@@ -7054,7 +7054,10 @@ a.card-list-pub .pub-image{
     border-top-left-radius: 200% !important;
     border-bottom-left-radius: 200% !important;
 }
-
+.page-item:last-child .page-link {
+  border-top-right-radius: 200% !important;
+  border-bottom-right-radius: 200% !important;
+}*/
 
 
 .pagination-lg .page-link {

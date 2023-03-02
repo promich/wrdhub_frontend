@@ -6325,6 +6325,11 @@ span.date,
     transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
     margin-bottom: 1.5rem !important;
 }
+.card-list a{
+    margin-bottom: 0 !important;
+}
+
+
 .card-list a:hover {
     background-color: #d9f0fa; /*blue 15%*/
 }

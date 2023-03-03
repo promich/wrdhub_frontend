@@ -5934,6 +5934,8 @@ transition: background-color 0.2s ease-in-out;
     text-decoration: none;
     color: #001118;
     margin-bottom: 1.5rem !important;
+    height: 100% !important;
+    width: 100% !important;
 }
 
 .card-event a:hover{
@@ -6083,7 +6085,6 @@ section.events-landing{
 .events-landing .card-top{
   margin-bottom: 1rem!important;
 }
-
 
 .events-nav .nav-tabs .nav-item {
     margin-bottom: 0;
@@ -6478,6 +6479,9 @@ a.card-list-pub .pub-image{
   height: 100% !important;
   text-decoration: none !important;
   transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  margin-right: 0.5rem !important;
+  margin-left: 0.5rem !important;
 }
 
 .related-events .card h3{
@@ -6501,6 +6505,11 @@ a.card-list-pub .pub-image{
     background-color: #e5f5fb !important;
     color: #431a3e !important;
 }
+.related-events .card span:not(.badge) {
+  font-size: 0.875rem !important;
+}
+
+
 @media (max-width: 499.98px){
   .related-events .card .badge {
     font-size: 0.75em;
@@ -19190,6 +19199,19 @@ text-align: right;
   border-radius: 0;
 }
 
+#experts-search .input-group{
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+
+}
+
+
+#experts-search .input-group#edit-expert-search-group1 {
+    margin-bottom: -1px;
+}
+
 /*@media (max-width: 991.98px) and (min-width: 768px)*/
 @media (max-width: 991.98px){
   #experts-search .form-select{
@@ -19219,10 +19241,13 @@ text-align: right;
     text-decoration: none;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+}
+
+/*change for drupal*/
+.expert-listing div a.expert-card {
     border-top: 1px solid #aadef3;
 }
-.expert-listing a.expert-card:first-of-type {
-
+.expert-listing div:first-of-type a.expert-card {
     border-top: 0;
 }
 

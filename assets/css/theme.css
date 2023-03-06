@@ -17157,6 +17157,9 @@ a.badge {
 
 /* Global search results page */
 
+
+
+
 #global-search .input-group .btn{
   border-radius: 0 !important;
 }
@@ -17173,8 +17176,50 @@ a.badge {
 #global-search aside{
   margin-bottom: 2rem;
   margin-top: -2rem;
+}
+
+#global-search aside h2 {
+    margin-bottom: 0;
+}
+
+
+#global-search aside .accordion-item {
+    border: 1px solid #009ddc;
+    border: 1px solid #aadef3;
+    margin-top: -1px;
+}
+
+#global-search aside .accordion-button {
+    font-weight: 400;
+    padding: 0.5rem 0 0.5rem 1rem;
+    color: #009ddc;
+    color: #001118;
+}
+
+
+#global-search aside .accordion-button::after {
+
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='%23009ddc'%3e%3cpath d='M225.813 48.907L128 146.72 30.187 48.907 0 79.093l128 128 128-128z'/%3e%3c/svg%3e");
 
 }
+#global-search aside .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='%23009ddc'%3e%3cpath d='M225.813 48.907L128 146.72 30.187 48.907 0 79.093l128 128 128-128z'/%3e%3c/svg%3e");
+  transform: rotate(-180deg);
+}
+
+#global-search aside .accordion-body {
+    padding: 0 0.75rem 0.75rem 1rem;
+}
+
+
+#global-search aside .form-check-input {
+border: 2px solid #80ceed; /*50%*/
+}
+#global-search aside .form-check-input:checked {
+    background-color: #009ddc;
+    border-color: #009ddc;
+}
+
 
 #global-search .form-select{
   margin-bottom: -1px;
@@ -19575,6 +19620,7 @@ cursor: pointer;
   width: 100% !important;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
+  line-height: 1.33;
   color: #009ddc;
   border-color: #e8692e;
   white-space: normal;

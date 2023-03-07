@@ -191,8 +191,6 @@
                     aria-controls="menu-2"> </a>
                   <ul class="dropdown-menu collapse" id="menu-2" data-bs-parent="#navbarNav">
                       <li><a href="insights.html" class="dropdown-item">Insights</a></li>
-                      <li><a href="insights.html" class="dropdown-item">Women’s perspectives</a></li>
-                      <li><a href="insights.html" class="dropdown-item">Case Studies</a></li>
                       <li><a href="regions.html" class="dropdown-item">Regions</a></li>
                       <li><a href="hazards.html" class="dropdown-item">Hazards</a></li>
                       
@@ -205,8 +203,7 @@
                     aria-controls="menu-3"> </a>
                   <ul class="dropdown-menu collapse" id="menu-3" data-bs-parent="#navbarNav">
                     <li><a href="topics.html" class="dropdown-item">Topics</a></li>
-                    <li><a href="library.html" class="dropdown-item active">Library</a></li>
-                    <li><a href="library.html" class="dropdown-item">Tools</a></li>
+                    <li><a href="library.html" class="dropdown-item active">Resources</a></li>
                     <li><a href="tracker.html" class="dropdown-item">Policy Tracker</a></li>  
                   </ul>               
                 </li>
@@ -217,7 +214,7 @@
                     aria-controls="menu-4"> </a>
                   <ul class="dropdown-menu collapse" id="menu-4" data-bs-parent="#navbarNav">
                       <li><a href="engage.html" class="dropdown-item">Community of Practice</a></li>
-                      <li><a href="experts.html" class="dropdown-item active">Expert Roster</a></li>
+                      <li><a href="experts.html" class="dropdown-item">Expert Roster</a></li>
                       <li><a href="events.html" class="dropdown-item">Events</a></li>
                       <li><a href="platforms.html" class="dropdown-item">Recommended Platforms</a></li>
                   </ul>               
@@ -366,7 +363,7 @@
           <a href="index.html">Home</a>
         </li>
         <li class="breadcrumb-item" aria-current="page"><a href="practice.html">Practice</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Library</li>
+        <li class="breadcrumb-item active" aria-current="page">Resources</li>
       </ol>
     </nav> 
 
@@ -491,10 +488,43 @@
 <section id="library-search-sec" class="">
 
 <div id="library-search" class="container">
-  
 
+  <div class="input-group input-group-lg ">
+        <input type="text" class="form-control w-50" placeholder="Search resources...">
+
+        <div class="dropdown">
+              <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                  Resources
+              </button>
+              <div class="dropdown-menu">
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="ex-check-1">
+                     <label class="form-check-label" for="ex-check-1">Publications (31)</label>
+                   </div>
+                   <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="ex-check-2">
+                     <label class="form-check-label" for="ex-check-2">Tools (23)</label>
+                   </div>
+                   <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="ex-check-3">
+                     <label class="form-check-label" for="ex-check-3">Legal & Policy Frameworks</label>
+                   </div>
+              </div>
+        </div>
+
+        <button type="submit" class="btn btn-icon btn-primary btn-lg">
+          <i class="bx bx-search"></i>
+        </button>
+
+    </div>
+  
+<!--
             <div class="input-group input-group-lg ">
                 <input type="text" class="form-control w-50" placeholder="Search resources...">
+
+
+
+
 
                 <select class="form-select form-resources">
                   <option value="" selected="">All resources</option>
@@ -508,86 +538,185 @@
                 </button>
 
             </div>
-
+-->
 
 <button id="btnLibrary" class="btn-library-mobile" type="button" data-bs-toggle="collapse" data-bs-target="#libraryOptions" aria-expanded="false" aria-controls="libraryOptions">Modify your search</button>
 
-            <div id="libraryOptions" class="collapse" aria-labelledby="btnLibrary" data-bs-parent="#btnLibrary">
-<form class="">
-            
-            
-                          <div class="input-group input-group-lg" style="margin-top:-1px;">
-            
-                              <select class="form-select ">
-                                <option value="" selected="" >All topics</option>
-                                <option value="Risk">RISK</option>
-                                <option value="Gender dimensions of disasters">Gender dimensions of disasters</option>
-                                <option value="Intersectionality">Intersectionality</option>
-                                <option value="Gender data">Gender data</option>
-                                <option value="Gender-responsive risk assessment">Gender-responsive risk assessment</option>
-                                <option value="Gender-responsive needs assessment">Gender-responsive needs assessment</option>
-                                <option value="Systems">SYSTEMS</option>
-                                <option value="Policies">Legislation, policies, strategies, plans & projects</option>
-                                <option value="Budgets">Gender-responsive budgets, expenditure, and funding</option>
-                                <option value="Information management systems">Gender-responsive information management systems</option>
-                                <option value="Early warning preparedness">Gender-responsive early warning, preparedness & risk communication systems</option>
-                                <option value="Coordination">Gender-responsive coordination mechanisms, networks & partnerships</option>
-                                <option value="Action">ACTION</option>
-                                <option value="Finance">Access to finance</option>
-                                <option value="Services">Access to services</option>
-                                <option value="Infrastructure">Access to resilient infrastructure</option>
-                                <option value="Livelihoods">Women's resilient livelihoods and businesses</option>
-                                <option value="Freedom from violence">Women's freedom from violence</option>
-                              </select>
-            
-            
-                              <select class="form-select">
-                                <option value="" selected="" >All cross-cutting issues</option>
-                                <option value="Web Development">Women’s leadership</option>
-                                <option value="Mobile Development">Global frameworks</option>
-                                <option value="Programming">Capabilities</option>
-                              </select>
-                            <select class="form-select">
-                                <option value="" selected="">All regions</option>
-                                <option value="Web Development">Asia</option>
-                                <option value="Mobile Development">Pacific</option>
-                                <option value="Programming">Americas &amp; Caribbean</option>
-                                <option value="Game Development">Eastern &amp; Southern Africa</option>
-                                <option value="Software Testing">West &amp; Central Africa</option>
-                                <option value="Software Engineering">Europe &amp; Central Asia</option>
-                                <option value="Network &amp; Security">Northern Africa &amp; Middle East</option>
-                              </select>
-                              <select class="form-select">
-                                <option value="" selected="">All hazards</option>
-                                <option value="Web Development">Floods</option>
-                                <option value="Web Development">Epidemic</option>
-                                <option value="Mobile Development">Drought</option>
-                                <option value="Programming">German</option>
-                                <option value="Game Development">Earthquake</option>
-                                <option value="Software Testing">Swahili</option>
-                                <option value="Software Engineering">Turkish</option>
-                              </select>
-                              <select class="form-select"><!-- organization-->
-                                <option value="" selected="">All publishers</option>
-                                <option value="Web Development">UNEP</option>
-                                <option value="Web Development">UNDRR</option>
-                                <option value="Mobile Development">UNDP</option>
-                                <option value="Programming">UN Women</option>
-                                <option value="Game Development">WMO</option>
-                              </select>
-                              <select class="form-select">
-                                <option value="" selected="">All tools</option>
-                                <option value="Web Development">Training</option>
-                                <option value="Web Development">Assessment</option>
-                                <option value="Mobile Development">Advocacy/Outreach</option>
-                                <option value="Programming">Checklist</option>
-                              </select>
-            
-                            </div>
-            
-            
-            
-            </form>
+  <div id="libraryOptions" class="collapse" aria-labelledby="btnLibrary" data-bs-parent="#btnLibrary">
+    <div class="library-dropdowns">
+        <div class="dropdown">
+                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                  Topics
+                </button>
+                <div class="dropdown-menu">
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="ex-check-1">
+                     <label class="form-check-label" for="ex-check-1">RISK (31)</label>
+                   </div>
+                   <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="ex-check-2">
+                     <label class="form-check-label" for="ex-check-2">Gender dimensions of disasters (23)</label>
+                   </div>
+                   <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="ex-check-3">
+                     <label class="form-check-label" for="ex-check-3">Intersectionality</label>
+                   </div>
+                   <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="ex-check-4">
+                      <label class="form-check-label" for="ex-check-4">Gender data</label>
+                   </div>
+                   <div class="form-check">
+                       <input class="form-check-input" type="checkbox" value="" id="ex-check-5">
+                       <label class="form-check-label" for="ex-check-5">Gender-responsive risk assessment</label>
+                    </div>
+
+                </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+            Cross-cutting issues
+          </button>
+          <div class="dropdown-menu">
+            <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-1">
+               <label class="form-check-label" for="ex-check-1">RISK (31)</label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-2">
+               <label class="form-check-label" for="ex-check-2">Gender dimensions of disasters (23)</label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-3">
+               <label class="form-check-label" for="ex-check-3">Intersectionality</label>
+             </div>
+             <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ex-check-4">
+                <label class="form-check-label" for="ex-check-4">Gender data</label>
+             </div>
+             <div class="form-check">
+                 <input class="form-check-input" type="checkbox" value="" id="ex-check-5">
+                 <label class="form-check-label" for="ex-check-5">Gender-responsive risk assessment</label>
+              </div>
+        
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+            Regions
+          </button>
+          <div class="dropdown-menu">
+            <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-1">
+               <label class="form-check-label" for="ex-check-1">RISK (31)</label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-2">
+               <label class="form-check-label" for="ex-check-2">Gender dimensions of disasters (23)</label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-3">
+               <label class="form-check-label" for="ex-check-3">Intersectionality</label>
+             </div>
+             <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ex-check-4">
+                <label class="form-check-label" for="ex-check-4">Gender data</label>
+             </div>
+             <div class="form-check">
+                 <input class="form-check-input" type="checkbox" value="" id="ex-check-5">
+                 <label class="form-check-label" for="ex-check-5">Gender-responsive risk assessment</label>
+              </div>
+        
+          </div>
+        </div>  
+        <div class="dropdown">
+          <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+            Hazards
+          </button>
+          <div class="dropdown-menu">
+            <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-1">
+               <label class="form-check-label" for="ex-check-1">RISK (31)</label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-2">
+               <label class="form-check-label" for="ex-check-2">Gender dimensions of disasters (23)</label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-3">
+               <label class="form-check-label" for="ex-check-3">Intersectionality</label>
+             </div>
+             <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ex-check-4">
+                <label class="form-check-label" for="ex-check-4">Gender data</label>
+             </div>
+             <div class="form-check">
+                 <input class="form-check-input" type="checkbox" value="" id="ex-check-5">
+                 <label class="form-check-label" for="ex-check-5">Gender-responsive risk assessment</label>
+              </div>
+        
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+            Publishers
+          </button>
+          <div class="dropdown-menu">
+            <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-1">
+               <label class="form-check-label" for="ex-check-1">RISK (31)</label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-2">
+               <label class="form-check-label" for="ex-check-2">Gender dimensions of disasters (23)</label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-3">
+               <label class="form-check-label" for="ex-check-3">Intersectionality</label>
+             </div>
+             <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ex-check-4">
+                <label class="form-check-label" for="ex-check-4">Gender data</label>
+             </div>
+             <div class="form-check">
+                 <input class="form-check-input" type="checkbox" value="" id="ex-check-5">
+                 <label class="form-check-label" for="ex-check-5">Gender-responsive risk assessment</label>
+              </div>
+        
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+            Tools
+          </button>
+          <div class="dropdown-menu">
+            <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-1">
+               <label class="form-check-label" for="ex-check-1">RISK (31)</label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-2">
+               <label class="form-check-label" for="ex-check-2">Gender dimensions of disasters (23)</label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-3">
+               <label class="form-check-label" for="ex-check-3">Intersectionality</label>
+             </div>
+             <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ex-check-4">
+                <label class="form-check-label" for="ex-check-4">Gender data</label>
+             </div>
+             <div class="form-check">
+                 <input class="form-check-input" type="checkbox" value="" id="ex-check-5">
+                 <label class="form-check-label" for="ex-check-5">Gender-responsive risk assessment</label>
+              </div>
+        
+          </div>
+        </div>
+    </div>
+              
+              
+
+
             
             <div class="filter-tokens pt-3">
             

@@ -387,8 +387,8 @@
    
    <button id="btnSearch" class="btn-search-mobile" type="button" data-bs-toggle="collapse" data-bs-target="#searchOptions" aria-expanded="false" aria-controls="searchOptions">Modify your search</button>
  
- 
- <div class="accordion" id="accordionSearchFiltersExample">
+ <div id="searchOptions" class="collapse" aria-labelledby="btnSearch" data-bs-parent="#btnSearch">
+ <div class="accordion" id="accordionSearchFilters">
    <div class="accordion-item">
      <h2 class="accordion-header" id="SearchFilters-headingOne">
        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SearchFilters-collapseOne" aria-expanded="false" aria-controls="SearchFilters-collapseOne">
@@ -551,7 +551,7 @@
  
  
    
-               <div id="searchOptions" class="collapse" aria-labelledby="btnSearch" data-bs-parent="#btnSearch">
+               
 
                
                <div class="filter-tokens pt-3">

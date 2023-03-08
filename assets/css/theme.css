@@ -22063,6 +22063,10 @@ img-comparison-slider:focus {
 
 .home-regions{
   background-color:#009ddc  !important;
+  
+  background-color:#009ddc  !important;
+  background: linear-gradient(#40b5e5, #60c2e9)!important; /*75%-62.5% */ 
+  
 }
 .home-regions circle {
   fill: #fff ;
@@ -22070,6 +22074,9 @@ img-comparison-slider:focus {
 .home-regions a circle{
   /*fill: #73c9ec;*/
   fill: #a6ddf3;
+  fill: #e5f5fb; /*10%*/
+  fill: #d9f0fa; /*15%*/
+  
 }
 .home-regions a.region{
   fill: transparent;
@@ -22098,6 +22105,7 @@ img-comparison-slider:focus {
 
 #regions-map #mapcontrol{
   background-color: #008cc4;
+  background-color: #009ddc;
   padding-left: 0;
   padding-right: 0;
 }
@@ -22106,6 +22114,7 @@ img-comparison-slider:focus {
     padding: 0;
     background-color: transparent;
     border: 2px solid  #009ddc;
+    border: 2px solid  #60c2e9; /*62.5%*/
     width: 100%;
     display: flex !important;
     align-items: center !important;
@@ -22146,6 +22155,7 @@ img-comparison-slider:focus {
     font-size: 0.8725rem;
     line-height: 1rem;
     background-color: #0e83b6;
+    background-color: #008cc4;
     width: 100%;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     display: flex !important;

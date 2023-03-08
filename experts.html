@@ -408,103 +408,180 @@ WRD Experts have gone through a selection and vetting process. WRD Experts recei
 
 </div>
 
-<div id="experts-search" class="container">
-
-            <div class="input-group input-group-lg ">
-                <input type="text" class="form-control w-50" placeholder="Search experts...">
-
-                <button type="submit" class="btn btn-icon btn-primary btn-lg">
-                  <i class="bx bx-search"></i>
-                </button>
-
-            </div>
-
-
-
-<form class="mb-5">
-
-
-
-                <div class="input-group input-group-lg" style="margin-top:-1px;">
-
-                  <select class="form-select col-12 col-sm-4">
-                    <option value="" selected="" >All topics</option>
-                    <option value="Web Development">Web Development</option>
-                    <option value="Mobile Development">Mobile Development</option>
-                    <option value="Programming">Programming</option>
-                    <option value="Game Development">Game Development</option>
-                    <option value="Software Testing">Software Testing</option>
-                    <option value="Software Engineering">Software Engineering</option>
-                    <option value="Network &amp; Security">Network &amp; Security</option>
-                  </select>
-
-                  <select class="form-select col-12 col-sm-4">
-                    <option value="" selected="" >All regions</option>
-                    <option value="Web Development">Web Development</option>
-                    <option value="Mobile Development">Mobile Development</option>
-                    <option value="Programming">Programming</option>
-                    <option value="Game Development">Game Development</option>
-                    <option value="Software Testing">Software Testing</option>
-                    <option value="Software Engineering">Software Engineering</option>
-                    <option value="Network &amp; Security">Network &amp; Security</option>
-                  </select>
-
-                  <select class="form-select col-12 col-sm-4">
-                    <option value="" selected="" >All countries</option>
-                    <option value="Web Development">France</option>
-                    <option value="Mobile Development">Germany</option>
-                    <option value="Programming">Italy</option>
-                    <option value="Game Development">Game Development</option>
-                    <option value="Software Testing">Software Testing</option>
-                    <option value="Software Engineering">Software Engineering</option>
-                    <option value="Network &amp; Security">Network &amp; Security</option>
-                    <option value="Web Development">France</option>
-                    <option value="Mobile Development">Germany</option>
-                    <option value="Programming">Italy</option>
-                    <option value="Web Development">France</option>
-                    <option value="Mobile Development">Germany</option>
-                    <option value="Programming">Italy</option>
-                    <option value="Web Development">France</option>
-                    <option value="Mobile Development">Germany</option>
-                    <option value="Programming">Italy</option>
-                    <option value="Web Development">France</option>
-                    <option value="Mobile Development">Germany</option>
-                    <option value="Programming">Italy</option>
-                    <option value="Web Development">France</option>
-                    <option value="Mobile Development">Germany</option>
-                    <option value="Programming">Italy</option>
-                    <option value="Web Development">France</option>
-                    <option value="Mobile Development">Germany</option>
-                    <option value="Programming">Italy</option>
-                    <option value="Web Development">France</option>
-                    <option value="Mobile Development">Germany</option>
-                    <option value="Programming">Italy</option>
-                  </select>
-
-                  <select class="form-select col-12 col-sm-4">
-                    <option value="" selected="" >Any language</option>
-                    <option value="Web Development">Arabic</option>
-                    <option value="Web Development">English</option>
-                    <option value="Mobile Development">French</option>
-                    <option value="Programming">German</option>
-                    <option value="Game Development">Italian</option>
-                    <option value="Software Testing">Swahili</option>
-                    <option value="Software Engineering">Turkish</option>
-                  </select>
-
-                </div>
-
-
-
-</form>
-
-</div>
 </section>
 
-      <section id="related-perspectives" class="expert-listing">
-        <div class="container">
-<div class="row">
-  <div class="col-12 col-xl-10 offset-xl-1">
+
+<section id="experts-search-sec" class="">
+
+<div id="experts-search" class="container">
+
+  <div class="input-group input-group-lg ">
+        <input type="text" class="form-control w-50" placeholder="Search experts...">
+
+        <button type="submit" class="btn btn-icon btn-primary btn-lg">
+          <i class="bx bx-search"></i>
+        </button>
+
+    </div>
+
+
+<button id="btnLibrary" class="btn-library-mobile" type="button" data-bs-toggle="collapse" data-bs-target="#libraryOptions" aria-expanded="false" aria-controls="libraryOptions">Modify your search</button>
+
+  <div id="libraryOptions" class="collapse" aria-labelledby="btnLibrary" data-bs-parent="#btnLibrary">
+    <div class="experts-dropdowns">
+        <div class="dropdown">
+                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                  Topics
+                </button>
+                <div class="dropdown-menu">
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="ex-check-1">
+                     <label class="form-check-label" for="ex-check-1">RISK (31)</label>
+                   </div>
+                   <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="ex-check-2">
+                     <label class="form-check-label" for="ex-check-2">Gender dimensions of disasters (23)</label>
+                   </div>
+                   <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="ex-check-3">
+                     <label class="form-check-label" for="ex-check-3">Intersectionality</label>
+                   </div>
+                   <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="ex-check-4">
+                      <label class="form-check-label" for="ex-check-4">Gender data</label>
+                   </div>
+                   <div class="form-check">
+                       <input class="form-check-input" type="checkbox" value="" id="ex-check-5">
+                       <label class="form-check-label" for="ex-check-5">Gender-responsive risk assessment</label>
+                    </div>
+
+                </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+            Regions
+          </button>
+          <div class="dropdown-menu">
+            <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-1">
+               <label class="form-check-label" for="ex-check-1">RISK (31)</label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-2">
+               <label class="form-check-label" for="ex-check-2">Gender dimensions of disasters (23)</label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-3">
+               <label class="form-check-label" for="ex-check-3">Intersectionality</label>
+             </div>
+             <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ex-check-4">
+                <label class="form-check-label" for="ex-check-4">Gender data</label>
+             </div>
+             <div class="form-check">
+                 <input class="form-check-input" type="checkbox" value="" id="ex-check-5">
+                 <label class="form-check-label" for="ex-check-5">Gender-responsive risk assessment</label>
+              </div>
+        
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+            Countries
+          </button>
+          <div class="dropdown-menu">
+            <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-1">
+               <label class="form-check-label" for="ex-check-1">RISK (31)</label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-2">
+               <label class="form-check-label" for="ex-check-2">Gender dimensions of disasters (23)</label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-3">
+               <label class="form-check-label" for="ex-check-3">Intersectionality</label>
+             </div>
+             <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ex-check-4">
+                <label class="form-check-label" for="ex-check-4">Gender data</label>
+             </div>
+             <div class="form-check">
+                 <input class="form-check-input" type="checkbox" value="" id="ex-check-5">
+                 <label class="form-check-label" for="ex-check-5">Gender-responsive risk assessment</label>
+              </div>
+        
+          </div>
+        </div>  
+        <div class="dropdown">
+          <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+            Languages
+          </button>
+          <div class="dropdown-menu">
+            <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-1">
+               <label class="form-check-label" for="ex-check-1">RISK (31)</label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-2">
+               <label class="form-check-label" for="ex-check-2">Gender dimensions of disasters (23)</label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="ex-check-3">
+               <label class="form-check-label" for="ex-check-3">Intersectionality</label>
+             </div>
+             <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ex-check-4">
+                <label class="form-check-label" for="ex-check-4">Gender data</label>
+             </div>
+             <div class="form-check">
+                 <input class="form-check-input" type="checkbox" value="" id="ex-check-5">
+                 <label class="form-check-label" for="ex-check-5">Gender-responsive risk assessment</label>
+              </div>
+        
+          </div>
+        </div>
+
+
+    </div>
+              
+              
+
+
+            
+            <div class="filter-tokens pt-3">
+            
+                <button type="button" class="btn btn-token btn-danger">Clear filters</button>
+            
+                <button type="button" class="btn btn-token">West and Central Africa</button>
+                <button type="button" class="btn btn-token">South-east Asia</button>
+                <button type="button" class="btn btn-token">West and Central Africa</button>
+                <button type="button" class="btn btn-token">South-east Asia</button>
+                <button type="button" class="btn btn-token">West and Central Africa</button>
+                <button type="button" class="btn btn-token">South-east Asia</button>
+                <button type="button" class="btn btn-token">West and Central Africa</button>
+                <button type="button" class="btn btn-token">South-east Asia</button>
+                <button type="button" class="btn btn-token">West and Central Africa</button>
+                <button type="button" class="btn btn-token">South-east Asia</button>
+                <button type="button" class="btn btn-token">West and Central Africa</button>
+                <button type="button" class="btn btn-token">South-east Asia</button>
+                <button type="button" class="btn btn-token">West and Central Africa</button>
+                <button type="button" class="btn btn-token">South-east Asia</button>
+                                
+            </div>
+            </div><!--close #libraryOptions-->
+
+
+
+</div>
+
+</section>
+
+
+<section id="" class="expert-listing">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-xl-10 offset-xl-1">
 
 <!-- item -->
     <a href="expert-single.html" class="expert-card">

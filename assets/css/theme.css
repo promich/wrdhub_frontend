@@ -2725,6 +2725,10 @@ textarea.form-control-lg {
   font-size: 0.875rem;
 }
 
+.facet-hidden{
+  display: none !important;
+}
+
 .facet-item {
   display: block;
   min-height: 1.6rem;

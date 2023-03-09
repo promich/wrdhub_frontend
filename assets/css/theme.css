@@ -2720,6 +2720,11 @@ textarea.form-control-lg {
 /*label > [no-class] = form-check-label*/
 /* = */
 
+.view-header{
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
 .facet-item {
   display: block;
   min-height: 1.6rem;

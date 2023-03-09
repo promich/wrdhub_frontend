@@ -3840,6 +3840,9 @@ textarea.form-control-lg {
   font-size: 0.8125em;
   font-weight: 600;
   line-height: 1;
+  
+  white-space: normal;
+  text-align: left;
 }
 .btn-token.btn-danger {
   padding: 0.35em 0.65em;

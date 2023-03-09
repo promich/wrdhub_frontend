@@ -2714,6 +2714,82 @@ textarea.form-control-lg {
   opacity: 0.55;
 }
 
+/*form-check styles for Drupal's facet module*/
+/*facet-item = form-check*/
+/*input > facets-checkbox = form-check-input*/
+/*label > [no-class] = form-check-label*/
+/* = */
+
+.facet-item {
+  display: block;
+  min-height: 1.6rem;
+  padding-left: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+.facet-item .facets-checkbox {
+  float: left;
+  margin-left: -1.5rem;
+}
+
+.facets-checkbox {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.3rem;
+  vertical-align: top;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 2px solid #b4b7c9;
+  border: 2px solid #80ceed;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-print-color-adjust: exact;
+  color-adjust: exact;
+}
+.facets-checkbox[type=checkbox] {
+  border-radius: 0.1875em;
+  border-radius: 0.01875em;
+}
+.facets-checkbox[type=radio] {
+  border-radius: 50%;
+}
+.facets-checkbox:active {
+  filter: brightness(90%);
+}
+.facets-checkbox:focus {
+  border-color: #009ddc;
+  outline: 0;
+  box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.25);
+}
+.facets-checkbox:checked {
+  background-color: #009ddc;
+  border-color: #009ddc;
+}
+.facets-checkbox:checked[type=checkbox] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+.facets-checkbox:checked[type=radio] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+.facets-checkbox[type=checkbox]:indeterminate {
+  background-color: #9b3c90;
+  border-color: #9b3c90;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
+}
+.facets-checkbox:disabled {
+  pointer-events: none;
+  filter: none;
+  opacity: 0.55;
+}
+.facets-checkbox[disabled] ~ label, .facets-checkbox:disabled ~ label {
+  opacity: 0.55;
+}
+
+
+/*End form-check Drupal styles*/
+
 .form-switch {
   padding-left: 3.375em;
 }
@@ -3751,10 +3827,10 @@ textarea.form-control-lg {
   box-shadow: unset;
   border-radius: 0 !important;
   padding: 0.25em 0.3em 0.25em 0.6em;
-  margin: 0 0 0.25rem 0;
-    font-size: 0.8125em;
-    font-weight: 600;
-    line-height: 1;
+  margin: 0 0.25rem 0.25rem 0;
+  font-size: 0.8125em;
+  font-weight: 600;
+  line-height: 1;
 }
 .btn-token.btn-danger {
   padding: 0.35em 0.65em;

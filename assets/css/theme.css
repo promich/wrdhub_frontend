@@ -15452,6 +15452,10 @@ body {
   border: 1px solid #40b5e5;
 }
 
+
+
+
+
 a {
   transition: color 0.2s ease-in-out;
 }
@@ -20657,6 +20661,12 @@ a.pub-box:hover .hover-arrow:after {
   }
 }
 
+
+#mc_embed_signup .input-group-lg>.btn{
+  border-radius: 50rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
 
 /* About page */
 

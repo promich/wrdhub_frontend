@@ -2721,9 +2721,23 @@ textarea.form-control-lg {
 /* = */
 
 .view-header{
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   font-size: 0.875rem;
 }
+
+.view-header hr {
+    color: #aadef3;
+}
+
+.expert-listing p.rearch-result-details,
+p.rearch-result-details{
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.25;
+}
+
+
+
 
 .facet-hidden{
   display: none !important;
@@ -4886,6 +4900,7 @@ color: #fff;
   #insights-search .input-group-lg .form-select.form-resources{
       width: calc(100% - 56.5px) !important;
   } 
+  
   #insights-search .dropdown {
       width: 100%;
   }
@@ -5071,8 +5086,14 @@ color: #fff;
 
 
 #insights-listing{
-  
 }
+#insights-listing h2{
+display: none;
+}
+.insights-listing .views-exposed-form.mb-5 {
+    margin-bottom: 0 !important;
+}
+
 
 a.insight-card {
     display: block;

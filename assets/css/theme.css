@@ -4535,7 +4535,9 @@ a.featured-pub-slide:hover h2.featured-pub-title{
 }
 
 @media (max-width: 499.98px) {
-
+  .expert-listing div a.expert-card .p-3{
+    padding-left: 0 !important;
+  }
 }
 
 
@@ -20670,6 +20672,17 @@ a.pub-box:hover .hover-arrow:after {
     --bs-bg-opacity: 1;
     background-color: #e5f5fb !important;
     color: #431a3e !important;
+}
+
+/* Feedback page */
+
+.contact-message-feedback-form .form-actions{
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.contact-message-feedback-form .form-actions .button{
+  display: inline-flex;
+  width: auto;
 }
 
 

@@ -20367,6 +20367,12 @@ display: block;
   font-weight: 800;
   text-transform: uppercase;
 }
+@media (max-width: 499.98px) {
+  .top-label{
+    margin-top: 0.5rem;
+  }
+}
+
 a.top-label:hover{
 text-decoration: none;
 color: #007aab;

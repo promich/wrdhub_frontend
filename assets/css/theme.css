@@ -8639,6 +8639,11 @@ a.card-list-pub .pub-image{
   transform: translateX(100%);
 }
 
+/*fix _offcanvas.scss issue*/
+.offcanvas.offcanvas-end.hiding {
+  transform: translateX(100%) !important;
+}
+
 @media (max-width: 991.98px) and (min-width: 768px) {
   .offcanvas-end {
       max-width: 50vw;

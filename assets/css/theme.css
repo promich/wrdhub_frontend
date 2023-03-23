@@ -18229,8 +18229,9 @@ border: 2px solid #80ceed; /*50%*/
     flex-direction: row;
   }
   .list-group-horizontal-lg > .list-group-item:first-child {
-    border-bottom-left-radius: 0;
     border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
     border-top-left-radius: 0;
   }
   .list-group-horizontal-lg > .list-group-item:last-child {
@@ -22278,6 +22279,12 @@ img-comparison-slider:focus {
     justify-content: center !important;
     flex-direction: column;
 }
+#regions-map #mapcontrol .list-group-item:last-child {
+    border-bottom-right-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+}
+
+
 #regions-map #mapcontrol .list-group-item a{
     position: relative;
     padding: 0.625rem 0.75rem;

@@ -21726,6 +21726,16 @@ section.home-three {
   border-color: #bfe6f6 !important; /*25%*/ 
 }
 
+/*home only*/
+.home-three:not(.practice-area) article{
+  display: flex !important;
+  flex: 1 1 auto !important;
+  flex-direction: column !important;
+}
+
+
+
+
 .home-three a,
 .home-three a:hover{
   text-decoration: none !important;
@@ -21774,7 +21784,7 @@ section.home-three {
     color: var(--bs-body-color) !important;
     margin-bottom: 0.75rem;
 }
-.home-three p:first-of-type {
+.home-three.practice-area p:first-of-type {
     font-size: 1.25rem;
     font-style: italic;
     line-height: 1.333;

@@ -16278,6 +16278,7 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
 .btn-scroll-top:hover {
   background-color: rgba(19, 16, 34, 0.5);
   color: #fff;
+  text-decoration: none;
 }
 .btn-scroll-top:hover .btn-scroll-top-tooltip {
   visibility: visible;

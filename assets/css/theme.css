@@ -6809,6 +6809,12 @@ span.date,
   margin-bottom: 0.33rem;
   font-weight: 500;
 }
+#page-side .side-social h6{
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
 
 #page-side .btn:not(.btn-twitter, .btn-linkedin, .btn-whatsapp, .btn-facebook){
   display: flex !important;

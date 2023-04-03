@@ -2,7 +2,7 @@
 /*
  * WRD Hub Child theme
  * Based on Silicon | Multipurpose Bootstrap 5 frontend by 2022 Createx Studio
- * Last updated 29 Mar 2023
+ * Last updated 3 apr 2023
 */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 .text-gradient-primary {
@@ -6555,6 +6555,8 @@ a.card-latest:hover .badge,
 .card-latest .card-body p,
 .card-event .card-body p {
   margin-block-end: 0;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 
@@ -6888,6 +6890,13 @@ span.date,
     line-height: 0.875rem;
 }
 
+#page-side .side-org a {
+    display: inline-block;
+    line-height: 1.333rem !important;
+    margin-bottom: 0.5rem;
+}
+
+
 
 /* Event single > Event main*/
 
@@ -6896,7 +6905,7 @@ span.date,
 	margin-bottom: 1.5rem !important;
 }
 
-#page-content p:last-of-type{
+#page-content :not(.card-body) p:last-of-type{
   margin-bottom: 2.5rem !important;
 }
 #page-content blockquote p:last-of-type{
@@ -6924,9 +6933,11 @@ span.date,
     transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
     margin-bottom: 1.5rem !important;
 }
+/*
 .card-list a{
     margin-bottom: 0 !important;
 }
+*/
 .page-node-events #page-content .card-list a:not(:last-child){
     margin-bottom: 1.5rem !important;
 }
@@ -20549,6 +20560,10 @@ cursor: pointer;
 .topic-top .icon-title h2 {
   line-height: 1.2;
   margin-bottom: 0 !important;
+}
+
+.page-vocabulary-topic .topic-top p:last-of-type{
+  margin-bottom: 2.5rem;
 }
 
 #subtopic-zone{

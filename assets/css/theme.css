@@ -2,7 +2,7 @@
 /*
  * WRD Hub Child theme
  * Based on Silicon | Multipurpose Bootstrap 5 frontend by 2022 Createx Studio
- * Last updated 3 apr 2023
+ * Last updated 4 apr 2023
 */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 .text-gradient-primary {
@@ -23267,7 +23267,7 @@ img-comparison-slider:focus {
 
 
 .clipped-img {
-  clip-path: url(#raindropClipPath);
+  clip-path: url(#raindropClipPath) !important;
 }
 
 

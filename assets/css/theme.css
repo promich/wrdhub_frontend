@@ -6892,7 +6892,7 @@ span.date,
 
 #page-side .side-org a {
     display: inline-block;
-    line-height: 1.333rem !important;
+    line-height: 1.25rem !important;
     margin-bottom: 0.5rem;
 }
 
@@ -23388,8 +23388,14 @@ img-comparison-slider:focus {
       margin-top: 1rem;
     }
     
+ #tool-main .tab-content:not(.pt-1) .tab-pane p:first-of-type{
+   margin-top: 1.25rem;
+ }
  
- 
+ #tool-main .tab-content:not(.pt-1) .tab-pane ul li{
+    padding-bottom: 0.75rem;
+  }
+
 
 
 

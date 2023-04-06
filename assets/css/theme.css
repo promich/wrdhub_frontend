@@ -6906,8 +6906,15 @@ span.date,
 }
 
 #page-content :not(.card-body) p:last-of-type{
-  margin-bottom: 2.5rem !important;
+  margin-bottom: 2.5rem;
+  
 }
+
+#page-content .card-body p{
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 #page-content blockquote p:last-of-type{
   margin-bottom: 0;
 }

@@ -16299,6 +16299,10 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
   visibility: hidden;
   opacity: 0;
 }
+.btn-scroll-top .btn-scroll-top-tooltip.text-muted {
+  color: #fff!important;
+}
+
 .btn-scroll-top:hover {
   background-color: rgba(19, 16, 34, 0.5);
   color: #fff;

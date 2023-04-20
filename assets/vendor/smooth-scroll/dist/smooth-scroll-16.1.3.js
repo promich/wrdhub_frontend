@@ -1,9 +1,24 @@
-/*! SmoothScroll v16.1.4 | (c) 2020 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/smooth-scroll */
-(function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-	typeof define === 'function' && define.amd ? define(factory) :
-	(global = global || self, global.SmoothScroll = factory());
-}(this, (function () { 'use strict';
+/*!
+ * smooth-scroll v16.1.3
+ * Animate scrolling to anchor links
+ * (c) 2020 Chris Ferdinandi
+ * MIT License
+ * http://github.com/cferdinandi/smooth-scroll
+ */
+
+(function (root, factory) {
+	if (typeof define === 'function' && define.amd) {
+		define([], (function () {
+			return factory(root);
+		}));
+	} else if (typeof exports === 'object') {
+		module.exports = factory(root);
+	} else {
+		root.SmoothScroll = factory(root);
+	}
+})(typeof global !== 'undefined' ? global : typeof window !== 'undefined' ? window : this, (function (window) {
+
+	'use strict';
 
 	//
 	// Default settings
@@ -62,12 +77,12 @@
 	 */
 	var extend = function () {
 		var merged = {};
-		Array.prototype.forEach.call(arguments, function (obj) {
+		Array.prototype.forEach.call(arguments, (function (obj) {
 			for (var key in obj) {
 				if (!obj.hasOwnProperty(key)) return;
 				merged[key] = obj[key];
 			}
-		});
+		}));
 		return merged;
 	};
 
@@ -174,8 +189,8 @@
 	/**
 	 * Calculate the easing pattern
 	 * @link https://gist.github.com/gre/1650294
-	 * @param   {Object} settings Easing pattern
-	 * @param   {Number} time     Time animation should take to complete
+	 * @param {String} type Easing pattern
+	 * @param {Number} time Time animation should take to complete
 	 * @returns {Number}
 	 */
 	var easingPattern = function (settings, time) {
@@ -234,7 +249,7 @@
 		if (clip) {
 			location = Math.min(location, getDocumentHeight() - window.innerHeight);
 		}
-			return location;
+ 		return location;
 	};
 
 	/**
@@ -364,7 +379,7 @@
 		//
 
 		var smoothScroll = {}; // Object for public APIs
-		var settings, toggle, fixedHeader, animationInterval;
+		var settings, anchor, toggle, fixedHeader, eventTimeout, animationInterval;
 
 
 		//
@@ -538,7 +553,7 @@
 		/**
 		 * Animate scroll on popstate events
 		 */
-		var popstateHandler = function () {
+		var popstateHandler = function (event) {
 
 			// Stop if history.state doesn't exist (ex. if clicking on a broken anchor link).
 			// fixes `Cannot read property 'smoothScroll' of null` error getting thrown.
@@ -546,6 +561,10 @@
 
 			// Only run if state is a popstate record for this instantiation
 			if (!history.state.smoothScroll || history.state.smoothScroll !== JSON.stringify(settings)) return;
+
+			// Only run if state includes an anchor
+
+			// if (!history.state.anchor && history.state.anchor !== 0) return;
 
 			// Get the anchor
 			var anchor = history.state.anchor;
@@ -576,8 +595,10 @@
 
 			// Reset variables
 			settings = null;
+			anchor = null;
 			toggle = null;
 			fixedHeader = null;
+			eventTimeout = null;
 			animationInterval = null;
 
 		};
@@ -626,4 +647,4 @@
 
 	return SmoothScroll;
 
-})));
+}));
